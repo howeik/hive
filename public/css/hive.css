@@ -1,3 +1,7 @@
+body {
+	background-image:url(../images/school.png); background-repeat:repeat
+}
+
 .header {
 	background-color: #FFCC11;
 	height:55px;
@@ -8,11 +12,6 @@
 	padding-bottom: 8px;
 	padding-top: 8px;
 	color:#444444;
-
-.navbar {
-	display: block;
-	background-color: #FAE62C;
-	position: relative;
 }
 
 #appname {
@@ -21,8 +20,25 @@
 
 .settings-cog {
 	color: #FAE62C
-	
 }
+
 .container {
 	background-color: #FAE62C;
+}
+
+.navbar-header .navbar-icon {
+    line-height:50px;
+    height:50px;
+}
+
+.navbar-header  a.navbar-icon {
+	    line-height:50px;
+    height:50px;
+
+    padding: 0 10px;
+      float:left;
+
+          line-height:50px;
+    height:50px;
+
 }
