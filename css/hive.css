@@ -1,0 +1,17 @@
+.navbar {
+	display: block;
+	background-color: #FAE62C;
+	position: relative;
+}
+
+#appname {
+	color: #C0A090;
+}
+
+.settings-cog {
+	color: #FAE62C
+	
+}
+.container {
+	background-color: #FAE62C;
+}
