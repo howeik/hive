@@ -8,4 +8,21 @@
 	padding-bottom: 8px;
 	padding-top: 8px;
 	color:#444444;
+
+.navbar {
+	display: block;
+	background-color: #FAE62C;
+	position: relative;
+}
+
+#appname {
+	color: #C0A090;
+}
+
+.settings-cog {
+	color: #FAE62C
+	
+}
+.container {
+	background-color: #FAE62C;
 }
