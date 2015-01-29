@@ -1,0 +1,11 @@
+.header {
+	background-color: #FFCC11;
+	height:55px;
+}
+.header-text {
+	font-family: 'Lato';
+	font-size: 35px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	color:#444444;
+}
