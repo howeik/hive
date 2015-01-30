@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" href="css/hive.css">
 
 	<script src="jquery/dist/jquery.min.js"></script>
@@ -20,38 +21,109 @@
 	<div class="navbar navbar-default navbar-fixed-top">
 
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Brand</a>
+			<a class="navbar-brand" id="logo" href="#">Hive</a>
 			<a href="#" class="navbar-icon"><span class="glyphicon glyphicon-comment"></span></a>
 			<a href="#" class="navbar-icon"><span class="glyphicon glyphicon-edit"></span></a>
+
 		</div>
 	</div>
 
+	<!--This Week Content -->
+	<div class="thisweek-container">
 
-	<div class="container">
-<!-- 		<nav class="navbar">
-			<div id="logo">
-				<h2 id="appname">Hive</h2>
+		<div class="header">
+			<h2 class="header-text">This Week</h2>
+		</div>
+
+		<div class="content-container">
+			<div class="assignment">
+				<ul >
+					<li>
+						<form action="check">
+							<input type="radio" name="check" value="empty" class="radiobutton"><div class="task-title">Midterm Review Session<br><div class="task-class-COGS120">COGS102B</div></div>
+						</form>
+					</li>
+					<li class="task-date">Tuesday</li>
+				</ul>	
 			</div>
-			<div id="settings-cog">
-				<button type="button" class="btn btn-default" aria-label="Left Align">
-					<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-				</button>
+
+			<div class="assignment">
+				<ul >
+					<li>
+						<form action="check">
+							<input type="radio" name="check" value="empty" class="radiobutton"><div class="task-title">Lab #4<br><div class="task-class-COGS120">COGS120</div></div>
+						</form>
+					</li>
+					<li class="task-date">Thursday</li>
+				</ul>	
 			</div>
-			<div class="navbar-right">
-				<div>
-				</div>
-				<div>
-				</div>
+
+			<div class="assignment">
+				<ul >
+					<li>
+						<form action="check">
+							<input type="radio" name="check" value="empty" class="radiobutton"><div class="task-title">Midterm II<br><div class="task-class-COGS120">MATH20F</div></div>
+						</form>
+					</li>
+					<li class="task-date">Thursday</li>
+				</ul>	
 			</div>
-		</nav>
-	-->
-	<div class="header">
-		<h2 class="header-text">This Week</h2>
+
+			<div class="assignment">
+				<ul >
+					<li>
+						<form action="check">
+							<input type="radio" name="check" value="empty" class="radiobutton"><div class="task-title">Political Party Essay<br><div class="task-class-COGS120">POLI100</div></div>
+						</form>
+					</li>
+					<li class="task-date">Friday</li>
+				</ul>	
+			</div>
+
+		</div>
 	</div>
 
-	<div class="header">
-		<h2 class="header-text">Upcoming Week</h2>
-	</div>
-</div>
+	<!--Upcoming Content -->
+	<div class="upcoming-container">
+
+		<div class="header">
+			<h2 class="header-text">Upcoming Week</h2>
+		</div>
+
+		<div class="content-container">
+			<div class="assignment">
+				<ul >
+					<li>
+						<form action="check">
+							<input type="radio" name="check" value="empty" class="radiobutton"><div class="task-title">Assignment #4<br><div class="task-class-COGS120">COGS120</div></div>
+						</form>
+					</li>
+					<li class="task-date">2/29/15</li>
+				</ul>	
+			</div>
+
+			<div class="assignment">
+				<ul >
+					<li>
+						<form action="check">
+							<input type="radio" name="check" value="empty" class="radiobutton"><div class="task-title">Reading Guide - Latour 1910<br><div class="task-class-COGS120">COGS102B</div></div>
+						</form>
+					</li>
+					<li class="task-date">2/30/15</li>
+				</ul>	
+			</div>
+
+			<div class="assignment">
+				<ul >
+					<li>
+						<form action="check">
+							<input type="radio" name="check" value="empty" class="radiobutton"><div class="task-title">Homework 3.1-3.7,4.9<br><div class="task-class-COGS120">MATH 20F</div></div>
+						</form>
+					</li>
+					<li class="task-date">3/2/15</li>
+				</ul>	
+			</div>
+		</div>
+	</div>		
 </body>
 </html>

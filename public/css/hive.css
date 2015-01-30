@@ -14,12 +14,20 @@ body {
 	color:#444444;
 }
 
+#logo {
+	font-family: 'lato';
+	font-size: 30px;
+}
 #appname {
 	color: #C0A090;
 }
 
 .settings-cog {
 	color: #FAE62C
+}
+
+.icon {
+	top:20px;
 }
 
 .container {
@@ -41,4 +49,59 @@ body {
           line-height:50px;
     height:50px;
 
+}
+
+.thisweek-container{
+	position:relative;
+	top: 25px;
+
+}
+.upcoming-container{
+	position: relative;
+
+}
+.content-container {
+	padding:5px;
+	width:100%;
+}
+
+.assignment {
+	padding:2px;
+	border-color: black;
+	color:red;
+	height:50px;
+}
+
+.radiobutton {
+	height:30px;
+}
+
+ul li{
+	color:#444444;
+	list-style-type: none;
+	display: inline;
+	float: left;
+}
+.task-title{
+	font-size: 18px;
+	font-family: 'Lato';
+	color:#444444;
+	float: right;
+	padding-left: 25px;
+	margin-top:-3px;
+}
+.task-class-COGS120{
+	font-size: 15px;
+	font-family: 'Lato';
+	color:#444444;
+
+}
+.task-date {
+	float:right;
+	padding-top: 5px;
+	padding-right:50px;
+	font-size: 20px;
+	font-family: 'Lato';
+	color:#444444;
+	text-align: right;
 }
