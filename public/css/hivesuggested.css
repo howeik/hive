@@ -1,0 +1,30 @@
+.title {
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.date {
+    float: right;
+}
+
+.course {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    display: inline;
+    padding-bottom: 0px;
+}
+
+.endorsed {
+    font-family: 'open sans';
+    font-size: 11px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+.suggested {
+    padding-bottom: 15px;
+}
