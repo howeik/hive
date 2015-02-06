@@ -7,37 +7,52 @@ body {
 
 .login h1 {
     font-family: "Poiret One";
-    font-size: 100px;
+    font-size: 130px;
     text-align: center;
-    color: 444444;
+    color: #444444;
     display: block;
     padding-top: 80px;
+}
+
+.login {
+    padding: 40px;
+    position: relative;
 }
 
 .login-information {
     text-align: center;
     display: block;
 }
+input::-webkit-input-placeholder {
+    color: #ccc28e;
+    text-transform: uppercase;
 
-#username {
+}
+input[type="text"], textarea {
     background-color: #fff3b2;
-    width: 180px;
+    width: 230px;
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
     font-family: 'Open Sans';
+    border-bottom-color: #eae1b3;
 }
 
-#password {
+input[type="password"], textarea {
     background-color: #fff3b2;
-    width: 180px;
+    width: 230px;
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
     font-family: 'Open Sans';
+    border-bottom-color: #eae1b3;
 }
 
 input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="password"]:focus {
     outline: none;
 }
 
@@ -49,5 +64,44 @@ input[type="text"]:focus {
 
 .login-button {
     text-align: center;
-    padding: 30px;
+    position: relative;
+    padding-top: 40px;
+ 
+}
+
+#loginbutton {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #fff3b2, #fff3b2);
+  background-image: -moz-linear-gradient(top, #fff3b2, #fff3b2);
+  background-image: -ms-linear-gradient(top, #fff3b2, #fff3b2);
+  background-image: -o-linear-gradient(top, #fff3b2, #fff3b2);
+  background-image: linear-gradient(to bottom, #fff3b2, #fff3b2);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: 'Open sans';
+  color: #ccc28e;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #eae1b3 2px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#signupbutton {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -moz-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -ms-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -o-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: linear-gradient(to bottom, #eae1b3, #eae1b3);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: 'Open sans';
+  color: #fff3b2;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #eae1b3 2px;
+  text-decoration: none;
 }
