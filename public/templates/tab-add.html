@@ -13,12 +13,19 @@
           <input type="text" placeholder="Title">
         </label>
 
-        <label class="item item-input">
-          <input type="text" placeholder="Class">
-        </label>
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Class
+    </div>
+    <select>
+      <option>CSE124</option>
+      <option selected>COGS120</option>
+      <option>CSE132A</option>
+    </select>
+  </label>
 
         <label class="item item-input">
-          <input type="text" placeholder="Due Date">
+          <input type="date" placeholder="Due Date">
         </label>
 
         <label class="item item-input">
@@ -36,12 +43,12 @@
           </label>
         </ion-item>
           <label class="item item-input">
-            <textarea placeholder="Description"></textarea>
+            <textarea rows=5 placeholder="Description"></textarea>
           </label>
 
           <div class="submitButton">
           <button class="button button-block button-calm">
-            Submit
+            Add Task
           </button>
           <div>
       </div>
