@@ -33,6 +33,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/ionic', index.view_ionic);
 // Example route
 // app.get('/users', user.list);
 app.get('/login', login.view);
