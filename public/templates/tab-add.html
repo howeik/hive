@@ -6,9 +6,39 @@
 -->
 <ion-view view-title="Add Task">
   <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+  <link href="../css/tab-add.css" rel="stylesheet">
     <p>
-      ADD STUFF
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Title">
+        </label>
+
+        <label class="item item-input">
+          <input type="text" placeholder="Class">
+        </label>
+
+        <label class="item item-input">
+          <input type="text" placeholder="Due Date">
+        </label>
+
+        <label class="item item-input">
+          <input type="text" placeholder="Time">
+        </label>
+
+        <ion-item class="item-toggle">
+         Share with Class
+          <label class="toggle">
+            <input type="checkbox" ng-model="settings.enableShare">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+
+          </label>
+        </ion-item>
+          <label class="item item-input">
+            <textarea placeholder="Description"></textarea>
+          </label>
+      </div>
     </p>
   </ion-content>
 </ion-view>
