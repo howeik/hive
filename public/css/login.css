@@ -1,0 +1,39 @@
+body {
+    background-color: #FFCC11;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.login h1 {
+    font-family: "Poiret One";
+    font-size: 100px;
+    text-align: center;
+    color: #444444;
+    display: block;
+    padding-top: 80px;
+}
+
+.login-information {
+    text-align: center;
+    display: block;
+}
+
+#username {
+    padding: 10px;
+}
+
+#password {
+    padding: 10px;
+}
+
+.login ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.login-button {
+    text-align: center;
+    padding: 30px;
+}
