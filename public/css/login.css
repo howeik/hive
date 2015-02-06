@@ -1,5 +1,5 @@
 body {
-    background-color: #FFCC11;
+    background-color: #fff3b2;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -9,7 +9,7 @@ body {
     font-family: "Poiret One";
     font-size: 100px;
     text-align: center;
-    color: #444444;
+    color: 444444;
     display: block;
     padding-top: 80px;
 }
@@ -20,11 +20,25 @@ body {
 }
 
 #username {
-    padding: 10px;
+    background-color: #fff3b2;
+    width: 180px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    font-family: 'Open Sans';
 }
 
 #password {
-    padding: 10px;
+    background-color: #fff3b2;
+    width: 180px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    font-family: 'Open Sans';
+}
+
+input[type="text"]:focus {
+    outline: none;
 }
 
 .login ul {
