@@ -1,5 +1,98 @@
 angular.module('starter.services', [])
 
+.factory('Classes', function() {
+
+  // Some fake testing data
+  var classes = [{
+    id: 0,
+    name: 'COGS120'
+  }];
+
+  return {
+    all: function() {
+      return classes;
+    },
+    get: function(id) {
+      for (var i = 0; i < classes.length; i++) {
+        if (classes[i].id === parseInt(id)) {
+          return classes[i];
+        }
+      }
+      return null;
+    },
+    remove: function(class) {
+      classes.splice(classes.indexOf(class), 1);
+    }
+  }
+});
+
+.factory('Tasks', function() {
+
+  // Some fake testing data
+  var tasks = [{
+    id: 0,
+    class_id: 0,
+    name: 'A06 - Meat on the Bones',
+    description: 'Functionality functionality functionality!',
+    due_date: '02/13/2015'
+  }, {
+    id: 1,
+    class_id: 0,
+    name: 'Lab 6 - AJAX',
+    description: 'Connecting client to server without reloading!',
+    due_date: '02/12/2015'
+  }];
+
+  return {
+    all: function() {
+      return tasks;
+    },
+    get: function(id) {
+      for (var i = 0; i < tasks.length; i++) {
+        if (tasks[i].id == parseInt(id)) {
+          return tasks[i];
+        }
+      }
+      return null;
+    },
+    remove: function(class) {
+      tasks.splice(tasks.indexOf(class), 1);
+    }
+  }
+
+});
+
+.factory('UserTasks', ['Classes', 'Tasks', function() {
+
+  // Some fake testing data
+  var userTasks = [{
+    id: 0,
+    user_id: 0,
+    task_id: 0,
+    is_finished: false
+  }, {
+    id: 1,
+    user_id: 0,
+    task_id: 1,
+    is_finished: true
+  }];
+
+  return {
+    all: function() {
+      return userTasks;
+    },
+    get: function(id) {
+      for (var i = 0; i < userTasks.length; i++) {
+        if (userTasks[i].id == parseInt(id)) {
+          return userTasks[i];
+        }
+      }
+      return null;
+    }
+  }
+
+}]);
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 

@@ -1,5 +1,31 @@
 angular.module('starter.controllers', [])
 
+.controller('TasksCtrl', function($scope) {
+  var tasks = Tasks.all();
+})
+
+.controller('SharedCtrl', function($scope) {
+  var tasks = Tasks.all();
+  tasks = tasks.filter(function(task) {
+    task.is_shared = true;
+  });
+
+  var classes = [0, 5];
+  tasks = tasks.filter(function(task) {
+    classes.includes(task.class_id);
+  });
+
+  var userTaskIds = UserTasks.all().map(function(userTask) {
+    userTask.task_id;
+  });
+
+  tasks = tasks.filter(function(task) {
+    userTaskIds.includes(task.id) == false;
+  });
+
+  $scope.tasks = tasks;
+})
+
 .controller('DashCtrl', function($scope) {})
 
 
