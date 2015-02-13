@@ -1,3 +1,6 @@
+
+/* Shared Task Page */
+
 .title {
     font-family: 'Open Sans';
     font-size: 17px;
@@ -20,10 +23,6 @@
     font-size: 12px;
 }
 
-.suggested-content {
-
-}
-
 .action-buttons {
     margin: 0 auto;
     left: 50%;
@@ -36,9 +35,7 @@
     padding-right: 25px;
 }
 
-.task {
-
-}
+/* Main Task Page */
 
 .task-title {
     font-size:20px;
@@ -63,7 +60,11 @@
     margin-top: 5px;   
 }
 
+.item {
+	font-family: 'Open Sans';
+}
 
+/* Add Task Page */
 
 
 
