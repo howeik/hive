@@ -1,31 +1,5 @@
 angular.module('starter.controllers', [])
 
-// .controller('TasksCtrl', function($scope) {
-//   var tasks = Tasks.all();
-// })
-
-// .controller('SharedCtrl', function($scope) {
-//   var tasks = Tasks.all();
-//   tasks = tasks.filter(function(task) {
-//     task.is_shared = true;
-//   });
-
-//   var classes = [0, 5];
-//   tasks = tasks.filter(function(task) {
-//     classes.includes(task.class_id);
-//   });
-
-//   var userTaskIds = UserTasks.all().map(function(userTask) {
-//     userTask.task_id;
-//   });
-
-//   tasks = tasks.filter(function(task) {
-//     userTaskIds.includes(task.id) == false;
-//   });
-
-//   $scope.tasks = tasks;
-// })
-
 .controller('DashCtrl', function($scope, Classes, Tasks, UserTasks) {
   var userTasks = UserTasks.all();
   userTasks.map(function(userTask) {
@@ -39,9 +13,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-
 .controller('AddCtrl', function($scope) {})
-
 
 .controller('ChatsCtrl', function($scope, Users, Classes, Tasks, UserTasks) {
   // filter tasks that are not shared
@@ -65,12 +37,49 @@ angular.module('starter.controllers', [])
     return userTasks.indexOf(task.id) == -1;
   });
 
+  // filter tasks that you've declined
+  var declinedTaskIds = Users.declinedTaskIds();
+  tasks = tasks.filter(function(task) {
+    return declinedTaskIds.indexOf(task.id) == -1;
+  });
+
+  // append endorsement information
+  userTasks = UserTasks.all();
+  tasks.map(function(task) {
+    if (task.is_endorsed == true) {
+      task.endorsed_message = " by an instructor";
+    } else {
+      var taskUsers = userTasks.filter(function(userTask) {
+        return userTask.task_id == task.id;
+      });
+
+      task.endorsed_message = " by " + taskUsers.length + " students";
+    }
+  });
+
   // append class information to the task
   tasks.map(function(task) {
     task.class = Classes.get(task.class_id);
   });
 
-  console.log(tasks);
+  $scope.tasks = tasks;
+  $scope.accept = function(task) {
+    console.log(task);
+    UserTasks.add(0, task.id);
+    $('#task' + task.id).hide(500);
+    $scope.badgeCount -= 1;
+  };
+
+  $scope.decline = function(task) {
+    console.log(task);
+    Users.addDeclinedTaskId(task.id);
+    $('#task' + task.id).hide(500);
+    $scope.badgeCount -= 1;
+  };
+
+  console.log("setting badge count to " + tasks.length);
+
+  $scope.badgeCount = tasks.length;
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {

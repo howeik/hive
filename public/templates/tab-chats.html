@@ -1,95 +1,22 @@
 <ion-view view-title="Chats">
-	<ion-content>
-		<ul class="list">
- 			<li class="item" style="padding-bottom: 0px;">
- 				<div class="suggested-content">
-		    	<div class="title">Midterm Study Session</div>
-	    		<div class="course">COGS102B</div>
-	    		<div class="date">2/10/15</div>
-	    		<div class="endorsed">
-	    			<span class="ion-checkmark-round"> by 22 students</span>
-	    		</div>
-	    		<div class= "action-buttons">
-		   		  <button class="button button-clear button-balanced" style="line-height: 30px;"> 
-		 			 		Accept
-						</button>
-						<button class="button button-clear button-assertive" style="line-height: 30px;">
-		 					Decline
-						</button>
-					</div>
-				</div>
-			</li>
- 			<li class="item" style="padding-bottom: 0px;">
- 				<div class="suggested-content">
-		    	<div class="title">Midterm Study Session</div>
-	    		<div class="course">COGS102B</div>
-	    		<div class="date">2/10/15</div>
-	    		<div class="endorsed">
-	    			<span class="ion-checkmark-round"> by 22 students</span>
-	    		</div>
-	    		<div class= "action-buttons">
-		   		  <button class="button button-clear button-balanced" style="line-height: 30px;"> 
-		 			 		Accept
-						</button>
-						<button class="button button-clear button-assertive" style="line-height: 30px;">
-		 					Decline
-						</button>
-					</div>
-				</div>
-			</li>
-			<li class="item" style=" padding-bottom: 0px;">
- 				<div class="suggested-content">
-		    	<div class="title">Midterm Study Session</div>
-	    		<div class="course">COGS102B</div>
-	    		<div class="date">2/10/15</div>
-	    		<div class="endorsed">
-	    			<span class="ion-checkmark-round"> by 22 students</span>
-	    		</div>
-	    		<div class= "action-buttons">
-		   		  <button class="button button-clear button-balanced" style="line-height: 30px;"> 
-		 			 		Accept
-						</button>
-						<button class="button button-clear button-assertive" style="line-height: 30px;">
-		 					Decline
-						</button>
-					</div>
-				</div>
-			</li>
-		 	<li class="item" style="padding-bottom: 0px;">
- 				<div class="suggested-content">
-		    	<div class="title">Midterm Study Session</div>
-	    		<div class="course">COGS102B</div>
-	    		<div class="date">2/10/15</div>
-	    		<div class="endorsed">
-	    			<span class="ion-checkmark-round"> by 22 students</span>
-	    		</div>
-	    		<div class= "action-buttons">
-		   		  <button class="button button-clear button-balanced" style="line-height: 30px;"> 
-		 			 		Accept
-						</button>
-						<button class="button button-clear button-assertive" style="line-height: 30px;">
-		 					Decline
-						</button>
-					</div>
-				</div>
-			</li>
-			 <li class="item" style="padding-bottom: 0px;">
- 				<div class="suggested-content">
-		    	<div class="title">Midterm Study Session</div>
-	    		<div class="course">COGS102B</div>
-	    		<div class="date">2/10/15</div>
-	    		<div class="endorsed">
-	    			<span class="ion-checkmark-round"> by 22 students</span>
-	    		</div>
-	    		<div class= "action-buttons">
-		   		  <button class="button button-clear button-balanced" style="line-height: 30px;"> 
-		 			 		Accept
-						</button>
-						<button class="button button-clear button-assertive" style="line-height: 30px;">
-		 					Decline
-						</button>
-					</div>
-				</div>
-			</li>
-	</ion-content>
+    <ion-content>
+        <ul class="list">
+            <ion-item style="padding-bottom: 0px;" ng-repeat="task in tasks" id="task{{task.id}}">
+                <div class="title">{{task.name}}</div>
+                <div class="course">{{task.class.name}}</div>
+                <div class="date">{{task.due_date}}</div>
+                <div class="endorsed">
+                    <span class="ion-checkmark-round">{{task.endorsed_message}}</span>
+                </div>
+                <div class= "action-buttons">
+                    <button ng-click="accept(task)" class="button button-clear button-balanced" style="line-height: 30px;"> 
+                        Accept
+                    </button>
+                    <button ng-click="decline(task)" class="button button-clear button-assertive" style="line-height: 30px;">
+                        Decline
+                    </button>
+                </div>
+            </ion-item>
+        </ul>
+    </ion-content>
 </ion-view>

@@ -41,9 +41,20 @@ angular.module('starter.services', [])
 })
 
 .factory('Users', ['Classes', function() {
+  var declined_task_ids = [];
+
   return {
     class_ids: function() {
       return [0, 1, 3];
+    },
+    id: function() {
+      return 0
+    },
+    addDeclinedTaskId: function(task_id) {
+      declined_task_ids.push(task_id);
+    },
+    declinedTaskIds: function() {
+      return declined_task_ids;
     }
     // classes: function() {
     //   return [0, 1, 3].map(function(class_id) {
@@ -148,6 +159,18 @@ angular.module('starter.services', [])
   return {
     all: function() {
       return userTasks;
+    },
+    add: function(user_id, task_id) {
+      var userTaskIds = userTasks.map(function(userTask) {
+        return userTask.id;
+      });
+
+      var newTaskId = Math.max.apply(Math, userTaskIds) + 1;
+      userTasks.push({
+        id: newTaskId,
+        user_id: user_id,
+        task_id: task_id
+      });
     },
     get: function(id) {
       for (var i = 0; i < userTasks.length; i++) {
