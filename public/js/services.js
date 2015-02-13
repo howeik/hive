@@ -18,6 +18,15 @@ angular.module('starter.services', [])
         }
       }
       return null;
+    },
+    remove: function(id) {
+      for (var i = 0; i < classes.length; i++) {
+        if (classes[i].id === parseInt(id)) {
+          classes.splice(i, 1);
+          return true;
+        }
+      }
+      return false;
     }
   }
 })
@@ -81,6 +90,14 @@ angular.module('starter.services', [])
         }
       }
       return null;
+    },
+    update: function(userTask) {
+      for (var i = 0; i < userTasks.length; i++) {
+        if (userTasks[i].id == userTask.id) {
+          userTasks[i].is_finished = userTask.is_finished;
+        }
+      }
+      return false;
     }
   }
 

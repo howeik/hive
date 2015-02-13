@@ -7,12 +7,36 @@
       This Week
     </div>
 
-  <ion-list>
+      <ion-checkbox ng-repeat="userTask in userTasks" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+        <div class="tasks">
+          <div class="task-title">
+            {{userTask.task.name}}
+          </div>
+          <div class="date-title">
+            {{userTask.task.due_date}}
+          </div>
+          <div class="course-title">
+            {{userTask.task.class.title}}
+          </div>
+        </div>
+<!-- 
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button> -->
+      </ion-checkbox>
+
+      <ion-checkbox ng-model="a"><div class="tasks"><div class="task-title">Assignment #5</div><div class= "date-title">Thursday</div><div class= "course-title">COGS120</div></div>
+      </ion-checkbox>
+
       <div class="task">
       <ion-checkbox ng-model="a"><div class="tasks"><div class="task-title">Assignment #5</div><div class= "date-title">Thursday</div><div class= "course-title">COGS120</div></div>
       </ion-checkbox>
       </div>
-    </ion-list>
   <ion-checkbox ng-model="b"><div class="tasks"><div class="task-title">Reading Guide #1</div><div class= "date-title">Thursday</div><div class= "course-title">COGS102B</div></div></ion-checkbox>
 
   <ion-checkbox ng-model="c"><div class="tasks"><div class="task-title">Midterm I</div><div class= "date-title">Friday</div><div class= "course-title">POLI 28</div></div></ion-checkbox>

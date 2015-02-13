@@ -26,17 +26,44 @@ angular.module('starter.controllers', [])
 //   $scope.tasks = tasks;
 // })
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, Classes, Tasks, UserTasks) {
+  var userTasks = UserTasks.all();
+  userTasks.map(function(userTask) {
+    userTask.task = Tasks.get(userTask.task_id);
+    userTask.task.class = Classes.get(userTask.task.class_id);
+  });
+
+  console.log(userTasks);
+
+  $scope.userTasks = userTasks;
+  $scope.updateUserTask = function(userTask) {
+    UserTasks.update(userTask);
+  };
+})
 
 
 .controller('AddCtrl', function($scope) {})
 
 
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('ChatsCtrl', function($scope, Chats, Classes, Tasks, UserTasks) {
+  var userTasks = UserTasks.all();
+
+  var tasks = userTasks.map(function(userTask) {
+    return Tasks.get(userTask.task_id);
+  });
+
+  var classes = tasks.map(function(task) {
+    return Classes.get(task.class_id);
+  });
+
+  console.log(userTasks);
+  console.log(tasks);
+  console.log(classes);
+
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
     Chats.remove(chat);
-  }
+  };
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
