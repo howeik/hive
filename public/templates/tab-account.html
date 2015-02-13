@@ -1,17 +1,53 @@
 <ion-view view-title="Account">
-  <ion-content>
+  <ion-content class="padding">
     <ion-list>
-      <ion-item class="item-toggle">
-        Enable Friends
-        <label class="toggle">
-          <input type="checkbox" ng-model="settings.enableFriends">
-          <div class="track">
-            <div class="handle"></div>
+     
+       <ion-item>
+        <div class="email">
+           Email:<p class="user-email">student@ucsd.edu</p>
           </div>
-        </label>
-      </ion-item>
+        </ion-item>
 
-      
+        <ion-list>
+          <div class="list">
+            <div class="item item-divider">
+               Enrolled Classes
+            </div>
+
+            <a class="item item-icon-left" href="#">
+              <i class="icon ion-ios-plus-outline"></i>
+               Add Class
+            </a>
+
+            <div class="item">
+              COGS 120
+              <a class="trash-icon item-icon-right"><i class="icon ion-ios-close-outline"></i></a>
+             </div>
+
+            <div class="item">
+              CSE 132A
+              <a class="trash-icon item-icon-right"><i class="icon ion-ios-close-outline"></i></a>
+            </div>
+
+            <div class="item">
+              CSE 125
+               <a class="trash-icon item-icon-right"><i class="icon ion-ios-close-outline"></i></a>
+            </div>
+          </div>
+       </ion-list>
+
+      <!-- <a class="item item-icon-left" href="#">
+        <i class="icon ion-ios-plus-outline"></i>
+        Add Class
+       </a>-->
+       <!-- Log out Button -->
+      <div class="LogOutButton">
+        <button class="button button-block button-calm">
+          Log Out
+        </button>
+      <div>
+
+
     </ion-list>
   </ion-content>
 </ion-view>
