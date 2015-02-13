@@ -1,7 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, Classes, Tasks, UserTasks) {
+.controller('DashCtrl', function($scope, Users, Classes, Tasks, UserTasks) {
   var userTasks = UserTasks.all();
+  userTasks = userTasks.filter(function(userTask) {
+    return Users.id() == userTask.user_id;
+  });
   userTasks.map(function(userTask) {
     userTask.task = Tasks.get(userTask.task_id);
     userTask.task.class = Classes.get(userTask.task.class_id);
@@ -99,9 +102,14 @@ angular.module('starter.controllers', [])
   });
 
   // filter tasks that you already have added
-  var userTasks = UserTasks.all().map(function(userTask) {
+  var userTasks = UserTasks.all()
+  userTasks = userTasks.filter(function(userTask) {
+    return Users.id() == userTask.user_id;
+  });
+  userTasks = userTasks.map(function(userTask) {
     return userTask.task_id;
   });
+
 
   tasks = tasks.filter(function(task) {
     return userTasks.indexOf(task.id) == -1;

@@ -48,7 +48,7 @@ angular.module('starter.services', [])
       return [0, 1, 3];
     },
     id: function() {
-      return 0
+      return 0;
     },
     addDeclinedTaskId: function(task_id) {
       declined_task_ids.push(task_id);
@@ -180,6 +180,71 @@ angular.module('starter.services', [])
     id: 1,
     user_id: 0,
     task_id: 1,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 7,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 7,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 7,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 7,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 4,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 4,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 4,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 6,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 6,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 6,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 6,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 6,
+    is_finished: true
+  }, {
+    id: 1,
+    user_id: 1,
+    task_id: 6,
     is_finished: true
   }];
 
