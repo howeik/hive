@@ -5,53 +5,65 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="Add Task">
-  <ion-content class="padding">
-    <div class="list list-inset">
+	<ion-content class="padding">
+		<div class="list">
 
-      <label class="item item-input">
-        <input type="text" placeholder="Title">
-      </label>
+			<!--Basic Details -->	
+			<div class="event-details"> 
+				<div class="item item-divider">
+					Basic Details
+				</div>
 
-      <label class="item item-input item-select">
-        <div class="input-label">
-          Class
-          </div>
-        <select>
-          <option>CSE124</option>
-          <option selected>COGS120</option>
-          <option>CSE132A</option>
-        </select>
-      </label>
+				<div class="list">
+					<label class="item item-input">
+						<span class="input-label">Task Name</span>
+						<input type="text">
+					</label>
+					
+					<label class="item item-input item-select">
+						<div class="input-label">
+							Class
+						</div>
+						<select>
+							<option>CSE124</option>
+							<option selected>COGS120</option>
+							<option>CSE132A</option>
+						</select>
+					</label>
 
-      <label class="item item-input">
-        <input type="date" placeholder="Due Date">
-      </label>
+					<label class="item item-input">
+						<span class="time">Due Date</span>
+						<input type="date" placeholder="Due Date">
+					</label>
 
-      <label class="item item-input">
-        <input type="text" placeholder="Time">
-      </label>
+					<label class="item item-input">
+						<span class="time">Time</span>
+						<input type="time" name="usr_time">
+					</label>
 
-      <ion-item class="item-toggle">
-        Share with Class
-        <label class="toggle">
-          <input type="checkbox" ng-model="settings.enableShare">
-            <div class="track">
-              <div class="handle"></div>
-            </div>
-        </label>
-      </ion-item>
+					<label class="item item-input">
+						<textarea placeholder="Additional Info"></textarea>
+					</label>
+				</div>
+			</div>
 
-      <label class="item item-input">
-        <textarea rows=5 placeholder="Description"></textarea>
-      </label>
+			<!-- Event Actions -->  
+			<div class="event-actions">
+				<div class="item item-divider" id="event-actions-title">
+					Actions
+				</div>
 
-      <div class="submitButton">
-        <button class="button button-block button-calm">
-          Add Task
-        </button>
-      <div>
-    </div>
+				<ion-item class="item-toggle">
+				Share with Class
+				<label class="toggle">
+					<input type="checkbox" ng-model="settings.enableShare">
+					<div class="track">
+						<div class="handle"></div>
+					</div>
+				</label>
+			</ion-item>
+			</div>	 
 
-
-  </ion-content>
+		</div>
+	</ion-content>
 </ion-view>
