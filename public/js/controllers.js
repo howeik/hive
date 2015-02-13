@@ -43,7 +43,47 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller('AddCtrl', function($scope) {})
+.controller('AddCtrl', function($scope, $ionicLoading, Users, Tasks, UserTasks) {
+  $scope.task = {
+    class_id: 0,
+    name: "",
+    due_date: '2015-02-13',
+    is_shared: true,
+    description: ''
+  }
+
+  $scope.addTask = function(task) {
+    console.log("Adding Task!");
+    console.log(task);
+
+    var _date = new Date(task.due_date);
+        console.log(_date);
+
+    var _helsenkiOffset = 2*60*60000;//maybe 3 [h*60*60000 = ms]
+    var _userOffset = _date.getTimezoneOffset()*60000; // [min*60000 = ms]
+    var _helsenkiTime = new Date(_date.getTime()+_helsenkiOffset+_userOffset);
+
+    console.log(_helsenkiTime);
+    console.log((_helsenkiTime.getMonth() + 1) + "/" + _helsenkiTime.getDate() + "/" + _helsenkiTime.getFullYear());
+    task.due_date = (_helsenkiTime.getMonth() + 1) + "/" + _helsenkiTime.getDate() + "/" + _helsenkiTime.getFullYear();
+
+    var taskId = Tasks.add(task);
+    UserTasks.add(Users.id(), taskId);
+
+    $scope.task = {
+      class_id: 0,
+      name: "",
+      due_date: '2015-02-13',
+      is_shared: true,
+      description: ''
+    };
+
+    $ionicLoading.show({ template: 'Added task ' + task.name + '!', noBackdrop: true, duration: 800 });
+
+  }
+
+  console.log($scope.task);
+})
 
 .controller('ChatsCtrl', function($scope, $rootScope, $ionicLoading, Users, Classes, Tasks, UserTasks) {
   // filter tasks that are not shared

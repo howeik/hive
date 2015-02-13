@@ -137,6 +137,25 @@ angular.module('starter.services', [])
     all: function() {
       return tasks;
     },
+    add: function(task) {
+      // determine new task id (do this server sided later for sure)
+      var taskIds = tasks.map(function(task) {
+        return task.id;
+      });
+
+      var newTaskId = Math.max.apply(Math, taskIds) + 1;
+
+      task.id = newTaskId;
+
+      // parse the class_id to an int in case it isn't since it's from a form
+      task.class_id = parseInt(task.class_id);
+
+      // add the task
+      tasks.push(task);
+
+      // return the new task's id (since we wanna add it to UserTasks too)
+      return newTaskId;
+    },
     get: function(id) {
       for (var i = 0; i < tasks.length; i++) {
         if (tasks[i].id == parseInt(id)) {
