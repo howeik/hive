@@ -11,11 +11,41 @@ angular.module('starter.controllers', [])
   $scope.updateUserTask = function(userTask) {
     UserTasks.update(userTask);
   };
+
+  var curr = new Date;
+  var firstday = new Date(curr.setDate(curr.getDate() - curr.getDay()));
+  var lastday = new Date(curr.setDate(curr.getDate() - curr.getDay()+6));
+
+  userTasks.sort(function(a, b) {
+    return new Date(a.task.due_date) - new Date(b.task.due_date);
+  });
+
+  var daysOfTheWeek = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ];
+
+  $scope.this_week = [];
+  $scope.upcoming = [];
+  userTasks.map(function(userTask) {
+    if (firstday < new Date(userTask.task.due_date) && new Date(userTask.task.due_date) < lastday) {
+      console.log(new Date(userTask.task.due_date));
+      userTask.day_of_the_week = daysOfTheWeek[new Date(userTask.task.due_date).getDay()];
+      $scope.this_week.push(userTask);
+    } else {
+      $scope.upcoming.push(userTask);
+    }
+  });
 })
 
 .controller('AddCtrl', function($scope) {})
 
-.controller('ChatsCtrl', function($scope, Users, Classes, Tasks, UserTasks) {
+.controller('ChatsCtrl', function($scope, $ionicLoading, Users, Classes, Tasks, UserTasks) {
   // filter tasks that are not shared
   var tasks = Tasks.all();
   tasks = tasks.filter(function(task) {
@@ -68,14 +98,22 @@ angular.module('starter.controllers', [])
     UserTasks.add(0, task.id);
     $('#task' + task.id).hide(500);
     $scope.badgeCount -= 1;
+    $ionicLoading.show({ template: 'Task accepted!', noBackdrop: true, duration: 800 });
   };
 
   $scope.decline = function(task) {
     console.log(task);
     Users.addDeclinedTaskId(task.id);
     $('#task' + task.id).hide(500);
+    $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
+
     $scope.badgeCount -= 1;
   };
+
+  tasks.sort(function(a, b) {
+    return new Date(a.due_date) - new Date(b.due_date);
+  });
+
 
   console.log("setting badge count to " + tasks.length);
 

@@ -123,6 +123,14 @@ angular.module('starter.services', [])
     due_date: '03/07/2015',
     is_shared: true,
     is_endorsed: false
+  }, {
+    id: 7,
+    class_id: 3,
+    name: 'Martin Luther Paper',
+    description: 'Analzye a news article and write about it.',
+    due_date: '02/13/2015',
+    is_shared: true,
+    is_endorsed: false
   }];
 
   return {

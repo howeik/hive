@@ -6,13 +6,13 @@
         This Week
       </div>
 
-      <ion-checkbox ng-repeat="userTask in userTasks" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+      <ion-checkbox ng-repeat="userTask in this_week" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
         <div class="tasks">
           <div class="task-title">
             {{userTask.task.name}}
           </div>
           <div class="date-title">
-            {{userTask.task.due_date}}
+            {{userTask.day_of_the_week}}
           </div>
           <div class="course-title">
             {{userTask.task.class.name}}
@@ -24,7 +24,7 @@
         Upcoming
       </div>
 
-      <ion-checkbox ng-repeat="userTask in userTasks" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+      <ion-checkbox ng-repeat="userTask in upcoming" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
         <div class="tasks">
           <div class="task-title">
             {{userTask.task.name}}
