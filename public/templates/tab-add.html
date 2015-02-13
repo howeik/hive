@@ -13,29 +13,21 @@
   		  <input type="text" placeholder="Task Name">
  			 </label>
 
-				<label class="item item-input item-select">
-					<div class="input-label">
-						Class
-					</div>
-					<select>
-						<option>CSE124</option>
-						<option selected>COGS120</option>
+				<label class="item item-input item-select" style = "height: 47px;">
+					<span class="date">Class</span>
+					<select name ="select_projects">
+						<option>COGS120</option>
 						<option>CSE132A</option>
 					</select>
 				</label>
 
 				<label class="item item-input">
-					<span class="time">Due Date</span>
+					<span class="date">Due Date</span>
 					<input type="date" placeholder="Due Date">
 				</label>
 
-				<label class="item item-input" style = "margin-top: 1px">
-					<span class="time">Time</span>
-					<input type="time" name="usr_time">
-				</label>
-
 				<label class="item item-input">
-					<textarea placeholder="Additional Info"></textarea>
+					<textarea placeholder="Additional Info" style="height:100px;"></textarea>
 				</label>
 			</div>
 		</div>
@@ -58,7 +50,7 @@
 		</div>	 
 	
 		<div class="submitButton">
-			<button class="button button-block button-calm">
+			<button class="button button-block button-calm" style="font-size:18px">
 			Add Task
 		</button>
 		</div>

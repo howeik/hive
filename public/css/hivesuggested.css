@@ -66,9 +66,35 @@
 
 /* Add Task Page */
 
+input[type="text"], textarea {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-color: #444;
+}
 
 
+input[type="time"] {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-color: #444;
+    float: right;
+}
 
+.time {
+	display: inline;
+	position: relative;
+	width: 40px;
+}
 
+.date {
+	display: inline;
+}
 
+.event-details {
+	padding-bottom: 20px;
+}
+
+.event-actions {
+	padding-bottom: 10px;
+}
 
