@@ -1,59 +1,52 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
 <ion-view view-title="Add Task">
 	<ion-content class="padding">
 		<div class="list">
 
-			<!--Basic Details -->	
-			<div class="event-details"> 
-				<div class="item item-divider">
-					Basic Details
-				</div>
-
-				<div class="list">
-					<label class="item item-input">
-						<span class="input-label">Task Name</span>
-						<input type="text">
-					</label>
-					
-					<label class="item item-input item-select">
-						<div class="input-label">
-							Class
-						</div>
-						<select>
-							<option>CSE124</option>
-							<option selected>COGS120</option>
-							<option>CSE132A</option>
-						</select>
-					</label>
-
-					<label class="item item-input">
-						<span class="time">Due Date</span>
-						<input type="date" placeholder="Due Date">
-					</label>
-
-					<label class="item item-input">
-						<span class="time">Time</span>
-						<input type="time" name="usr_time">
-					</label>
-
-					<label class="item item-input">
-						<textarea placeholder="Additional Info"></textarea>
-					</label>
-				</div>
+		<!--Basic Details -->	
+		<div class="event-details"> 
+			<div class="item item-divider">
+				Basic Details
 			</div>
 
-			<!-- Event Actions -->  
-			<div class="event-actions">
-				<div class="item item-divider" id="event-actions-title">
-					Actions
-				</div>
+			<div class="list">
+ 			 <label class="item item-input">
+  		  <input type="text" placeholder="Task Name">
+ 			 </label>
 
-				<ion-item class="item-toggle">
+				<label class="item item-input item-select">
+					<div class="input-label">
+						Class
+					</div>
+					<select>
+						<option>CSE124</option>
+						<option selected>COGS120</option>
+						<option>CSE132A</option>
+					</select>
+				</label>
+
+				<label class="item item-input">
+					<span class="time">Due Date</span>
+					<input type="date" placeholder="Due Date">
+				</label>
+
+				<label class="item item-input" style = "margin-top: 1px">
+					<span class="time">Time</span>
+					<input type="time" name="usr_time">
+				</label>
+
+				<label class="item item-input">
+					<textarea placeholder="Additional Info"></textarea>
+				</label>
+			</div>
+		</div>
+
+	<!-- Event Actions -->  
+		<div class="event-actions">
+			<div class="item item-divider" id="event-actions-title">
+			Actions
+		</div>
+		
+			<ion-item class="item-toggle">
 				Share with Class
 				<label class="toggle">
 					<input type="checkbox" ng-model="settings.enableShare">
@@ -62,8 +55,12 @@
 					</div>
 				</label>
 			</ion-item>
-			</div>	 
-
+		</div>	 
+	
+		<div class="submitButton">
+			<button class="button button-block button-calm">
+			Add Task
+		</button>
 		</div>
 	</ion-content>
 </ion-view>
