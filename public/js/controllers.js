@@ -45,7 +45,7 @@ angular.module('starter.controllers', [])
 
 .controller('AddCtrl', function($scope) {})
 
-.controller('ChatsCtrl', function($scope, $ionicLoading, Users, Classes, Tasks, UserTasks) {
+.controller('ChatsCtrl', function($scope, $rootScope, $ionicLoading, Users, Classes, Tasks, UserTasks) {
   // filter tasks that are not shared
   var tasks = Tasks.all();
   tasks = tasks.filter(function(task) {
@@ -97,7 +97,7 @@ angular.module('starter.controllers', [])
     console.log(task);
     UserTasks.add(0, task.id);
     $('#task' + task.id).hide(500);
-    $scope.badgeCount -= 1;
+    $rootScope.badgeCount -= 1;
     $ionicLoading.show({ template: 'Task accepted!', noBackdrop: true, duration: 800 });
   };
 
@@ -107,7 +107,7 @@ angular.module('starter.controllers', [])
     $('#task' + task.id).hide(500);
     $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
 
-    $scope.badgeCount -= 1;
+    $rootScope.badgeCount -= 1;
   };
 
   tasks.sort(function(a, b) {
@@ -116,8 +116,7 @@ angular.module('starter.controllers', [])
 
 
   console.log("setting badge count to " + tasks.length);
-
-  $scope.badgeCount = tasks.length;
+  $rootScope.badgeCount = tasks.length;
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
