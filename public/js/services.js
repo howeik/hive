@@ -5,6 +5,15 @@ angular.module('starter.services', [])
   var classes = [{
     id: 0,
     name: 'COGS120'
+  }, {
+    id: 1,
+    name: 'CSE124'
+  }, {
+    id: 2,
+    name: 'CSE130'
+  }, {
+    id: 3,
+    name: 'POLI20'
   }];
 
   return {
@@ -31,6 +40,19 @@ angular.module('starter.services', [])
   }
 })
 
+.factory('Users', ['Classes', function() {
+  return {
+    class_ids: function() {
+      return [0, 1, 3];
+    }
+    // classes: function() {
+    //   return [0, 1, 3].map(function(class_id) {
+    //     return Classes.get(class_id);
+    //   });
+    // }
+  }
+}])
+
 .factory('Tasks', function() {
 
   // Some fake testing data
@@ -39,13 +61,57 @@ angular.module('starter.services', [])
     class_id: 0,
     name: 'A06 - Meat on the Bones',
     description: 'Functionality functionality functionality!',
-    due_date: '02/13/2015'
+    due_date: '02/13/2015',
+    is_shared: true,
+    is_endorsed: false
   }, {
     id: 1,
     class_id: 0,
     name: 'Lab 6 - AJAX',
     description: 'Connecting client to server without reloading!',
-    due_date: '02/12/2015'
+    due_date: '02/12/2015',
+    is_shared: true,
+    is_endorsed: false
+  }, {
+    id: 2,
+    class_id: 1,
+    name: 'Project 1: Build your own webserver',
+    description: 'Write your own webserver in C using sockets.',
+    due_date: '02/16/2015',
+    is_shared: true,
+    is_endorsed: true
+  }, {
+    id: 3,
+    class_id: 1,
+    name: 'Project 2: Hadoop and MapReduce',
+    description: 'Distributed stuff.',
+    due_date: '02/18/2015',
+    is_shared: true,
+    is_endorsed: true
+  }, {
+    id: 4,
+    class_id: 1,
+    name: 'Homework 3',
+    description: 'See course website please.',
+    due_date: '02/25/2015',
+    is_shared: true,
+    is_endorsed: false
+  }, {
+    id: 5,
+    class_id: 3,
+    name: 'Midterm Paper 1',
+    description: 'Is Creon a MPK?',
+    due_date: '03/02/2015',
+    is_shared: true,
+    is_endorsed: true
+  }, {
+    id: 6,
+    class_id: 3,
+    name: 'News Article Analysis',
+    description: 'Analzye a news article and write about it.',
+    due_date: '03/07/2015',
+    is_shared: true,
+    is_endorsed: false
   }];
 
   return {

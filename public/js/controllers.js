@@ -33,8 +33,6 @@ angular.module('starter.controllers', [])
     userTask.task.class = Classes.get(userTask.task.class_id);
   });
 
-  console.log(userTasks);
-
   $scope.userTasks = userTasks;
   $scope.updateUserTask = function(userTask) {
     UserTasks.update(userTask);
@@ -45,25 +43,34 @@ angular.module('starter.controllers', [])
 .controller('AddCtrl', function($scope) {})
 
 
-.controller('ChatsCtrl', function($scope, Chats, Classes, Tasks, UserTasks) {
-  var userTasks = UserTasks.all();
-
-  var tasks = userTasks.map(function(userTask) {
-    return Tasks.get(userTask.task_id);
+.controller('ChatsCtrl', function($scope, Users, Classes, Tasks, UserTasks) {
+  // filter tasks that are not shared
+  var tasks = Tasks.all();
+  tasks = tasks.filter(function(task) {
+    return task.is_shared == true;
   });
 
-  var classes = tasks.map(function(task) {
-    return Classes.get(task.class_id);
+  // filter tasks that are not part of any classes you're in
+  var class_ids = Users.class_ids();
+  tasks = tasks.filter(function(task) {
+    return class_ids.indexOf(task.class_id) != -1;
   });
 
-  console.log(userTasks);
+  // filter tasks that you already have added
+  var userTasks = UserTasks.all().map(function(userTask) {
+    return userTask.task_id;
+  });
+
+  tasks = tasks.filter(function(task) {
+    return userTasks.indexOf(task.id) == -1;
+  });
+
+  // append class information to the task
+  tasks.map(function(task) {
+    task.class = Classes.get(task.class_id);
+  });
+
   console.log(tasks);
-  console.log(classes);
-
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
