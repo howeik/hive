@@ -98,4 +98,8 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+})
+
+.controller('AccountAddClassCtrl', function($scope) {
+
 });

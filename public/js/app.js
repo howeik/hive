@@ -104,7 +104,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'AccountCtrl'
       }
     }
-  });
+  })
+
+  .state('tab.account-addClass', {
+    url: '/account/addClass',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/account-addClass.html',
+        controller: 'AccountAddClassCtrl'
+      }
+    }
+  })
+  ;
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
