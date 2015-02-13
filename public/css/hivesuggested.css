@@ -1,70 +1,73 @@
 .title {
     font-family: 'Open Sans';
-    font-size: 18px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.date {
-    float: right;
+    font-size: 17px;
 }
 
 .course {
     font-family: 'Open Sans';
     font-size: 14px;
     display: inline;
-    padding-bottom: 0px;
+}
+
+.date {
+    float: right;
+    font-size: 18px;
+    font-family: 'Open Sans';
 }
 
 .endorsed {
     font-family: 'open sans';
-    font-size: 11px;
-    padding-bottom: 10px;
-    padding-top: 0px;
+    font-size: 12px;
 }
 
-.suggested {
-    padding-bottom: 15px;
+.suggested-content {
+
 }
+
+.action-buttons {
+    margin: 0 auto;
+    left: 50%;
+    width: 200px;
+}
+
+.button-clear {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    padding-right: 25px;
+}
+
 .task {
 
 }
 
-.email {
-    display: inline;
-}
-.user-email {
-    float: right;
-}
 .task-title {
     font-size:20px;
     display: inline;
     padding-right: 10px;
-    padding-left: 5px;
-
 }
-.task {
 
-}
 .tasks {
     padding-top:5px;
     margin-top: -3px;
 }
+
 .course-title {
     font-size:15px;
     padding-left: 5px;
-    
-
 }
 
 .date-title {
     float: right;
     display: inline;
     font-size: 22px;
-    margin-top: 5px;
-    
-    
+    margin-top: 5px;   
 }
+
+
+
+
+
+
+
+
 
