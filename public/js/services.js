@@ -1,7 +1,6 @@
 angular.module('starter.services', [])
 
 .factory('Classes', function() {
-
   // Some fake testing data
   var classes = [{
     id: 0,
@@ -19,12 +18,9 @@ angular.module('starter.services', [])
         }
       }
       return null;
-    },
-    remove: function(class) {
-      classes.splice(classes.indexOf(class), 1);
     }
   }
-});
+})
 
 .factory('Tasks', function() {
 
@@ -54,13 +50,10 @@ angular.module('starter.services', [])
         }
       }
       return null;
-    },
-    remove: function(class) {
-      tasks.splice(tasks.indexOf(class), 1);
     }
   }
 
-});
+})
 
 .factory('UserTasks', ['Classes', 'Tasks', function() {
 
@@ -91,7 +84,7 @@ angular.module('starter.services', [])
     }
   }
 
-}]);
+}])
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
