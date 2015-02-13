@@ -38,7 +38,7 @@
 /* Main Task Page */
 
 .task-title {
-    font-size:20px;
+    font-size:18px;
     display: inline;
     padding-right: 10px;
 }
@@ -49,14 +49,14 @@
 }
 
 .course-title {
-    font-size:15px;
-    padding-left: 5px;
+    font-size:14px;
+    font-family: 'Open Sans';
 }
 
 .date-title {
     float: right;
     display: inline;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 5px;   
 }
 
@@ -84,10 +84,20 @@ input[type="time"] {
 	display: inline;
 	position: relative;
 	width: 40px;
+
 }
 
 .date {
 	display: inline;
+}
+
+.due-date {
+    font-size: 16px;
+    font-family: 'Open Sans';   
+}
+.class {
+    font-size: 16px;
+    font-family: 'Open Sans';
 }
 
 .event-details {
@@ -97,4 +107,6 @@ input[type="time"] {
 .event-actions {
 	padding-bottom: 10px;
 }
+
+
 

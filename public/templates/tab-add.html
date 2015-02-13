@@ -10,11 +10,11 @@
 
 			<div class="list">
  			 <label class="item item-input">
-  		  <input type="text" ng-model="task.name" placeholder="Task Name">
+  		  <input type="text" ng-model="task.name" placeholder="Task Name" style="font-size:16px;">
  			 </label>
 
 				<label class="item item-input item-select" style = "height: 47px;">
-					<span class="date">Class</span>
+					<span class="class">Courses</span>
 					<select name="select_projects" ng-model="task.class_id">
 						<option value=0>COGS120</option>
 						<option value=1>CSE124</option>
@@ -23,12 +23,12 @@
 				</label>
 
 				<label class="item item-input">
-					<span class="date">Due Date</span>
+					<span class="due-date">Due Date</span>
 					<input id="due_date" type="date" ng-model="task.due_date" placeholder="yyyy-MM-dd">
 				</label>
 
 				<label class="item item-input">
-					<textarea ng-model="task.description" placeholder="Additional Info" style="height:100px;"></textarea>
+					<textarea ng-model="task.description" placeholder="Additional Info" style="height:100px; font-size: 15px"></textarea>
 				</label>
 			</div>
 		</div>
