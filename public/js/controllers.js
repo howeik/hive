@@ -1,6 +1,27 @@
+function dayToString(day) {
+  var daysOfTheWeek = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ];
+
+  return daysOfTheWeek[day];
+};
+
+function dateToWeek(date) {
+  // start of winter quarter 2015
+  var start = new Date('01-05-2015');
+
+  return Math.round((date - start) / 604800000) + 1;
+};
+
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, Users, Classes, Tasks, UserTasks) {
+.controller('TasksCtrl', function($scope, Users, Classes, Tasks, UserTasks) {
   var userTasks = UserTasks.all();
   userTasks = userTasks.filter(function(userTask) {
     return Users.id() == userTask.user_id;
@@ -15,7 +36,7 @@ angular.module('starter.controllers', [])
     UserTasks.update(userTask);
   };
 
-  var curr = new Date;
+  var curr = new Date('02-13-2015');
   var firstday = new Date(curr.setDate(curr.getDate() - curr.getDay()));
   var lastday = new Date(curr.setDate(curr.getDate() - curr.getDay()+6));
 
@@ -23,22 +44,12 @@ angular.module('starter.controllers', [])
     return new Date(a.task.due_date) - new Date(b.task.due_date);
   });
 
-  var daysOfTheWeek = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday'
-  ];
-
   $scope.this_week = [];
   $scope.upcoming = [];
   userTasks.map(function(userTask) {
     if (firstday < new Date(userTask.task.due_date) && new Date(userTask.task.due_date) < lastday) {
       console.log(new Date(userTask.task.due_date));
-      userTask.day_of_the_week = daysOfTheWeek[new Date(userTask.task.due_date).getDay()];
+      userTask.day_of_the_week = dayToString(new Date(userTask.task.due_date).getDay());
       $scope.this_week.push(userTask);
     } else {
       $scope.upcoming.push(userTask);
