@@ -22,6 +22,14 @@ angular.module('starter.controllers', [])
     return Math.round((date - start) / 604800000) + 1;
   };
 
+  $scope.updateUserTask = function(userTask) {
+    console.log("in updateUserTask");
+    Task.update(userTask._id, function(data, err) {
+      if (err) { console.log(err); return; }
+      console.log(data);
+    });
+  }
+
   Task.all(function(tasks, err) {
     if (err) { console.log(err); return; }
 
@@ -49,7 +57,10 @@ angular.module('starter.controllers', [])
       }
     });
 
+
+
   });
+
 })
 
 .controller('AddCtrl', function($scope, $ionicLoading, Task, Class, Users, Tasks, UserTasks) {
@@ -111,6 +122,10 @@ angular.module('starter.controllers', [])
 
 .controller('ChatsCtrl', function($scope, $rootScope, $ionicLoading, Task, Users, Classes, Tasks, UserTasks) {
   $scope.tasks = [];
+  if ($rootScope.declinedTasks == undefined) {
+    $rootScope.declinedTasks = [];
+
+  }
 
   Task.shared(function(sharedTasks, err) {
     Task.all(function(allTasks, err) {
@@ -121,7 +136,12 @@ angular.module('starter.controllers', [])
             return false;
           }
         }
-        return true;
+
+        if ($rootScope.declinedTasks.indexOf(sharedTask._id) == -1) {
+          return true;
+        }
+
+        return false;
       });
 
       $scope.tasks = sharedTasks;
@@ -210,6 +230,8 @@ angular.module('starter.controllers', [])
     console.log(task);
     // Users.addDeclinedTaskId(task.id);
     $('#task' + task._id).hide(500);
+
+    $rootScope.declinedTasks.push(task._id);
     $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
 
     $rootScope.badgeCount -= 1;

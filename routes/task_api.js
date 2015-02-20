@@ -66,6 +66,16 @@ exports.create = function(req, res) {
 	});
 }
 
+exports.update = function(req, res) {
+	if (req.signedCookies.user_id == undefined) { res.send(500); return; }
+
+	var task = req.body;
+	models.UserTasks.findOne({ '_id': task._id }, function(err, stask) {
+		stask.is_finished = task.is_finished;
+		res.respond(200, { success: true});
+	});
+}
+
 exports.details = function(req, res) {
 	var taskId = req.params.task_id;
 	console.log(taskId);

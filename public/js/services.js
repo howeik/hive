@@ -74,6 +74,14 @@ angular.module('starter.services', [])
           callback(data, status);
       });
     },
+    update: function(task, callback) {
+      var req = {
+        method: 'POST',
+        url: '/task/update',
+        data: task
+      };
+      this.apiCall(req, callback);
+    },
     all: function(callback) {
       var req = {
         method: 'GET',
