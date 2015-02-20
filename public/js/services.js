@@ -18,6 +18,23 @@ angular.module('starter.services', [])
       };
       this.apiCall(req, callback);
     },
+    shared: function(callback) {
+      var req = {
+        method: 'GET',
+        url: '/task/shared'
+      };
+      this.apiCall(req, callback);
+    },
+    shareCount: function(id, callback) {
+      var req = {
+        method: 'GET',
+        url: '/task/'+id,
+        params: {
+          details: 'shareCount'
+        }
+      }
+      this.apiCall(req, callback);
+    },
   }
 }])
 

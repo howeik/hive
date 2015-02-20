@@ -55,6 +55,7 @@ app.get('/api/class/all', class_api.all);
 app.get('/api/class/enrolled', class_api.enrolled);
 app.get('/api/task/all', task_api.all);
 app.get('/api/task/shared', task_api.shared);
+app.get('/api/task/:task_id', task_api.details);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

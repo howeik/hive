@@ -94,83 +94,111 @@ angular.module('starter.controllers', [])
   console.log($scope.task);
 })
 
-.controller('ChatsCtrl', function($scope, $rootScope, $ionicLoading, Users, Classes, Tasks, UserTasks) {
-  // filter tasks that are not shared
-  var tasks = Tasks.all();
-  tasks = tasks.filter(function(task) {
-    return task.is_shared == true;
-  });
+.controller('ChatsCtrl', function($scope, $rootScope, $ionicLoading, Task, Users, Classes, Tasks, UserTasks) {
+  $scope.tasks = []
 
-  // filter tasks that are not part of any classes you're in
-  var class_ids = Users.class_ids();
-  tasks = tasks.filter(function(task) {
-    return class_ids.indexOf(task.class_id) != -1;
-  });
-
-  // filter tasks that you already have added
-  var userTasks = UserTasks.all()
-  userTasks = userTasks.filter(function(userTask) {
-    return Users.id() == userTask.user_id;
-  });
-  userTasks = userTasks.map(function(userTask) {
-    return userTask.task_id;
-  });
-
-
-  tasks = tasks.filter(function(task) {
-    return userTasks.indexOf(task.id) == -1;
-  });
-
-  // filter tasks that you've declined
-  var declinedTaskIds = Users.declinedTaskIds();
-  tasks = tasks.filter(function(task) {
-    return declinedTaskIds.indexOf(task.id) == -1;
-  });
-
-  // append endorsement information
-  userTasks = UserTasks.all();
-  tasks.map(function(task) {
-    if (task.is_endorsed == true) {
-      task.endorsed_message = " by an instructor";
-    } else {
-      var taskUsers = userTasks.filter(function(userTask) {
-        return userTask.task_id == task.id;
+  Task.shared(function(sharedTasks, err) {
+    Task.all(function(allTasks, err) {
+      console.log(sharedTasks);
+      sharedTasks = sharedTasks.filter(function(sharedTask) {
+        for (var i = 0; i < allTasks.length; i++) {
+          if (allTasks[i].task._id == sharedTask._id) {
+            return false;
+          }
+        }
+        return true;
       });
 
-      task.endorsed_message = " by " + taskUsers.length + " students";
-    }
-  });
+      $scope.tasks = sharedTasks;
 
-  // append class information to the task
-  tasks.map(function(task) {
-    task.class = Classes.get(task.class_id);
-  });
+      // populate endorsement information
+      sharedTasks.forEach(function(sharedTask) {
+        if (sharedTask.is_endorsed) {
+          sharedTask.endorsed_message = " by an instructor";
+        } else {
+          Task.shareCount(sharedTask._id, function(res, err) {
+            sharedTask.endorsed_message = " by " + res.shareCount + " students";
+          });
+        }
+      });
+    })
+  })
+  // // filter tasks that are not shared
+  // var tasks = Tasks.all();
+  // tasks = tasks.filter(function(task) {
+  //   return task.is_shared == true;
+  // });
 
-  $scope.tasks = tasks;
-  $scope.accept = function(task) {
-    console.log(task);
-    UserTasks.add(0, task.id);
-    $('#task' + task.id).hide(500);
-    $rootScope.badgeCount -= 1;
-    $ionicLoading.show({ template: 'Task accepted!', noBackdrop: true, duration: 800 });
-  };
+  // // filter tasks that are not part of any classes you're in
+  // var class_ids = Users.class_ids();
+  // tasks = tasks.filter(function(task) {
+  //   return class_ids.indexOf(task.class_id) != -1;
+  // });
 
-  $scope.decline = function(task) {
-    console.log(task);
-    Users.addDeclinedTaskId(task.id);
-    $('#task' + task.id).hide(500);
-    $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
-
-    $rootScope.badgeCount -= 1;
-  };
-
-  tasks.sort(function(a, b) {
-    return new Date(a.due_date) - new Date(b.due_date);
-  });
+  // // filter tasks that you already have added
+  // var userTasks = UserTasks.all()
+  // userTasks = userTasks.filter(function(userTask) {
+  //   return Users.id() == userTask.user_id;
+  // });
+  // userTasks = userTasks.map(function(userTask) {
+  //   return userTask.task_id;
+  // });
 
 
-  console.log("setting badge count to " + tasks.length);
-  $rootScope.badgeCount = tasks.length;
+  // tasks = tasks.filter(function(task) {
+  //   return userTasks.indexOf(task.id) == -1;
+  // });
+
+  // // filter tasks that you've declined
+  // var declinedTaskIds = Users.declinedTaskIds();
+  // tasks = tasks.filter(function(task) {
+  //   return declinedTaskIds.indexOf(task.id) == -1;
+  // });
+
+  // // append endorsement information
+  // userTasks = UserTasks.all();
+  // tasks.map(function(task) {
+  //   if (task.is_endorsed == true) {
+  //     task.endorsed_message = " by an instructor";
+  //   } else {
+  //     var taskUsers = userTasks.filter(function(userTask) {
+  //       return userTask.task_id == task.id;
+  //     });
+
+  //     task.endorsed_message = " by " + taskUsers.length + " students";
+  //   }
+  // });
+
+  // // append class information to the task
+  // tasks.map(function(task) {
+  //   task.class = Classes.get(task.class_id);
+  // });
+
+  // $scope.tasks = tasks;
+  // $scope.accept = function(task) {
+  //   console.log(task);
+  //   UserTasks.add(0, task.id);
+  //   $('#task' + task.id).hide(500);
+  //   $rootScope.badgeCount -= 1;
+  //   $ionicLoading.show({ template: 'Task accepted!', noBackdrop: true, duration: 800 });
+  // };
+
+  // $scope.decline = function(task) {
+  //   console.log(task);
+  //   Users.addDeclinedTaskId(task.id);
+  //   $('#task' + task.id).hide(500);
+  //   $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
+
+  //   $rootScope.badgeCount -= 1;
+  // };
+
+  // tasks.sort(function(a, b) {
+  //   return new Date(a.due_date) - new Date(b.due_date);
+  // });
+
+
+  // console.log("setting badge count to " + tasks.length);
+  // $rootScope.badgeCount = tasks.length;
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {

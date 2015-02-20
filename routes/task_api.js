@@ -24,6 +24,17 @@ exports.all = function(req, res) {
 	});
 };
 
+exports.details = function(req, res) {
+	var taskId = req.params.task_id;
+	console.log(taskId);
+
+	models.UserTasks.find({ 'task': taskId }, function(err, tasks) {
+		if (err) { console.log(err); res.send(500); return; }
+
+		res.send(200, { 'shareCount': tasks.length });
+	});
+}
+
 exports.shared = function(req, res) {
 	if (req.signedCookies.user_id == undefined) { res.send(500); return; }
 
