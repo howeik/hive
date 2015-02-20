@@ -3,10 +3,13 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 var mongoose = require('mongoose');
+var flash = require('connect-flash');
 
 var index = require('./routes/index');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
+
+var user_api = require('./routes/user_api');
 
 
 // Connect to the Mongo database, whether locally or on Heroku
@@ -30,6 +33,7 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(express.cookieParser('hive_28349983242390283293'));
 app.use(express.session());
+app.use(flash());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'bower_components')));
@@ -42,6 +46,8 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view_ionic);
 app.get('/login', login.view);
+app.post('/login', login.auth);
+app.get('/api/user/login', user_api.login);
 app.get('/signup', signup.view);
 
 http.createServer(app).listen(app.get('port'), function(){

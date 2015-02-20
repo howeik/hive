@@ -8,5 +8,9 @@ exports.view = function(req, res){
 };
 
 exports.view_ionic = function(req, res) {
+	if (req.signedCookies.user_id == undefined) {
+		res.redirect('login');
+	}
+
 	res.render('index_ionic');
 }

@@ -16,26 +16,25 @@
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/links.js"></script>
 
-	<link href='http://fonts.googleapis.com/css?family=Lato|PT+Sans|Open+Sans|Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato|PT+Sans|Open+Sans|Poiret+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="login">
+    <form class="login" method="post">
         <h1>Hive</h1>
+        <h2>{{message}}</h2>
         <div class="login">
             <div class="login-information">
                 <ul>
-               <li><input type="text" placeholder="email"></li> 
-                <br>
-                <li><input type ="password" placeholder="password"></li>
-                    </ul>
-                </div>
+                    <li><input name="email" type="text" placeholder="email"></li> 
+                    <br>
+                    <li><input name="password" type ="password" placeholder="password"></li>
+                </ul>
+            </div>
             <div class="login-button">
-                <a href="/" class="loginbutton">LOG IN</a>
+                <input type="submit" value="LOG IN" class="loginbutton"></input>
                 <a href="/signup" id="signupbutton">SIGN UP</a>
-            
             </div>
         </div>
-        
-    </div>
+    </form>
 </body>
 </html>
