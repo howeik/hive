@@ -19,7 +19,9 @@
     "express3-handlebars": "*",
     "mongodb": "*",
     "mongoose": "*",
-    "bower": "*"
+    "bower": "*",
+    "mongodb": "*",
+    "mongoose": "*"
   },
   "engines": {
     "node": "0.10.x"
