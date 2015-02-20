@@ -10,7 +10,7 @@ exports.view = function(req, res){
 exports.view_ionic = function(req, res) {
 	if (req.signedCookies.user_id == undefined) {
 		res.redirect('login');
+	} else {
+		res.render('index_ionic');
 	}
-
-	res.render('index_ionic');
 }
