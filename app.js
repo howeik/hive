@@ -8,9 +8,7 @@ var flash = require('connect-flash');
 var index = require('./routes/index');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
-
 var user_api = require('./routes/user_api');
-
 
 // Connect to the Mongo database, whether locally or on Heroku
 // MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
