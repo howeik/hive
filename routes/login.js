@@ -1,8 +1,11 @@
 var models = require('../models');
 
 exports.view = function(req, res){
-
-  res.render('login', { message: req.flash('message') });
+	if (req.signedCookies.user_id != undefined) {
+		res.redirect('/');
+	} else {
+		res.render('login', { message: req.flash('message') });
+	}
 };
 
 exports.logout = function(req, res){
