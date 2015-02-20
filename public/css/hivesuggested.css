@@ -95,6 +95,15 @@ input[type="time"] {
     font-size: 16px;
     font-family: 'Open Sans';   
 }
+/* tab-add.html */
+#due_date {
+    text-align: right;
+}
+
+#due_time {
+    text-align: right;
+}
+
 .class {
     font-size: 16px;
     font-family: 'Open Sans';
