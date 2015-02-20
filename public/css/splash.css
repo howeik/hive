@@ -66,10 +66,9 @@ input[type="password"]:focus {
     text-align: center;
     position: relative;
     padding-top: 40px;
- 
-}
+ }
 
-#loginbutton {
+.loginbutton {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #fff3b2, #fff3b2);
   background-image: -moz-linear-gradient(top, #fff3b2, #fff3b2);
@@ -88,8 +87,6 @@ input[type="password"]:focus {
   margin-right: 10px;
 }
 
-
-
 #signupbutton {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #eae1b3, #eae1b3);
@@ -107,3 +104,76 @@ input[type="password"]:focus {
   border: solid #eae1b3 2px;
   text-decoration: none;
 }
+
+/* Sign Up */
+.sign-up-bar {
+  height: 35px;
+  margin: 0 auto;
+  background-color: #ccc28e;
+}
+
+#sign-up-header {
+    font-size: 25px;
+    font-family: 'Open Sans';
+    text-align: center;
+    vertical-align: middle;
+    color: #fff3b2;
+}
+
+.signup-button {
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+ }
+
+#sign-up-email {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -moz-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -ms-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -o-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: linear-gradient(to bottom, #eae1b3, #eae1b3);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: 'Open sans';
+  color: #fff3b2;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #eae1b3 2px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

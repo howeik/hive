@@ -1,0 +1,57 @@
+[{
+    "name": "A06 - Meat on the Bones",
+    "class_name": "COGS120",
+    "description": "Functionality functionality functionality!",
+    "due_date": "02/13/2015",
+    "is_shared": true,
+    "is_endorsed": false
+  }, {
+    "name": "Lab 6 - AJAX",
+    "class_name": "COGS120",
+    "description": "Connecting client to server without reloading!",
+    "due_date": "02/12/2015",
+    "is_shared": true,
+    "is_endorsed": false
+  }, {
+    "name": "Project 1: Build your own webserver",
+    "class_name": "CSE124",
+    "description": "Write your own webserver in C using sockets.",
+    "due_date": "02/16/2015",
+    "is_shared": true,
+    "is_endorsed": true
+  }, {
+    "name": "Project 2: Hadoop and MapReduce",
+    "class_name": "CSE124",
+    "description": "Distributed stuff.",
+    "due_date": "02/18/2015",
+    "is_shared": true,
+    "is_endorsed": true
+  }, {
+    "name": "Homework 3",
+    "class_name": "CSE124",
+    "description": "See course website please.",
+    "due_date": "02/25/2015",
+    "is_shared": true,
+    "is_endorsed": false
+  }, {
+    "name": "Midterm Paper 1",
+    "class_name": "POLI28",
+    "description": "Is Creon a MPK?",
+    "due_date": "03/02/2015",
+    "is_shared": true,
+    "is_endorsed": true
+  }, {
+    "name": "News Article Analysis",
+    "class_name": "POLI28",
+    "description": "Analzye a news article and write about it.",
+    "due_date": "03/07/2015",
+    "is_shared": true,
+    "is_endorsed": false
+  }, {
+    "name": "Martin Luther Paper",
+    "class_name": "POLI28",
+    "description": "Analzye a news article and write about it.",
+    "due_date": "02/13/2015",
+    "is_shared": true,
+    "is_endorsed": false
+  }]

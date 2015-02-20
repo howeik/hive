@@ -2,26 +2,7 @@
   <ion-content>
     <div class="list">
 
-<!--       <div ng-repeat="userTasks in tasksByWeek track by $index">
-        <div class="item item-divider">
-          Week {{$index + 1}}
-        </div>
-
-        <ion-checkbox ng-repeat="userTask in userTasks" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
-          <div class="tasks">
-            <div class="task-title">
-              {{userTask.task.name}}
-            </div>
-            <div class="date-title">
-              {{userTask.task.due_date}}
-            </div>
-            <div class="course-title">
-              {{userTask.task.class.name}}
-            </div>
-          </div>
-        </ion-checkbox>
-      </div> -->
-
+    <!-- Completed Tasks -->
       <div class="item item-divider">
         Archived
       </div>
@@ -40,11 +21,17 @@
         </div>
       </ion-checkbox>
 
+=======
+    <!-- This Week -->
+>>>>>>> Stashed changes
       <div class="item item-divider">
         This Week
+        <i class = "ion-ios-plus-outline"></i>
       </div>
 
+      <!-- This Week Task -->
       <ion-checkbox ng-repeat="userTask in this_week" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+      <div class="task-content">
         <div class="tasks">
           <div class="task-title">
             {{userTask.task.name}}
@@ -55,13 +42,25 @@
           <div class="course-title">
             {{userTask.task.class.name}}
           </div>
+	        <div class="task-detail-arrow">
+	      		<i class="ion-chevron-down"></i>
+	      	</div>
         </div>
+        <div class="task-details">
+        df
+        </div>
+        </div>
+
       </ion-checkbox>
 
+
+      <!-- Upcoming -->
       <div class="item item-divider">
         Upcoming
+        <i class = "ion-ios-plus-outline"></i>
       </div>
 
+      <!-- Upcoming Task -->
       <ion-checkbox ng-repeat="userTask in upcoming" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
         <div class="tasks">
           <div class="task-title">

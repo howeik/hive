@@ -35,7 +35,16 @@
     padding-right: 25px;
 }
 
+
 /* Main Task Page */
+.ion-chevron-down {
+    float:right;
+}
+
+.ion-ios-plus-outline {
+    font-size: 22px;
+    float: right;
+}
 
 .task-title {
     font-size:18px;
@@ -48,9 +57,10 @@
     margin-top: -3px;
 }
 
+
 .course-title {
     font-size:14px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans'
 }
 
 .date-title {
@@ -62,6 +72,15 @@
 
 .item {
 	font-family: 'Open Sans';
+}
+
+.task-detail-arrow {
+    float: right;
+    background-color: red;
+}
+
+.task-details {
+    background-color: orange;
 }
 
 /* Add Task Page */

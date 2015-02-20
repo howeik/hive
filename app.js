@@ -2,12 +2,24 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
-// Example route
-// var user = require('./routes/user');
 var login = require('./routes/login');
+var signup = require('./routes/signup');
+<<<<<<< Updated upstream
 
+
+// Connect to the Mongo database, whether locally or on Heroku
+// MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
+var local_database_name = 'hive';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
+
+=======
+var signup = require('./routes/signup');
+>>>>>>> Stashed changes
 var app = express();
 
 // all environments
@@ -33,9 +45,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view_ionic);
-// Example route
-// app.get('/users', user.list);
 app.get('/login', login.view);
+app.get('/signup', signup.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
