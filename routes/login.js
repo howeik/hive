@@ -4,6 +4,11 @@ exports.view = function(req, res){
   res.render('login', { message: req.flash('message') });
 };
 
+exports.logout = function(req, res){
+  res.clearCookie('user_id');
+  res.redirect('/');
+};
+
 exports.auth = function(req, res) {
 	console.log(req.body);
 

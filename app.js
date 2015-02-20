@@ -45,6 +45,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view_ionic);
 app.get('/login', login.view);
 app.post('/login', login.auth);
+app.get('/logout', login.logout);
 app.get('/api/user/login', user_api.login);
 app.get('/signup', signup.view);
 
