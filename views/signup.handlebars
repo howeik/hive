@@ -14,28 +14,34 @@
 
 	<script src="jquery/dist/jquery.min.js"></script>
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/links.js"></script>
+	<script type="text/javascript" src="js/links.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Lato|PT+Sans|Open+Sans|Poiret+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="login">
-        <h1>Hive</h1>
-        <div class="login">
-            <div class="login-information">
-                <ul>
-               <li><input type="text" placeholder="username"></li> 
-                <br>
-                <li><input type ="password" placeholder="password"></li>
-                    </ul>
-                </div>
-            <div class="login-button">
-                <a href="/" id="loginbutton">Log In</a>
-                <a href="#" id="signupbutton">Sign Up</a>
-            
-            </div>
-        </div>
-        
-    </div>
+	<div class="signup">
+		<div class="sign-up-bar">
+			<div id="sign-up-header">
+				SIGN UP
+			</div>
+		</div>
+		<div class="login">
+			<div class="login-information">
+				<ul>
+					<li><input type="text" placeholder="NAME"></li> 
+					<br>
+					<li><input type="text" placeholder="EMAIL"></li> 
+					<br>
+					<li><input type ="password" placeholder="PASSWORD"></li>
+				</ul>
+			</div>
+			<div class="signup-button">
+			<a href="/login" class="loginbutton">GO BACK</a>
+			<a href="/signup" id="sign-up-email">SIGN UP</a>
+
+			</div>
+		</div>
+
+	</div>
 </body>
 </html>
