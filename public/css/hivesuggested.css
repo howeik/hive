@@ -40,7 +40,7 @@
 
 
 .task-title {
-    font-size:18px;
+    font-size:14px;
     display: inline;
     padding-right: 10px;
 }
@@ -49,19 +49,18 @@
     padding-top:5px;
     margin-top: -3px;
     margin-right: 0px;
-    width:92%;
+    width:94%;
 }
 
 .course-title {
-    font-size:14px;
+    font-size:13px;
     font-family: 'Open Sans'
 }
 
 .date-title {
     float: right;
     display: inline;
-    font-size: 18px;
-    margin-top: 5px;   
+    font-size: 15px; 
 }
 
 .item {
