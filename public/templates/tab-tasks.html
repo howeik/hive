@@ -5,6 +5,7 @@
     <!-- Completed Tasks -->
       <div class="item item-divider">
         Archived
+        <i class="ion-arrow-right-b" style="float:right;"></i>
       </div>
 
       <ion-checkbox ng-repeat="userTask in archived" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
@@ -19,11 +20,21 @@
             {{userTask.task.class.name}}
           </div>
         </div>
+    
+        <i class="ion-chevron-down"></i>
+
+        <div class="detail">
+          <div class="detail-header">
+            Detail:
+          </div>
+          Info! Info! Info!
+        </div>
       </ion-checkbox>
 
     <!-- This Week -->
       <div class="item item-divider">
         This Week
+        <i class="ion-arrow-down-b" style="float:right;"></i>
       </div>
 
       <!-- This Week Task -->
@@ -54,6 +65,7 @@
       <!-- Upcoming -->
       <div class="item item-divider">
         Upcoming
+        <i class="ion-arrow-right-b" style="float:right;"></i>
       </div>
 
       <!-- Upcoming Task -->
