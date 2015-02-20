@@ -10,12 +10,12 @@
 
 			<div class="list">
  			 <label class="item item-input">
-  		  <input type="text" ng-model="task.name" placeholder="Task Name" style="font-size:16px;">
+  		  <input type="text" ng-model="task.name" placeholder="Task Name" style="font-size:16px; color: #444;">
  			 </label>
 
 				<label class="item item-input item-select" style = "height: 47px;">
 					<span class="class">Courses</span>
-					<select name="select_projects" ng-model="task.class_id">
+					<select name="select_projects" ng-model="task.class_id" style= "font-family: 'Open Sans'; color: #444; font-size:16px;">
 						<option value=0>COGS120</option>
 						<option value=1>CSE124</option>
 						<option value=3>POLI20</option>
@@ -24,16 +24,16 @@
 
 				<label class="item item-input">
 					<span class="due-date">Due Date</span>
-					<input id="due_date" type="date" ng-model="task.due_date" placeholder="yyyy-MM-dd"/>
+					<input id="due_date" type="date" ng-model="task.due_date" placeholder="yyyy-MM-dd" style= "font-family: 'Open Sans'; color: #444; font-size:16px; padding-right:0px;"/>
 				</label>
 
 				<label class="item item-input">
 					<span class="due-time">Time</span>
-					<input id="due_time" type="time" ng-model="task.due_time"/>
+					<input id="due_time" type="time" ng-model="task.due_time" style="font-family: 'Open Sans'; color: #444; font-size:16px; padding-right:0px;"/>
 				</label>
 
 				<label class="item item-input">
-					<textarea ng-model="task.description" placeholder="Additional Info" style="height:100px; font-size: 15px"></textarea>
+					<textarea ng-model="task.description" placeholder="Details" style="height:100px; font-family:'Open Sans'; font-size:16px;"></textarea>
 				</label>
 			</div>
 		</div>
