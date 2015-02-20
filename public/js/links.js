@@ -17,8 +17,3 @@ $( document ).on(
     }
 );
 
-$(document).ready(function) {
-    $("#dropdown").click(function() {
-        $(".detail").toggle();
-    }
-}

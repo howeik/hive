@@ -68,14 +68,14 @@
 	font-family: 'Open Sans';
 }
 
-.task-detail-arrow {
-    float: right;
-    background-color: red;
+.detail-header {
+    font-size: 14px;
 }
 
-.task-details {
-    background-color: orange;
+.detail {
+    font-size: 12px;
 }
+
 
 
 /* Add Task Page */
