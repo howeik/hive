@@ -1,5 +1,5 @@
 /*
- * User API home page.
+ * User API.
  */
 
 var models = require('../models');
@@ -20,5 +20,11 @@ exports.login = function(req, res) {
 		}
 
 		res.send(200, { "success": success });
+	});
+};
+
+exports.all = function(req, res) {
+	models.User.find({}, function(err, users) {
+		res.send(200, users);
 	});
 };

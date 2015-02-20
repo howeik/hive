@@ -36,6 +36,7 @@ console.log(to_save_count);
 var model = models.User;
 var model_json = users_json;
 
+
 save(models.User, users_json);
 save(models.Class, classes_json);
 save(models.Task, tasks_json);
@@ -58,10 +59,21 @@ function save(model, model_json) {
             to_save_count--;
             console.log(to_save_count + ' left to save');
             if(to_save_count == 0) {
-              console.log('DONE');
+              console.log('DONE. Added users to classes...');
+
+              var howei = models.User.findOne({ email: 'hok022@ucsd.edu' }, function(err, user) {
+                if (err) console.log(err);
+                var cogs120 = models.Class.findOne({ name: 'COGS120' }, function(err, _class) {
+                  if (err) console.log(err);
+                  models.UserClasses.create({ user: user._id, class: _class._id }, function(err, userClass) {
+                    if (err) console.log(err);
+                    console.log("added hok022@ucsd.edu to COGS120");
+                    mongoose.connection.close()
+                  });
+                });
+              });
               // The script won't terminate until the 
               // connection to the database is closed
-              mongoose.connection.close()
             }
           });
         }

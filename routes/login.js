@@ -24,7 +24,7 @@ exports.auth = function(req, res) {
 			var correctPassword = users[0].password;
 			if (correctPassword == password) {
 				success = true;
-				user_id = users[0].id;
+				user_id = users[0]._id;
 			}
 		}
 
@@ -37,4 +37,4 @@ exports.auth = function(req, res) {
 			res.redirect('login');
 		}
 	});
-}
+};

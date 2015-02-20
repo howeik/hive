@@ -14,8 +14,8 @@ var ClassSchema = new Mongoose.Schema({
 });
 
 var UserClassesSchema = new Mongoose.Schema({
-  "user": { type: Number, ref: "User" },
-  "class": { type: Number, ref: "Class" }
+  "user": { type: Mongoose.Schema.Types.ObjectId, ref: "User" },
+  "class": { type: Mongoose.Schema.Types.ObjectId, ref: "Class" }
 });
 
 var TaskSchema = new Mongoose.Schema({
@@ -23,14 +23,14 @@ var TaskSchema = new Mongoose.Schema({
   "description": String,
   "due_date": String,
   "is_shared": Boolean,
-  "class": { type: Number, ref: "Class" },
+  "class": { type: Mongoose.Schema.Types.ObjectId, ref: "Class" },
   "class_name": String,
   "is_endorsed": Boolean
 });
 
 var UserTasksSchema = new Mongoose.Schema({
-  "user": { type: Number, ref: "User" },
-  "task": { type: Number, ref: "Task" },
+  "user": { type: Mongoose.Schema.Types.ObjectId, ref: "User" },
+  "task": { type: Mongoose.Schema.Types.ObjectId, ref: "Task" },
   "is_finished": Boolean
 });
 
