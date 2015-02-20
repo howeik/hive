@@ -87,6 +87,24 @@ input[type="password"]:focus {
   margin-right: 10px;
 }
 
+.signupbutton {
+  background: #3498db;
+   background-image: -webkit-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -moz-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -ms-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: -o-linear-gradient(top, #eae1b3, #eae1b3);
+  background-image: linear-gradient(to bottom, #eae1b3, #eae1b3);
+   -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: 'Open sans';
+  color: #fff3b2;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #eae1b3 2px;
+  text-decoration: none;
+}
+
 #signupbutton {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #eae1b3, #eae1b3);

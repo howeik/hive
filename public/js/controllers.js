@@ -201,6 +201,7 @@ angular.module('starter.controllers', [])
   // $rootScope.badgeCount = tasks.length;
 })
 
+
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })

@@ -8,9 +8,12 @@ var flash = require('connect-flash');
 var index = require('./routes/index');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
+var addclass = require('./routes/addclass');
+
 var user_api = require('./routes/user_api');
 var class_api = require('./routes/class_api');
 var task_api = require('./routes/task_api');
+
 
 // Connect to the Mongo database, whether locally or on Heroku
 // MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
@@ -51,11 +54,13 @@ app.get('/logout', login.logout);
 app.get('/api/user/login', user_api.login);
 app.get('/api/user/all', user_api.all);
 app.get('/signup', signup.view);
+app.post('/signup', signup.adduser);
 app.get('/api/class/all', class_api.all);
 app.get('/api/class/enrolled', class_api.enrolled);
 app.get('/api/task/all', task_api.all);
 app.get('/api/task/shared', task_api.shared);
 app.get('/api/task/:task_id', task_api.details);
+app.get('/addclass', addclass.addclass);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
