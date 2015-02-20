@@ -1,60 +1,92 @@
-function dayToString(day) {
-  var daysOfTheWeek = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday'
-  ];
-
-  return daysOfTheWeek[day];
-};
-
-function dateToWeek(date) {
-  // start of winter quarter 2015
-  var start = new Date('01-05-2015');
-
-  return Math.round((date - start) / 604800000) + 1;
-};
-
 angular.module('starter.controllers', [])
 
 .controller('TasksCtrl', function($scope, Users, Classes, Tasks, UserTasks) {
-  var userTasks = UserTasks.all();
-  userTasks = userTasks.filter(function(userTask) {
+  function dayToString(day) {
+    var daysOfTheWeek = [
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday'
+    ];
+
+    return daysOfTheWeek[day];
+  };
+
+  function dateToWeek(date) {
+    // start of winter quarter 2015
+    var start = new Date('01-04-2015');
+
+    return Math.round((date - start) / 604800000) + 1;
+  };
+
+  // retreive all of this users' tasks, populate class data, and sort by due date
+  var userTasks = UserTasks.all()
+  .filter(function(userTask) {
     return Users.id() == userTask.user_id;
-  });
-  userTasks.map(function(userTask) {
+  })
+  .map(function(userTask) {
     userTask.task = Tasks.get(userTask.task_id);
     userTask.task.class = Classes.get(userTask.task.class_id);
+    return userTask;
+  })
+  .sort(function(a, b) {
+    return new Date(a.task.due_date) - new Date(b.task.due_date);
   });
+
+  // index user tasks by the week of its due date
+  $scope.tasksByWeek = [];
+  userTasks.forEach(function(userTask) {
+    var week = dateToWeek(new Date(userTask.task.due_date)) - 1;
+    if ($scope.tasksByWeek[week] == null) {
+      $scope.tasksByWeek[week] = [];
+    }
+    $scope.tasksByWeek[week].push(userTask);
+  });
+
+  // set task list to empty list for weeks that have no tasks
+  $scope.tasksByWeek = $scope.tasksByWeek.map(function(tasks) {
+    if (tasks == null) {
+      return [];
+    }
+    return tasks;
+  });
+
+  console.log($scope.tasksByWeek);
+
+  $scope.toggleUserTask = function(userTask) {
+    UserTasks.update(userTask);
+  };
 
   $scope.userTasks = userTasks;
   $scope.updateUserTask = function(userTask) {
     UserTasks.update(userTask);
   };
 
-  var curr = new Date('02-13-2015');
+  var curr = new Date();
   var firstday = new Date(curr.setDate(curr.getDate() - curr.getDay()));
   var lastday = new Date(curr.setDate(curr.getDate() - curr.getDay()+6));
 
-  userTasks.sort(function(a, b) {
-    return new Date(a.task.due_date) - new Date(b.task.due_date);
-  });
-
   $scope.this_week = [];
   $scope.upcoming = [];
+  $scope.archived = [];
   userTasks.map(function(userTask) {
-    if (firstday < new Date(userTask.task.due_date) && new Date(userTask.task.due_date) < lastday) {
+    if (firstday <= new Date(userTask.task.due_date) && new Date(userTask.task.due_date) <= lastday) {
       console.log(new Date(userTask.task.due_date));
       userTask.day_of_the_week = dayToString(new Date(userTask.task.due_date).getDay());
       $scope.this_week.push(userTask);
+    } else if (firstday > new Date(userTask.task.due_date)) {
+      $scope.archived.push(userTask);
     } else {
       $scope.upcoming.push(userTask);
     }
   });
+
+  console.log($scope.archived);
+
+  console.log($scope.tasksByWeek);
 })
 
 .controller('AddCtrl', function($scope, $ionicLoading, Users, Tasks, UserTasks) {

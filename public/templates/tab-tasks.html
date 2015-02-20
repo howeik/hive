@@ -2,6 +2,44 @@
   <ion-content>
     <div class="list">
 
+<!--       <div ng-repeat="userTasks in tasksByWeek track by $index">
+        <div class="item item-divider">
+          Week {{$index + 1}}
+        </div>
+
+        <ion-checkbox ng-repeat="userTask in userTasks" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+          <div class="tasks">
+            <div class="task-title">
+              {{userTask.task.name}}
+            </div>
+            <div class="date-title">
+              {{userTask.task.due_date}}
+            </div>
+            <div class="course-title">
+              {{userTask.task.class.name}}
+            </div>
+          </div>
+        </ion-checkbox>
+      </div> -->
+
+      <div class="item item-divider">
+        Archived
+      </div>
+
+      <ion-checkbox ng-repeat="userTask in archived" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+        <div class="tasks">
+          <div class="task-title">
+            {{userTask.task.name}}
+          </div>
+          <div class="date-title">
+            {{userTask.task.due_date}}
+          </div>
+          <div class="course-title">
+            {{userTask.task.class.name}}
+          </div>
+        </div>
+      </ion-checkbox>
+
       <div class="item item-divider">
         This Week
       </div>
