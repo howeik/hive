@@ -1,7 +1,7 @@
 <ion-view view-title="Chats">
     <ion-content>
         <ul class="list">
-            <ion-item style="padding-bottom: 0px;" ng-repeat="task in tasks" id="task{{task.id}}">
+            <ion-item style="padding-bottom: 0px;" ng-repeat="task in tasks" id="task{{task._id}}">
                 <div class="title">{{task.name}}</div>
                 <div class="course">{{task.class.name}}</div>
                 <div class="date">{{task.due_date}}</div>

@@ -2,16 +2,19 @@
 	{
 		"name": "Ho-Wei Kang",
 		"email": "hok022@ucsd.edu",
-		"password": "password"
+		"password": "password",
+		"declined": []
 	},
 	{
 		"name": "Karen Kim",
 		"email": "kak003@ucsd.edu",
-		"password": "password"
+		"password": "password",
+		"declined": []
 	},
 	{
 		"name": "Ashley Perez",
 		"email": "amp016@ucsd.edu",
-		"password": "password"
+		"password": "password",
+		"declined": []
 	}
 ]

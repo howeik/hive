@@ -28,3 +28,11 @@ exports.all = function(req, res) {
 		res.send(200, users);
 	});
 };
+
+exports.me = function(req, res) {
+	if (req.signedCookies.user_id == undefined) { res.send(500); return; }
+	models.User.findOne({ _id: req.signedCookies.user_id }, function(err, user) {
+		if (err) { console.log(err); res.send(500); return; }
+		res.send(200, user);
+	});
+}

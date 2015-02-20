@@ -6,7 +6,8 @@ var Mongoose = require('mongoose');
 var UserSchema = new Mongoose.Schema({
   "name": String,
   "email": String,
-  "password": String
+  "password": String,
+  "declined": [Mongoose.Schema.Types.ObjectId]
 });
 
 var ClassSchema = new Mongoose.Schema({

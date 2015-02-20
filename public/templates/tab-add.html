@@ -14,11 +14,9 @@
  			 </label>
 
 				<label class="item item-input item-select" style = "height: 47px;">
-					<span class="class">Courses</span>
-					<select name="select_projects" ng-model="task.class_id" style= "font-family: 'Open Sans'; color: #444; font-size:16px;">
-						<option value=0>COGS120</option>
-						<option value=1>CSE124</option>
-						<option value=3>POLI20</option>
+					<span class="class">Class</span>
+					<select name="select_projects" ng-model="task.class" style= "font-family: 'Open Sans'; color: #444; font-size:16px;">
+						<option ng-repeat="class in classes" value="{{class._id}}">{{class.name}}</option>
 					</select>
 				</label>
 
@@ -27,11 +25,11 @@
 					<input id="due_date" type="date" ng-model="task.due_date" placeholder="yyyy-MM-dd" style= "font-family: 'Open Sans'; color: #444; font-size:16px; padding-right:0px;"/>
 				</label>
 
-				<label class="item item-input">
+<!-- 				<label class="item item-input">
 					<span class="due-time">Time</span>
 					<input id="due_time" type="time" ng-model="task.due_time" style="font-family: 'Open Sans'; color: #444; font-size:16px; padding-right:0px;"/>
 				</label>
-
+ -->
 				<label class="item item-input">
 					<textarea ng-model="task.description" placeholder="Details" style="height:100px; font-family:'Open Sans'; font-size:16px;"></textarea>
 				</label>

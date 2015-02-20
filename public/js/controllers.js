@@ -52,14 +52,22 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller('AddCtrl', function($scope, $ionicLoading, Users, Tasks, UserTasks) {
-  $scope.task = {
-    class_id: 0,
-    name: "",
-    due_date: '2015-02-13',
-    is_shared: true,
-    description: ''
+.controller('AddCtrl', function($scope, $ionicLoading, Task, Class, Users, Tasks, UserTasks) {
+  if ($scope.task = undefined) {
+    $scope.task = {
+      name: "",
+      due_date: '2015-02-13',
+      is_shared: true,
+      description: ''
+    }
   }
+
+  Class.enrolled(function(classes, err) {
+    if (err) { console.log(err); return; }
+
+    $scope.classes = classes;
+    // console.log(classes);
+  });
 
   $scope.addTask = function(task) {
     console.log("Adding Task!");
@@ -76,26 +84,33 @@ angular.module('starter.controllers', [])
     console.log((_helsenkiTime.getMonth() + 1) + "/" + _helsenkiTime.getDate() + "/" + _helsenkiTime.getFullYear());
     task.due_date = (_helsenkiTime.getMonth() + 1) + "/" + _helsenkiTime.getDate() + "/" + _helsenkiTime.getFullYear();
 
-    var taskId = Tasks.add(task);
-    UserTasks.add(Users.id(), taskId);
+    Task.create(task, function(data, err) {
+      if (err) { console.log(err); return }
+
+      console.log("data inserted");
+      console.log(data);
+
+      $ionicLoading.show({ template: 'Added task ' + task.name + '!', noBackdrop: true, duration: 800 });
+
+    });
+
+    // var taskId = Tasks.add(task);
+    // UserTasks.add(Users.id(), taskId);
 
     $scope.task = {
       class_id: 0,
       name: "",
-      due_date: '2015-02-13',
+      due_date: new Date,
       is_shared: true,
       description: ''
     };
-
-    $ionicLoading.show({ template: 'Added task ' + task.name + '!', noBackdrop: true, duration: 800 });
-
   }
 
   console.log($scope.task);
 })
 
 .controller('ChatsCtrl', function($scope, $rootScope, $ionicLoading, Task, Users, Classes, Tasks, UserTasks) {
-  $scope.tasks = []
+  $scope.tasks = [];
 
   Task.shared(function(sharedTasks, err) {
     Task.all(function(allTasks, err) {
@@ -110,6 +125,8 @@ angular.module('starter.controllers', [])
       });
 
       $scope.tasks = sharedTasks;
+      $rootScope.badgeCount = $scope.tasks.length;
+
 
       // populate endorsement information
       sharedTasks.forEach(function(sharedTask) {
@@ -175,22 +192,28 @@ angular.module('starter.controllers', [])
   // });
 
   // $scope.tasks = tasks;
-  // $scope.accept = function(task) {
-  //   console.log(task);
-  //   UserTasks.add(0, task.id);
-  //   $('#task' + task.id).hide(500);
-  //   $rootScope.badgeCount -= 1;
-  //   $ionicLoading.show({ template: 'Task accepted!', noBackdrop: true, duration: 800 });
-  // };
+  $scope.accept = function(task) {
+    console.log(task);
+    $('#task' + task._id).hide(500);
 
-  // $scope.decline = function(task) {
-  //   console.log(task);
-  //   Users.addDeclinedTaskId(task.id);
-  //   $('#task' + task.id).hide(500);
-  //   $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
+    Task.add(task._id, function(data,err) {
+      if (err) { console.log(err); return }
+      console.log("task added");
+      console.log(data);
+    })
 
-  //   $rootScope.badgeCount -= 1;
-  // };
+    $rootScope.badgeCount -= 1;
+    $ionicLoading.show({ template: 'Task accepted!', noBackdrop: true, duration: 800 });
+  };
+
+  $scope.decline = function(task) {
+    console.log(task);
+    // Users.addDeclinedTaskId(task.id);
+    $('#task' + task._id).hide(500);
+    $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
+
+    $rootScope.badgeCount -= 1;
+  };
 
   // tasks.sort(function(a, b) {
   //   return new Date(a.due_date) - new Date(b.due_date);
@@ -214,12 +237,75 @@ angular.module('starter.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, User, Class) {
   $scope.settings = {
     enableFriends: true
   };
+
+  User.me(function(me, err) {
+    $scope.user = me;
+    console.log(me);
+  });
+
+  Class.enrolled(function(classes, err) {
+    if (err) { console.log(err); return; }
+
+    $scope.classes = classes;
+    // console.log(classes);
+  });
+
+  $scope.deleteClass = function(_class) {
+    console.log("delete tas kclicked");
+    console.log(_class);
+    Class.delete(_class._id, function(data, err) {
+      if (err) { console.log(err); return; }
+      console.log(data);
+    });
+
+  Class.enrolled(function(classes, err) {
+    if (err) { console.log(err); return; }
+
+    $scope.classes = classes;
+    // console.log(classes);
+  });
+    };
 })
 
-.controller('AccountAddClassCtrl', function($scope) {
+.controller('AccountAddClassCtrl', function($scope, Class) {
 
+  function refreshClasses() {
+    Class.all(function(classes, err) {
+      if (err) { console.log(err); return; }
+
+      Class.enrolled(function(enrolledClasses, err) {
+          if (err) { console.log(err); return; }
+
+          classes = classes.filter(function(_class) {
+            for (var i = 0; i < enrolledClasses.length; i++) {
+              if (enrolledClasses[i]._id == _class._id) {
+                return false;
+              }
+            }
+            return true;
+          });
+
+          $scope.classes = classes;
+      });
+      // console.log(classes);
+    });
+  }
+
+  refreshClasses();
+
+  $scope.addClass = function(_class) {
+    console.log("adding class");
+    console.log(_class);
+
+    Class.add(_class._id, function(data, err) {
+      if (err) { console.log(err); return; }
+      console.log(data);
+
+      refreshClasses();
+    });
+  }
 });

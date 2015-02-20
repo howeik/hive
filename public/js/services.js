@@ -1,6 +1,69 @@
 
 angular.module('starter.services', [])
 
+.factory('User', ['$http', function($http) {
+    return {
+      apiCall: function(req, callback) {
+        req.url = "/api" + req.url;
+        $http(req).success(function(data){
+            callback(data, false);
+        }).error(function(data, status){
+            callback(data, status);
+        });
+      },
+      me: function(callback) {
+        var req = {
+          method: 'GET',
+          url: '/user/me'
+        };
+        this.apiCall(req, callback);
+      },
+    }
+}])
+
+.factory('Class', ['$http', function($http) {
+  return {
+    apiCall: function(req, callback) {
+      req.url = "/api" + req.url;
+      $http(req).success(function(data){
+          callback(data, false);
+      }).error(function(data, status){
+          callback(data, status);
+      });
+    },
+    all: function(callback) {
+      var req = {
+        method: 'GET',
+        url: '/class/all'
+      };
+      this.apiCall(req, callback);
+    },
+    add: function(classId, callback) {
+      var req = {
+        method: 'POST',
+        url: '/class/add',
+        data: { 'classId': classId }
+      }
+      this.apiCall(req, callback);
+    },
+    delete: function(classId, callback) {
+      var req = {
+        method: 'POST',
+        url: '/class/delete',
+        data: { 'classId': classId }
+      };
+      this.apiCall(req, callback);
+    },
+    enrolled: function(callback) {
+      var req = {
+        method: 'GET',
+        url: '/class/enrolled'
+      };
+      this.apiCall(req, callback);
+    },
+  }
+}])
+
 .factory('Task', ['$http', function($http) {
   return {
     apiCall: function(req, callback) {
@@ -15,6 +78,22 @@ angular.module('starter.services', [])
       var req = {
         method: 'GET',
         url: '/task/all'
+      };
+      this.apiCall(req, callback);
+    },
+    create: function(task, callback) {
+      var req = {
+        method: 'POST',
+        url: '/task/create',
+        data: task
+      };
+      this.apiCall(req, callback);
+    },
+    add: function(taskId, callback) {
+      var req = {
+        method: 'POST',
+        url: '/task/add',
+        data: { 'taskId': taskId }
       };
       this.apiCall(req, callback);
     },

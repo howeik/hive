@@ -56,10 +56,15 @@ app.get('/api/user/all', user_api.all);
 app.get('/signup', signup.view);
 app.post('/signup', signup.adduser);
 app.get('/api/class/all', class_api.all);
+app.get('/api/user/me', user_api.me);
 app.get('/api/class/enrolled', class_api.enrolled);
+app.post('/api/class/add', class_api.add);
+app.post('/api/class/delete', class_api.delete);
 app.get('/api/task/all', task_api.all);
 app.get('/api/task/shared', task_api.shared);
 app.get('/api/task/:task_id', task_api.details);
+app.post('/api/task/create', task_api.create);
+app.post('/api/task/add', task_api.add);
 app.get('/addclass', addclass.addclass);
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -12,15 +12,13 @@
       <ion-list>
         <div class="search-results">
 
-          <a class="item item-icon-right" href="#">
-            <i class="icon ion-ios-plus-outline"></i>
-             CSE 167
-          </a>
+        <div ng-repeat="class in classes">
+          <div class="item item-icon-right">
+            <a ng-click="addClass(class)"><i class="icon ion-ios-plus-outline"></i></a>
+            {{class.name}}
 
-          <a class="item item-icon-right" href="#">
-            <i class="icon ion-ios-plus-outline"></i>
-             CSE 168
-          </a>
+          </div>
+        </div>
 
 
         </div>

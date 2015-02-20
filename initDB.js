@@ -72,7 +72,7 @@ function save(model, model_json) {
                     // assign class ids to each task
                     models.Task.find().remove().find({}, function(err, tasks) {
 
-                      var tasksToLink = tasks.length - 1;
+                      var tasksToLink = tasks.length - 2;
 
                       tasks.forEach(function(task) {
                         models.Class.findOne({ 'name': task.class_name }, function(err, _class2) {
@@ -80,7 +80,7 @@ function save(model, model_json) {
                           task.class = _class2.id;
                           task.save();
 
-                          if (task.name != "Lab 6 - AJAX") {
+                          if (task.class_name != "COGS120") {
                             models.UserTasks.create({ 'user': user.id, 'task': task.id, 'is_finished': false}, function(err, userTask) {
                               console.log("gave user howei task " + task.name);
 
