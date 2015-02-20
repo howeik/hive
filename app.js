@@ -7,7 +7,6 @@ var mongoose = require('mongoose');
 var index = require('./routes/index');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
-<<<<<<< Updated upstream
 
 
 // Connect to the Mongo database, whether locally or on Heroku
@@ -17,9 +16,6 @@ var local_database_uri  = 'mongodb://localhost/' + local_database_name
 var database_uri = process.env.MONGOLAB_URI || local_database_uri
 mongoose.connect(database_uri);
 
-=======
-var signup = require('./routes/signup');
->>>>>>> Stashed changes
 var app = express();
 
 // all environments
