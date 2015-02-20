@@ -1,6 +1,7 @@
 var models = require('../models');
 
 exports.view = function(req, res){
+
   res.render('login', { message: req.flash('message') });
 };
 
@@ -20,7 +21,7 @@ exports.auth = function(req, res) {
 
 		var success = false;
 		var user_id = null;
-		if (users.length == 1) {
+		if (users.length >= 1) {
 			var correctPassword = users[0].password;
 			if (correctPassword == password) {
 				success = true;
