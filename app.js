@@ -8,6 +8,7 @@ var flash = require('connect-flash');
 var index = require('./routes/index');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
+var addclass = require('./routes/addclass');
 
 var user_api = require('./routes/user_api');
 var class_api = require('./routes/class_api');
@@ -58,6 +59,7 @@ app.get('/api/class/all', class_api.all);
 app.get('/api/class/enrolled', class_api.enrolled);
 app.get('/api/task/all', task_api.all);
 app.get('/api/task/shared', task_api.shared);
+app.get('/addclass', addclass.addclass);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
