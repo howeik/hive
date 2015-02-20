@@ -21,7 +21,8 @@
     "mongoose": "*",
     "bower": "*",
     "mongodb": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "connect-flash": "*"
   },
   "engines": {
     "node": "0.10.x"
