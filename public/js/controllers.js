@@ -31,17 +31,21 @@ angular.module('starter.controllers', [])
     var firstday = new Date(curr.setDate(curr.getDate() - curr.getDay()));
     var lastday = new Date(curr.setDate(curr.getDate() - curr.getDay()+6));
 
+    tasks = tasks.sort(function(a, b) {
+      return new Date(a.task.due_date) - new Date(b.task.due_date);
+    });
+
     $scope.this_week = [];
     $scope.upcoming = [];
     $scope.archived = [];
-    tasks.forEach(function(task) {
-      if (firstday <= new Date(task.due_date) && new Date(task.due_date) <= lastday) {
-        task.day_of_the_week = dayToString(new Date(task.due_date).getDay());
-        $scope.this_week.push(task);
-      } else if (firstday > new Date(task.due_date)) {
-        $scope.archived.push(task);
+    tasks.forEach(function(userTask) {
+      if (firstday <= new Date(userTask.task.due_date) && new Date(userTask.task.due_date) <= lastday) {
+        userTask.day_of_the_week = dayToString(new Date(userTask.task.due_date).getDay());
+        $scope.this_week.push(userTask);
+      } else if (firstday > new Date(userTask.task.due_date)) {
+        $scope.archived.push(userTask);
       } else {
-        $scope.upcoming.push(task);
+        $scope.upcoming.push(userTask);
       }
     });
 
