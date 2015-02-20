@@ -50,6 +50,7 @@ app.post('/login', login.auth);
 app.get('/logout', login.logout);
 app.get('/api/user/login', user_api.login);
 app.get('/signup', signup.view);
+app.post('/signup', signup.adduser);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
