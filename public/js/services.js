@@ -1,4 +1,25 @@
+
 angular.module('starter.services', [])
+
+.factory('Task', ['$http', function($http) {
+  return {
+    apiCall: function(req, callback) {
+      req.url = "/api" + req.url;
+      $http(req).success(function(data){
+          callback(data, false);
+      }).error(function(data, status){
+          callback(data, status);
+      });
+    },
+    all: function(callback) {
+      var req = {
+        method: 'GET',
+        url: '/task/all'
+      };
+      this.apiCall(req, callback);
+    },
+  }
+}])
 
 .factory('Classes', function() {
   // Some fake testing data
@@ -64,7 +85,7 @@ angular.module('starter.services', [])
   }
 }])
 
-.factory('Tasks', function() {
+.factory('Tasks', [ '$http', function($http) {
 
   // Some fake testing data
   var tasks = [{
@@ -134,6 +155,21 @@ angular.module('starter.services', [])
   }];
 
   return {
+    all_api: function() {
+      var req = {
+        method: 'GET',
+        url: '/task/all'
+      };
+      this.apiCall(req, function(data){ console.log(data); }, function(data,status){console.log(status); return []});
+    },
+    apiCall: function(req, success, error){
+      req.url = "/api" + req.url;
+      $http(req).success(function(data){
+          success(data);
+      }).error(function(data, status){
+          error(data, status);
+      });
+    },
     all: function() {
       return tasks;
     },
@@ -166,7 +202,7 @@ angular.module('starter.services', [])
     }
   }
 
-})
+}])
 
 .factory('UserTasks', ['Classes', 'Tasks', function() {
 
