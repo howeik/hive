@@ -68,7 +68,39 @@ function save(model, model_json) {
                   models.UserClasses.create({ user: user._id, class: _class._id }, function(err, userClass) {
                     if (err) console.log(err);
                     console.log("added hok022@ucsd.edu to COGS120");
-                    mongoose.connection.close()
+
+                    // assign class ids to each task
+                    models.Task.find().remove().find({}, function(err, tasks) {
+
+                      var tasksToLink = tasks.length - 1;
+
+                      tasks.forEach(function(task) {
+                        models.Class.findOne({ 'name': task.class_name }, function(err, _class2) {
+                          console.log("setting " + task.name + " to class id " + _class2.id);
+                          task.class = _class2.id;
+                          task.save();
+
+                          if (task.name != "Lab 6 - AJAX") {
+                            models.UserTasks.create({ 'user': user.id, 'task': task.id, 'is_finished': false}, function(err, userTask) {
+                              console.log("gave user howei task " + task.name);
+
+                              tasksToLink--;
+                              if (tasksToLink == 0) {
+                                console.log("all done!");
+                                mongoose.connection.close()
+                              }
+
+                            });
+                          }
+
+                        });
+                      });
+
+
+
+
+                    });
+
                   });
                 });
               });
