@@ -2,29 +2,26 @@
   "name": "Hive",
   "version": "0.0.1",
   "author": "Karen, Ashley, Ho-Wei Kang",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/howeik/hive"
   },
   "license": "MIT",
-
   "private": true,
   "scripts": {
     "start": "node app.js",
     "postinstall": "node_modules/.bin/bower install"
   },
   "dependencies": {
+    "bower": "*",
+    "connect-flash": "*",
     "express": "3.x",
     "express3-handlebars": "*",
     "mongodb": "*",
     "mongoose": "*",
-    "bower": "*",
-    "mongodb": "*",
-    "mongoose": "*",
-    "connect-flash": "*"
+    "newrelic": "^1.16.3"
   },
   "engines": {
     "node": "0.10.x"
-  }  
+  }
 }
