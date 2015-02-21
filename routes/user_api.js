@@ -33,6 +33,7 @@ exports.me = function(req, res) {
 	if (req.signedCookies.user_id == undefined) { res.send(500); return; }
 	models.User.findOne({ _id: req.signedCookies.user_id }, function(err, user) {
 		if (err) { console.log(err); res.send(500); return; }
+		if (user == undefined) { res.redirect('/logout'); return; }
 		res.send(200, user);
 	});
 }

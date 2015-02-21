@@ -10,6 +10,9 @@ exports.all = function(req, res) {
 	models.UserTasks.find({ 'user': req.signedCookies.user_id }).populate('user task').exec(function(err, userTasks) {
 		if (err) { console.log(err); res.send(500); return; }
 
+		if (user == undefined) { res.redirect('/logout'); return; }
+
+
 		console.log("IN FIND USER");
 
 
@@ -92,6 +95,8 @@ exports.shared = function(req, res) {
 
 	models.User.findOne( {'_id': req.signedCookies.user_id }, function(err, user) {
 		if (err) { console.log(err); res.send(500); return; }
+
+		if (user == undefined) { res.redirect('/logout'); return; }
 
 		models.UserClasses
 		.find({ 'user': user.id })

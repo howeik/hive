@@ -48,6 +48,8 @@ exports.enrolled = function(req, res) {
 	models.User.findOne( {'_id': req.signedCookies.user_id }, function(err, user) {
 		if (err) { console.log(err); res.send(500); return; }
 
+		if (user == undefined) { res.redirect('/logout'); return; }
+
 		var classes = []
 
 		models.UserClasses
