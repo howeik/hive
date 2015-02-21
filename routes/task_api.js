@@ -102,6 +102,10 @@ exports.shared = function(req, res) {
 			console.log(userClasses);
 
 			var classesToProcess = userClasses.length;
+			if (classesToProcess == 0) {
+				res.send(200, {});
+			}
+
 			userClasses.forEach(function(userClass) {
 				models.Task.find({ 'is_shared': true, 'class': userClass.class }).populate('class').exec(function(err, tasks) {
 					if (err) { console.log(err); res.send(500); return; }
