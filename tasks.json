@@ -48,10 +48,45 @@
     "is_shared": true,
     "is_endorsed": false
   }, {
-    "name": "Martin Luther Paper",
-    "class_name": "POLI28",
-    "description": "Analzye a news article and write about it.",
-    "due_date": "02/13/2015",
+    "name": "Midterm 2",
+    "class_name": "CSE100",
+    "description": "Lecures after Midterm I",
+    "due_date": "03/4/2015",
     "is_shared": true,
     "is_endorsed": false
-  }]
+  }, {
+    "name": "Reading Quiz: Data Structures 3.4-3.5",
+    "class_name": "CSE100",
+    "description": "Link:http://www.quia.com/quiz/5223392.html",
+    "due_date": "02/25/2015",
+    "is_shared": true,
+    "is_endorsed": false  
+}, {
+    "name": "P4 Checkpoint",
+    "class_name": "CSE100",
+    "description": "Fun With Graphs.",
+    "due_date": "03/02/2015",
+    "is_shared": true,
+    "is_endorsed": false  
+}, {
+    "name": "Wireframe Presentation",
+    "class_name": "COGS187B",
+    "description": "Present wireframes during class time.",
+    "due_date": "02/26/2015",
+    "is_shared": true,
+    "is_endorsed": false  
+}, {
+    "name": "Prototype I and Content Inventory",
+    "class_name": "COGS187B",
+    "description": "Create cover page, content inventory, and website files",
+    "due_date": "03/03/2015",
+    "is_shared": true,
+    "is_endorsed": false  
+}, {
+    "name": "Readings: Ch 6 & 7",
+    "class_name": "COGS101B",
+    "description": "Types of Memory and Schemas and Scripts",
+    "due_date": "02/27/2015",
+    "is_shared": true,
+    "is_endorsed": false  
+}]
