@@ -1,101 +1,110 @@
 <!DOCTYPE html>
 <html ng-app="welcome">
 
-  <head>
+	<head>
 <!--    <link data-require="ionic@1.0.0-beta6" data-semver="1.0.0-beta6" rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.6/css/ionic.css" />
-    <script data-require="ionic@1.0.0-beta6" data-semver="1.0.0-beta6" src="http://code.ionicframework.com/1.0.0-beta.6/js/ionic.bundle.js"></script> -->
+		<script data-require="ionic@1.0.0-beta6" data-semver="1.0.0-beta6" src="http://code.ionicframework.com/1.0.0-beta.6/js/ionic.bundle.js"></script> -->
+	<title>Hive</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link href="../ionic/css/ionic.css" rel="stylesheet">
+	<link href="../ionicons/css/ionicons.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/welcome.css">
+		
+	<link href='http://fonts.googleapis.com/css?family=Lato|PT+Sans|Open+Sans|Poiret+One' rel='stylesheet' type='text/css'>
 
-
-  <link href="../ionic/css/ionic.css" rel="stylesheet">
-  <link href="../ionicons/css/ionicons.css" rel="stylesheet">
-    
-  <link href='http://fonts.googleapis.com/css?family=Lato|PT+Sans|Open+Sans|Poiret+One' rel='stylesheet' type='text/css'>
-
-
-  <!-- ionic/angularjs js -->
-  <script src="../jquery/dist/jquery.js"></script>
-  <script src="../ionic/js/ionic.bundle.js"></script>
-    <script src="../js/welcome.js"></script>
-  </head>
+	<!-- ionic/angularjs js -->
+	<script src="../jquery/dist/jquery.js"></script>
+	<script src="../ionic/js/ionic.bundle.js"></script>
+		<script src="../js/welcome.js"></script>
+	</head>
 
 <body>
-    <ion-nav-view></ion-nav-view>
+		<ion-nav-view></ion-nav-view>
 
-    <script type="text/ng-template" id="main.html">
-      <ion-nav-bar class="bar-positive">
-        <ion-nav-back-button class="button-clear">
-          <i class="ion-arrow-left-c"></i> Back
-        </ion-nav-back-button>
-      </ion-nav-bar>
+		<script type="text/ng-template" id="main.html">
+			<ion-nav-bar class="bar-positive">
+				<ion-nav-back-button class="button-clear">
+					<i class="ion-arrow-left-c"></i> Back
+				</ion-nav-back-button>
+			</ion-nav-bar>
 
-      <ion-nav-view name="welcome"></ion-nav-view>
-    </script>
+			<ion-nav-view name="welcome"></ion-nav-view>
+		</script>
 
-   <script type="text/ng-template" id="welcome.html">
-      <ion-view title="Hive">
-        <ion-content>
+	<!-- Welcome -->
+	 <script type="text/ng-template" id="welcome.html">
+			<ion-view title=" ">
+				<ion-content>
+					<div class="welcome-title">
+						Welcome to 
+						<br>
+							<span id="welcometohive">
+								Hive
+							</span>
+					</div>
 
-          <button class="button" ui-sref="app.welcome.login()">
-            Login
-          </button>
+				<div class="welcome-content">
+					<i class="ion-ios-world"></i>
+						<p id="shared"> Add your class work that are automatically shared by your classmates!</p>
+						<br>
+					<i class="ion-ios-list-outline"></i>
+						<p id="todolist"> View and check off all the tasks for this week and next week at the palm of your hands.  </p>
+					
+					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ui-sref="app.welcome.signup()">
+					</input>
+					<br>
 
-          <button class="button" ui-sref="app.welcome.signup()">
-            Sign up
-          </button>
+          <input type="submit" value="LOG IN" class="button button-large button-outline button-energized welcome-button-login" ui-sref="app.welcome.login()">
+					</input>
+				</ion-content>
+			</ion-view>
+		</script>
+	
+	<!-- Log In -->
+		<script type="text/ng-template" id="login.html">
+			<ion-view title="Log In">
+				<ion-content>
+					<div class="list">
+						<label class="item item-input">
+							<input type="text" placeholder="Email">
+						</label>
+						<label class="item item-input">
+							<input type="password" placeholder="Password">
+						</label>
+					</div>
+									
+          <input type="submit" value="LOG IN" class="button button-large  button-energized welcome-button-login" ui-sref="app.welcome.login()">
+					</input>
+				</ion-content>
+			</ion-view>
+		</script>
 
+	<!-- Sign Up-->
+		<script type="text/ng-template" id="signup.html">
+			<ion-view title="Sign Up">
+				<ion-content>
+				 <div class="list">
+						<label class="item item-input">
+							<input type="text" placeholder="Full Name">
+						</label>
+						<label class="item item-input">
+							<input type="text" placeholder="Email">
+						 </label>
+						 <label class="item item-input">
+							 <input type="password" placeholder="Password">
+							</label>
+					</div>
 
-        </ion-content>
-      </ion-view>
-    </script>
+					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ui-sref="app.welcome.signup()">
+					</input>
 
-    <script type="text/ng-template" id="login.html">
-      <ion-view title="Todo">
-        <ion-content>
-
-        <p> this is the login page </p>
-        </ion-content>
-      </ion-view>
-    </script>
-
-    <script type="text/ng-template" id="signup.html">
-      <ion-view title="Todo">
-        <ion-content>
-
-        <p> this is the signup page</p> 
-
-        </ion-content>
-      </ion-view>
-    </script>
-
-    <script type="text/ng-template" id="todo.html">
-      <ion-view title="Todo">
-        <ion-content>
-            <div class="item">
-              <p>{{todo.title}}</p>
-            </div>
-
-            <div class="item item-checkbox">
-              <div>
-                <label class="checkbox">
-                  <input type="checkbox" ng-model="todo.done">
-                </label>
-                Done
-              </div>
-
-            </div>
-        </ion-content>
-      </ion-view>
-    </script>
-
-    <script type="text/ng-template" id="help.html">
-      <ion-view title="Home">
-        <ion-content padding="true">
-           <h2>Using the app</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis architecto hic officia quasi excepturi sequi deleniti maiores consectetur veritatis sint?</p>
-        </ion-content>
-      </ion-view>
-    </script>
-  </body>
+				</ion-content>
+			</ion-view>
+		</script>
+	</body>
 </html>
-  
+	
 </html>
