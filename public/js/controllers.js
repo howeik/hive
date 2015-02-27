@@ -101,7 +101,7 @@ angular.module('starter.controllers', [])
       console.log("data inserted");
       console.log(data);
 
-      //window.location.href = 'task';
+      // Redirecting User to main page
       $location.path("../templates/index")
       $ionicLoading.show({ template: 'Added task ' + task.name + '!', noBackdrop: true, duration: 800 });
 
