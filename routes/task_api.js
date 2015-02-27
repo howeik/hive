@@ -13,9 +13,6 @@ exports.all = function(req, res) {
 		if (userTasks == undefined) { res.redirect('/logout'); return; }
 
 
-		console.log("IN FIND USER");
-
-
 		var numTasksToPopulate = userTasks.length;
 		if (numTasksToPopulate == 0) {
 			console.log("returned!!!!!!!");
@@ -23,13 +20,9 @@ exports.all = function(req, res) {
 			return;
 		}
 
-		console.log("SET numTasksToPopulate TO : " + numTasksToPopulate);
-
 		userTasks.forEach(function (userTask) {
 			models.Class.populate(userTask.task, {path: 'class'}, function(err, _class) {
-				console.log("populated class " + _class);
 				numTasksToPopulate--;
-				console.log("numTasksToPopulate: " + numTasksToPopulate);
 				if (numTasksToPopulate == 0) {
 					res.send(200, userTasks);
 				}
@@ -44,9 +37,6 @@ exports.add = function(req, res) {
 	var taskId = req.body.taskId;
 	models.UserTasks.create({ user: req.signedCookies.user_id, task: taskId}, function(err, userTask) {
 		if (err) { console.log(err); res.send(500); return; }
-
-		console.log("created user task with id " + userTask._id);
-		console.log(userTask);
 		res.send(200, { "success": true });
 	});
 }
@@ -62,8 +52,6 @@ exports.create = function(req, res) {
 		models.UserTasks.create({ user: req.signedCookies.user_id, task: task._id }, function(err, userTask) {
 			if (err) { console.log(err); res.send(500); return; }
 
-			console.log("created user task with id " + userTask._id);
-			console.log(userTask);
 			res.send(200, { "success": true });
 		});
 	});
@@ -104,7 +92,6 @@ exports.shared = function(req, res) {
 			if (err) { console.log(err); res.send(500); return; }
 
 			var sharedTasks = [];
-			console.log(userClasses);
 
 			var classesToProcess = userClasses.length;
 			if (classesToProcess == 0) {
@@ -117,15 +104,10 @@ exports.shared = function(req, res) {
 
 					sharedTasks = sharedTasks.concat(tasks);
 
-					console.log(sharedTasks);
-
 					classesToProcess--;
 					console.log("classesToProcess: " + classesToProcess);
 					if (classesToProcess == 0) {
-						console.log("sending thing");
-
 						res.send(200, sharedTasks);
-						console.log("sent thing");
 					}
 				});
 			});
