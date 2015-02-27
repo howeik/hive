@@ -261,7 +261,7 @@ angular.module('starter.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
-.controller('AccountCtrl', function($scope, User, Class) {
+.controller('AccountCtrl', function($scope, $ionicLoading, User, Class) {
   $scope.settings = {
     enableFriends: true
   };
@@ -279,7 +279,7 @@ angular.module('starter.controllers', [])
   });
 
   $scope.deleteClass = function(_class) {
-    console.log("delete tas kclicked");
+    console.log("delete task clicked");
     console.log(_class);
     Class.delete(_class._id, function(data, err) {
       if (err) { console.log(err); return; }
@@ -291,6 +291,7 @@ angular.module('starter.controllers', [])
 
       $scope.classes = classes;
     });
+     $ionicLoading.show({ template: 'Deleted Class!', noBackdrop: true, duration: 800 });
   };
 })
 
@@ -327,7 +328,6 @@ angular.module('starter.controllers', [])
     Class.add(_class._id, function(data, err) {
       if (err) { console.log(err); return; }
       console.log(data);
-
       refreshClasses();
     });
   }
