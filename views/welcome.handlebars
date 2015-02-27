@@ -25,7 +25,7 @@
 		<ion-nav-view></ion-nav-view>
 
 		<script type="text/ng-template" id="main.html">
-			<ion-nav-bar class="bar-positive">
+			<ion-nav-bar class="bar-energized">
 				<ion-nav-back-button class="button-clear">
 					<i class="ion-arrow-left-c"></i> Back
 				</ion-nav-back-button>
@@ -46,19 +46,24 @@
 							</span>
 					</div>
 
-				<div class="welcome-content">
-					<i class="ion-ios-world"></i>
-						<p id="shared"> Add your class work that are automatically shared by your classmates!</p>
+				<div style="" class="welcome-content">
+        <div>
+          <i class="ion-ios-list-outline"></i>
+            <p id="shared"> <!--View and check off all the tasks for this week and next week at the palm of your hands.-->  All your tasks, for all your classes in one place.</p>
+            </div>
 						<br>
-					<i class="ion-ios-list-outline"></i>
-						<p id="todolist"> View and check off all the tasks for this week and next week at the palm of your hands.  </p>
-					
-					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ui-sref="app.welcome.signup()">
+          <i class="ion-ios-world"></i>
+            <p id="todolist"> <!--Add your class work that are automatically shared by your classmates!--> Add tasks your classmates share with one click, and share tasks of your own! </p>
+            </div>
+
+					<div style="margin-left: auto; margin-right: auto; text-align: center;">
+					<input style="width:500px;"type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ui-sref="app.welcome.signup()">
 					</input>
 					<br>
 
-          <input type="submit" value="LOG IN" class="button button-large button-outline button-energized welcome-button-login" ui-sref="app.welcome.login()">
+          <input style="margin-left: auto; margin-right: auto; width: 70%; "type="submit" value="LOG IN" class="button button-large button-outline button-energized welcome-button-login" ui-sref="app.welcome.login()">
 					</input>
+          </div>
 				</ion-content>
 			</ion-view>
 		</script>
@@ -69,14 +74,14 @@
 				<ion-content>
 					<div class="list">
 						<label class="item item-input">
-							<input type="text" placeholder="Email">
+							<input ng-model="email" type="text" placeholder="@ucsd.edu email">
 						</label>
 						<label class="item item-input">
-							<input type="password" placeholder="Password">
+							<input ng-model="password" type="password" placeholder="password">
 						</label>
 					</div>
 									
-          <input type="submit" value="LOG IN" class="button button-large  button-energized welcome-button-login" ui-sref="app.welcome.login()">
+          <input type="submit" ng-click="login(email, password)" value="LOG IN" class="button button-large  button-energized welcome-button-login" ui-sref="app.welcome.login()">
 					</input>
 				</ion-content>
 			</ion-view>
@@ -88,17 +93,17 @@
 				<ion-content>
 				 <div class="list">
 						<label class="item item-input">
-							<input type="text" placeholder="Full Name">
+							<input ng-model="name" type="text" placeholder="name">
 						</label>
 						<label class="item item-input">
-							<input type="text" placeholder="Email">
+							<input ng-model="email" type="text" placeholder="@ucsd.edu email">
 						 </label>
 						 <label class="item item-input">
-							 <input type="password" placeholder="Password">
+							 <input ng-model="password" type="password" placeholder="password">
 							</label>
 					</div>
 
-					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ui-sref="app.welcome.signup()">
+					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ng-click="signup(name, email, password)">
 					</input>
 
 				</ion-content>

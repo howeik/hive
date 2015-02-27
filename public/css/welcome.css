@@ -10,17 +10,34 @@ body {
 	padding-top: 55px;
 	padding-bottom: 70px;
 
+
 }
+
+
 
 .welcome-button-signup {
 	font-size: 25px;
 	font-family: 'Poiret One';
-	padding-left: 28%;
-	padding-right: 28%;
+/*	padding-left: 28%;
+	padding-right: 28%;*/
 	text-align: center;
 	margin-top: 10px;
-	left:12%;
-	vertical-align: middle;
+	width: 100% !important;
+
+/*	left:12%;
+*/	vertical-align: middle;
+
+}
+.welcome-button-login {
+	font-size: 25px;
+	font-family: 'Poiret One';
+/*	padding-left: 28%;
+	padding-right: 30%;*/
+	text-align: center;
+	margin-top: 20px;
+	width: 100% !important;
+/*	left:12%;
+*/	vertical-align: middle;
 
 }
 
@@ -32,17 +49,6 @@ input[type="text"], textarea {
 	font-size: 16px;
 }
 
-.welcome-button-login {
-	font-size: 25px;
-	font-family: 'Poiret One';
-	padding-left: 28%;
-	padding-right: 30%;
-	text-align: center;
-	margin-top: 20px;
-	left:12%;
-
-
-}
 
 #welcometohive {
 	font-size:55px;

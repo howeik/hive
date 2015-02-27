@@ -55,7 +55,9 @@ app.get('/', index.view_ionic);
 app.get('/login', login.view);
 app.post('/login', login.auth);
 app.get('/logout', login.logout);
-app.get('/api/user/login', user_api.login);
+app.post('/api/user/login', user_api.login);
+app.post('/api/user/signup', user_api.adduser);
+
 app.get('/api/user/all', user_api.all);
 app.get('/signup', signup.view);
 app.post('/signup', signup.adduser);

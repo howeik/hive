@@ -34,7 +34,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('app.welcome.login', {
     url: '/login',
     templateUrl: 'login.html',
-    controller: 'TodoCtrl',
+    controller: 'LoginCtrl',
     resolve: {
       todo: function($stateParams, TodosService) {
         return TodosService.getTodo($stateParams.todo)
@@ -45,7 +45,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('app.welcome.signup', {
     url: '/signup',
     templateUrl: 'signup.html',
-    controller: 'TodoCtrl',
+    controller: 'SignupCtrl',
     resolve: {
       todo: function($stateParams, TodosService) {
         return TodosService.getTodo($stateParams.todo)
@@ -78,6 +78,65 @@ app.factory('TodosService', function() {
     }
   }
 })
+
+app.controller('LoginCtrl', function($scope, $http, $ionicLoading, $location, TodosService) {
+  $scope.email = "";
+  $scope.password = "";
+  $scope.login = function(email, password) {
+    console.log("login clicked with " + email + " : " + password);
+
+    var req = {
+      method: 'POST',
+      url: '/api/user/login',
+      data: {
+        'email': email,
+        'password': password
+      }
+    };
+
+    $http(req).success(function(data){
+      console.log(data);
+      if (data.success) {
+        window.location.replace('/');
+      } else {
+          $ionicLoading.show({ template: 'Invalid email or password!', noBackdrop: true, duration: 800 });
+      }
+    }).error(function(data, status){
+      $ionicLoading.show({ template: 'Login failed!', noBackdrop: true, duration: 800 });
+      console.log(status);
+    });
+  }
+})
+
+app.controller('SignupCtrl', function($scope, $ionicLoading, $http, TodosService) {
+  $scope.name = "";
+  $scope.email = "";
+  $scope.password = "";
+  $scope.signup = function(name, email, password) {
+    console.log("signup clicked with " + name + " : " + email + " : " + password);
+
+    var req = {
+      method: 'POST',
+      url: '/api/user/signup',
+      data: {
+        'name': name,
+        'email': email,
+        'password': password
+      }
+    };
+
+    $http(req).success(function(data){
+      console.log(data);
+      if (data.success) {
+        window.location.replace('/');
+      } else {
+          $ionicLoading.show({ template: 'Signup failed!', noBackdrop: true, duration: 800 });
+      }
+    }).error(function(data, status){
+      $ionicLoading.show({ template: 'Signup failed!', noBackdrop: true, duration: 800 });
+      console.log(status);
+    });
+  }})
 
 app.controller('TodosCtrl', function($scope, TodosService) {
   $scope.todos = TodosService.todos
