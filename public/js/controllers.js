@@ -277,7 +277,7 @@ angular.module('starter.controllers', [])
     $scope.classes = classes;
     // console.log(classes);
   });
-
+  //$location.path("tab-account");
   $scope.deleteClass = function(_class) {
     console.log("delete task clicked");
     console.log(_class);

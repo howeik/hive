@@ -139,4 +139,33 @@ z-index: 3;
 margin-top: -21px;
 }
 
+/* Tasks Details */
 
+.endorsed {
+     float: left;
+    display: inline;
+    font-size: 15px; 
+}
+
+.delete {
+     float: right;
+    display: inline;
+    font-size: 17px; 
+}
+
+.task-detail-title {
+    font-size:17px;
+    display: inline;
+    padding-right: 10px;
+}
+
+.task-detail-date {
+    font-size:14px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.task-detail-class {
+    font-size:15px;
+    padding-right: 10px; 
+}
