@@ -286,13 +286,12 @@ angular.module('starter.controllers', [])
       console.log(data);
     });
 
-  Class.enrolled(function(classes, err) {
-    if (err) { console.log(err); return; }
+    Class.enrolled(function(classes, err) {
+      if (err) { console.log(err); return; }
 
-    $scope.classes = classes;
-    // console.log(classes);
-  });
-    };
+      $scope.classes = classes;
+    });
+  };
 })
 
 .controller('AccountAddClassCtrl', function($scope, Class) {
