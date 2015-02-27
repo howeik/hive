@@ -294,7 +294,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('AccountAddClassCtrl', function($scope, Class) {
+.controller('AccountAddClassCtrl', function($scope, Class, $ionicLoading) {
 
   function refreshClasses() {
     Class.all(function(classes, err) {
@@ -323,6 +323,11 @@ angular.module('starter.controllers', [])
   $scope.addClass = function(_class) {
     console.log("adding class");
     console.log(_class);
+
+    $ionicLoading.show({ template: 'Enrolled in ' + _class.name + '!', noBackdrop: true, duration: 800 });
+//          $ionicLoading.show({ template: 'Added task ' + task.name + '!', noBackdrop: true, duration: 800 });
+
+
 
     Class.add(_class._id, function(data, err) {
       if (err) { console.log(err); return; }
