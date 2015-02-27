@@ -1,0 +1,81 @@
+body {
+	margin: 0 auto;
+}
+
+.welcome-title {
+	font-family: 'Poiret One';
+	font-size: 44px;
+	line-height: 45px;
+	text-align: center;
+	padding-top: 55px;
+	padding-bottom: 70px;
+
+}
+
+.welcome-button-signup {
+	font-size: 25px;
+	font-family: 'Poiret One';
+	padding-left: 28%;
+	padding-right: 28%;
+	text-align: center;
+	margin-top: 10px;
+	left:12%;
+	vertical-align: middle;
+
+}
+
+input[type="password"], textarea {
+	font-size: 16px;
+}
+
+input[type="text"], textarea {
+	font-size: 16px;
+}
+
+.welcome-button-login {
+	font-size: 25px;
+	font-family: 'Poiret One';
+	padding-left: 28%;
+	padding-right: 30%;
+	text-align: center;
+	margin-top: 20px;
+	left:12%;
+
+
+}
+
+#welcometohive {
+	font-size:55px;
+}
+
+.ion-ios-world {
+	font-size: 44px;
+	padding-left: 20px;
+
+}
+
+#shared {
+	padding-left:70px;
+	margin-top: -45px;
+	width:98%;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 25px;	
+}
+
+
+.ion-ios-list-outline {
+	font-size: 44px;
+	padding-left: 20px;
+
+}
+
+#todolist{
+	padding-left:70px;
+	margin-top: -45px;
+	padding-bottom: 40px;
+	width:98%;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 25px;	
+}
