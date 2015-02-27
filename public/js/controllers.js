@@ -63,11 +63,11 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('AddCtrl', function($scope, $ionicLoading, Task, Class, Users, Tasks, UserTasks) {
-  if ($scope.task = undefined) {
+.controller('AddCtrl', function($scope, $location, $ionicLoading, Task, Class, Users, Tasks, UserTasks) {
+  if ($scope.task == undefined) {
     $scope.task = {
       name: "",
-      due_date: '2015-02-13',
+      due_date: new Date(),
       is_shared: true,
       description: ''
     }
