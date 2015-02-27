@@ -16,6 +16,8 @@ var user_api = require('./routes/user_api');
 var class_api = require('./routes/class_api');
 var task_api = require('./routes/task_api');
 
+var welcome = require('./routes/welcome');
+
 
 // Connect to the Mongo database, whether locally or on Heroku
 // MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
@@ -69,6 +71,11 @@ app.post('/api/task/create', task_api.create);
 app.post('/api/task/add', task_api.add);
 app.post('/api/task/update', task_api.update);
 app.get('/addclass', addclass.addclass);
+
+// alternative design
+app.get('/welcome', welcome.welcome);
+app.get('/welcome/login', welcome.login);
+app.get('/welcome/signup', welcome.signup);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
