@@ -249,7 +249,7 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+.controller('ChatDetailCtrl', function($scope, $stateParams, $ionicPopup, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
@@ -261,7 +261,7 @@ angular.module('starter.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
-.controller('AccountCtrl', function($scope, $ionicLoading, User, Class) {
+.controller('AccountCtrl', function($scope, $ionicLoading, $ionicPopup, User, Class) {
   $scope.settings = {
     enableFriends: true
   };
@@ -279,19 +279,31 @@ angular.module('starter.controllers', [])
   });
   //$location.path("tab-account");
   $scope.deleteClass = function(_class) {
-    console.log("delete task clicked");
-    console.log(_class);
-    Class.delete(_class._id, function(data, err) {
-      if (err) { console.log(err); return; }
-      console.log(data);
-    });
 
-    Class.enrolled(function(classes, err) {
-      if (err) { console.log(err); return; }
-
-      $scope.classes = classes;
+    var confirmPopup = $ionicPopup.confirm({
+      title: 'Are you sure?',
+      template: '<p>Removing ' + _class.name + ' will delete all your tasks associated with ' + _class.name + '.<br> Are you sure you want to do this?</p>'
     });
-     $ionicLoading.show({ template: 'Dropped ' + _class.name + '!', noBackdrop: true, duration: 800 });
+   confirmPopup.then(function(res) {
+     if (res) {
+      console.log("delete task clicked");
+      console.log(_class);
+      Class.delete(_class._id, function(data, err) {
+        if (err) { console.log(err); return; }
+        console.log(data);
+      });
+
+      Class.enrolled(function(classes, err) {
+        if (err) { console.log(err); return; }
+
+        $scope.classes = classes;
+      });
+       $ionicLoading.show({ template: 'Dropped ' + _class.name + '!', noBackdrop: true, duration: 800 });
+     } else {
+       console.log('You are not sure');
+     }
+   });
+
   };
 })
 

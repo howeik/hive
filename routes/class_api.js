@@ -21,8 +21,51 @@ exports.delete = function(req, res) {
 	.exec(function(err) {
 		if (err) { console.log(err); res.send(500); return; }
 
-		res.send(200, { success: true });
-	});
+	models.UserTasks.find({'user': req.signedCookies.user_id}).populate('task').exec(function(err, userTasks) {
+		var numTasksToPopulate = userTasks.length;
+		if (numTasksToPopulate == 0) {
+			console.log("returned!!!!!!!");
+			res.send(200, { success: true });
+			return;
+		}
+
+		var tasksToDelete = [];
+		userTasks.forEach(function (userTask) {
+			models.Class.populate(userTask.task, {path: 'class'}, function(err, populatedTask) {
+				if (populatedTask.class != undefined) {
+					if (populatedTask.class._id == classId) {
+						tasksToDelete.push(populatedTask);
+					}
+				}
+
+				numTasksToPopulate--;
+				if (numTasksToPopulate == 0) {
+					var numTasksToDelete = tasksToDelete.length;
+					console.log("deleting " + numTasksToDelete + " tasks");
+					if (numTasksToDelete == 0) {
+						res.send(200, {success:true});
+						return;
+					}
+
+					tasksToDelete.forEach(function(taskToDelete) {
+						models.UserTasks.find({'user': req.signedCookies.user_id, 'task': taskToDelete._id}).remove(function(err, ut) {
+							if (err) { console.log(err); res.send(500); return; }
+
+							--numTasksToDelete;
+							if (numTasksToDelete == 0) {
+								res.send(200, { success: true });
+							}
+						});
+
+					});
+
+
+				}
+			});
+		});
+	});	});
+
+
 }
 
 exports.add = function(req, res) {
