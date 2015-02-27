@@ -291,7 +291,7 @@ angular.module('starter.controllers', [])
 
       $scope.classes = classes;
     });
-     $ionicLoading.show({ template: 'Deleted Class!', noBackdrop: true, duration: 800 });
+     $ionicLoading.show({ template: 'Dropped ' + _class.name + '!', noBackdrop: true, duration: 800 });
   };
 })
 
