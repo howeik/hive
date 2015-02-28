@@ -68,7 +68,12 @@ app.post('/api/class/add', class_api.add);
 app.post('/api/class/delete', class_api.delete);
 app.get('/api/task/all', task_api.all);
 app.get('/api/task/shared', task_api.shared);
+app.get('/api/task/super_all', task_api.super_all);
+
 app.get('/api/task/:task_id', task_api.details);
+
+
+
 app.post('/api/task/create', task_api.create);
 app.post('/api/task/add', task_api.add);
 app.post('/api/task/update', task_api.update);

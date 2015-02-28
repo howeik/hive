@@ -31,6 +31,31 @@ exports.all = function(req, res) {
 	});
 };
 
+exports.super_all = function(req, res) {
+	models.UserTasks.find().populate('user task').exec(function(err, userTasks) {
+		if (err) { console.log(err); res.send(500); return; }
+
+		if (userTasks == undefined) { res.redirect('/logout'); return; }
+
+
+		var numTasksToPopulate = userTasks.length;
+		if (numTasksToPopulate == 0) {
+			console.log("returned!!!!!!!");
+			res.send(200, {});
+			return;
+		}
+
+		userTasks.forEach(function (userTask) {
+			models.Class.populate(userTask.task, {path: 'class'}, function(err, _class) {
+				numTasksToPopulate--;
+				if (numTasksToPopulate == 0) {
+					res.send(200, userTasks);
+				}
+			});
+		});
+	});
+};
+
 exports.add = function(req, res) {
 	if (req.signedCookies.user_id == undefined) { res.send(500); return; }
 
