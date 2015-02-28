@@ -31,7 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // setup an abstract state for the tabs directive
   .state('tab', {
-    url: "/tab",
+    url: "/app",
     abstract: true,
     templateUrl: "templates/tabs.html"
   })
@@ -44,6 +44,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       'tab-tasks': {
         templateUrl: 'templates/tab-tasks.html',
         controller: 'TasksCtrl'
+      }
+    }
+  })
+
+  .state('tab.task-detail', {
+    url: '/tasks/:taskId',
+    views: {
+      'tab-tasks': {
+        templateUrl: 'templates/tasks-detail.html',
+        controller: 'TaskDetailsCtrl'
       }
     }
   })
@@ -127,6 +137,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/tasks');
+  $urlRouterProvider.otherwise('/app/tasks');
 
 });
