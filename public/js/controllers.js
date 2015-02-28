@@ -24,7 +24,7 @@ angular.module('starter.controllers', [])
 
   $scope.updateUserTask = function(userTask) {
     console.log("in updateUserTask");
-    Task.update(userTask._id, function(data, err) {
+    Task.update(userTask, function(data, err) {
       if (err) { console.log(err); return; }
       console.log(data);
     });

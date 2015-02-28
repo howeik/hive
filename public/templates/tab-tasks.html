@@ -13,7 +13,7 @@
 
 				<!-- Checkbox -->
 					<div  ng-change="updateUserTask(userTask)" ng-model="userTask.is_finished"  class="checkbox">
-						<input type="checkbox">
+						<input type="checkbox" ng-change="updateUserTask(userTask)" ng-model="userTask.is_finished">
 					</div>
 
 				<!-- Task Content -->

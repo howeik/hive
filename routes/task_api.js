@@ -60,10 +60,12 @@ exports.create = function(req, res) {
 exports.update = function(req, res) {
 	if (req.signedCookies.user_id == undefined) { res.send(500); return; }
 
-	var task = req.body;
-	models.UserTasks.findOne({ '_id': task._id }, function(err, stask) {
-		stask.is_finished = task.is_finished;
-		res.respond(200, { success: true});
+	var userTask = req.body;
+	models.UserTasks.findOne({ '_id': userTask._id, 'user': req.signedCookies.user_id }, function(err, stask) {
+		if (err || stask == undefined) { console.log(err); res.send(500); return; }
+		stask.is_finished = userTask.is_finished;
+		stask.save();
+		res.send(200, { success: true});
 	});
 }
 
