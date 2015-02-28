@@ -141,13 +141,13 @@ margin-top: -21px;
 
 /* Tasks Details */
 
-.endorsed {
+.task-detail-endorsed {
      float: left;
     display: inline;
     font-size: 15px; 
 }
 
-.delete {
+.task-acccount-delete {
      float: right;
     display: inline;
     font-size: 17px; 
