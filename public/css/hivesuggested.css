@@ -1,3 +1,24 @@
+body {
+        background-image:url(/images/geometry.png); background-repeat:repeat;
+
+}
+
+.mainContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-style: solid;
+    border-left: 2px solid #ddd; 
+    border-right: 2px solid #ddd; 
+
+}
+
 
 /* Shared Task Page */
 
