@@ -1,5 +1,27 @@
 angular.module('starter.controllers', [])
 
+.controller('TaskDetailsCtrl', function($scope, $stateParams, Task) {
+  $scope.task = {
+    'class': {
+      'name': 'LOADING...'
+    },
+    name: 'LOADING...',
+    description: 'LOADING'
+  }
+
+  Task.detail($stateParams.taskId, function(data, err) {
+    if (err) { console.log(err); return; }
+    console.log(data);
+    $scope.task = data;
+
+    Task.shareCount($scope.task._id, function(res, err) {
+      if (err) { console.log(err); return; }
+      console.log(res);
+      $scope.task.shareCount = res.shareCount;
+    });
+  });
+})
+
 .controller('TasksCtrl', function($scope, Task, Users, Classes, Tasks, UserTasks) {
   function dayToString(day) {
     var daysOfTheWeek = [

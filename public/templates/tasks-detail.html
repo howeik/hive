@@ -20,24 +20,22 @@
 		  <div class="item item-body">
 
 		  	<div class="task-detail-title">
-				Homework 3<!--{{userTask.task.name}}-->
+				{{task.name}}<!--{{userTask.task.name}}-->
 			</div>
 			<div class="task-detail-class">
-				CSE124 <!--{{userTask.task.class.name}}-->
+				{{task.class.name}} <!--{{userTask.task.class.name}}-->
 			</div>
 			<div class="task-detail-date">
-				Due: Wednesday <!--{{userTask.task.due_date}}-->
+				Due: {{task.due_date}} <!--{{userTask.task.due_date}}-->
 			</div>
 		  
 		  	<h2>Details</h2>
 		    <p>
-		      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-		      the content is from a card-body consisting of an image and paragraph text. The footer
-		      consists of tabs, icons aligned left, within the card-footer.
+		      {{task.description}}
 		    </p>
 		   
 		   <div class="task-detail-endorsed">
-		      	<p>Endorsed by 22 Students</p>
+		      	<p>Endorsed by {{task.shareCount}} Students</p>
 		    </div>
 		    <div class="task-detail-delete">
 		    <a class="item-icon" href="#">

@@ -74,6 +74,13 @@ angular.module('starter.services', [])
           callback(data, status);
       });
     },
+    detail: function(taskId, callback) {
+      var req = {
+        method: 'GET',
+        url: '/task/detail/' + taskId
+      };
+      this.apiCall(req, callback);
+    },
     update: function(task, callback) {
       var req = {
         method: 'POST',
@@ -115,7 +122,7 @@ angular.module('starter.services', [])
     shareCount: function(id, callback) {
       var req = {
         method: 'GET',
-        url: '/task/'+id,
+        url: '/task/shareCount/'+id,
         params: {
           details: 'shareCount'
         }

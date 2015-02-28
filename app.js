@@ -70,8 +70,8 @@ app.get('/api/task/all', task_api.all);
 app.get('/api/task/shared', task_api.shared);
 app.get('/api/task/super_all', task_api.super_all);
 
-app.get('/api/task/:task_id', task_api.details);
-
+app.get('/api/task/detail/:task_id', task_api.details);
+app.get('/api/task/shareCount/:task_id', task_api.shareCount);
 
 
 app.post('/api/task/create', task_api.create);
