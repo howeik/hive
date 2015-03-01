@@ -96,6 +96,7 @@ app.controller('LoginCtrl', function($scope, $http, $ionicLoading, $location, To
 
     $http(req).success(function(data){
       console.log(data);
+      $ionicLoading.show({ template: data, noBackdrop: true, duration: 800 });
       if (data.success) {
         window.location.replace('/');
       } else {
