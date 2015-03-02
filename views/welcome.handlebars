@@ -47,21 +47,19 @@
 					</div>
 
 				<div style="" class="welcome-content">
-        <div>
           <i class="ion-ios-list-outline"></i>
-            <p id="shared"> <!--View and check off all the tasks for this week and next week at the palm of your hands.-->  All your tasks, for all your classes in one place.</p>
-            </div>
+            <p id="shared"> All your tasks, for all your classes in one place.</p>
 						<br>
           <i class="ion-ios-world"></i>
-            <p id="todolist"> <!--Add your class work that are automatically shared by your classmates!--> Add tasks your classmates share with one click, and share tasks of your own! </p>
+            <p id="todolist"> Add tasks your classmates share with one click, and share tasks of your own! </p>
             </div>
 
 					<div style="margin-left: auto; margin-right: auto; text-align: center;">
-					<input style="width:500px;"type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ui-sref="app.welcome.signup()">
+					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ui-sref="app.welcome.signup()">
 					</input>
 					<br>
 
-          <input style="margin-left: auto; margin-right: auto; width: 70%; "type="submit" value="LOG IN" class="button button-large button-outline button-energized welcome-button-login" ui-sref="app.welcome.login()">
+          <input type="submit" value="LOG IN" class="button button-large button-outline button-energized welcome-button-login" ui-sref="app.welcome.login()">
 					</input>
           </div>
 				</ion-content>
@@ -80,9 +78,10 @@
 							<input ng-model="password" type="password" placeholder="password">
 						</label>
 					</div>
-									
+		<div style="margin-left: auto; margin-right: auto; text-align: center;">							
           <input type="submit" ng-click="login(email, password)" value="LOG IN" class="button button-large  button-energized welcome-button-login" ui-sref="app.welcome.login()">
 					</input>
+		</div>
 				</ion-content>
 			</ion-view>
 		</script>
@@ -102,9 +101,10 @@
 							 <input ng-model="password" type="password" placeholder="password">
 							</label>
 					</div>
-
-					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ng-click="signup(name, email, password)">
+				<div style="margin-left: auto; margin-right: auto; text-align: center;">
+					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" id="signupbutton" ng-click="signup(name, email, password)">
 					</input>
+				</div>
 
 				</ion-content>
 			</ion-view>
