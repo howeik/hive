@@ -144,13 +144,15 @@ angular.module('starter.controllers', [])
   console.log($scope.task);
 })
 
-.controller('SharedCtrl', function($scope, $rootScope, $ionicLoading, Task, Class, Users, Classes, Tasks, UserTasks) {
+.controller('SharedCtrl', function($scope, $rootScope, $ionicLoading, Task, User, Class, Users, Classes, Tasks, UserTasks) {
   $scope.tasks = [];
   if ($rootScope.declinedTasks == undefined) {
     $rootScope.declinedTasks = [];
-
   }
 
+  $scope.classes = []
+
+  User.declined(function(declined, err) {
   Task.shared(function(sharedTasks, err) {
     Task.all(function(allTasks, err) {
       console.log(sharedTasks);
@@ -161,7 +163,7 @@ angular.module('starter.controllers', [])
           }
         }
 
-        if ($rootScope.declinedTasks.indexOf(sharedTask._id) == -1) {
+        if (declined.indexOf(sharedTask._id) == -1) {
           return true;
         }
 
@@ -206,6 +208,7 @@ angular.module('starter.controllers', [])
         }
       });
     })
+  })
   })
   // // filter tasks that are not shared
   // var tasks = Tasks.all();
@@ -290,11 +293,13 @@ angular.module('starter.controllers', [])
       }
     });
 
+    User.decline(task._id, function(data, err) {
+      if (err) { console.log(err); return; }
+      $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
+      $rootScope.badgeCount -= 1;
+    });
 
     $rootScope.declinedTasks.push(task._id);
-    $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });
-
-    $rootScope.badgeCount -= 1;
   };
 
   // tasks.sort(function(a, b) {

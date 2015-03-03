@@ -18,6 +18,21 @@ angular.module('starter.services', [])
         };
         this.apiCall(req, callback);
       },
+      decline: function(taskId, callback) {
+        var req = {
+          method: 'POST',
+          url: '/user/decline',
+          data: { 'taskId': taskId }
+        };
+        this.apiCall(req, callback);
+      },
+      declined: function(callback) {
+        var req = {
+          method: 'GET',
+          url: '/user/declined'
+        };
+        this.apiCall(req, callback);
+      }
     }
 }])
 
