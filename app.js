@@ -69,6 +69,7 @@ app.get('/api/user/me', user_api.me);
 app.get('/api/class/enrolled', class_api.enrolled);
 app.post('/api/class/add', class_api.add);
 app.post('/api/class/delete', class_api.delete);
+app.get('/api/class/search', class_api.search);
 app.get('/api/task/all', task_api.all);
 app.get('/api/task/shared', task_api.shared);
 app.get('/api/task/super_all', task_api.super_all);

@@ -4,6 +4,16 @@
 
 var models = require('../models');
 
+exports.search = function(req, res) {
+	var q = req.query.q;
+	console.log(q);
+	models.Class.find({name: new RegExp(q)}, function(err, classes) {
+		if (err) { console.log(err); res.send(500); return; }
+
+		res.send(200, classes);
+	});
+};
+
 exports.all = function(req, res) {
 	models.Class.find({ }).exec(function(err, classes) {
 		if (err) { console.log(err); res.send(500); return; }

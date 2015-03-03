@@ -329,6 +329,14 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 
+  function sortClass(classA, classB) {
+    if (classA.name < classB.name) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }
+
   User.me(function(me, err) {
     $scope.user = me;
     console.log(me);
@@ -338,7 +346,7 @@ angular.module('starter.controllers', [])
     if (err) { console.log(err); return; }
 
     $scope.classes = classes;
-    // console.log(classes);
+    $scope.classes = $scope.classes.sort(sortClass);
   });
   //$location.path("tab-account");
   $scope.deleteClass = function(_class) {
@@ -370,45 +378,116 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('AccountAddClassCtrl', function($scope, Class, $ionicLoading) {
+.controller('AccountAddClassCtrl', function($scope, $ionicPopup, Class, $ionicLoading) {
+  $scope.enrolled = []
+  Class.enrolled(function(enrolled, err) {
+    if (err) { console.log(err); return; }
 
-  function refreshClasses() {
-    Class.all(function(classes, err) {
-      if (err) { console.log(err); return; }
+    $scope.enrolled = enrolled;
+    console.log($scope.enrolled);
+  });
 
-      Class.enrolled(function(enrolledClasses, err) {
-          if (err) { console.log(err); return; }
+  $scope.isEnrolledClass = function(__class) {
+    for (var i = 0; i < $scope.enrolled.length; ++i) {
+      if ($scope.enrolled[i]._id == __class._id) {
+        return true;
+      }
+    }
 
-          classes = classes.filter(function(_class) {
-            for (var i = 0; i < enrolledClasses.length; i++) {
-              if (enrolledClasses[i]._id == _class._id) {
-                return false;
-              }
-            }
-            return true;
-          });
-
-          $scope.classes = classes;
-      });
-      // console.log(classes);
-    });
+    return false;
   }
 
-  refreshClasses();
+  function filterEnrolledClasses(__class) {
+    for (var i = 0; i < $scope.enrolled.length; i++) {
+      if ($scope.enrolled[i]._id == __class._id) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function sortClass(classA, classB) {
+    if (classA.name < classB.name) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }
+
+  $scope.q = ""
+  $scope.searchCache = {}
+  $scope.onSearchQueryChanged = function(q) {
+    if (q.length < 3) { return; }
+
+    q = q.toUpperCase();
+    var cachedQ = q.toUpperCase().substr(0, 3);
+    if ($scope.searchCache[cachedQ] == undefined) {
+      Class.search(q, function(classes, err) {
+        if (err) { console.log(err); return; }
+
+        $scope.classes = classes;
+        $scope.searchCache[cachedQ] = classes;
+        // console.log($scope.enrolled);
+        // $scope.classes = $scope.classes.filter(filterEnrolledClasses);
+        $scope.classes = $scope.classes.sort(sortClass);
+      });
+    } else {
+      var cachedClasses = $scope.searchCache[cachedQ];
+      cachedClasses = cachedClasses.filter(function(cachedClass) {
+        return cachedClass.name.indexOf(q) != -1;
+      });
+
+      $scope.classes = cachedClasses;
+      // $scope.classes = $scope.classes.filter(filterEnrolledClasses);
+      $scope.classes = $scope.classes.sort(sortClass);
+    }
+  };
+
+  // refreshClasses();
 
   $scope.addClass = function(_class) {
+    if ($scope.isEnrolledClass(_class)) {
+      var confirmPopup = $ionicPopup.confirm({
+          title: 'Are you sure?',
+          template: '<p>Removing ' + _class.name + ' will delete all your tasks associated with ' + _class.name + '.<br> Are you sure you want to do this?</p>'
+        });
+       confirmPopup.then(function(res) {
+         if (res) {
+          console.log("delete task clicked");
+          console.log(_class);
+          Class.delete(_class._id, function(data, err) {
+            if (err) { console.log(err); return; }
+            console.log(data);
+          });
+
+          for (var i = 0; i < $scope.enrolled.length; ++i) {
+            if ($scope.enrolled[i]._id == _class._id) {
+              $scope.enrolled.splice(i, 1);
+            }
+          }
+
+           $ionicLoading.show({ template: 'Dropped ' + _class.name + '!', noBackdrop: true, duration: 800 });
+         } else {
+           console.log('You are not sure');
+         }
+       });
+
+      return;
+    }
+
     console.log("adding class");
     console.log(_class);
+    $scope.enrolled.push(_class);
+
+    // $('#class' + _class._id).hide(500, function() {
+    //   $scope.enrolled.push(_class);
+    // });
 
     $ionicLoading.show({ template: 'Enrolled in ' + _class.name + '!', noBackdrop: true, duration: 800 });
-//          $ionicLoading.show({ template: 'Added task ' + task.name + '!', noBackdrop: true, duration: 800 });
-
-
 
     Class.add(_class._id, function(data, err) {
       if (err) { console.log(err); return; }
       console.log(data);
-      refreshClasses();
     });
   }
 });

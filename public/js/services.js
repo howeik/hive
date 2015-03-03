@@ -46,6 +46,13 @@ angular.module('starter.services', [])
           callback(data, status);
       });
     },
+    search: function(q, callback) {
+      var req = {
+        method: 'GET',
+        url: '/class/search?q=' + q
+      };
+      this.apiCall(req, callback);
+    },
     all: function(callback) {
       var req = {
         method: 'GET',
