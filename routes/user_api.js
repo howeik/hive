@@ -4,6 +4,31 @@
 
 var models = require('../models');
 
+exports.decline = function(req, res) {
+  if (req.signedCookies.user_id == undefined) { res.send(500); return; }
+
+  var taskId = req.body.taskId;
+  models.User.findOne({'_id': req.signedCookies.user_id}, function(err, user) {
+    if (err) { console.log(err); res.send(500); return;}
+    if (user == undefined) { res.redirect('/logout'); return; }
+
+    user.declined.push(taskId);
+    user.save();
+
+    res.send(200, {success: true});
+  });
+};
+
+exports.declined = function(req, res) {
+  if (req.signedCookies.user_id == undefined) { res.send(500); return; }
+
+  models.User.findOne({'_id': req.signedCookies.user_id}, function(err, user) {
+    if (err) { console.log(err); res.send(500); return;}
+    if (user == undefined) { res.redirect('/logout'); return; }
+
+    res.send(200, user.declined);
+  });
+};
 
 exports.adduser = function(req, res){
   console.log(req.body);

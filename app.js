@@ -58,6 +58,9 @@ app.get('/logout', login.logout);
 app.post('/api/user/login', user_api.login);
 app.post('/api/user/signup', user_api.adduser);
 
+app.get('/api/user/declined', user_api.declined);
+app.post('/api/user/decline', user_api.decline);
+
 app.get('/api/user/all', user_api.all);
 app.get('/signup', signup.view);
 app.post('/signup', signup.adduser);

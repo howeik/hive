@@ -87,14 +87,14 @@ exports.adduser = function(req, res){
         res.redirect('login');
       }
 
-    if (success) {
-      res.cookie('user_id', user_id, {signed: true})
-      console.log("user of user_id " + user_id + " signed in!");
-      res.redirect('/');
-    } else {
-      req.flash('message', 'Invalid email or password!');
-      res.redirect('login');
-    }
+    // if (success) {
+    //   res.cookie('user_id', user_id, {signed: true})
+    //   console.log("user of user_id " + user_id + " signed in!");
+    //   res.redirect('/');
+    // } else {
+    //   req.flash('message', 'Invalid email or password!');
+    //   res.redirect('login');
+    // }
   });
  	}
 };
