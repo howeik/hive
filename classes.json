@@ -1,19 +1,7292 @@
 [
-  {
-    "name": "COGS120"
-  }, {
-    "name": "CSE124"
-  }, {
-    "name": "CSE130"
-  }, {
-    "name": "POLI28"
-  }, {
-  	"name": "COGS101B"
-  }, {
-  	"name": "COGS153"
-  }, {
-  	"name": "COGS187B"
-  }, {
-  	"name": "CSE100"
-  }
+    {
+        "name": "MUS95C"
+    },
+    {
+        "name": "ECE53"
+    },
+    {
+        "name": "POLI132C"
+    },
+    {
+        "name": "MUS95E"
+    },
+    {
+        "name": "MUS95B"
+    },
+    {
+        "name": "MUS95K"
+    },
+    {
+        "name": "LTWR121"
+    },
+    {
+        "name": "SOCB162R"
+    },
+    {
+        "name": "SOCD178"
+    },
+    {
+        "name": "LTWR120"
+    },
+    {
+        "name": "LIFR1CX"
+    },
+    {
+        "name": "LIGN130"
+    },
+    {
+        "name": "POLI145A"
+    },
+    {
+        "name": "MUS95W"
+    },
+    {
+        "name": "RELI1"
+    },
+    {
+        "name": "LTWR122"
+    },
+    {
+        "name": "MATH20C"
+    },
+    {
+        "name": "MATH20B"
+    },
+    {
+        "name": "COHI130"
+    },
+    {
+        "name": "COHI136"
+    },
+    {
+        "name": "MATH20F"
+    },
+    {
+        "name": "COHI134"
+    },
+    {
+        "name": "COHI135"
+    },
+    {
+        "name": "MCWP50"
+    },
+    {
+        "name": "POLI103A"
+    },
+    {
+        "name": "POLI103B"
+    },
+    {
+        "name": "POLI103C"
+    },
+    {
+        "name": "SOCC163"
+    },
+    {
+        "name": "SOCC167"
+    },
+    {
+        "name": "BIPN152"
+    },
+    {
+        "name": "BIPN150"
+    },
+    {
+        "name": "HILD7B"
+    },
+    {
+        "name": "HILD7C"
+    },
+    {
+        "name": "HILD7A"
+    },
+    {
+        "name": "MUS95L"
+    },
+    {
+        "name": "POLI121B"
+    },
+    {
+        "name": "EDS134"
+    },
+    {
+        "name": "JAPN140C"
+    },
+    {
+        "name": "EDS136"
+    },
+    {
+        "name": "EDS137"
+    },
+    {
+        "name": "EDS130"
+    },
+    {
+        "name": "EDS131"
+    },
+    {
+        "name": "EDS138"
+    },
+    {
+        "name": "HINE112A"
+    },
+    {
+        "name": "ANGN100"
+    },
+    {
+        "name": "ANGN103"
+    },
+    {
+        "name": "MATH121A"
+    },
+    {
+        "name": "MATH121B"
+    },
+    {
+        "name": "PHIL15"
+    },
+    {
+        "name": "USP187"
+    },
+    {
+        "name": "ERTH20"
+    },
+    {
+        "name": "POLI154"
+    },
+    {
+        "name": "POLI151"
+    },
+    {
+        "name": "HDP1"
+    },
+    {
+        "name": "SE120"
+    },
+    {
+        "name": "ECE25"
+    },
+    {
+        "name": "COGS184"
+    },
+    {
+        "name": "SE125"
+    },
+    {
+        "name": "MATH4C"
+    },
+    {
+        "name": "MUS4"
+    },
+    {
+        "name": "BIBC130"
+    },
+    {
+        "name": "ECE172A"
+    },
+    {
+        "name": "MATH103B"
+    },
+    {
+        "name": "HIEA114"
+    },
+    {
+        "name": "HIEA115"
+    },
+    {
+        "name": "HIEA116"
+    },
+    {
+        "name": "HIEA117"
+    },
+    {
+        "name": "HIEA111"
+    },
+    {
+        "name": "HIEA112"
+    },
+    {
+        "name": "HIEA113"
+    },
+    {
+        "name": "TDGE1"
+    },
+    {
+        "name": "TDGE3"
+    },
+    {
+        "name": "COSF181"
+    },
+    {
+        "name": "COSF180"
+    },
+    {
+        "name": "COSF183"
+    },
+    {
+        "name": "COSF182"
+    },
+    {
+        "name": "HITO117"
+    },
+    {
+        "name": "COSF184"
+    },
+    {
+        "name": "COSF186"
+    },
+    {
+        "name": "COSF188"
+    },
+    {
+        "name": "HITO119"
+    },
+    {
+        "name": "COGS101A"
+    },
+    {
+        "name": "COGS101B"
+    },
+    {
+        "name": "COGS101C"
+    },
+    {
+        "name": "SOCI189"
+    },
+    {
+        "name": "JAPN20B"
+    },
+    {
+        "name": "JAPN20C"
+    },
+    {
+        "name": "JAPN20A"
+    },
+    {
+        "name": "SOCI180"
+    },
+    {
+        "name": "SOCI181"
+    },
+    {
+        "name": "SOCI182"
+    },
+    {
+        "name": "SOCI184"
+    },
+    {
+        "name": "SOCI185"
+    },
+    {
+        "name": "SOCI187"
+    },
+    {
+        "name": "JAPN140A"
+    },
+    {
+        "name": "MATH20E"
+    },
+    {
+        "name": "MATH184A"
+    },
+    {
+        "name": "MATH20D"
+    },
+    {
+        "name": "ETHN108"
+    },
+    {
+        "name": "LTEU110"
+    },
+    {
+        "name": "ETHN101"
+    },
+    {
+        "name": "ETHN100"
+    },
+    {
+        "name": "ETHN103"
+    },
+    {
+        "name": "ETHN102"
+    },
+    {
+        "name": "ETHN105"
+    },
+    {
+        "name": "ETHN104"
+    },
+    {
+        "name": "ETHN107"
+    },
+    {
+        "name": "ETHN106"
+    },
+    {
+        "name": "VIS109"
+    },
+    {
+        "name": "VIS108"
+    },
+    {
+        "name": "LTWL168"
+    },
+    {
+        "name": "COHI115"
+    },
+    {
+        "name": "LTWL165"
+    },
+    {
+        "name": "LTWL160"
+    },
+    {
+        "name": "ECON125"
+    },
+    {
+        "name": "INTL101"
+    },
+    {
+        "name": "LTKO1C"
+    },
+    {
+        "name": "LTKO1B"
+    },
+    {
+        "name": "LTKO1A"
+    },
+    {
+        "name": "COMM104G"
+    },
+    {
+        "name": "CHIN112"
+    },
+    {
+        "name": "SOCC140F"
+    },
+    {
+        "name": "CSE191"
+    },
+    {
+        "name": "CSE190"
+    },
+    {
+        "name": "POLI191B"
+    },
+    {
+        "name": "TDCH140"
+    },
+    {
+        "name": "TDCH143"
+    },
+    {
+        "name": "CGS2B"
+    },
+    {
+        "name": "CGS2A"
+    },
+    {
+        "name": "BICD131"
+    },
+    {
+        "name": "BICD130"
+    },
+    {
+        "name": "BICD134"
+    },
+    {
+        "name": "BICD136"
+    },
+    {
+        "name": "MAE118B"
+    },
+    {
+        "name": "MAE118C"
+    },
+    {
+        "name": "MAE118A"
+    },
+    {
+        "name": "SIO160"
+    },
+    {
+        "name": "TDPF160"
+    },
+    {
+        "name": "TDPF161"
+    },
+    {
+        "name": "SE111B"
+    },
+    {
+        "name": "SE111A"
+    },
+    {
+        "name": "MUS95JC"
+    },
+    {
+        "name": "HUM3"
+    },
+    {
+        "name": "LIPO1AX"
+    },
+    {
+        "name": "HISC108"
+    },
+    {
+        "name": "HISC107"
+    },
+    {
+        "name": "HISC106"
+    },
+    {
+        "name": "HISC104"
+    },
+    {
+        "name": "VIS107B"
+    },
+    {
+        "name": "VIS107A"
+    },
+    {
+        "name": "LTEN138"
+    },
+    {
+        "name": "LTEN130"
+    },
+    {
+        "name": "LTEN132"
+    },
+    {
+        "name": "PSYC180"
+    },
+    {
+        "name": "SOCI130"
+    },
+    {
+        "name": "POLI120N"
+    },
+    {
+        "name": "POLI120I"
+    },
+    {
+        "name": "POLI120H"
+    },
+    {
+        "name": "POLI120E"
+    },
+    {
+        "name": "POLI120D"
+    },
+    {
+        "name": "POLI120C"
+    },
+    {
+        "name": "POLI120B"
+    },
+    {
+        "name": "POLI120A"
+    },
+    {
+        "name": "CHEM109"
+    },
+    {
+        "name": "CHEM108"
+    },
+    {
+        "name": "SIO10"
+    },
+    {
+        "name": "CHIN22"
+    },
+    {
+        "name": "PHIL157"
+    },
+    {
+        "name": "PHIL150"
+    },
+    {
+        "name": "PHIL151"
+    },
+    {
+        "name": "PHIL152"
+    },
+    {
+        "name": "BENG160"
+    },
+    {
+        "name": "PHIL158"
+    },
+    {
+        "name": "MATH120B"
+    },
+    {
+        "name": "MATH120A"
+    },
+    {
+        "name": "JAPN140B"
+    },
+    {
+        "name": "ENG100"
+    },
+    {
+        "name": "SOCI148E"
+    },
+    {
+        "name": "COGS8"
+    },
+    {
+        "name": "BENG187A"
+    },
+    {
+        "name": "BENG187B"
+    },
+    {
+        "name": "BENG187C"
+    },
+    {
+        "name": "BENG187D"
+    },
+    {
+        "name": "LIGN120"
+    },
+    {
+        "name": "LIGN121"
+    },
+    {
+        "name": "ANTH42"
+    },
+    {
+        "name": "SOCC157"
+    },
+    {
+        "name": "SOCC156"
+    },
+    {
+        "name": "VIS145A"
+    },
+    {
+        "name": "SOCC150"
+    },
+    {
+        "name": "SOCC153"
+    },
+    {
+        "name": "SOCC152"
+    },
+    {
+        "name": "RELI113"
+    },
+    {
+        "name": "RELI112"
+    },
+    {
+        "name": "RELI111"
+    },
+    {
+        "name": "MCWP40"
+    },
+    {
+        "name": "MAE154"
+    },
+    {
+        "name": "TDCH40"
+    },
+    {
+        "name": "HIEU147A"
+    },
+    {
+        "name": "ECE171A"
+    },
+    {
+        "name": "TDMV141"
+    },
+    {
+        "name": "ECE171B"
+    },
+    {
+        "name": "PHIL180"
+    },
+    {
+        "name": "TDMV143"
+    },
+    {
+        "name": "TDMV142"
+    },
+    {
+        "name": "EDS126"
+    },
+    {
+        "name": "EDS125"
+    },
+    {
+        "name": "MGT132"
+    },
+    {
+        "name": "MGT133"
+    },
+    {
+        "name": "MGT136"
+    },
+    {
+        "name": "MGT134"
+    },
+    {
+        "name": "MGT135"
+    },
+    {
+        "name": "ANGN130"
+    },
+    {
+        "name": "HIEU101A"
+    },
+    {
+        "name": "POLI115A"
+    },
+    {
+        "name": "POLI144E"
+    },
+    {
+        "name": "POLI144D"
+    },
+    {
+        "name": "POLI133A"
+    },
+    {
+        "name": "POLI133G"
+    },
+    {
+        "name": "POLI133D"
+    },
+    {
+        "name": "POLI133J"
+    },
+    {
+        "name": "CHEM112B"
+    },
+    {
+        "name": "CHEM112A"
+    },
+    {
+        "name": "ERTH10"
+    },
+    {
+        "name": "ERTH12"
+    },
+    {
+        "name": "HINE126"
+    },
+    {
+        "name": "HINE127"
+    },
+    {
+        "name": "ERTH16"
+    },
+    {
+        "name": "ANTH196A"
+    },
+    {
+        "name": "ANTH196B"
+    },
+    {
+        "name": "POLI102G"
+    },
+    {
+        "name": "CHEM105A"
+    },
+    {
+        "name": "POLI102C"
+    },
+    {
+        "name": "POLI102L"
+    },
+    {
+        "name": "ECE15"
+    },
+    {
+        "name": "COGS176"
+    },
+    {
+        "name": "COGS175"
+    },
+    {
+        "name": "COGS174"
+    },
+    {
+        "name": "COGS172"
+    },
+    {
+        "name": "COGS171"
+    },
+    {
+        "name": "HIEA129"
+    },
+    {
+        "name": "HIEA128"
+    },
+    {
+        "name": "LIGM1AX"
+    },
+    {
+        "name": "POLI134AA"
+    },
+    {
+        "name": "HIEA121"
+    },
+    {
+        "name": "HIEA120"
+    },
+    {
+        "name": "HIEA122"
+    },
+    {
+        "name": "HIEA125"
+    },
+    {
+        "name": "BIBC120"
+    },
+    {
+        "name": "HIEA126"
+    },
+    {
+        "name": "PHIL147"
+    },
+    {
+        "name": "USP191"
+    },
+    {
+        "name": "TDTR101"
+    },
+    {
+        "name": "VIS145B"
+    },
+    {
+        "name": "HITO104"
+    },
+    {
+        "name": "HITO105"
+    },
+    {
+        "name": "HITO106"
+    },
+    {
+        "name": "HITO107"
+    },
+    {
+        "name": "LTCS170"
+    },
+    {
+        "name": "LTCS172"
+    },
+    {
+        "name": "USP177"
+    },
+    {
+        "name": "USP174"
+    },
+    {
+        "name": "USP173"
+    },
+    {
+        "name": "USP170"
+    },
+    {
+        "name": "USP171"
+    },
+    {
+        "name": "SOCI50"
+    },
+    {
+        "name": "USP178"
+    },
+    {
+        "name": "USP179"
+    },
+    {
+        "name": "ETHN116"
+    },
+    {
+        "name": "ETHN117"
+    },
+    {
+        "name": "ETHN115"
+    },
+    {
+        "name": "ECON110A"
+    },
+    {
+        "name": "ETHN113"
+    },
+    {
+        "name": "ETHN110"
+    },
+    {
+        "name": "ECON110B"
+    },
+    {
+        "name": "POLI114B"
+    },
+    {
+        "name": "ETHN118"
+    },
+    {
+        "name": "ETHN119"
+    },
+    {
+        "name": "LTEU105"
+    },
+    {
+        "name": "SOCC165A"
+    },
+    {
+        "name": "PHYS5"
+    },
+    {
+        "name": "PHYS7"
+    },
+    {
+        "name": "CHIN11"
+    },
+    {
+        "name": "CHIN13"
+    },
+    {
+        "name": "CHIN12"
+    },
+    {
+        "name": "LTWL176"
+    },
+    {
+        "name": "PHYS9"
+    },
+    {
+        "name": "PHYS8"
+    },
+    {
+        "name": "LTWL172"
+    },
+    {
+        "name": "ECON132"
+    },
+    {
+        "name": "ECON130"
+    },
+    {
+        "name": "CHIN182B"
+    },
+    {
+        "name": "ECON136"
+    },
+    {
+        "name": "ECON135"
+    },
+    {
+        "name": "MGT45"
+    },
+    {
+        "name": "ECON139"
+    },
+    {
+        "name": "EDS129A"
+    },
+    {
+        "name": "BENG172"
+    },
+    {
+        "name": "SOCC134A"
+    },
+    {
+        "name": "USP139"
+    },
+    {
+        "name": "VIS20"
+    },
+    {
+        "name": "SE2"
+    },
+    {
+        "name": "VIS22"
+    },
+    {
+        "name": "HIUS106B"
+    },
+    {
+        "name": "VIS154"
+    },
+    {
+        "name": "VIS106B"
+    },
+    {
+        "name": "VIS106C"
+    },
+    {
+        "name": "MGT183"
+    },
+    {
+        "name": "LTWL158A"
+    },
+    {
+        "name": "VIS155"
+    },
+    {
+        "name": "COMM101D"
+    },
+    {
+        "name": "VIS153"
+    },
+    {
+        "name": "LTEA100A"
+    },
+    {
+        "name": "LTEA100C"
+    },
+    {
+        "name": "LTEA100B"
+    },
+    {
+        "name": "VIS150"
+    },
+    {
+        "name": "VIS126P"
+    },
+    {
+        "name": "VIS151"
+    },
+    {
+        "name": "CSE8B"
+    },
+    {
+        "name": "CSE8A"
+    },
+    {
+        "name": "LTEN125C"
+    },
+    {
+        "name": "LTEN125B"
+    },
+    {
+        "name": "ECE53A"
+    },
+    {
+        "name": "SE9"
+    },
+    {
+        "name": "ECE53B"
+    },
+    {
+        "name": "BICD123"
+    },
+    {
+        "name": "BICD120"
+    },
+    {
+        "name": "COMM109N"
+    },
+    {
+        "name": "COMM109D"
+    },
+    {
+        "name": "COMM101"
+    },
+    {
+        "name": "TDGE124"
+    },
+    {
+        "name": "ETHN1A"
+    },
+    {
+        "name": "ETHN1B"
+    },
+    {
+        "name": "ETHN1C"
+    },
+    {
+        "name": "COMM101M"
+    },
+    {
+        "name": "VIS128A"
+    },
+    {
+        "name": "LISP1DX"
+    },
+    {
+        "name": "PHYS121"
+    },
+    {
+        "name": "HISC114"
+    },
+    {
+        "name": "BENG186B"
+    },
+    {
+        "name": "BENG186A"
+    },
+    {
+        "name": "MUS150"
+    },
+    {
+        "name": "HISC111"
+    },
+    {
+        "name": "MUS154"
+    },
+    {
+        "name": "ESYS150"
+    },
+    {
+        "name": "ENG100L"
+    },
+    {
+        "name": "ENG100A"
+    },
+    {
+        "name": "SOCI136E"
+    },
+    {
+        "name": "SOCI136F"
+    },
+    {
+        "name": "HIEU171"
+    },
+    {
+        "name": "POLI40"
+    },
+    {
+        "name": "CHEM118"
+    },
+    {
+        "name": "VIS120A"
+    },
+    {
+        "name": "VIS120B"
+    },
+    {
+        "name": "CHEM113"
+    },
+    {
+        "name": "CHEM116"
+    },
+    {
+        "name": "BIEB100"
+    },
+    {
+        "name": "PHIL160"
+    },
+    {
+        "name": "BIEB102"
+    },
+    {
+        "name": "PHIL162"
+    },
+    {
+        "name": "SOCB145"
+    },
+    {
+        "name": "PHIL164"
+    },
+    {
+        "name": "PHIL167"
+    },
+    {
+        "name": "PHIL166"
+    },
+    {
+        "name": "PHIL168"
+    },
+    {
+        "name": "POLI130B"
+    },
+    {
+        "name": "LIFR1AX"
+    },
+    {
+        "name": "SOCI20"
+    },
+    {
+        "name": "SE121"
+    },
+    {
+        "name": "MATH190"
+    },
+    {
+        "name": "LIGN155"
+    },
+    {
+        "name": "MATH194"
+    },
+    {
+        "name": "SOCC140"
+    },
+    {
+        "name": "SOCC141"
+    },
+    {
+        "name": "MATH130B"
+    },
+    {
+        "name": "MATH130A"
+    },
+    {
+        "name": "SOCC148"
+    },
+    {
+        "name": "SOCC149"
+    },
+    {
+        "name": "LTEN107"
+    },
+    {
+        "name": "VIS125BN"
+    },
+    {
+        "name": "MUS101B"
+    },
+    {
+        "name": "MUS101C"
+    },
+    {
+        "name": "MUS101A"
+    },
+    {
+        "name": "POLI113C"
+    },
+    {
+        "name": "POLI113B"
+    },
+    {
+        "name": "ETHN112A"
+    },
+    {
+        "name": "ANGN128"
+    },
+    {
+        "name": "MATH103A"
+    },
+    {
+        "name": "HIEU102A"
+    },
+    {
+        "name": "VIS123AN"
+    },
+    {
+        "name": "TDAC122"
+    },
+    {
+        "name": "MAE181"
+    },
+    {
+        "name": "HIEA136"
+    },
+    {
+        "name": "HIEA137"
+    },
+    {
+        "name": "PHIL10"
+    },
+    {
+        "name": "HIEA135"
+    },
+    {
+        "name": "HIEA132"
+    },
+    {
+        "name": "HIEA133"
+    },
+    {
+        "name": "HIEA130"
+    },
+    {
+        "name": "HIEA131"
+    },
+    {
+        "name": "SE102"
+    },
+    {
+        "name": "SE103"
+    },
+    {
+        "name": "COGS160"
+    },
+    {
+        "name": "HIEA138"
+    },
+    {
+        "name": "BISP194"
+    },
+    {
+        "name": "SDCC1"
+    },
+    {
+        "name": "USP189"
+    },
+    {
+        "name": "USP181"
+    },
+    {
+        "name": "USP180"
+    },
+    {
+        "name": "LTKO3"
+    },
+    {
+        "name": "USP186"
+    },
+    {
+        "name": "HITO134"
+    },
+    {
+        "name": "POLI100O"
+    },
+    {
+        "name": "HITO133"
+    },
+    {
+        "name": "POLI116A"
+    },
+    {
+        "name": "USP165"
+    },
+    {
+        "name": "USP166"
+    },
+    {
+        "name": "ETHN167"
+    },
+    {
+        "name": "ETHN166"
+    },
+    {
+        "name": "ETHN165"
+    },
+    {
+        "name": "ETHN164"
+    },
+    {
+        "name": "POLI160AA"
+    },
+    {
+        "name": "COCU110"
+    },
+    {
+        "name": "LTIT161"
+    },
+    {
+        "name": "LTEU139"
+    },
+    {
+        "name": "CHEM140BH"
+    },
+    {
+        "name": "SOCC151M"
+    },
+    {
+        "name": "COGS1"
+    },
+    {
+        "name": "CHIN21"
+    },
+    {
+        "name": "COGS3"
+    },
+    {
+        "name": "CHIN23"
+    },
+    {
+        "name": "SIO15"
+    },
+    {
+        "name": "COMM10"
+    },
+    {
+        "name": "SIO16"
+    },
+    {
+        "name": "COSF185"
+    },
+    {
+        "name": "LTWL147"
+    },
+    {
+        "name": "COMM106G"
+    },
+    {
+        "name": "COMM106F"
+    },
+    {
+        "name": "COHI112"
+    },
+    {
+        "name": "PHYS1BL"
+    },
+    {
+        "name": "COHI113"
+    },
+    {
+        "name": "POLI100H"
+    },
+    {
+        "name": "VIS164"
+    },
+    {
+        "name": "BENG168"
+    },
+    {
+        "name": "HIUS101"
+    },
+    {
+        "name": "BENG162"
+    },
+    {
+        "name": "ECON100A"
+    },
+    {
+        "name": "ECON100B"
+    },
+    {
+        "name": "ECON100C"
+    },
+    {
+        "name": "MGT121A"
+    },
+    {
+        "name": "MGT121B"
+    },
+    {
+        "name": "BICD150"
+    },
+    {
+        "name": "LTGK1"
+    },
+    {
+        "name": "VIS194S"
+    },
+    {
+        "name": "SIO102"
+    },
+    {
+        "name": "SIO103"
+    },
+    {
+        "name": "SIO100"
+    },
+    {
+        "name": "SIO101"
+    },
+    {
+        "name": "COMM176"
+    },
+    {
+        "name": "SIO104"
+    },
+    {
+        "name": "SIO105"
+    },
+    {
+        "name": "LIPO1CX"
+    },
+    {
+        "name": "TWS21"
+    },
+    {
+        "name": "TWS23"
+    },
+    {
+        "name": "TWS22"
+    },
+    {
+        "name": "TWS25"
+    },
+    {
+        "name": "TWS24"
+    },
+    {
+        "name": "TWS26"
+    },
+    {
+        "name": "CHIN185C"
+    },
+    {
+        "name": "LTEA110A"
+    },
+    {
+        "name": "LTEA110B"
+    },
+    {
+        "name": "LTEA110C"
+    },
+    {
+        "name": "TDGE25"
+    },
+    {
+        "name": "TDDE1"
+    },
+    {
+        "name": "MUS80"
+    },
+    {
+        "name": "POLI144"
+    },
+    {
+        "name": "VIS105A"
+    },
+    {
+        "name": "ANAR190"
+    },
+    {
+        "name": "MMW6H"
+    },
+    {
+        "name": "VIS105B"
+    },
+    {
+        "name": "VIS105D"
+    },
+    {
+        "name": "VIS183B"
+    },
+    {
+        "name": "VIS183A"
+    },
+    {
+        "name": "VIS105C"
+    },
+    {
+        "name": "LTEA132"
+    },
+    {
+        "name": "ANSC189"
+    },
+    {
+        "name": "CHEM125"
+    },
+    {
+        "name": "CHEM124"
+    },
+    {
+        "name": "CHEM127"
+    },
+    {
+        "name": "CHEM126"
+    },
+    {
+        "name": "CAT125"
+    },
+    {
+        "name": "CAT124"
+    },
+    {
+        "name": "HIEU105"
+    },
+    {
+        "name": "HIEU104"
+    },
+    {
+        "name": "SOCI160E"
+    },
+    {
+        "name": "COMM151"
+    },
+    {
+        "name": "BIEB135"
+    },
+    {
+        "name": "BIEB134"
+    },
+    {
+        "name": "BIEB131"
+    },
+    {
+        "name": "BIEB130"
+    },
+    {
+        "name": "PHIL170"
+    },
+    {
+        "name": "BIEB132"
+    },
+    {
+        "name": "MAE156A"
+    },
+    {
+        "name": "MAE156B"
+    },
+    {
+        "name": "MATH110A"
+    },
+    {
+        "name": "LISP1CX"
+    },
+    {
+        "name": "LIGN148"
+    },
+    {
+        "name": "SOCI30"
+    },
+    {
+        "name": "COMM114M"
+    },
+    {
+        "name": "LIGN140"
+    },
+    {
+        "name": "LIGN141"
+    },
+    {
+        "name": "LIGN143"
+    },
+    {
+        "name": "LIGN144"
+    },
+    {
+        "name": "MATH185"
+    },
+    {
+        "name": "MATH186"
+    },
+    {
+        "name": "MATH187"
+    },
+    {
+        "name": "RELI131"
+    },
+    {
+        "name": "RELI130"
+    },
+    {
+        "name": "LTEN112"
+    },
+    {
+        "name": "LTEN113"
+    },
+    {
+        "name": "LTEN110"
+    },
+    {
+        "name": "LTEN114"
+    },
+    {
+        "name": "LTEN118"
+    },
+    {
+        "name": "POLI100B"
+    },
+    {
+        "name": "LIFR1A"
+    },
+    {
+        "name": "LIFR1B"
+    },
+    {
+        "name": "LIFR1C"
+    },
+    {
+        "name": "LIFR1D"
+    },
+    {
+        "name": "BIPN108"
+    },
+    {
+        "name": "POLI100K"
+    },
+    {
+        "name": "POLI100J"
+    },
+    {
+        "name": "BIPN105"
+    },
+    {
+        "name": "BIPN106"
+    },
+    {
+        "name": "POLI100A"
+    },
+    {
+        "name": "BIPN100"
+    },
+    {
+        "name": "POLI100C"
+    },
+    {
+        "name": "BIPN102"
+    },
+    {
+        "name": "MATH3C"
+    },
+    {
+        "name": "BENG166A"
+    },
+    {
+        "name": "MGT112"
+    },
+    {
+        "name": "POLI100T"
+    },
+    {
+        "name": "POLI100Q"
+    },
+    {
+        "name": "LTFR115"
+    },
+    {
+        "name": "VIS21B"
+    },
+    {
+        "name": "LTFR116"
+    },
+    {
+        "name": "MATH100A"
+    },
+    {
+        "name": "MATH100C"
+    },
+    {
+        "name": "MATH100B"
+    },
+    {
+        "name": "COGS102A"
+    },
+    {
+        "name": "BENG119B"
+    },
+    {
+        "name": "COGS102C"
+    },
+    {
+        "name": "COGS102B"
+    },
+    {
+        "name": "ANGN151"
+    },
+    {
+        "name": "LISL1CX"
+    },
+    {
+        "name": "MUS137C"
+    },
+    {
+        "name": "MUS137B"
+    },
+    {
+        "name": "MUS137A"
+    },
+    {
+        "name": "ETHN3"
+    },
+    {
+        "name": "BILD18GS"
+    },
+    {
+        "name": "USP113"
+    },
+    {
+        "name": "CSE5A"
+    },
+    {
+        "name": "POLI165"
+    },
+    {
+        "name": "POLI162"
+    },
+    {
+        "name": "POLI163"
+    },
+    {
+        "name": "POLI131C"
+    },
+    {
+        "name": "COGS187A"
+    },
+    {
+        "name": "HIEU103"
+    },
+    {
+        "name": "HIEU102"
+    },
+    {
+        "name": "HIEU101"
+    },
+    {
+        "name": "PSYC181"
+    },
+    {
+        "name": "LIHL115X"
+    },
+    {
+        "name": "VIS84"
+    },
+    {
+        "name": "MUS120C"
+    },
+    {
+        "name": "MUS120B"
+    },
+    {
+        "name": "MUS120A"
+    },
+    {
+        "name": "ETHN20"
+    },
+    {
+        "name": "COGS151"
+    },
+    {
+        "name": "COGS153"
+    },
+    {
+        "name": "COGS152"
+    },
+    {
+        "name": "COGS155"
+    },
+    {
+        "name": "COGS154"
+    },
+    {
+        "name": "COGS156"
+    },
+    {
+        "name": "VIS60"
+    },
+    {
+        "name": "BIBC140"
+    },
+    {
+        "name": "BIEB143"
+    },
+    {
+        "name": "LTCS111"
+    },
+    {
+        "name": "LTCS110"
+    },
+    {
+        "name": "SOCL60"
+    },
+    {
+        "name": "LISP15"
+    },
+    {
+        "name": "LISP17"
+    },
+    {
+        "name": "LISP16"
+    },
+    {
+        "name": "HIUS131D"
+    },
+    {
+        "name": "SOCI40"
+    },
+    {
+        "name": "HITO126"
+    },
+    {
+        "name": "HITO124"
+    },
+    {
+        "name": "SOCA110A"
+    },
+    {
+        "name": "ETHN172"
+    },
+    {
+        "name": "COCU108"
+    },
+    {
+        "name": "ETHN176"
+    },
+    {
+        "name": "LISP1A"
+    },
+    {
+        "name": "NANO120B"
+    },
+    {
+        "name": "LISP1C"
+    },
+    {
+        "name": "LISP1B"
+    },
+    {
+        "name": "COCU100"
+    },
+    {
+        "name": "LISP1D"
+    },
+    {
+        "name": "LTEN188"
+    },
+    {
+        "name": "LTWL157"
+    },
+    {
+        "name": "LTWL154"
+    },
+    {
+        "name": "LTWL155"
+    },
+    {
+        "name": "LTWL152"
+    },
+    {
+        "name": "LTWL153"
+    },
+    {
+        "name": "LTWL159"
+    },
+    {
+        "name": "CHEM149B"
+    },
+    {
+        "name": "CHEM149A"
+    },
+    {
+        "name": "NANO120A"
+    },
+    {
+        "name": "ECE108"
+    },
+    {
+        "name": "MUS130"
+    },
+    {
+        "name": "MUS133"
+    },
+    {
+        "name": "BENG110"
+    },
+    {
+        "name": "MMW5H"
+    },
+    {
+        "name": "SOCC136B"
+    },
+    {
+        "name": "SOCC136A"
+    },
+    {
+        "name": "SOCI159"
+    },
+    {
+        "name": "SOCI158"
+    },
+    {
+        "name": "SOCI157"
+    },
+    {
+        "name": "SOCI156"
+    },
+    {
+        "name": "SOCI155"
+    },
+    {
+        "name": "SOCI154"
+    },
+    {
+        "name": "SOCI153"
+    },
+    {
+        "name": "SOCI152"
+    },
+    {
+        "name": "SOCI150"
+    },
+    {
+        "name": "ECON170B"
+    },
+    {
+        "name": "ECON170A"
+    },
+    {
+        "name": "MMW6"
+    },
+    {
+        "name": "MMW5"
+    },
+    {
+        "name": "MMW4"
+    },
+    {
+        "name": "MMW3"
+    },
+    {
+        "name": "LTWL110B"
+    },
+    {
+        "name": "LTIT50"
+    },
+    {
+        "name": "TDPW104"
+    },
+    {
+        "name": "MATH181B"
+    },
+    {
+        "name": "MATH181A"
+    },
+    {
+        "name": "PHIL177"
+    },
+    {
+        "name": "BICD140"
+    },
+    {
+        "name": "BICD145"
+    },
+    {
+        "name": "COMM168"
+    },
+    {
+        "name": "COGS18"
+    },
+    {
+        "name": "CHEM140CH"
+    },
+    {
+        "name": "COGS10"
+    },
+    {
+        "name": "LTEN127B"
+    },
+    {
+        "name": "COGS15"
+    },
+    {
+        "name": "COGS14"
+    },
+    {
+        "name": "COGS17"
+    },
+    {
+        "name": "LTFR31"
+    },
+    {
+        "name": "PHYS2DL"
+    },
+    {
+        "name": "CENG122"
+    },
+    {
+        "name": "CENG120"
+    },
+    {
+        "name": "HISC131"
+    },
+    {
+        "name": "LISP1BX"
+    },
+    {
+        "name": "MAE155A"
+    },
+    {
+        "name": "MAE155B"
+    },
+    {
+        "name": "ANAR184"
+    },
+    {
+        "name": "ANAR185"
+    },
+    {
+        "name": "ANAR182"
+    },
+    {
+        "name": "ECE187"
+    },
+    {
+        "name": "MATH160A"
+    },
+    {
+        "name": "ECE182"
+    },
+    {
+        "name": "ECE183"
+    },
+    {
+        "name": "PHYS11"
+    },
+    {
+        "name": "PHYS10"
+    },
+    {
+        "name": "PHYS12"
+    },
+    {
+        "name": "POLI27"
+    },
+    {
+        "name": "LIAB1DX"
+    },
+    {
+        "name": "CHEM132"
+    },
+    {
+        "name": "MAE131B"
+    },
+    {
+        "name": "MAE131A"
+    },
+    {
+        "name": "CHEM131"
+    },
+    {
+        "name": "PHYS1A"
+    },
+    {
+        "name": "HIEU115"
+    },
+    {
+        "name": "PHYS1C"
+    },
+    {
+        "name": "PHYS1B"
+    },
+    {
+        "name": "HIEU118"
+    },
+    {
+        "name": "LTSP31"
+    },
+    {
+        "name": "LIIT1D"
+    },
+    {
+        "name": "LIIT1C"
+    },
+    {
+        "name": "LIIT1B"
+    },
+    {
+        "name": "LIIT1A"
+    },
+    {
+        "name": "LTSP135B"
+    },
+    {
+        "name": "LTSP135A"
+    },
+    {
+        "name": "BIEB128"
+    },
+    {
+        "name": "PHIL108"
+    },
+    {
+        "name": "VIS122D"
+    },
+    {
+        "name": "BIEB123"
+    },
+    {
+        "name": "PHIL101"
+    },
+    {
+        "name": "BIEB121"
+    },
+    {
+        "name": "BIEB126"
+    },
+    {
+        "name": "PHIL106"
+    },
+    {
+        "name": "PHIL105"
+    },
+    {
+        "name": "PHIL104"
+    },
+    {
+        "name": "LIGN175"
+    },
+    {
+        "name": "LIGN174"
+    },
+    {
+        "name": "LIGN177"
+    },
+    {
+        "name": "LIGN176"
+    },
+    {
+        "name": "LIGN171"
+    },
+    {
+        "name": "LIGN170"
+    },
+    {
+        "name": "LIGN172"
+    },
+    {
+        "name": "LTLA2"
+    },
+    {
+        "name": "LTLA3"
+    },
+    {
+        "name": "SOCD130"
+    },
+    {
+        "name": "LTLA1"
+    },
+    {
+        "name": "LIGN179"
+    },
+    {
+        "name": "LTLA4"
+    },
+    {
+        "name": "ICAM110"
+    },
+    {
+        "name": "LTSP50A"
+    },
+    {
+        "name": "LTSP50C"
+    },
+    {
+        "name": "LTSP50B"
+    },
+    {
+        "name": "POLI136A"
+    },
+    {
+        "name": "MATH183"
+    },
+    {
+        "name": "ECE166"
+    },
+    {
+        "name": "POLI181C"
+    },
+    {
+        "name": "ECE164"
+    },
+    {
+        "name": "LIHL114X"
+    },
+    {
+        "name": "ECE163"
+    },
+    {
+        "name": "MUS174B"
+    },
+    {
+        "name": "MUS174C"
+    },
+    {
+        "name": "MUS174A"
+    },
+    {
+        "name": "ANLD23"
+    },
+    {
+        "name": "MGT103"
+    },
+    {
+        "name": "MGT106"
+    },
+    {
+        "name": "MGT105"
+    },
+    {
+        "name": "COMM166"
+    },
+    {
+        "name": "MAE126B"
+    },
+    {
+        "name": "ECE154A"
+    },
+    {
+        "name": "ECE154B"
+    },
+    {
+        "name": "ECE154C"
+    },
+    {
+        "name": "LIGM1D"
+    },
+    {
+        "name": "LIGM1A"
+    },
+    {
+        "name": "LIGM1B"
+    },
+    {
+        "name": "LIGM1C"
+    },
+    {
+        "name": "MUS33"
+    },
+    {
+        "name": "MUS32"
+    },
+    {
+        "name": "ECE161A"
+    },
+    {
+        "name": "ECE161B"
+    },
+    {
+        "name": "ECE161C"
+    },
+    {
+        "name": "TDDE121"
+    },
+    {
+        "name": "CSE131B"
+    },
+    {
+        "name": "CSE131A"
+    },
+    {
+        "name": "HIEA150"
+    },
+    {
+        "name": "HIEA151"
+    },
+    {
+        "name": "CHEM6CH"
+    },
+    {
+        "name": "CHEM133"
+    },
+    {
+        "name": "CHEM100A"
+    },
+    {
+        "name": "CHEM100B"
+    },
+    {
+        "name": "ECE65"
+    },
+    {
+        "name": "LTCS52"
+    },
+    {
+        "name": "LTCS50"
+    },
+    {
+        "name": "LTCS100"
+    },
+    {
+        "name": "LTCS102"
+    },
+    {
+        "name": "POLI181B"
+    },
+    {
+        "name": "HIEU153A"
+    },
+    {
+        "name": "POLI110A"
+    },
+    {
+        "name": "LTWL4M"
+    },
+    {
+        "name": "POLI110C"
+    },
+    {
+        "name": "LTWL4C"
+    },
+    {
+        "name": "LTWL4B"
+    },
+    {
+        "name": "LTWL4A"
+    },
+    {
+        "name": "LISL1BX"
+    },
+    {
+        "name": "POLI110J"
+    },
+    {
+        "name": "LTWL4D"
+    },
+    {
+        "name": "POLI100M"
+    },
+    {
+        "name": "ECON173B"
+    },
+    {
+        "name": "SOCD176"
+    },
+    {
+        "name": "ECON173A"
+    },
+    {
+        "name": "USP147"
+    },
+    {
+        "name": "SDCC4"
+    },
+    {
+        "name": "USP145"
+    },
+    {
+        "name": "USP144"
+    },
+    {
+        "name": "USP143"
+    },
+    {
+        "name": "LIDS19"
+    },
+    {
+        "name": "COCU139"
+    },
+    {
+        "name": "SOCB125"
+    },
+    {
+        "name": "POLI100N"
+    },
+    {
+        "name": "ETHN149"
+    },
+    {
+        "name": "MATH180C"
+    },
+    {
+        "name": "MATH180B"
+    },
+    {
+        "name": "COCU131"
+    },
+    {
+        "name": "COCU130"
+    },
+    {
+        "name": "WCWP10A"
+    },
+    {
+        "name": "COCU132"
+    },
+    {
+        "name": "LTRU1B"
+    },
+    {
+        "name": "ETHN140"
+    },
+    {
+        "name": "COCU137"
+    },
+    {
+        "name": "COCU136"
+    },
+    {
+        "name": "LTWL123"
+    },
+    {
+        "name": "LTWL122"
+    },
+    {
+        "name": "LTWL120"
+    },
+    {
+        "name": "SOCD177"
+    },
+    {
+        "name": "LTWL124"
+    },
+    {
+        "name": "LTIT100"
+    },
+    {
+        "name": "LTEN120A"
+    },
+    {
+        "name": "POLI100E"
+    },
+    {
+        "name": "COGS143"
+    },
+    {
+        "name": "SIO35"
+    },
+    {
+        "name": "SIO30"
+    },
+    {
+        "name": "POLI100DA"
+    },
+    {
+        "name": "COGS14B"
+    },
+    {
+        "name": "COGS14A"
+    },
+    {
+        "name": "PSYC4"
+    },
+    {
+        "name": "POLI181A"
+    },
+    {
+        "name": "PSYC6"
+    },
+    {
+        "name": "PSYC7"
+    },
+    {
+        "name": "LIGM1DX"
+    },
+    {
+        "name": "PSYC2"
+    },
+    {
+        "name": "PSYC3"
+    },
+    {
+        "name": "BENG109"
+    },
+    {
+        "name": "VIS121B"
+    },
+    {
+        "name": "LIGN8"
+    },
+    {
+        "name": "BENG100"
+    },
+    {
+        "name": "BENG101"
+    },
+    {
+        "name": "LIGN4"
+    },
+    {
+        "name": "BIMM194"
+    },
+    {
+        "name": "VIS124CN"
+    },
+    {
+        "name": "SOCI148"
+    },
+    {
+        "name": "SOCI144"
+    },
+    {
+        "name": "LTLA100"
+    },
+    {
+        "name": "SOCI140"
+    },
+    {
+        "name": "SOCI141"
+    },
+    {
+        "name": "SOCI142"
+    },
+    {
+        "name": "SOCI143"
+    },
+    {
+        "name": "HILA120"
+    },
+    {
+        "name": "HILA121"
+    },
+    {
+        "name": "HILA122"
+    },
+    {
+        "name": "MGT131A"
+    },
+    {
+        "name": "MAE130A"
+    },
+    {
+        "name": "MAE130B"
+    },
+    {
+        "name": "MAE130C"
+    },
+    {
+        "name": "PHYS2D"
+    },
+    {
+        "name": "COMM153"
+    },
+    {
+        "name": "COMM158"
+    },
+    {
+        "name": "SOCL50"
+    },
+    {
+        "name": "ANLD2"
+    },
+    {
+        "name": "ANLD3"
+    },
+    {
+        "name": "ECE191"
+    },
+    {
+        "name": "CHIN111"
+    },
+    {
+        "name": "CHIN113"
+    },
+    {
+        "name": "INTL102"
+    },
+    {
+        "name": "ESYS120"
+    },
+    {
+        "name": "MUS7"
+    },
+    {
+        "name": "LTRU110C"
+    },
+    {
+        "name": "LTRU110B"
+    },
+    {
+        "name": "LTWL131A"
+    },
+    {
+        "name": "MMW4T"
+    },
+    {
+        "name": "POLI30"
+    },
+    {
+        "name": "MAE143B"
+    },
+    {
+        "name": "MAE143C"
+    },
+    {
+        "name": "MAE143A"
+    },
+    {
+        "name": "SOCB127"
+    },
+    {
+        "name": "HIEU129"
+    },
+    {
+        "name": "HIEU128"
+    },
+    {
+        "name": "HIEU125"
+    },
+    {
+        "name": "TDMV140"
+    },
+    {
+        "name": "HIEU127"
+    },
+    {
+        "name": "HIEU126"
+    },
+    {
+        "name": "LTSP21"
+    },
+    {
+        "name": "HIEU120"
+    },
+    {
+        "name": "TDMV146"
+    },
+    {
+        "name": "COMM145"
+    },
+    {
+        "name": "HIUS128"
+    },
+    {
+        "name": "LTCH101"
+    },
+    {
+        "name": "PHIL110"
+    },
+    {
+        "name": "PHIL111"
+    },
+    {
+        "name": "PHIL112"
+    },
+    {
+        "name": "SOCB137"
+    },
+    {
+        "name": "EDS129C"
+    },
+    {
+        "name": "EDS129B"
+    },
+    {
+        "name": "LIGN160"
+    },
+    {
+        "name": "LISP1AX"
+    },
+    {
+        "name": "SE1"
+    },
+    {
+        "name": "LIGN165"
+    },
+    {
+        "name": "VIS128CN"
+    },
+    {
+        "name": "ICAM101"
+    },
+    {
+        "name": "ICAM102"
+    },
+    {
+        "name": "ICAM103"
+    },
+    {
+        "name": "ETHN179B"
+    },
+    {
+        "name": "ETHN179A"
+    },
+    {
+        "name": "SOCI10"
+    },
+    {
+        "name": "LTSP2E"
+    },
+    {
+        "name": "LTSP2D"
+    },
+    {
+        "name": "LTSP2A"
+    },
+    {
+        "name": "LTSP2C"
+    },
+    {
+        "name": "LTSP2B"
+    },
+    {
+        "name": "ECE175"
+    },
+    {
+        "name": "ECE174"
+    },
+    {
+        "name": "CHEM6AH"
+    },
+    {
+        "name": "TMC15"
+    },
+    {
+        "name": "ECE173"
+    },
+    {
+        "name": "ERTH1"
+    },
+    {
+        "name": "COMM160"
+    },
+    {
+        "name": "TDTR10"
+    },
+    {
+        "name": "CHEM6BL"
+    },
+    {
+        "name": "CHEM6BH"
+    },
+    {
+        "name": "TDHT115"
+    },
+    {
+        "name": "TDHT114"
+    },
+    {
+        "name": "TDHT116"
+    },
+    {
+        "name": "ECE159A"
+    },
+    {
+        "name": "MMW4H"
+    },
+    {
+        "name": "POLI110DA"
+    },
+    {
+        "name": "ANSC145"
+    },
+    {
+        "name": "ANSC144"
+    },
+    {
+        "name": "ECE175A"
+    },
+    {
+        "name": "ANSC142"
+    },
+    {
+        "name": "ANSC140"
+    },
+    {
+        "name": "ANSC148"
+    },
+    {
+        "name": "ECE181"
+    },
+    {
+        "name": "LISL1AX"
+    },
+    {
+        "name": "CSE141L"
+    },
+    {
+        "name": "SOCD179"
+    },
+    {
+        "name": "POLI108"
+    },
+    {
+        "name": "POLI137A"
+    },
+    {
+        "name": "LIGN17"
+    },
+    {
+        "name": "MATH11"
+    },
+    {
+        "name": "LTIT2A"
+    },
+    {
+        "name": "JUDA100"
+    },
+    {
+        "name": "JUDA101"
+    },
+    {
+        "name": "ANRG125"
+    },
+    {
+        "name": "ANRG127"
+    },
+    {
+        "name": "JUDA3"
+    },
+    {
+        "name": "JUDA2"
+    },
+    {
+        "name": "JUDA1"
+    },
+    {
+        "name": "PHIL28"
+    },
+    {
+        "name": "PHIL27"
+    },
+    {
+        "name": "PHIL26"
+    },
+    {
+        "name": "VIS40"
+    },
+    {
+        "name": "CSE123A"
+    },
+    {
+        "name": "CSE123B"
+    },
+    {
+        "name": "ETHN120"
+    },
+    {
+        "name": "VIS124BN"
+    },
+    {
+        "name": "LTCS131"
+    },
+    {
+        "name": "LTCS130"
+    },
+    {
+        "name": "LTCS133"
+    },
+    {
+        "name": "LTCS132"
+    },
+    {
+        "name": "POLI121"
+    },
+    {
+        "name": "BENG183"
+    },
+    {
+        "name": "COCU126"
+    },
+    {
+        "name": "COCU127"
+    },
+    {
+        "name": "COCU124"
+    },
+    {
+        "name": "COCU125"
+    },
+    {
+        "name": "COCU123"
+    },
+    {
+        "name": "COCU120"
+    },
+    {
+        "name": "USP133"
+    },
+    {
+        "name": "USP137"
+    },
+    {
+        "name": "USP135"
+    },
+    {
+        "name": "VIS167"
+    },
+    {
+        "name": "BENG140B"
+    },
+    {
+        "name": "MATH111A"
+    },
+    {
+        "name": "VIS166"
+    },
+    {
+        "name": "ETHN152"
+    },
+    {
+        "name": "BENG122A"
+    },
+    {
+        "name": "VIS165"
+    },
+    {
+        "name": "ETHN155"
+    },
+    {
+        "name": "PSYC171"
+    },
+    {
+        "name": "TDGE11"
+    },
+    {
+        "name": "LTWL135"
+    },
+    {
+        "name": "MAE122"
+    },
+    {
+        "name": "LTWL138"
+    },
+    {
+        "name": "LTIT115"
+    },
+    {
+        "name": "ERC103GS"
+    },
+    {
+        "name": "SIO20"
+    },
+    {
+        "name": "SIO25"
+    },
+    {
+        "name": "BENG130"
+    },
+    {
+        "name": "PSYC108"
+    },
+    {
+        "name": "PSYC107"
+    },
+    {
+        "name": "PSYC106"
+    },
+    {
+        "name": "PSYC105"
+    },
+    {
+        "name": "PSYC104"
+    },
+    {
+        "name": "PSYC103"
+    },
+    {
+        "name": "PSYC102"
+    },
+    {
+        "name": "PSYC101"
+    },
+    {
+        "name": "COMT175"
+    },
+    {
+        "name": "SOCI179"
+    },
+    {
+        "name": "SOCI178"
+    },
+    {
+        "name": "SOCI170"
+    },
+    {
+        "name": "SOCI172"
+    },
+    {
+        "name": "HILA118"
+    },
+    {
+        "name": "HILA115"
+    },
+    {
+        "name": "HILA114"
+    },
+    {
+        "name": "HILA113"
+    },
+    {
+        "name": "HILA112"
+    },
+    {
+        "name": "SIO133"
+    },
+    {
+        "name": "SIO132"
+    },
+    {
+        "name": "COGN21"
+    },
+    {
+        "name": "COGN20"
+    },
+    {
+        "name": "COGN22"
+    },
+    {
+        "name": "ECON172A"
+    },
+    {
+        "name": "ECON172C"
+    },
+    {
+        "name": "ECON172B"
+    },
+    {
+        "name": "SOCL40"
+    },
+    {
+        "name": "COMM143"
+    },
+    {
+        "name": "PHYS2BL"
+    },
+    {
+        "name": "COMM146"
+    },
+    {
+        "name": "EDS128A"
+    },
+    {
+        "name": "EDS128B"
+    },
+    {
+        "name": "SIO134"
+    },
+    {
+        "name": "CENG100"
+    },
+    {
+        "name": "CENG102"
+    },
+    {
+        "name": "MAE1"
+    },
+    {
+        "name": "MAE3"
+    },
+    {
+        "name": "MAE2"
+    },
+    {
+        "name": "MAE5"
+    },
+    {
+        "name": "MAE9"
+    },
+    {
+        "name": "PHYS161"
+    },
+    {
+        "name": "PHYS162"
+    },
+    {
+        "name": "COMT111A"
+    },
+    {
+        "name": "SIO138"
+    },
+    {
+        "name": "CSE107"
+    },
+    {
+        "name": "CSE105"
+    },
+    {
+        "name": "CSE103"
+    },
+    {
+        "name": "CSE100"
+    },
+    {
+        "name": "LTWR148"
+    },
+    {
+        "name": "ECON104"
+    },
+    {
+        "name": "LTWR143"
+    },
+    {
+        "name": "VIS180B"
+    },
+    {
+        "name": "VIS180A"
+    },
+    {
+        "name": "SOCB172"
+    },
+    {
+        "name": "LTEA140"
+    },
+    {
+        "name": "LTEA142"
+    },
+    {
+        "name": "LTEA143"
+    },
+    {
+        "name": "LTEA144"
+    },
+    {
+        "name": "HIEU138"
+    },
+    {
+        "name": "HIUS142B"
+    },
+    {
+        "name": "HIEU132"
+    },
+    {
+        "name": "HIEU133"
+    },
+    {
+        "name": "HIEU130"
+    },
+    {
+        "name": "HIEU131"
+    },
+    {
+        "name": "HIEU137"
+    },
+    {
+        "name": "HIEU134"
+    },
+    {
+        "name": "LATI50"
+    },
+    {
+        "name": "PHIL120"
+    },
+    {
+        "name": "PHIL123"
+    },
+    {
+        "name": "PHIL122"
+    },
+    {
+        "name": "PHYS4C"
+    },
+    {
+        "name": "PHIL159"
+    },
+    {
+        "name": "SOCB143"
+    },
+    {
+        "name": "MATH154"
+    },
+    {
+        "name": "MATH153"
+    },
+    {
+        "name": "MATH152"
+    },
+    {
+        "name": "POLI134B"
+    },
+    {
+        "name": "RELI141"
+    },
+    {
+        "name": "SOCC184"
+    },
+    {
+        "name": "RELI143"
+    },
+    {
+        "name": "RELI144"
+    },
+    {
+        "name": "RELI145"
+    },
+    {
+        "name": "POLI134D"
+    },
+    {
+        "name": "RELI147"
+    },
+    {
+        "name": "POLI134I"
+    },
+    {
+        "name": "COMT175A"
+    },
+    {
+        "name": "TDHT102"
+    },
+    {
+        "name": "TDHT103"
+    },
+    {
+        "name": "TDHT101"
+    },
+    {
+        "name": "TDHT107"
+    },
+    {
+        "name": "TDHT104"
+    },
+    {
+        "name": "TDHT105"
+    },
+    {
+        "name": "MATH171A"
+    },
+    {
+        "name": "COMM111F"
+    },
+    {
+        "name": "ANSC150"
+    },
+    {
+        "name": "SOCI165A"
+    },
+    {
+        "name": "ERTH102"
+    },
+    {
+        "name": "POLI112C"
+    },
+    {
+        "name": "POLI112A"
+    },
+    {
+        "name": "MGT131B"
+    },
+    {
+        "name": "POLI136"
+    },
+    {
+        "name": "SOCD187S"
+    },
+    {
+        "name": "POLI132"
+    },
+    {
+        "name": "MAE149"
+    },
+    {
+        "name": "MAE142"
+    },
+    {
+        "name": "MAE140"
+    },
+    {
+        "name": "HIUS160"
+    },
+    {
+        "name": "HIEU117A"
+    },
+    {
+        "name": "HIEU117B"
+    },
+    {
+        "name": "PHYS1CL"
+    },
+    {
+        "name": "LTSP162"
+    },
+    {
+        "name": "CHIN10AD"
+    },
+    {
+        "name": "SOCC154"
+    },
+    {
+        "name": "CHIN10AM"
+    },
+    {
+        "name": "CHIN10AN"
+    },
+    {
+        "name": "ECE158A"
+    },
+    {
+        "name": "BENG103B"
+    },
+    {
+        "name": "POLI110EB"
+    },
+    {
+        "name": "POLI110EC"
+    },
+    {
+        "name": "PHIL163"
+    },
+    {
+        "name": "COSF129"
+    },
+    {
+        "name": "SOCA100"
+    },
+    {
+        "name": "COSF126"
+    },
+    {
+        "name": "COSF124"
+    },
+    {
+        "name": "SOCA104"
+    },
+    {
+        "name": "SOCA106"
+    },
+    {
+        "name": "SOCA107"
+    },
+    {
+        "name": "HUM5"
+    },
+    {
+        "name": "VIS126CN"
+    },
+    {
+        "name": "USP129"
+    },
+    {
+        "name": "USP121"
+    },
+    {
+        "name": "SOCC159"
+    },
+    {
+        "name": "USP122"
+    },
+    {
+        "name": "CGS109B"
+    },
+    {
+        "name": "USP124"
+    },
+    {
+        "name": "PHYS160"
+    },
+    {
+        "name": "ANSC170"
+    },
+    {
+        "name": "LTIT122"
+    },
+    {
+        "name": "HIEU116CD"
+    },
+    {
+        "name": "LTWL104"
+    },
+    {
+        "name": "LTWL106"
+    },
+    {
+        "name": "LTWL100"
+    },
+    {
+        "name": "COGS120"
+    },
+    {
+        "name": "COGS121"
+    },
+    {
+        "name": "PHYS2CL"
+    },
+    {
+        "name": "ECE45"
+    },
+    {
+        "name": "VIS124AN"
+    },
+    {
+        "name": "BENG123"
+    },
+    {
+        "name": "JAPN190"
+    },
+    {
+        "name": "BENG125"
+    },
+    {
+        "name": "PSYC114"
+    },
+    {
+        "name": "PSYC115"
+    },
+    {
+        "name": "PSYC117"
+    },
+    {
+        "name": "PSYC110"
+    },
+    {
+        "name": "TDGE10"
+    },
+    {
+        "name": "SOCI166"
+    },
+    {
+        "name": "SOCI167"
+    },
+    {
+        "name": "SOCI163"
+    },
+    {
+        "name": "SOCI160"
+    },
+    {
+        "name": "SOCI161"
+    },
+    {
+        "name": "SOCI169"
+    },
+    {
+        "name": "MUS2B"
+    },
+    {
+        "name": "MUS2C"
+    },
+    {
+        "name": "MUS2A"
+    },
+    {
+        "name": "HMNR101"
+    },
+    {
+        "name": "HMNR100"
+    },
+    {
+        "name": "LTAM111"
+    },
+    {
+        "name": "ENVR120"
+    },
+    {
+        "name": "HILA102"
+    },
+    {
+        "name": "HILA103"
+    },
+    {
+        "name": "HILA100"
+    },
+    {
+        "name": "HILA101"
+    },
+    {
+        "name": "ETHN178"
+    },
+    {
+        "name": "MUS152"
+    },
+    {
+        "name": "PHYS4B"
+    },
+    {
+        "name": "ANBI116"
+    },
+    {
+        "name": "PHYS4A"
+    },
+    {
+        "name": "ANBI111"
+    },
+    {
+        "name": "PHYS4E"
+    },
+    {
+        "name": "POLI130AD"
+    },
+    {
+        "name": "POLI130AA"
+    },
+    {
+        "name": "SE163"
+    },
+    {
+        "name": "MGT12"
+    },
+    {
+        "name": "ETHN183"
+    },
+    {
+        "name": "ETHN185"
+    },
+    {
+        "name": "ETHN184"
+    },
+    {
+        "name": "ETHN186"
+    },
+    {
+        "name": "ETHN189"
+    },
+    {
+        "name": "ETHN188"
+    },
+    {
+        "name": "MGT18"
+    },
+    {
+        "name": "MUS13AM"
+    },
+    {
+        "name": "CENG113"
+    },
+    {
+        "name": "CSE101"
+    },
+    {
+        "name": "MUS13AF"
+    },
+    {
+        "name": "ESYS102"
+    },
+    {
+        "name": "ESYS103"
+    },
+    {
+        "name": "ESYS101"
+    },
+    {
+        "name": "MUS13AS"
+    },
+    {
+        "name": "LTWR144"
+    },
+    {
+        "name": "MMW4GS"
+    },
+    {
+        "name": "SE110A"
+    },
+    {
+        "name": "CSE111"
+    },
+    {
+        "name": "CSE110"
+    },
+    {
+        "name": "CSE112"
+    },
+    {
+        "name": "PHIL1"
+    },
+    {
+        "name": "CSE118"
+    },
+    {
+        "name": "TDMV123"
+    },
+    {
+        "name": "TDMV122"
+    },
+    {
+        "name": "MAE110A"
+    },
+    {
+        "name": "POLI13"
+    },
+    {
+        "name": "POLI12"
+    },
+    {
+        "name": "POLI11"
+    },
+    {
+        "name": "POLI10"
+    },
+    {
+        "name": "MATH31BH"
+    },
+    {
+        "name": "CAT1"
+    },
+    {
+        "name": "CAT2"
+    },
+    {
+        "name": "CAT3"
+    },
+    {
+        "name": "COCU141C"
+    },
+    {
+        "name": "COCU141A"
+    },
+    {
+        "name": "PHIL132"
+    },
+    {
+        "name": "SOCB113"
+    },
+    {
+        "name": "PHIL130"
+    },
+    {
+        "name": "PHIL131"
+    },
+    {
+        "name": "PHIL136"
+    },
+    {
+        "name": "PHIL137"
+    },
+    {
+        "name": "PHIL134"
+    },
+    {
+        "name": "SOCB115"
+    },
+    {
+        "name": "ECE135A"
+    },
+    {
+        "name": "SOCB118"
+    },
+    {
+        "name": "SOCB119"
+    },
+    {
+        "name": "LIGN180"
+    },
+    {
+        "name": "LIGN181"
+    },
+    {
+        "name": "VIS2"
+    },
+    {
+        "name": "VIS3"
+    },
+    {
+        "name": "VIS1"
+    },
+    {
+        "name": "POLI28"
+    },
+    {
+        "name": "ECE156"
+    },
+    {
+        "name": "ECE153"
+    },
+    {
+        "name": "HILA121B"
+    },
+    {
+        "name": "SIO187"
+    },
+    {
+        "name": "ANSC162"
+    },
+    {
+        "name": "ANSC165"
+    },
+    {
+        "name": "ANSC164"
+    },
+    {
+        "name": "ANSC167"
+    },
+    {
+        "name": "ANSC168"
+    },
+    {
+        "name": "BILD84S"
+    },
+    {
+        "name": "CGS104"
+    },
+    {
+        "name": "LTIT2B"
+    },
+    {
+        "name": "BIMM114"
+    },
+    {
+        "name": "POLI191A"
+    },
+    {
+        "name": "ERTH112"
+    },
+    {
+        "name": "SIO189"
+    },
+    {
+        "name": "HUM2"
+    },
+    {
+        "name": "CGS100"
+    },
+    {
+        "name": "HUM1"
+    },
+    {
+        "name": "SOCI188J"
+    },
+    {
+        "name": "HUM4"
+    },
+    {
+        "name": "ECON120C"
+    },
+    {
+        "name": "ETHN2"
+    },
+    {
+        "name": "CGS102"
+    },
+    {
+        "name": "LTSP140"
+    },
+    {
+        "name": "POLI122"
+    },
+    {
+        "name": "POLI123"
+    },
+    {
+        "name": "ECON120A"
+    },
+    {
+        "name": "POLI127"
+    },
+    {
+        "name": "POLI125"
+    },
+    {
+        "name": "SOCD189"
+    },
+    {
+        "name": "SOCD182"
+    },
+    {
+        "name": "SOCD181"
+    },
+    {
+        "name": "SOCD187"
+    },
+    {
+        "name": "MAE150"
+    },
+    {
+        "name": "SOCD185"
+    },
+    {
+        "name": "LTSP174"
+    },
+    {
+        "name": "LTSP175"
+    },
+    {
+        "name": "LTSP176"
+    },
+    {
+        "name": "LTSP177"
+    },
+    {
+        "name": "LTSP170"
+    },
+    {
+        "name": "LTSP171"
+    },
+    {
+        "name": "LTSP172"
+    },
+    {
+        "name": "BENG119A"
+    },
+    {
+        "name": "LTEN115A"
+    },
+    {
+        "name": "VIS23"
+    },
+    {
+        "name": "PSYC60"
+    },
+    {
+        "name": "COSF139"
+    },
+    {
+        "name": "COSF134"
+    },
+    {
+        "name": "TDGE125"
+    },
+    {
+        "name": "TDGE126"
+    },
+    {
+        "name": "TDGE127"
+    },
+    {
+        "name": "COSF130"
+    },
+    {
+        "name": "TDGE122"
+    },
+    {
+        "name": "TDGE123"
+    },
+    {
+        "name": "TDHT10"
+    },
+    {
+        "name": "MUS1C"
+    },
+    {
+        "name": "MUS1B"
+    },
+    {
+        "name": "MUS1A"
+    },
+    {
+        "name": "LTWR110B"
+    },
+    {
+        "name": "COCU140"
+    },
+    {
+        "name": "COCU142"
+    },
+    {
+        "name": "COCU144"
+    },
+    {
+        "name": "VIS126BN"
+    },
+    {
+        "name": "COCU148"
+    },
+    {
+        "name": "MUS15"
+    },
+    {
+        "name": "MUS14"
+    },
+    {
+        "name": "POLI113A"
+    },
+    {
+        "name": "MUS12"
+    },
+    {
+        "name": "MUS11"
+    },
+    {
+        "name": "MUS10"
+    },
+    {
+        "name": "SOCB120S"
+    },
+    {
+        "name": "TDAC123"
+    },
+    {
+        "name": "LTWL116"
+    },
+    {
+        "name": "LTWL114"
+    },
+    {
+        "name": "LTWL115"
+    },
+    {
+        "name": "MATH20A"
+    },
+    {
+        "name": "CSE132B"
+    },
+    {
+        "name": "CSE132A"
+    },
+    {
+        "name": "COGS115"
+    },
+    {
+        "name": "HIEU116B"
+    },
+    {
+        "name": "HIEU116A"
+    },
+    {
+        "name": "COGS110"
+    },
+    {
+        "name": "PSYC129"
+    },
+    {
+        "name": "PSYC128"
+    },
+    {
+        "name": "PSYC121"
+    },
+    {
+        "name": "PSYC120"
+    },
+    {
+        "name": "PSYC125"
+    },
+    {
+        "name": "PSYC124"
+    },
+    {
+        "name": "ICAM40"
+    },
+    {
+        "name": "LTAF120"
+    },
+    {
+        "name": "SOCI113"
+    },
+    {
+        "name": "SOCI110"
+    },
+    {
+        "name": "SOCI117"
+    },
+    {
+        "name": "SOCI116"
+    },
+    {
+        "name": "SOCI115"
+    },
+    {
+        "name": "COMM114F"
+    },
+    {
+        "name": "SOCI119"
+    },
+    {
+        "name": "SOCI118"
+    },
+    {
+        "name": "ESYS10"
+    },
+    {
+        "name": "USP116"
+    },
+    {
+        "name": "HIUS108B"
+    },
+    {
+        "name": "HIUS108A"
+    },
+    {
+        "name": "SOCD158"
+    },
+    {
+        "name": "VIS140"
+    },
+    {
+        "name": "BIMM127"
+    },
+    {
+        "name": "BIMM126"
+    },
+    {
+        "name": "BIMM124"
+    },
+    {
+        "name": "ENVR130"
+    },
+    {
+        "name": "BIMM122"
+    },
+    {
+        "name": "BIMM121"
+    },
+    {
+        "name": "BIMM120"
+    },
+    {
+        "name": "VIS104A"
+    },
+    {
+        "name": "LTAM108"
+    },
+    {
+        "name": "SE112B"
+    },
+    {
+        "name": "TDMV11"
+    },
+    {
+        "name": "ANBI100"
+    },
+    {
+        "name": "HDP191"
+    },
+    {
+        "name": "ANBI103"
+    },
+    {
+        "name": "RELI140"
+    },
+    {
+        "name": "LTRU2A"
+    },
+    {
+        "name": "BIMM185"
+    },
+    {
+        "name": "RELI110A"
+    },
+    {
+        "name": "RELI110B"
+    },
+    {
+        "name": "ETHN190"
+    },
+    {
+        "name": "SOCC180"
+    },
+    {
+        "name": "HILA132"
+    },
+    {
+        "name": "HILA131"
+    },
+    {
+        "name": "MUS2CK"
+    },
+    {
+        "name": "MAE126A"
+    },
+    {
+        "name": "CSE8AL"
+    },
+    {
+        "name": "DOC100D"
+    },
+    {
+        "name": "MGT16"
+    },
+    {
+        "name": "DOC2"
+    },
+    {
+        "name": "DOC3"
+    },
+    {
+        "name": "DOC1"
+    },
+    {
+        "name": "JAPN130A"
+    },
+    {
+        "name": "POLI102E"
+    },
+    {
+        "name": "JAPN130C"
+    },
+    {
+        "name": "JAPN130B"
+    },
+    {
+        "name": "CSE120"
+    },
+    {
+        "name": "CSE123"
+    },
+    {
+        "name": "CSE124"
+    },
+    {
+        "name": "CSE125"
+    },
+    {
+        "name": "CSE127"
+    },
+    {
+        "name": "TDPW101"
+    },
+    {
+        "name": "TDMV130"
+    },
+    {
+        "name": "TDMV133"
+    },
+    {
+        "name": "TDMV138"
+    },
+    {
+        "name": "MMW2"
+    },
+    {
+        "name": "MMW1"
+    },
+    {
+        "name": "NANO156"
+    },
+    {
+        "name": "LTKO100"
+    },
+    {
+        "name": "CHEM167"
+    },
+    {
+        "name": "NANO150"
+    },
+    {
+        "name": "HIEU148"
+    },
+    {
+        "name": "SOCC121"
+    },
+    {
+        "name": "NANO15"
+    },
+    {
+        "name": "CHEM168"
+    },
+    {
+        "name": "SE131"
+    },
+    {
+        "name": "TDHT23"
+    },
+    {
+        "name": "MATH181E"
+    },
+    {
+        "name": "MATH174"
+    },
+    {
+        "name": "COGS179"
+    },
+    {
+        "name": "CHEM4"
+    },
+    {
+        "name": "WARR11A"
+    },
+    {
+        "name": "ANAR125"
+    },
+    {
+        "name": "MAE171B"
+    },
+    {
+        "name": "MAE171A"
+    },
+    {
+        "name": "ECE120"
+    },
+    {
+        "name": "SE115"
+    },
+    {
+        "name": "PHYS100C"
+    },
+    {
+        "name": "PHYS100B"
+    },
+    {
+        "name": "PHYS100A"
+    },
+    {
+        "name": "SOCB166"
+    },
+    {
+        "name": "COMM169"
+    },
+    {
+        "name": "LIPO1C"
+    },
+    {
+        "name": "LIPO1B"
+    },
+    {
+        "name": "LIPO1A"
+    },
+    {
+        "name": "STPA35"
+    },
+    {
+        "name": "LTFR142"
+    },
+    {
+        "name": "LTFR143"
+    },
+    {
+        "name": "SOCD188D"
+    },
+    {
+        "name": "SOCD188F"
+    },
+    {
+        "name": "SOCD188A"
+    },
+    {
+        "name": "SOCD188B"
+    },
+    {
+        "name": "ANGN181"
+    },
+    {
+        "name": "SOCD188J"
+    },
+    {
+        "name": "COGS11"
+    },
+    {
+        "name": "ICAM150"
+    },
+    {
+        "name": "SIO110"
+    },
+    {
+        "name": "SIO112"
+    },
+    {
+        "name": "WARR11B"
+    },
+    {
+        "name": "HIEU108S"
+    },
+    {
+        "name": "SOCI188M"
+    },
+    {
+        "name": "ANPR107"
+    },
+    {
+        "name": "ANPR106"
+    },
+    {
+        "name": "PSYC111A"
+    },
+    {
+        "name": "SOCI188E"
+    },
+    {
+        "name": "SOCI188D"
+    },
+    {
+        "name": "SOCI188G"
+    },
+    {
+        "name": "TDAC1"
+    },
+    {
+        "name": "MAE160"
+    },
+    {
+        "name": "TDAC115"
+    },
+    {
+        "name": "MAE166"
+    },
+    {
+        "name": "HIUS141"
+    },
+    {
+        "name": "HIUS140"
+    },
+    {
+        "name": "HIUS145"
+    },
+    {
+        "name": "HIUS147"
+    },
+    {
+        "name": "HIUS146"
+    },
+    {
+        "name": "LTSP141"
+    },
+    {
+        "name": "HIUS148"
+    },
+    {
+        "name": "LTSP142"
+    },
+    {
+        "name": "RELI188"
+    },
+    {
+        "name": "PHYS1AL"
+    },
+    {
+        "name": "CHIN10CD"
+    },
+    {
+        "name": "CHIN10CN"
+    },
+    {
+        "name": "CHIN10CM"
+    },
+    {
+        "name": "CSE151"
+    },
+    {
+        "name": "SOCC129"
+    },
+    {
+        "name": "COSF100"
+    },
+    {
+        "name": "POLI143A"
+    },
+    {
+        "name": "POLI138D"
+    },
+    {
+        "name": "TDHT21"
+    },
+    {
+        "name": "TDHT22"
+    },
+    {
+        "name": "LIIT1AX"
+    },
+    {
+        "name": "COCU175"
+    },
+    {
+        "name": "COCU177"
+    },
+    {
+        "name": "COCU170"
+    },
+    {
+        "name": "COCU172"
+    },
+    {
+        "name": "VIS181"
+    },
+    {
+        "name": "VIS182"
+    },
+    {
+        "name": "VIS186"
+    },
+    {
+        "name": "TDAC111"
+    },
+    {
+        "name": "USP193"
+    },
+    {
+        "name": "COGS118B"
+    },
+    {
+        "name": "CHEM140A"
+    },
+    {
+        "name": "CHEM140B"
+    },
+    {
+        "name": "CHEM140C"
+    },
+    {
+        "name": "POLI144AB"
+    },
+    {
+        "name": "COGS109"
+    },
+    {
+        "name": "CHIN165B"
+    },
+    {
+        "name": "CHIN165C"
+    },
+    {
+        "name": "CHIN165A"
+    },
+    {
+        "name": "SOCI1"
+    },
+    {
+        "name": "ECON100BH"
+    },
+    {
+        "name": "WCWP10B"
+    },
+    {
+        "name": "SE180"
+    },
+    {
+        "name": "COMT122"
+    },
+    {
+        "name": "COMT121"
+    },
+    {
+        "name": "COMT120"
+    },
+    {
+        "name": "VIS128DN"
+    },
+    {
+        "name": "HIUS117"
+    },
+    {
+        "name": "SOCI100"
+    },
+    {
+        "name": "SOCI104"
+    },
+    {
+        "name": "SOCI106"
+    },
+    {
+        "name": "SOCI107"
+    },
+    {
+        "name": "SOCI108"
+    },
+    {
+        "name": "SOCI109"
+    },
+    {
+        "name": "USP103"
+    },
+    {
+        "name": "USP101"
+    },
+    {
+        "name": "USP100"
+    },
+    {
+        "name": "USP107"
+    },
+    {
+        "name": "USP105"
+    },
+    {
+        "name": "USP104"
+    },
+    {
+        "name": "ECE188"
+    },
+    {
+        "name": "USP109"
+    },
+    {
+        "name": "HIUS118"
+    },
+    {
+        "name": "BIMM134"
+    },
+    {
+        "name": "LTAM130"
+    },
+    {
+        "name": "ENVR102"
+    },
+    {
+        "name": "BIMM130"
+    },
+    {
+        "name": "COHI121"
+    },
+    {
+        "name": "COMM190"
+    },
+    {
+        "name": "HDP181"
+    },
+    {
+        "name": "ANBI132"
+    },
+    {
+        "name": "PHYS105A"
+    },
+    {
+        "name": "PSYC136"
+    },
+    {
+        "name": "PSYC137"
+    },
+    {
+        "name": "PSYC134"
+    },
+    {
+        "name": "PSYC135"
+    },
+    {
+        "name": "PSYC132"
+    },
+    {
+        "name": "PSYC133"
+    },
+    {
+        "name": "PSYC130"
+    },
+    {
+        "name": "LTSP130A"
+    },
+    {
+        "name": "PSYC138"
+    },
+    {
+        "name": "LTSP130B"
+    },
+    {
+        "name": "ECON147"
+    },
+    {
+        "name": "MATH142B"
+    },
+    {
+        "name": "MATH142A"
+    },
+    {
+        "name": "ECON144"
+    },
+    {
+        "name": "ESYS190B"
+    },
+    {
+        "name": "ECON142"
+    },
+    {
+        "name": "ECON141"
+    },
+    {
+        "name": "ECON140"
+    },
+    {
+        "name": "VIS21A"
+    },
+    {
+        "name": "NANO168"
+    },
+    {
+        "name": "SE181"
+    },
+    {
+        "name": "SE182"
+    },
+    {
+        "name": "SOCL1B"
+    },
+    {
+        "name": "BILD71"
+    },
+    {
+        "name": "SOCL1A"
+    },
+    {
+        "name": "CSE136"
+    },
+    {
+        "name": "CSE135"
+    },
+    {
+        "name": "HIUS152B"
+    },
+    {
+        "name": "CSE131"
+    },
+    {
+        "name": "CSE130"
+    },
+    {
+        "name": "LTFR2A"
+    },
+    {
+        "name": "LTFR2B"
+    },
+    {
+        "name": "LTFR2C"
+    },
+    {
+        "name": "RELI146"
+    },
+    {
+        "name": "ETHN111"
+    },
+    {
+        "name": "SOCB118A"
+    },
+    {
+        "name": "LTEN25"
+    },
+    {
+        "name": "LTEN27"
+    },
+    {
+        "name": "LTEN26"
+    },
+    {
+        "name": "LTEN21"
+    },
+    {
+        "name": "SE160B"
+    },
+    {
+        "name": "LTEN23"
+    },
+    {
+        "name": "LTEN22"
+    },
+    {
+        "name": "LTEN29"
+    },
+    {
+        "name": "LTEN28"
+    },
+    {
+        "name": "SOCI106M"
+    },
+    {
+        "name": "NANO148"
+    },
+    {
+        "name": "MAE101A"
+    },
+    {
+        "name": "MAE101B"
+    },
+    {
+        "name": "MAE101C"
+    },
+    {
+        "name": "VIS129F"
+    },
+    {
+        "name": "MUS2BK"
+    },
+    {
+        "name": "SE151B"
+    },
+    {
+        "name": "SE151A"
+    },
+    {
+        "name": "VIS131"
+    },
+    {
+        "name": "BIPN148"
+    },
+    {
+        "name": "MUS126"
+    },
+    {
+        "name": "COMM120N"
+    },
+    {
+        "name": "ANAR111"
+    },
+    {
+        "name": "LTTH150"
+    },
+    {
+        "name": "CHIN10BM"
+    },
+    {
+        "name": "CHIN10BN"
+    },
+    {
+        "name": "HIEU136B"
+    },
+    {
+        "name": "CHIN10BD"
+    },
+    {
+        "name": "ANSC109"
+    },
+    {
+        "name": "ANSC108"
+    },
+    {
+        "name": "ANSC103"
+    },
+    {
+        "name": "ENVR30"
+    },
+    {
+        "name": "ANSC100"
+    },
+    {
+        "name": "ANSC107"
+    },
+    {
+        "name": "ANSC104"
+    },
+    {
+        "name": "POLI142A"
+    },
+    {
+        "name": "CHEM7L"
+    },
+    {
+        "name": "MATH163"
+    },
+    {
+        "name": "POLI142K"
+    },
+    {
+        "name": "POLI142J"
+    },
+    {
+        "name": "POLI142I"
+    },
+    {
+        "name": "POLI142O"
+    },
+    {
+        "name": "ICAM160B"
+    },
+    {
+        "name": "ICAM160A"
+    },
+    {
+        "name": "POLI142L"
+    },
+    {
+        "name": "PHYS110B"
+    },
+    {
+        "name": "PHYS110A"
+    },
+    {
+        "name": "TDDR111"
+    },
+    {
+        "name": "MAE170"
+    },
+    {
+        "name": "HIEU110"
+    },
+    {
+        "name": "LTSP154"
+    },
+    {
+        "name": "LTSP151"
+    },
+    {
+        "name": "ANTH21"
+    },
+    {
+        "name": "SOCC132"
+    },
+    {
+        "name": "ANTH23"
+    },
+    {
+        "name": "HIUS159"
+    },
+    {
+        "name": "HIUS156"
+    },
+    {
+        "name": "HIUS157"
+    },
+    {
+        "name": "HIUS154"
+    },
+    {
+        "name": "HIUS155"
+    },
+    {
+        "name": "HIUS153"
+    },
+    {
+        "name": "HIUS150"
+    },
+    {
+        "name": "HIUS151"
+    },
+    {
+        "name": "ECON100CH"
+    },
+    {
+        "name": "MAE125B"
+    },
+    {
+        "name": "CSE30"
+    },
+    {
+        "name": "NANO104"
+    },
+    {
+        "name": "LTEN117A"
+    },
+    {
+        "name": "LISL1E"
+    },
+    {
+        "name": "LISL1D"
+    },
+    {
+        "name": "LTEN175A"
+    },
+    {
+        "name": "LISL1A"
+    },
+    {
+        "name": "LISL1C"
+    },
+    {
+        "name": "LISL1B"
+    },
+    {
+        "name": "ECON120B"
+    },
+    {
+        "name": "COCU169"
+    },
+    {
+        "name": "TDAC102"
+    },
+    {
+        "name": "TDAC101"
+    },
+    {
+        "name": "COCU162"
+    },
+    {
+        "name": "COCU163"
+    },
+    {
+        "name": "COCU160"
+    },
+    {
+        "name": "COCU166"
+    },
+    {
+        "name": "COCU165"
+    },
+    {
+        "name": "SOCI187E"
+    },
+    {
+        "name": "BIMM171B"
+    },
+    {
+        "name": "BIMM171C"
+    },
+    {
+        "name": "BIMM171A"
+    },
+    {
+        "name": "LAWS101"
+    },
+    {
+        "name": "VIS127N"
+    },
+    {
+        "name": "CSE134B"
+    },
+    {
+        "name": "SE171"
+    },
+    {
+        "name": "SOCI139"
+    },
+    {
+        "name": "SOCI138"
+    },
+    {
+        "name": "SOCI135"
+    },
+    {
+        "name": "SOCI134"
+    },
+    {
+        "name": "SOCI137"
+    },
+    {
+        "name": "SOCI131"
+    },
+    {
+        "name": "LIPO1BX"
+    },
+    {
+        "name": "SOCI133"
+    },
+    {
+        "name": "SOCI132"
+    },
+    {
+        "name": "HIUS155A"
+    },
+    {
+        "name": "HIUS155B"
+    },
+    {
+        "name": "BIMM101"
+    },
+    {
+        "name": "BIMM100"
+    },
+    {
+        "name": "BIMM108"
+    },
+    {
+        "name": "CSE20"
+    },
+    {
+        "name": "CSE21"
+    },
+    {
+        "name": "ENVR110"
+    },
+    {
+        "name": "PHIL102"
+    },
+    {
+        "name": "ETHN143"
+    },
+    {
+        "name": "MATH170B"
+    },
+    {
+        "name": "MATH170A"
+    },
+    {
+        "name": "COCU181"
+    },
+    {
+        "name": "COCU182"
+    },
+    {
+        "name": "COCU183"
+    },
+    {
+        "name": "PHIL107"
+    },
+    {
+        "name": "PSYC143"
+    },
+    {
+        "name": "PSYC142"
+    },
+    {
+        "name": "PSYC141"
+    },
+    {
+        "name": "PSYC140"
+    },
+    {
+        "name": "VIS152"
+    },
+    {
+        "name": "PSYC146"
+    },
+    {
+        "name": "PSYC145"
+    },
+    {
+        "name": "PSYC144"
+    },
+    {
+        "name": "LIHL134"
+    },
+    {
+        "name": "LIHL135"
+    },
+    {
+        "name": "VIS158"
+    },
+    {
+        "name": "VIS159"
+    },
+    {
+        "name": "DOC100"
+    },
+    {
+        "name": "VIS128B"
+    },
+    {
+        "name": "VIS128C"
+    },
+    {
+        "name": "VIS128D"
+    },
+    {
+        "name": "VIS128E"
+    },
+    {
+        "name": "POLI124A"
+    },
+    {
+        "name": "VIS106A"
+    },
+    {
+        "name": "ECON150"
+    },
+    {
+        "name": "ECON152"
+    },
+    {
+        "name": "ECON153"
+    },
+    {
+        "name": "ECON158"
+    },
+    {
+        "name": "ECON159"
+    },
+    {
+        "name": "HILA132D"
+    },
+    {
+        "name": "LTWR103"
+    },
+    {
+        "name": "LTWR102"
+    },
+    {
+        "name": "LTWR100"
+    },
+    {
+        "name": "LTWR107"
+    },
+    {
+        "name": "LTWR106"
+    },
+    {
+        "name": "SIO1"
+    },
+    {
+        "name": "VIS110A"
+    },
+    {
+        "name": "SOCL30"
+    },
+    {
+        "name": "MUS2AK"
+    },
+    {
+        "name": "CSE140"
+    },
+    {
+        "name": "CSE141"
+    },
+    {
+        "name": "CSE145"
+    },
+    {
+        "name": "VIS110E"
+    },
+    {
+        "name": "SOCA109"
+    },
+    {
+        "name": "TDMV112"
+    },
+    {
+        "name": "HILD2A"
+    },
+    {
+        "name": "TDMV110"
+    },
+    {
+        "name": "TDMV111"
+    },
+    {
+        "name": "COMM114N"
+    },
+    {
+        "name": "POLI110EA"
+    },
+    {
+        "name": "SOCB111A"
+    },
+    {
+        "name": "LTRU104A"
+    },
+    {
+        "name": "LTRU104B"
+    },
+    {
+        "name": "HDP150"
+    },
+    {
+        "name": "SIO126"
+    },
+    {
+        "name": "SOCB111B"
+    },
+    {
+        "name": "PSYC139"
+    },
+    {
+        "name": "ECON131"
+    },
+    {
+        "name": "LTWR8A"
+    },
+    {
+        "name": "LTWR8C"
+    },
+    {
+        "name": "LTWR8B"
+    },
+    {
+        "name": "COGS187B"
+    },
+    {
+        "name": "MATH11L"
+    },
+    {
+        "name": "POLI110T"
+    },
+    {
+        "name": "JAPN150A"
+    },
+    {
+        "name": "CENG176B"
+    },
+    {
+        "name": "CENG176A"
+    },
+    {
+        "name": "POLI104A"
+    },
+    {
+        "name": "ECE107"
+    },
+    {
+        "name": "ECE100"
+    },
+    {
+        "name": "LIHL112X"
+    },
+    {
+        "name": "ECE102"
+    },
+    {
+        "name": "ECE103"
+    },
+    {
+        "name": "LTEN185"
+    },
+    {
+        "name": "TDPW1"
+    },
+    {
+        "name": "LTEN187"
+    },
+    {
+        "name": "LTEN186"
+    },
+    {
+        "name": "LTEN181"
+    },
+    {
+        "name": "ECE109"
+    },
+    {
+        "name": "LTEN183"
+    },
+    {
+        "name": "MUS132"
+    },
+    {
+        "name": "PHYS120A"
+    },
+    {
+        "name": "PHYS120B"
+    },
+    {
+        "name": "ANAR100"
+    },
+    {
+        "name": "LTEN160"
+    },
+    {
+        "name": "SOCI118E"
+    },
+    {
+        "name": "TDHD175"
+    },
+    {
+        "name": "TDHD174"
+    },
+    {
+        "name": "TDHD173"
+    },
+    {
+        "name": "TDHD172"
+    },
+    {
+        "name": "TDHD171"
+    },
+    {
+        "name": "MATH31AH"
+    },
+    {
+        "name": "ANSC118"
+    },
+    {
+        "name": "ANSC119"
+    },
+    {
+        "name": "ECON146"
+    },
+    {
+        "name": "ANSC110"
+    },
+    {
+        "name": "ANSC113"
+    },
+    {
+        "name": "ECON145"
+    },
+    {
+        "name": "MAE180B"
+    },
+    {
+        "name": "MAE180A"
+    },
+    {
+        "name": "MATH110"
+    },
+    {
+        "name": "ECON143"
+    },
+    {
+        "name": "POLI104N"
+    },
+    {
+        "name": "LTWL19B"
+    },
+    {
+        "name": "HIEA119"
+    },
+    {
+        "name": "CHEM6C"
+    },
+    {
+        "name": "CHEM6B"
+    },
+    {
+        "name": "CHEM6A"
+    },
+    {
+        "name": "COMM105M"
+    },
+    {
+        "name": "MATH193B"
+    },
+    {
+        "name": "TDDR101"
+    },
+    {
+        "name": "MAE107"
+    },
+    {
+        "name": "MAE104"
+    },
+    {
+        "name": "MAE105"
+    },
+    {
+        "name": "MAE108"
+    },
+    {
+        "name": "LTSP123"
+    },
+    {
+        "name": "LTSP122"
+    },
+    {
+        "name": "COHI175"
+    },
+    {
+        "name": "LTSP129"
+    },
+    {
+        "name": "BENG129A"
+    },
+    {
+        "name": "BENG129B"
+    },
+    {
+        "name": "SOCC126"
+    },
+    {
+        "name": "ECE165"
+    },
+    {
+        "name": "HIEU113A"
+    },
+    {
+        "name": "USP120"
+    },
+    {
+        "name": "HIUS122"
+    },
+    {
+        "name": "HIUS120"
+    },
+    {
+        "name": "HIUS126"
+    },
+    {
+        "name": "HILD30"
+    },
+    {
+        "name": "HIUS124"
+    },
+    {
+        "name": "POLI125A"
+    },
+    {
+        "name": "MUS127B"
+    },
+    {
+        "name": "USP125"
+    },
+    {
+        "name": "MUS127A"
+    },
+    {
+        "name": "SIO40"
+    },
+    {
+        "name": "BIPN194"
+    },
+    {
+        "name": "PHYS130A"
+    },
+    {
+        "name": "LISL1DX"
+    },
+    {
+        "name": "LIIT1CX"
+    },
+    {
+        "name": "ECE85"
+    },
+    {
+        "name": "ECE80"
+    },
+    {
+        "name": "MATH171B"
+    },
+    {
+        "name": "MAE131C"
+    },
+    {
+        "name": "COMM100C"
+    },
+    {
+        "name": "COMM100B"
+    },
+    {
+        "name": "COMM100A"
+    },
+    {
+        "name": "POLI194"
+    },
+    {
+        "name": "BENG161A"
+    },
+    {
+        "name": "BENG161B"
+    },
+    {
+        "name": "HIEU111"
+    },
+    {
+        "name": "COGN150"
+    },
+    {
+        "name": "COMT109"
+    },
+    {
+        "name": "COMT105"
+    },
+    {
+        "name": "COMT104"
+    },
+    {
+        "name": "COMT100"
+    },
+    {
+        "name": "SOCI129"
+    },
+    {
+        "name": "SOCI122"
+    },
+    {
+        "name": "SOCI121"
+    },
+    {
+        "name": "SOCI126"
+    },
+    {
+        "name": "SOCI127"
+    },
+    {
+        "name": "SOCI125"
+    },
+    {
+        "name": "LTRU1A"
+    },
+    {
+        "name": "HIEU104B"
+    },
+    {
+        "name": "SIO181"
+    },
+    {
+        "name": "CSE15L"
+    },
+    {
+        "name": "BIMM118"
+    },
+    {
+        "name": "BIMM116"
+    },
+    {
+        "name": "CGS105"
+    },
+    {
+        "name": "ANBI159"
+    },
+    {
+        "name": "CGS107"
+    },
+    {
+        "name": "BIMM112"
+    },
+    {
+        "name": "CGS101"
+    },
+    {
+        "name": "BIMM110"
+    },
+    {
+        "name": "CGS103"
+    },
+    {
+        "name": "SOCB118L"
+    },
+    {
+        "name": "HILA121A"
+    },
+    {
+        "name": "PSYC150"
+    },
+    {
+        "name": "PSYC151"
+    },
+    {
+        "name": "PSYC152"
+    },
+    {
+        "name": "PSYC153"
+    },
+    {
+        "name": "PSYC154"
+    },
+    {
+        "name": "PSYC155"
+    },
+    {
+        "name": "PSYC156"
+    },
+    {
+        "name": "PSYC157"
+    },
+    {
+        "name": "PSYC158"
+    },
+    {
+        "name": "PSYC159"
+    },
+    {
+        "name": "LIAB1D"
+    },
+    {
+        "name": "LIAB1A"
+    },
+    {
+        "name": "LIAB1C"
+    },
+    {
+        "name": "LIAB1B"
+    },
+    {
+        "name": "ECON161"
+    },
+    {
+        "name": "ECON163"
+    },
+    {
+        "name": "ECON162"
+    },
+    {
+        "name": "ECON165"
+    },
+    {
+        "name": "ECON166"
+    },
+    {
+        "name": "LTWR110"
+    },
+    {
+        "name": "LTWR112"
+    },
+    {
+        "name": "LTWR113"
+    },
+    {
+        "name": "LTWR114"
+    },
+    {
+        "name": "LTWR115"
+    },
+    {
+        "name": "MATH140A"
+    },
+    {
+        "name": "LTWR119"
+    },
+    {
+        "name": "MATH140C"
+    },
+    {
+        "name": "MATH140B"
+    },
+    {
+        "name": "VIS70N"
+    },
+    {
+        "name": "BILD18"
+    },
+    {
+        "name": "BILD12"
+    },
+    {
+        "name": "CSE150"
+    },
+    {
+        "name": "BILD10"
+    },
+    {
+        "name": "CSE152"
+    },
+    {
+        "name": "SE160A"
+    },
+    {
+        "name": "SOCI2"
+    },
+    {
+        "name": "LTSP41"
+    },
+    {
+        "name": "MUS153"
+    },
+    {
+        "name": "HISC115"
+    },
+    {
+        "name": "HISC116"
+    },
+    {
+        "name": "PHYS105B"
+    },
+    {
+        "name": "LIAB1CX"
+    },
+    {
+        "name": "VIS125A"
+    },
+    {
+        "name": "LTSP150B"
+    },
+    {
+        "name": "NANO164"
+    },
+    {
+        "name": "NANO161"
+    },
+    {
+        "name": "SOCI104Q"
+    },
+    {
+        "name": "SOCI168E"
+    },
+    {
+        "name": "BIEB156"
+    },
+    {
+        "name": "BIEB150"
+    },
+    {
+        "name": "TDPF162"
+    },
+    {
+        "name": "CHEM143AH"
+    },
+    {
+        "name": "LTEN175B"
+    },
+    {
+        "name": "VIS122CN"
+    },
+    {
+        "name": "MAE125A"
+    },
+    {
+        "name": "ECE111"
+    },
+    {
+        "name": "CHIN20BM"
+    },
+    {
+        "name": "CHIN20BN"
+    },
+    {
+        "name": "ECE118"
+    },
+    {
+        "name": "CHIN20BD"
+    },
+    {
+        "name": "PSYC111B"
+    },
+    {
+        "name": "LTEN174"
+    },
+    {
+        "name": "LTEN176"
+    },
+    {
+        "name": "LTEN177"
+    },
+    {
+        "name": "LTEN172"
+    },
+    {
+        "name": "LTEN178"
+    },
+    {
+        "name": "HILD2C"
+    },
+    {
+        "name": "HILD2B"
+    },
+    {
+        "name": "ANSC125"
+    },
+    {
+        "name": "ANSC124"
+    },
+    {
+        "name": "CSE7"
+    },
+    {
+        "name": "ANSC126"
+    },
+    {
+        "name": "ANSC121"
+    },
+    {
+        "name": "ANSC120"
+    },
+    {
+        "name": "CSE3"
+    },
+    {
+        "name": "ANSC122"
+    },
+    {
+        "name": "ANSC129"
+    },
+    {
+        "name": "ANSC128"
+    },
+    {
+        "name": "MATH102"
+    },
+    {
+        "name": "LIIT1BX"
+    },
+    {
+        "name": "MATH109"
+    },
+    {
+        "name": "PHYS130B"
+    },
+    {
+        "name": "PHYS130C"
+    },
+    {
+        "name": "MATH10A"
+    },
+    {
+        "name": "MATH10B"
+    },
+    {
+        "name": "MATH10C"
+    },
+    {
+        "name": "VIS141A"
+    },
+    {
+        "name": "MAE113"
+    },
+    {
+        "name": "MAE119"
+    },
+    {
+        "name": "MAE118"
+    },
+    {
+        "name": "COHI100"
+    },
+    {
+        "name": "LTSP134"
+    },
+    {
+        "name": "LTSP136"
+    },
+    {
+        "name": "LTSP137"
+    },
+    {
+        "name": "LTSP138"
+    },
+    {
+        "name": "HIUS138"
+    },
+    {
+        "name": "HIUS139"
+    },
+    {
+        "name": "HIUS130"
+    },
+    {
+        "name": "HIUS131"
+    },
+    {
+        "name": "HIUS132"
+    },
+    {
+        "name": "HIUS133"
+    },
+    {
+        "name": "HIUS134"
+    },
+    {
+        "name": "HIUS136"
+    },
+    {
+        "name": "HIUS137"
+    },
+    {
+        "name": "COSF175"
+    },
+    {
+        "name": "COSF177"
+    },
+    {
+        "name": "SE130B"
+    },
+    {
+        "name": "MGT174"
+    },
+    {
+        "name": "MGT172"
+    },
+    {
+        "name": "VIS126HN"
+    },
+    {
+        "name": "PHIL109"
+    },
+    {
+        "name": "CHIN100CM"
+    },
+    {
+        "name": "CHEM12"
+    },
+    {
+        "name": "CHEM13"
+    },
+    {
+        "name": "CHEM11"
+    },
+    {
+        "name": "CHEM15"
+    },
+    {
+        "name": "POLI140A"
+    },
+    {
+        "name": "CENG124A"
+    },
+    {
+        "name": "CENG124B"
+    },
+    {
+        "name": "POLI140B"
+    },
+    {
+        "name": "HITO140"
+    },
+    {
+        "name": "LIFR1DX"
+    },
+    {
+        "name": "TDMV2"
+    },
+    {
+        "name": "TDMV3"
+    },
+    {
+        "name": "TDMV1"
+    },
+    {
+        "name": "VIS111"
+    },
+    {
+        "name": "HIEU112S"
+    },
+    {
+        "name": "MATH95"
+    },
+    {
+        "name": "PSYC194A"
+    },
+    {
+        "name": "PSYC194C"
+    },
+    {
+        "name": "BIMM120GS"
+    },
+    {
+        "name": "CSE11"
+    },
+    {
+        "name": "COMT110"
+    },
+    {
+        "name": "SE150"
+    },
+    {
+        "name": "COMT116"
+    },
+    {
+        "name": "SE154"
+    },
+    {
+        "name": "COMM110P"
+    },
+    {
+        "name": "LTAM110"
+    },
+    {
+        "name": "COMM110T"
+    },
+    {
+        "name": "COMM110M"
+    },
+    {
+        "name": "VIS175"
+    },
+    {
+        "name": "ANBI140"
+    },
+    {
+        "name": "ANBI141"
+    },
+    {
+        "name": "ANBI143"
+    },
+    {
+        "name": "ANBI148"
+    },
+    {
+        "name": "CGS112"
+    },
+    {
+        "name": "CGS111"
+    },
+    {
+        "name": "CGS110"
+    },
+    {
+        "name": "CHEM143A"
+    },
+    {
+        "name": "CHEM143C"
+    },
+    {
+        "name": "CHEM143B"
+    },
+    {
+        "name": "LIHL117"
+    },
+    {
+        "name": "LIHL114"
+    },
+    {
+        "name": "LIHL115"
+    },
+    {
+        "name": "COMM103F"
+    },
+    {
+        "name": "VIS171"
+    },
+    {
+        "name": "BENG191"
+    },
+    {
+        "name": "COMM103E"
+    },
+    {
+        "name": "PSYC169"
+    },
+    {
+        "name": "PSYC168"
+    },
+    {
+        "name": "VIS176"
+    },
+    {
+        "name": "VIS177"
+    },
+    {
+        "name": "VIS178"
+    },
+    {
+        "name": "PSYC164"
+    },
+    {
+        "name": "PSYC166"
+    },
+    {
+        "name": "LTKO2B"
+    },
+    {
+        "name": "LTKO2C"
+    },
+    {
+        "name": "PSYC163"
+    },
+    {
+        "name": "LTKO2A"
+    },
+    {
+        "name": "VIS120C"
+    },
+    {
+        "name": "PSYC187"
+    },
+    {
+        "name": "PSYC184"
+    },
+    {
+        "name": "PSYC182"
+    },
+    {
+        "name": "ECON178"
+    },
+    {
+        "name": "ECON179"
+    },
+    {
+        "name": "ECON176"
+    },
+    {
+        "name": "ECON174"
+    },
+    {
+        "name": "ECON175"
+    },
+    {
+        "name": "ECON173"
+    },
+    {
+        "name": "PSYC189"
+    },
+    {
+        "name": "ECON171"
+    },
+    {
+        "name": "SE101B"
+    },
+    {
+        "name": "PHIL161"
+    },
+    {
+        "name": "CSE166"
+    },
+    {
+        "name": "CSE167"
+    },
+    {
+        "name": "CSE160"
+    },
+    {
+        "name": "CHIN20CN"
+    },
+    {
+        "name": "CHIN20CM"
+    },
+    {
+        "name": "LTFR21"
+    },
+    {
+        "name": "LTWR124"
+    },
+    {
+        "name": "VIS125DN"
+    },
+    {
+        "name": "LTWR126"
+    },
+    {
+        "name": "CSE168"
+    },
+    {
+        "name": "CSE169"
+    },
+    {
+        "name": "CHIN20CD"
+    },
+    {
+        "name": "SOCB142"
+    },
+    {
+        "name": "PHYS4D"
+    },
+    {
+        "name": "PHIL100"
+    },
+    {
+        "name": "MATH193A"
+    },
+    {
+        "name": "POLI140C"
+    },
+    {
+        "name": "TDMV144"
+    },
+    {
+        "name": "PHIL31"
+    },
+    {
+        "name": "PHIL183"
+    },
+    {
+        "name": "MATH150A"
+    },
+    {
+        "name": "PHIL181"
+    },
+    {
+        "name": "BILD20"
+    },
+    {
+        "name": "PHIL32"
+    },
+    {
+        "name": "PHIL185"
+    },
+    {
+        "name": "VIS110F"
+    },
+    {
+        "name": "PHIL33"
+    },
+    {
+        "name": "CHIN20AD"
+    },
+    {
+        "name": "LTSP119C"
+    },
+    {
+        "name": "NANO112"
+    },
+    {
+        "name": "NANO111"
+    },
+    {
+        "name": "NANO110"
+    },
+    {
+        "name": "HDP133"
+    },
+    {
+        "name": "HDP135"
+    },
+    {
+        "name": "BIEB147"
+    },
+    {
+        "name": "BIEB140"
+    },
+    {
+        "name": "ETHN170B"
+    },
+    {
+        "name": "MUS116"
+    },
+    {
+        "name": "MUS115"
+    },
+    {
+        "name": "MUS114"
+    },
+    {
+        "name": "MUS113"
+    },
+    {
+        "name": "MUS112"
+    },
+    {
+        "name": "MUS111"
+    },
+    {
+        "name": "MUS110"
+    },
+    {
+        "name": "STPA181"
+    },
+    {
+        "name": "MAE20"
+    },
+    {
+        "name": "LTFR50"
+    },
+    {
+        "name": "MAE175A"
+    },
+    {
+        "name": "LTEN141"
+    },
+    {
+        "name": "LTEN140"
+    },
+    {
+        "name": "LTEN143"
+    },
+    {
+        "name": "LTEN142"
+    },
+    {
+        "name": "LTEN145"
+    },
+    {
+        "name": "LTEN144"
+    },
+    {
+        "name": "LTEN147"
+    },
+    {
+        "name": "LTEN146"
+    },
+    {
+        "name": "LTEN149"
+    },
+    {
+        "name": "LTEN148"
+    },
+    {
+        "name": "MGT181"
+    },
+    {
+        "name": "MGT185"
+    },
+    {
+        "name": "MGT184"
+    },
+    {
+        "name": "ANSC136"
+    },
+    {
+        "name": "ANSC137"
+    },
+    {
+        "name": "ANSC134"
+    },
+    {
+        "name": "ANSC135"
+    },
+    {
+        "name": "ANSC139"
+    },
+    {
+        "name": "LIAB1BX"
+    },
+    {
+        "name": "SE112A"
+    },
+    {
+        "name": "CHEM154"
+    },
+    {
+        "name": "CHEM156"
+    },
+    {
+        "name": "CHEM157"
+    },
+    {
+        "name": "CHEM151"
+    },
+    {
+        "name": "CHEM152"
+    },
+    {
+        "name": "SOCI103M"
+    },
+    {
+        "name": "CHEM158"
+    },
+    {
+        "name": "LTEN127A"
+    },
+    {
+        "name": "ANTH5"
+    },
+    {
+        "name": "ANTH2"
+    },
+    {
+        "name": "ANTH3"
+    },
+    {
+        "name": "ANTH1"
+    },
+    {
+        "name": "USP1"
+    },
+    {
+        "name": "USP2"
+    },
+    {
+        "name": "USP3"
+    },
+    {
+        "name": "BENG112B"
+    },
+    {
+        "name": "BENG112A"
+    },
+    {
+        "name": "SOCB160L"
+    },
+    {
+        "name": "LIGN111"
+    },
+    {
+        "name": "LIGN110"
+    },
+    {
+        "name": "MAE124"
+    },
+    {
+        "name": "MAE120"
+    },
+    {
+        "name": "SOCD151"
+    },
+    {
+        "name": "LIGN119"
+    },
+    {
+        "name": "MAE123"
+    },
+    {
+        "name": "HIUS107"
+    },
+    {
+        "name": "LIGN150"
+    },
+    {
+        "name": "COHI114"
+    },
+    {
+        "name": "HIUS100"
+    },
+    {
+        "name": "COHI116"
+    },
+    {
+        "name": "COHI117"
+    },
+    {
+        "name": "COHI119"
+    },
+    {
+        "name": "SOCI60"
+    },
+    {
+        "name": "POLI150A"
+    },
+    {
+        "name": "HILD10"
+    },
+    {
+        "name": "HILD11"
+    },
+    {
+        "name": "HILD12"
+    },
+    {
+        "name": "HILD14"
+    },
+    {
+        "name": "POLI105A"
+    },
+    {
+        "name": "POLI110B"
+    },
+    {
+        "name": "POLI142Q"
+    },
+    {
+        "name": "POLI142P"
+    },
+    {
+        "name": "COSF141"
+    },
+    {
+        "name": "POLI110N"
+    },
+    {
+        "name": "COSF143"
+    },
+    {
+        "name": "COSF142"
+    },
+    {
+        "name": "MGT164"
+    },
+    {
+        "name": "MGT166"
+    },
+    {
+        "name": "POLI110H"
+    },
+    {
+        "name": "EDS118"
+    },
+    {
+        "name": "EDS119"
+    },
+    {
+        "name": "VIS126AN"
+    },
+    {
+        "name": "CSE140L"
+    },
+    {
+        "name": "EDS117"
+    },
+    {
+        "name": "EDS114"
+    },
+    {
+        "name": "EDS115"
+    },
+    {
+        "name": "VIS121AN"
+    },
+    {
+        "name": "HINE119"
+    },
+    {
+        "name": "HINE118"
+    },
+    {
+        "name": "HINE113"
+    },
+    {
+        "name": "SOCC168T"
+    },
+    {
+        "name": "HINE116"
+    },
+    {
+        "name": "HINE114"
+    },
+    {
+        "name": "SE140"
+    },
+    {
+        "name": "SE142"
+    },
+    {
+        "name": "SIO50"
+    },
+    {
+        "name": "CSE12"
+    },
+    {
+        "name": "BIBC110"
+    },
+    {
+        "name": "PSYC194B"
+    },
+    {
+        "name": "COGS107B"
+    },
+    {
+        "name": "COGS107C"
+    },
+    {
+        "name": "COGS107A"
+    },
+    {
+        "name": "CHIN100BM"
+    },
+    {
+        "name": "MUS9"
+    },
+    {
+        "name": "MUS8"
+    },
+    {
+        "name": "POLI142M"
+    },
+    {
+        "name": "MATH180A"
+    },
+    {
+        "name": "CHEM120B"
+    },
+    {
+        "name": "MUS6"
+    },
+    {
+        "name": "MUS5"
+    },
+    {
+        "name": "CHEM120A"
+    },
+    {
+        "name": "ANBI175"
+    },
+    {
+        "name": "BIMM171"
+    },
+    {
+        "name": "BIMM173"
+    },
+    {
+        "name": "ANBI173"
+    },
+    {
+        "name": "ETHN145"
+    },
+    {
+        "name": "SE152"
+    },
+    {
+        "name": "ETHN129"
+    },
+    {
+        "name": "ETHN128"
+    },
+    {
+        "name": "ETHN127"
+    },
+    {
+        "name": "ETHN126"
+    },
+    {
+        "name": "ETHN125"
+    },
+    {
+        "name": "ETHN122"
+    },
+    {
+        "name": "ETHN121"
+    },
+    {
+        "name": "LTRU1C"
+    },
+    {
+        "name": "LTWL184"
+    },
+    {
+        "name": "PSYC178"
+    },
+    {
+        "name": "PSYC179"
+    },
+    {
+        "name": "LTWL181"
+    },
+    {
+        "name": "LTWL180"
+    },
+    {
+        "name": "LTWL183"
+    },
+    {
+        "name": "PSYC172"
+    },
+    {
+        "name": "PSYC173"
+    },
+    {
+        "name": "PSYC170"
+    },
+    {
+        "name": "ETHN142"
+    },
+    {
+        "name": "PSYC176"
+    },
+    {
+        "name": "SE130A"
+    },
+    {
+        "name": "COMM102M"
+    },
+    {
+        "name": "ECON109"
+    },
+    {
+        "name": "PSYC190"
+    },
+    {
+        "name": "PSYC191"
+    },
+    {
+        "name": "PSYC193"
+    },
+    {
+        "name": "ECON103"
+    },
+    {
+        "name": "ECON101"
+    },
+    {
+        "name": "ECON107"
+    },
+    {
+        "name": "ECON105"
+    },
+    {
+        "name": "LIGM1BX"
+    },
+    {
+        "name": "BILD36"
+    },
+    {
+        "name": "HIAF120"
+    },
+    {
+        "name": "BILD38"
+    },
+    {
+        "name": "COMM111P"
+    },
+    {
+        "name": "HIUS156D"
+    },
+    {
+        "name": "ENVR140"
+    },
+    {
+        "name": "CSE70"
+    },
+    {
+        "name": "POLI126AA"
+    },
+    {
+        "name": "POLI126AB"
+    },
+    {
+        "name": "LTWL128"
+    },
+    {
+        "name": "TDMV120"
+    },
+    {
+        "name": "BICD111"
+    },
+    {
+        "name": "BICD110"
+    },
+    {
+        "name": "LIAB1AX"
+    },
+    {
+        "name": "TDPR6"
+    },
+    {
+        "name": "NANO108"
+    },
+    {
+        "name": "VIS127C"
+    },
+    {
+        "name": "VIS127B"
+    },
+    {
+        "name": "COMM133"
+    },
+    {
+        "name": "COMM132"
+    },
+    {
+        "name": "SIO141"
+    },
+    {
+        "name": "NANO101"
+    },
+    {
+        "name": "NANO102"
+    },
+    {
+        "name": "NANO103"
+    },
+    {
+        "name": "MMW22"
+    },
+    {
+        "name": "SIO12"
+    },
+    {
+        "name": "MMW21"
+    },
+    {
+        "name": "VIS127P"
+    },
+    {
+        "name": "HDP121"
+    },
+    {
+        "name": "HDP120"
+    },
+    {
+        "name": "HDP122"
+    },
+    {
+        "name": "BIEB174"
+    },
+    {
+        "name": "BIEB176"
+    },
+    {
+        "name": "SOCI120T"
+    },
+    {
+        "name": "LTTH115"
+    },
+    {
+        "name": "ANAR154"
+    },
+    {
+        "name": "ANAR156"
+    },
+    {
+        "name": "ANAR153"
+    },
+    {
+        "name": "LTSP133"
+    },
+    {
+        "name": "ANAR158"
+    },
+    {
+        "name": "MCWP125"
+    },
+    {
+        "name": "MUS102C"
+    },
+    {
+        "name": "MUS102B"
+    },
+    {
+        "name": "MUS102A"
+    },
+    {
+        "name": "LTEN158"
+    },
+    {
+        "name": "LTEN159"
+    },
+    {
+        "name": "LTEN156"
+    },
+    {
+        "name": "LTEN154"
+    },
+    {
+        "name": "LTEN155"
+    },
+    {
+        "name": "LTEN152"
+    },
+    {
+        "name": "LTEN153"
+    },
+    {
+        "name": "ECON113"
+    },
+    {
+        "name": "CHEM165"
+    },
+    {
+        "name": "CHEM164"
+    },
+    {
+        "name": "HIEU149"
+    },
+    {
+        "name": "CHEM166"
+    },
+    {
+        "name": "HIEU147"
+    },
+    {
+        "name": "HIEU146"
+    },
+    {
+        "name": "HIEU145"
+    },
+    {
+        "name": "HIEU144"
+    },
+    {
+        "name": "HIEU143"
+    },
+    {
+        "name": "HIEU141"
+    },
+    {
+        "name": "LIIT1DX"
+    },
+    {
+        "name": "CGS113"
+    },
+    {
+        "name": "SE101C"
+    },
+    {
+        "name": "SOCB112"
+    },
+    {
+        "name": "SOCL20"
+    },
+    {
+        "name": "PSYC1"
+    },
+    {
+        "name": "SOCD169"
+    },
+    {
+        "name": "LIGN105"
+    },
+    {
+        "name": "LIGN101"
+    },
+    {
+        "name": "MAE133"
+    },
+    {
+        "name": "VIS147A"
+    },
+    {
+        "name": "LIGN108"
+    },
+    {
+        "name": "SOCD164"
+    },
+    {
+        "name": "SOCB117"
+    },
+    {
+        "name": "HIUS110"
+    },
+    {
+        "name": "HIUS111"
+    },
+    {
+        "name": "HIUS116"
+    },
+    {
+        "name": "COHI128"
+    },
+    {
+        "name": "HIUS114"
+    },
+    {
+        "name": "HIUS115"
+    },
+    {
+        "name": "COHI125"
+    },
+    {
+        "name": "COHI124"
+    },
+    {
+        "name": "COHI127"
+    },
+    {
+        "name": "MGT3"
+    },
+    {
+        "name": "LTSP116"
+    },
+    {
+        "name": "MGT5"
+    },
+    {
+        "name": "COHI123"
+    },
+    {
+        "name": "COHI122"
+    },
+    {
+        "name": "ECON173AL"
+    },
+    {
+        "name": "SOCC139"
+    },
+    {
+        "name": "SOCC138"
+    },
+    {
+        "name": "COSF171A"
+    },
+    {
+        "name": "MATH104A"
+    },
+    {
+        "name": "LIGN7"
+    },
+    {
+        "name": "MATH104B"
+    },
+    {
+        "name": "BIPN140"
+    },
+    {
+        "name": "BIPN142"
+    },
+    {
+        "name": "BIPN145"
+    },
+    {
+        "name": "BIPN144"
+    },
+    {
+        "name": "BIPN146"
+    },
+    {
+        "name": "MATH168A"
+    },
+    {
+        "name": "BENG139A"
+    },
+    {
+        "name": "CHIN100AM"
+    },
+    {
+        "name": "BENG139B"
+    },
+    {
+        "name": "COSF139B"
+    },
+    {
+        "name": "COSF139A"
+    },
+    {
+        "name": "EDS109"
+    },
+    {
+        "name": "POLI145C"
+    },
+    {
+        "name": "LIGN146"
+    },
+    {
+        "name": "LIHL112"
+    },
+    {
+        "name": "COSF140B"
+    },
+    {
+        "name": "COSF140C"
+    },
+    {
+        "name": "COSF140A"
+    },
+    {
+        "name": "CHEM114A"
+    },
+    {
+        "name": "CHEM114C"
+    },
+    {
+        "name": "CHEM114B"
+    },
+    {
+        "name": "POLI146A"
+    },
+    {
+        "name": "LIFR1BX"
+    },
+    {
+        "name": "MAE8"
+    },
+    {
+        "name": "POLI119A"
+    },
+    {
+        "name": "HINE108"
+    },
+    {
+        "name": "POLI104B"
+    },
+    {
+        "name": "POLI104D"
+    },
+    {
+        "name": "POLI104F"
+    },
+    {
+        "name": "POLI104I"
+    },
+    {
+        "name": "HINE101"
+    },
+    {
+        "name": "HINE102"
+    },
+    {
+        "name": "HINE103"
+    },
+    {
+        "name": "POLI104M"
+    },
+    {
+        "name": "POLI104L"
+    },
+    {
+        "name": "HINE107"
+    },
+    {
+        "name": "ECE35"
+    },
+    {
+        "name": "LTWL19C"
+    },
+    {
+        "name": "LTWL19A"
+    },
+    {
+        "name": "ECE30"
+    },
+    {
+        "name": "SIO45"
+    },
+    {
+        "name": "JAPN10A"
+    },
+    {
+        "name": "JAPN10C"
+    },
+    {
+        "name": "JAPN10B"
+    },
+    {
+        "name": "BIBC104"
+    },
+    {
+        "name": "BIBC100"
+    },
+    {
+        "name": "BIBC102"
+    },
+    {
+        "name": "BIBC103"
+    },
+    {
+        "name": "LIGM1CX"
+    },
+    {
+        "name": "VIS174"
+    },
+    {
+        "name": "LTCS150"
+    },
+    {
+        "name": "LTEA120C"
+    },
+    {
+        "name": "LTEA120B"
+    },
+    {
+        "name": "LTEA120A"
+    },
+    {
+        "name": "PSYC161"
+    },
+    {
+        "name": "ETHN137"
+    },
+    {
+        "name": "ETHN131"
+    },
+    {
+        "name": "BENG140A"
+    },
+    {
+        "name": "CGS106"
+    },
+    {
+        "name": "LTWL191"
+    },
+    {
+        "name": "VIS112"
+    },
+    {
+        "name": "PSYC162"
+    },
+    {
+        "name": "INTL190"
+    },
+    {
+        "name": "ECON118"
+    },
+    {
+        "name": "ECON119"
+    },
+    {
+        "name": "ANTH101"
+    },
+    {
+        "name": "ANTH103"
+    },
+    {
+        "name": "ANTH102"
+    },
+    {
+        "name": "ECON111"
+    },
+    {
+        "name": "ECE101"
+    },
+    {
+        "name": "ECON114"
+    },
+    {
+        "name": "SE110B"
+    },
+    {
+        "name": "ECON116"
+    },
+    {
+        "name": "ECON117"
+    },
+    {
+        "name": "HIAF111"
+    },
+    {
+        "name": "BILD22"
+    },
+    {
+        "name": "HIAF113"
+    },
+    {
+        "name": "HIAF112"
+    },
+    {
+        "name": "BILD26"
+    },
+    {
+        "name": "BILD24"
+    },
+    {
+        "name": "CHIN20AM"
+    },
+    {
+        "name": "CHIN20AN"
+    },
+    {
+        "name": "BICD100"
+    },
+    {
+        "name": "BICD101"
+    },
+    {
+        "name": "ECON158A"
+    },
+    {
+        "name": "VIS126J"
+    },
+    {
+        "name": "ECON158B"
+    },
+    {
+        "name": "VIS126K"
+    },
+    {
+        "name": "COMM126"
+    },
+    {
+        "name": "HDP110"
+    },
+    {
+        "name": "PHYS2A"
+    },
+    {
+        "name": "MMW13"
+    },
+    {
+        "name": "MMW12"
+    },
+    {
+        "name": "MMW11"
+    },
+    {
+        "name": "COMM128"
+    },
+    {
+        "name": "PHYS2B"
+    },
+    {
+        "name": "MMW15"
+    },
+    {
+        "name": "MMW14"
+    },
+    {
+        "name": "PHYS2C"
+    },
+    {
+        "name": "SIO120"
+    },
+    {
+        "name": "CHEM174"
+    },
+    {
+        "name": "PHIL12"
+    },
+    {
+        "name": "PHYS140B"
+    },
+    {
+        "name": "PHYS140A"
+    },
+    {
+        "name": "PHIL13"
+    },
+    {
+        "name": "CHEM172"
+    },
+    {
+        "name": "CHEM100BL"
+    },
+    {
+        "name": "HIEA134"
+    },
+    {
+        "name": "CHEM173"
+    },
+    {
+        "name": "MUS171"
+    },
+    {
+        "name": "MUS170"
+    },
+    {
+        "name": "MUS173"
+    },
+    {
+        "name": "MUS172"
+    },
+    {
+        "name": "MUS175"
+    },
+    {
+        "name": "CHEM171"
+    },
+    {
+        "name": "ANAR142"
+    },
+    {
+        "name": "ANAR143"
+    },
+    {
+        "name": "ANAR141"
+    },
+    {
+        "name": "PHIL14"
+    },
+    {
+        "name": "ANAR144"
+    },
+    {
+        "name": "PHIL146"
+    },
+    {
+        "name": "CENG101A"
+    },
+    {
+        "name": "CENG101C"
+    },
+    {
+        "name": "CENG101B"
+    },
+    {
+        "name": "PHIL145"
+    },
+    {
+        "name": "ANAR155S"
+    },
+    {
+        "name": "PSYC188"
+    },
+    {
+        "name": "BILD1"
+    },
+    {
+        "name": "BILD2"
+    },
+    {
+        "name": "BILD3"
+    },
+    {
+        "name": "BILD7"
+    },
+    {
+        "name": "LTEN120"
+    },
+    {
+        "name": "LTEN127"
+    },
+    {
+        "name": "LTEN125"
+    },
+    {
+        "name": "LTEN124"
+    },
+    {
+        "name": "SE101A"
+    },
+    {
+        "name": "ECON1"
+    },
+    {
+        "name": "ECON2"
+    },
+    {
+        "name": "ECON3"
+    },
+    {
+        "name": "ECON4"
+    },
+    {
+        "name": "HIEU158"
+    },
+    {
+        "name": "HIEU159"
+    },
+    {
+        "name": "VIS126I"
+    },
+    {
+        "name": "HIEU154"
+    },
+    {
+        "name": "HIEU156"
+    },
+    {
+        "name": "HIEU150"
+    },
+    {
+        "name": "HIEU151"
+    },
+    {
+        "name": "HIEU152"
+    },
+    {
+        "name": "HIEU153"
+    },
+    {
+        "name": "BIEB166"
+    },
+    {
+        "name": "BIEB167"
+    },
+    {
+        "name": "BIEB164"
+    },
+    {
+        "name": "BIEB165"
+    },
+    {
+        "name": "SOCB162"
+    },
+    {
+        "name": "SOCB161"
+    },
+    {
+        "name": "SOCB160"
+    },
+    {
+        "name": "VIS126Q"
+    },
+    {
+        "name": "PHIL149"
+    },
+    {
+        "name": "PHIL148"
+    }
 ]
