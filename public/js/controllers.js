@@ -387,12 +387,12 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountAddClassCtrl', function($scope, $ionicPopup, Class, $ionicLoading) {
-  $scope.enrolled = []
+  $scope.classes = [];
+  $scope.enrolled = [];
   Class.enrolled(function(enrolled, err) {
     if (err) { console.log(err); return; }
 
     $scope.enrolled = enrolled;
-    console.log($scope.enrolled);
   });
 
   $scope.isEnrolledClass = function(__class) {
