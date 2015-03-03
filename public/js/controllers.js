@@ -22,7 +22,7 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller('TasksCtrl', function($scope, Task, Users, Classes, Tasks, UserTasks) {
+.controller('TasksCtrl', function($scope, $location, Task, Users, Classes, Tasks, UserTasks) {
   function dayToString(day) {
     var daysOfTheWeek = [
       'Sunday',
@@ -35,6 +35,14 @@ angular.module('starter.controllers', [])
     ];
 
     return daysOfTheWeek[day];
+  };
+
+  $scope.click = function(event){
+    alert("Cliked");
+  };
+
+  $scope.taskDetail = function(userTask) {
+    $location.path("app/tasks/" + userTask.task._id);
   };
 
   function dateToWeek(date) {

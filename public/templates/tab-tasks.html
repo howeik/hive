@@ -1,22 +1,97 @@
 <ion-view view-title="Dashboard">
 	<ion-content>
-		<div class="list">
+		<div class="">
 
-		<!-- This Week -->
+			<!-- This Week -->
 			<div class="item item-divider">
 				This Week
-<!-- 				<i class="ion-chevron-down" style="float:right;"></i>
- -->			</div>
+			</div>
 
-			<!-- This Week Task -->
-			 	<li class="item item-checkbox"  ng-repeat="userTask in this_week" ng-change="updateUserTask(userTask)" ng-model="userTask.is_finished" >
+			<ion-item ng-repeat="userTask in this_week" class="item item-checkbox item-icon-right">
 
-				<!-- Checkbox -->
+				<label class="checkbox">
+				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+				</label>
+
+				<div class="tasks">
+					<div class="task-title">
+						{{userTask.task.name}}
+					</div>
+					<div class="date-title">
+						{{userTask.day_of_the_week}}
+					</div>
+					<div class="course-title">
+						{{userTask.task.class.name}}
+					</div>
+				</div>
+
+				<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+
+
+			<!-- Upcoming -->
+			<div class="item item-divider">
+				Upcoming
+			</div>
+
+			<ion-item ng-repeat="userTask in upcoming" class="item item-checkbox item-icon-right">
+
+				<label class="checkbox">
+				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+				</label>
+
+				<div class="tasks">
+					<div class="task-title">
+						{{userTask.task.name}}
+					</div>
+					<div class="date-title">
+						{{userTask.task.due_date}}
+					</div>
+					<div class="course-title">
+						{{userTask.task.class.name}}
+					</div>
+				</div>
+
+				<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+
+
+			<!-- Completed -->
+			<div class="item item-divider">
+				Completed
+			</div>
+
+			<ion-item ng-repeat="userTask in archived" class="item item-checkbox item-icon-right">
+
+				<label class="checkbox">
+				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+				</label>
+
+				<div class="tasks">
+					<div class="task-title">
+						{{userTask.task.name}}
+					</div>
+					<div class="date-title">
+						{{userTask.task.due_date}}
+					</div>
+					<div class="course-title">
+						{{userTask.task.class.name}}
+					</div>
+				</div>
+
+				<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+
+
+			<!-- OLD This Week Task -->
+			<!--	<li class="item item-checkbox"  ng-repeat="userTask in this_week" ng-change="updateUserTask(userTask)" ng-model="userTask.is_finished" >
+
+				
 					<div  ng-change="updateUserTask(userTask)" ng-model="userTask.is_finished"  class="checkbox">
 						<input type="checkbox" ng-change="updateUserTask(userTask)" ng-model="userTask.is_finished">
 					</div>
 
-				<!-- Task Content -->
+				
 					<div class="tasks">
 										<a href="#/app/tasks/{{userTask.task._id}}">
 
@@ -32,99 +107,18 @@
 						</a>
 					</div>
 	
-				<!-- Drop Down Arrow -->				
-<!-- 					<i class="ion-chevron-down" style="float:right;
-					margin-top: -39px;" id="dropdown"></i> -->
+					
+					<i class="ion-chevron-down" style="float:right;
+					margin-top: -39px;" id="dropdown"></i>
 
-				<!--Detail Content -->
+			
 					<div class="detail">
 						Detail:   {{userTask.task.description}}
-<!-- 						<div class="endorsed">
+						<div class="endorsed">
 							<span class="ion-checkmark-round">{{task.endorsed_message}}</span>
-						</div>     -->      
+						</div>       
 					</div>
-			</li>
-
-			<!-- Upcoming -->
-			<div class="item item-divider">
-				Upcoming
-<!-- 			 	<i class="ion-chevron-right" style="float:right; padding-right:2px;"></i>
- -->			</div>
-
-				<!-- Upcoming Task -->
-					<li class="item item-checkbox" ng-repeat="userTask in upcoming" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
-
-					<!-- Checkbox -->
-						<div class="checkbox">
-							<input type="checkbox">
-						</div> 
-
-					<!-- Task Content -->
-						<div class="tasks">
-							<div class="task-title">
-								{{userTask.task.name}}
-							</div>
-							<div class="date-title">
-								{{userTask.task.due_date}}
-							</div>
-							<div class="course-title">
-								{{userTask.task.class.name}}
-							</div>
-						</div>
-
-					<!-- Drop Down Arrow -->					
-		<!-- 				<i class="ion-chevron-down" style="float:right;
-						margin-top: -36px;" id="dropdown"></i> -->
-
-					<!--Detail Content -->
-						<div class="detail">
-						Detail:   {{userTask.task.description}}
-<!-- 							<div class="endorsed">
-							 <span class="ion-checkmark-round">{{task.endorsed_message}}</span>
-							</div>          
- -->						</div>
-					</li>
-
-
-
-		<!-- Completed Tasks -->
-			<div class="item item-divider">
-				Completed
-<!-- 				<i class="ion-chevron-right" style="float:right;"></i>
- -->			</div>
-
-			<!-- Checkbox -->
-				<li class="item item-checkbox" ng-repeat="userTask in archived" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
-					<div class="checkbox">
-						<input type="checkbox">
-					</div>
-
-				<!-- Task Content -->
-					<div class="tasks">
-						<div class="task-title">
-							{{userTask.task.name}}
-						</div>
-						<div class="date-title">
-							{{userTask.task.due_date}}
-						</div>
-						<div class="course-title">
-							{{userTask.task.class.name}}
-						</div>
-					</div>
-
-				<!-- Drop Down Arrow -->
-<!-- 					<i class="ion-chevron-down" style="float:right;
-					margin-top: -39px;" id="dropdown"></i> -->
-
-				<!--Detail Content -->
-					<div class="detail">
-						Detail:   {{userTask.task.description}}
-	<!-- 					<div class="endorsed">
-							 <span class="ion-checkmark-round">{{task.endorsed_message}}</span>
-						</div>       -->    
-					</div>
-				</li>
-
+			</li> -->
 
 		</div>
 	</ion-content>

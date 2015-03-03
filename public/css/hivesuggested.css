@@ -3,6 +3,13 @@ body {
 
 }
 
+
+.item-icon-right > .icon {
+  z-index: 4;
+}
+
+
+
 .mainContainer {
     position: absolute;
     top: 0;
