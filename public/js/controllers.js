@@ -144,7 +144,9 @@ angular.module('starter.controllers', [])
   console.log($scope.task);
 })
 
-.controller('ChatsCtrl', function($scope, $rootScope, $ionicLoading, Task, Users, Classes, Tasks, UserTasks) {
+.controller('SharedCtrl', function($scope, $rootScope, $ionicLoading, Task, Users, Classes, Tasks, UserTasks) {
+  
+
   $scope.tasks = [];
   if ($rootScope.declinedTasks == undefined) {
     $rootScope.declinedTasks = [];

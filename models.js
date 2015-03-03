@@ -26,7 +26,8 @@ var TaskSchema = new Mongoose.Schema({
   "is_shared": Boolean,
   "class": { type: Mongoose.Schema.Types.ObjectId, ref: "Class" },
   "class_name": String,
-  "is_endorsed": Boolean
+  "is_endorsed": Boolean,
+  "creator": { type: Mongoose.Schema.Types.ObjectId, ref: "User" }
 });
 
 var UserTasksSchema = new Mongoose.Schema({
