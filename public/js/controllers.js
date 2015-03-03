@@ -144,9 +144,7 @@ angular.module('starter.controllers', [])
   console.log($scope.task);
 })
 
-.controller('SharedCtrl', function($scope, $rootScope, $ionicLoading, Task, Users, Classes, Tasks, UserTasks) {
-  
-
+.controller('SharedCtrl', function($scope, $rootScope, $ionicLoading, Task, Class, Users, Classes, Tasks, UserTasks) {
   $scope.tasks = [];
   if ($rootScope.declinedTasks == undefined) {
     $rootScope.declinedTasks = [];
@@ -171,6 +169,29 @@ angular.module('starter.controllers', [])
       });
 
       $scope.tasks = sharedTasks;
+      $scope.tasksByClass = {}
+      Class.enrolled(function(classes, err) {
+        if (err) { console.log(err); return; }
+
+        var classesToProcess = classes.length;
+        classes.forEach(function(_class) {
+          $scope.tasksByClass[_class.name] = [];
+          classesToProcess--;
+
+          if (classesToProcess == 0) {
+            $scope.tasks.forEach(function(task) {
+              $scope.tasksByClass[task.class.name].push(task);
+            });
+
+            $scope.classes = classes.sort(function(a, b) {
+              return $scope.tasksByClass[b.name].length - $scope.tasksByClass[a.name].length;
+            });
+          }
+        });
+      });
+
+      console.log($scope.tasksByClass);
+
       $rootScope.badgeCount = $scope.tasks.length;
 
 
@@ -240,13 +261,19 @@ angular.module('starter.controllers', [])
   // $scope.tasks = tasks;
   $scope.accept = function(task) {
     console.log(task);
-    $('#task' + task._id).hide(500);
+    $('#task' + task._id).hide(400, function() {
+      for (var i = 0; i < $scope.tasksByClass[task.class.name].length; ++i) {
+        if ($scope.tasksByClass[task.class.name][i]._id == task._id) {
+          $scope.tasksByClass[task.class.name].splice(i, 1);
+        }
+      }
+    });
 
     Task.add(task._id, function(data,err) {
       if (err) { console.log(err); return }
       console.log("task added");
       console.log(data);
-    })
+    });
 
     $rootScope.badgeCount -= 1;
     $ionicLoading.show({ template: 'Task accepted!', noBackdrop: true, duration: 800 });
@@ -255,7 +282,14 @@ angular.module('starter.controllers', [])
   $scope.decline = function(task) {
     console.log(task);
     // Users.addDeclinedTaskId(task.id);
-    $('#task' + task._id).hide(500);
+    $('#task' + task._id).hide(400, function() {
+      for (var i = 0; i < $scope.tasksByClass[task.class.name].length; ++i) {
+        if ($scope.tasksByClass[task.class.name][i]._id == task._id) {
+          $scope.tasksByClass[task.class.name].splice(i, 1);
+        }
+      }
+    });
+
 
     $rootScope.declinedTasks.push(task._id);
     $ionicLoading.show({ template: 'Task declined!', noBackdrop: true, duration: 800 });

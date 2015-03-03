@@ -2,7 +2,7 @@
     <ion-content>
         <ul class="list">
             <ion-item ng-show="tasks.length == 0">
-                No shared tasks! Add your classes or share your own tasks!
+                Add your classes to see what's being shared :)
 <!--                 <div class="title">{{task.name}}</div>
                 <div class="course">{{task.class.name}}</div>
                 <div class="date">{{task.due_date}}</div>
@@ -18,24 +18,37 @@
                     </button>
                 </div> -->
             </ion-item>
-            <ion-item style="padding-bottom: 0px;" ng-repeat="task in tasks" id="task{{task._id}}">
-                <div class="title">{{task.name}}</div>
-                <div class="course">{{task.class.name}}</div>
-                <div class="date">{{task.due_date}}</div>
-                <div class="endorsed">
-                    <span class="ion-checkmark-round">{{task.endorsed_message}}</span>
+
+
+            <div ng-repeat="class in classes">
+                <div class="item item-divider">
+                    {{class.name}}
                 </div>
-                <div style="margin-left: auto; margin-right: auto; text-align: center;">
-                    <div class= "action-buttons">
-                        <button ng-click="accept(task)" class="button button-clear button-balanced" style="line-height: 30px;"> 
-                            Accept
-                        </button>
-                        <button ng-click="decline(task)" class="button button-clear button-assertive" style="line-height: 30px;">
-                            Decline
-                        </button>
+
+                <ion-item ng-show="tasksByClass[class.name].length == 0">
+                    No shared tasks for {{class.name}}. Why don't you add one?
+                </ion-item>
+
+                <ion-item style="padding-bottom: 0px;" ng-repeat="task in tasksByClass[class.name]" id="task{{task._id}}">
+                    <div class="title">{{task.name}}</div>
+                    <div class="course">{{task.class.name}}</div>
+                    <div class="date">{{task.due_date}}</div>
+                    <div class="endorsed">
+                        <span class="ion-checkmark-round">{{task.endorsed_message}}</span>
                     </div>
-                </div>
-            </ion-item>
+                    <div style="margin-left: auto; margin-right: auto; text-align: center;">
+                        <div class= "action-buttons">
+                            <button ng-click="accept(task)" class="button button-clear button-balanced" style="line-height: 30px;"> 
+                                Accept
+                            </button>
+                            <button ng-click="decline(task)" class="button button-clear button-assertive" style="line-height: 30px;">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                </ion-item>
+            </div>
+
         </ul>
     </ion-content>
 
