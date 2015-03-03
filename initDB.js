@@ -78,6 +78,7 @@ function save(model, model_json) {
                         models.Class.findOne({ 'name': task.class_name }, function(err, _class2) {
                           console.log("setting " + task.name + " to class id " + _class2.id);
                           task.class = _class2.id;
+                          task.creator = user.id;
                           task.save();
 
                           if (task.class_name != "COGS120") {
