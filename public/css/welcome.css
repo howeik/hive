@@ -3,6 +3,14 @@ body {
     background-image:url(/images/geometry.png); background-repeat:repeat;
 }
 
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: 130px;
+	margin-bottom: -20px;
+}
+
 .mainContainer {
     position: absolute;
     top: 0;
@@ -32,15 +40,15 @@ h1 {
 	font-size: 44px;
 	line-height: 45px;
 	text-align: center;
-	padding-top: 55px;
-	padding-bottom: 40px;
+
+	padding-bottom: 25px;
 }
 
 .tagline {
     margin-left: auto;
     margin-right: auto;
     text-align: center;	
-    padding-bottom: 40px;
+    padding-bottom: 30px;
    	font-family: 'Open Sans';
 	font-size: 16px;
 	line-height: 25px;
@@ -99,6 +107,10 @@ input[type="text"], textarea {
 
 }
 
+.buttons {
+	padding-bottom: 30px;
+}
+
 #shared {
 	padding-left:70px;
 	margin-top: -45px;
@@ -118,7 +130,7 @@ input[type="text"], textarea {
 #todolist{
 	padding-left:70px;
 	margin-top: -45px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	width:98%;
 	font-family: 'Open Sans';
 	font-size: 16px;

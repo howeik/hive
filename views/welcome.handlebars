@@ -39,9 +39,9 @@
 	 <script type="text/ng-template" id="welcome.html">
 			<ion-view title=" ">
 				<ion-content>
-					<!--<div class="logo">
-						<img src="images/owl.png" alt="logo">
-					</div>-->
+					<div class="logo">
+						<img src="images/owl.png" alt="logo" class="logo">
+					</div>
 					<div class="welcome-title">
 						Welcome to 
 						<br>
@@ -61,7 +61,7 @@
           <i class="ion-ios-world"></i>
             <p id="todolist"> Add tasks your classmates share with one click, and share tasks of your own! </p>
             </div>
-
+            	<div class="buttons">
 					<div style="margin-left: auto; margin-right: auto; text-align: center;">
 					<input type="submit" value="SIGN UP" class="button button-large welcome-button-signup" ui-sref="app.welcome.signup()">
 					</input>
@@ -69,6 +69,7 @@
 
           <input type="submit" value="LOG IN" class="button button-large button-outline  welcome-button-login" ui-sref="app.welcome.login()">
 					</input>
+					</div>
           </div>
 				</ion-content>
 			</ion-view>
