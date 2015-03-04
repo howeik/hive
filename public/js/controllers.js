@@ -119,6 +119,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AddCtrl', function($scope, $location, $ionicLoading, Task, Class, Users, Tasks, UserTasks) {
+  woopra.track("view add class");
   if ($scope.task == undefined) {
     $scope.task = {
       name: "",
@@ -179,6 +180,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SharedCtrl', function($scope, $rootScope, $ionicLoading, Task, User, Class, Users, Classes, Tasks, UserTasks) {
+  woopra.track("view shared tasks");
   $scope.tasks = [];
   if ($rootScope.declinedTasks == undefined) {
     $rootScope.declinedTasks = [];
