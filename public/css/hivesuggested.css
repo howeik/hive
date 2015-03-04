@@ -22,9 +22,9 @@ body {
 
 /* Navigation Bar */
 
-/*.badge {
-	background-color: #97bf5c !important; 
-}*/
+.badge {
+	background-color: #c51236 !important; 
+}
 
 .topnavbar {
 	background-color: #5C97BF !important;
@@ -67,22 +67,27 @@ body {
 .accept {
 	color:  #5C97BF !important;
 	border-color:  #5C97BF  !important;
-	width: 80px !important;
+	font-size: 15px !important	;
+	width: 82px !important;*/
 	padding-right: 4px !important;
 	padding-left: 4px !important;
 	padding-top: 2px !important;
 	padding-bottom: 1px !important; 
 	height: 35px !important;
 	margin-right: 8px !important;
+	vertical-align: middle !important;
 
 }
-
+.action-buttons {
+	display: inline-block !important;
+}
 .decline {
 	color:  white !important;
 	background-color:  #5C97BF  !important;
 	width: 80px !important;
-	height: 35px !important;
-	border-color: #4a8bb8;
+	font-size: 15px !important;
+	height: 33px !important;
+	border-color: #417ea7;
 	padding-right: 4px !important;
 	padding-left: 4px !important;
 	padding-top: 2px !important;
@@ -92,6 +97,7 @@ body {
 	border-left: 1px !important;
 	border-right: 1px !important;
 	margin-left: 8px !important;
+	vertical-align: middle !important;
 }
 
 .button-clear {
@@ -101,11 +107,13 @@ body {
 }
 
 .ion-ios-checkmark-empty {
-	font-size: 30px !important;
+	font-size: 28px !important;
+	vertical-align: middle !important;
 }
 .ion-ios-close-empty {
-	 font-size: 30px !important;
+	 font-size: 28px !important;
 	 padding-right: 3px; 
+	 vertical-align: middle !important;
 }
 
 /* Main Task Page */

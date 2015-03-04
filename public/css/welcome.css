@@ -9,6 +9,7 @@ body {
 	text-align: center;
 	height: 130px;
 	margin-bottom: -20px;
+	padding-top: 10px;
 }
 
 .mainContainer {
@@ -37,18 +38,18 @@ h1 {
 }
 .welcome-title {
 	font-family: 'Poiret One';
-	font-size: 44px;
+	font-size: 50px;
 	line-height: 45px;
 	text-align: center;
 
-	padding-bottom: 25px;
+	padding-bottom: 35px;
 }
 
 .tagline {
     margin-left: auto;
     margin-right: auto;
     text-align: center;	
-    padding-bottom: 30px;
+    padding-bottom: 50px;
    	font-family: 'Open Sans';
 	font-size: 16px;
 	line-height: 25px;
@@ -108,7 +109,8 @@ input[type="text"], textarea {
 }
 
 .buttons {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 }
 
 #shared {
