@@ -22,7 +22,28 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller('TasksCtrl', function($scope, $location, Task, Users, Classes, Tasks, UserTasks) {
+.controller('TasksCtrl', function($rootScope, $scope, $location, User, Task, Users, Classes, Tasks, UserTasks) {
+  if ($rootScope.tracking == undefined) {
+    $rootScope.tracking = true;
+    User.me(function(user, err) {
+      var userId = user._id;
+      var seed = parseInt(userId[userId.length - 1], 16);
+      $scope.useB = (seed % 2 == 0);
+
+      if (err) { console.log(err); return; }
+      woopra.identify({
+        name: user.name,
+        email: user.email,
+        company: user._id
+      });
+
+      woopra.track("view task list");
+    });
+  } else {
+    woopra.track("view task list");
+  }
+
+
   function dayToString(day) {
     var daysOfTheWeek = [
       'Sunday',
@@ -42,6 +63,7 @@ angular.module('starter.controllers', [])
   };
 
   $scope.taskDetail = function(userTask) {
+    woopra.track("view task detail", userTask.task);
     $location.path("app/tasks/" + userTask.task._id);
   };
 
@@ -111,6 +133,7 @@ angular.module('starter.controllers', [])
   });
 
   $scope.addTask = function(task) {
+    woopra.track("add task", task);
     console.log("Adding Task!");
     console.log(task);
 
@@ -271,6 +294,7 @@ angular.module('starter.controllers', [])
 
   // $scope.tasks = tasks;
   $scope.accept = function(task) {
+    woopra.track("accepted task", task);
     console.log(task);
     $('#task' + task._id).hide(400, function() {
       for (var i = 0; i < $scope.tasksByClass[task.class.name].length; ++i) {
@@ -291,6 +315,7 @@ angular.module('starter.controllers', [])
   };
 
   $scope.decline = function(task) {
+    woopra.track("declined task", task);
     console.log(task);
     // Users.addDeclinedTaskId(task.id);
     $('#task' + task._id).hide(400, function() {
@@ -333,6 +358,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope, $ionicLoading, $ionicPopup, User, Class) {
+  woopra.track("view account");
   $scope.settings = {
     enableFriends: true
   };
@@ -358,13 +384,14 @@ angular.module('starter.controllers', [])
   });
   //$location.path("tab-account");
   $scope.deleteClass = function(_class) {
-
+    woopra.track("delete class modal showed");
     var confirmPopup = $ionicPopup.confirm({
       title: 'Are you sure?',
       template: '<p>All your tasks for ' + _class.name + ' will be deleted'
     });
    confirmPopup.then(function(res) {
      if (res) {
+      woopra.track("confirmed delete class", _class);
       console.log("delete task clicked");
       console.log(_class);
       Class.delete(_class._id, function(data, err) {
@@ -379,6 +406,7 @@ angular.module('starter.controllers', [])
       });
        $ionicLoading.show({ template: 'Dropped ' + _class.name + '!', noBackdrop: true, duration: 800 });
      } else {
+      woopra.track("delete class cancelled");
        console.log('You are not sure');
      }
    });
@@ -387,6 +415,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountAddClassCtrl', function($scope, $ionicPopup, Class, $ionicLoading) {
+  woopra.track("view add class")
+
   $scope.classes = [];
   $scope.enrolled = [];
   Class.enrolled(function(enrolled, err) {
@@ -454,6 +484,7 @@ angular.module('starter.controllers', [])
   // refreshClasses();
 
   $scope.addClass = function(_class) {
+    woopra.track("add class", _class);
     if ($scope.isEnrolledClass(_class)) {
       var confirmPopup = $ionicPopup.confirm({
           title: 'Are you sure?',
@@ -474,8 +505,10 @@ angular.module('starter.controllers', [])
             }
           }
 
+          woopra.track("confirmed delete class", _class);
            $ionicLoading.show({ template: 'Dropped ' + _class.name + '!', noBackdrop: true, duration: 800 });
          } else {
+          woopra.track("delete class cancelled", _class);
            console.log('You are not sure');
          }
        });
