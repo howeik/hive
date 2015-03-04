@@ -34,7 +34,7 @@ exports.adduser = function(req, res){
   console.log(req.body);
 
   var name = req.body.name;
-  var email = req.body.email;
+  var email = req.body.email.toLowerCase();
   var password = req.body.password;
 
   console.log(name);
