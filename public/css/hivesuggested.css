@@ -2,22 +2,38 @@ body {
         background-image:url(/images/geometry.png); background-repeat:repeat;
 
 }
+.back {
+    background-color: white !important;
+}
 
 .badge {
-    background-color: #72a424 !important; 
+    background-color: #97bf5c !important; 
+
 }
 .item-icon-right > .icon {
   z-index: 4;
 }
+
+.ion-ios-checkmark-empty {
+    font-size: 30px !important;
+}
+.ion-ios-close-empty {
+     font-size: 30px !important;
+     padding-right: 3px; 
+}
 .topnavbar {
-    background-color: #2980b9 !important;
+    background-color: #5C97BF !important;
     color: white;
 }
-.tabs{
-    background-color: #2980b9 !important;
-   color: white !important;
-}
 
+
+.tabs{
+ /*   background-color: #EEEEEE !important;*/
+   color:  #2980b9  !important;
+}
+.light {
+    color:#5C97BF !important;
+}
 .mainContainer {
     position: absolute;
     top: 0;
@@ -59,11 +75,33 @@ body {
 }
 
 .accept {
-    color:  #b96229 !important;
+    color:  #5C97BF !important;
+    border-color:  #5C97BF  !important;
+    width: 80px !important;
+    padding-right: 4px !important;
+    padding-left: 4px !important;
+    padding-top: 2px !important;
+    padding-bottom: 1px !important; 
+    height: 35px !important;
+    margin-right: 8px !important;
+
 }
 
 .decline {
-    color:  #B92980 !important;
+    color:  white !important;
+    background-color:  #5C97BF  !important;
+    width: 80px !important;
+    height: 35px !important;
+    border-color: #4a8bb8;
+    padding-right: 4px !important;
+    padding-left: 4px !important;
+    padding-top: 2px !important;
+    padding-bottom: 1px !important;
+    border-top: 1px !important;
+    border-bottom: 1px !important;
+    border-left: 1px !important;
+    border-right: 1px !important;
+    margin-left: 8px !important;
 }
 
 /*.action-buttons {
