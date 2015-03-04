@@ -1,147 +1,141 @@
 body {
-        background-image:url(/images/geometry.png); background-repeat:repeat;
+	background-image:url(/images/geometry.png); background-repeat:repeat;
+}
 
+.item-divider {
+	background-color: #f8f8f8 !important;
 }
-.back {
-    background-color: white !important;
+
+.mainContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-left: 2px solid #ddd; 
+	border-right: 2px solid #ddd; 
 }
+
+/* Navigation Bar */
 
 .badge {
-    background-color: #97bf5c !important; 
-
-}
-.item-icon-right > .icon {
-  z-index: 4;
+	background-color: #97bf5c !important; 
 }
 
-.ion-ios-checkmark-empty {
-    font-size: 30px !important;
-}
-.ion-ios-close-empty {
-     font-size: 30px !important;
-     padding-right: 3px; 
-}
 .topnavbar {
-    background-color: #5C97BF !important;
-    color: white;
+	background-color: #5C97BF !important;
+	color: white;
 }
-
 
 .tabs{
- /*   background-color: #EEEEEE !important;*/
    color:  #2980b9  !important;
 }
+
 .light {
-    color:#5C97BF !important;
+	color:#5C97BF !important;
 }
-.mainContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
 
-    border-style: solid;
-    border-left: 2px solid #ddd; 
-    border-right: 2px solid #ddd; 
-
-}
 
 /* Shared Task Page */
 
 .title {
-    font-family: 'Poiret One';
-    font-size: 25px !important;
+	font-family: 'Poiret One';
+	font-size: 25px !important;
 }
 
 .course {
-    font-family: 'Open Sans';
-    font-size: 14px;
-    display: inline;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	display: inline;
 }
 
 .date {
-    float: right;
-    font-size: 18px;
-    font-family: 'Open Sans';
+	float: right;
+	font-size: 18px;
+	font-family: 'Open Sans';
 }
 
 .endorsed {
-    font-family: 'open sans';
-    font-size: 12px;
+	font-family: 'open sans';
+	font-size: 12px;
 }
 
 .accept {
-    color:  #5C97BF !important;
-    border-color:  #5C97BF  !important;
-    width: 80px !important;
-    padding-right: 4px !important;
-    padding-left: 4px !important;
-    padding-top: 2px !important;
-    padding-bottom: 1px !important; 
-    height: 35px !important;
-    margin-right: 8px !important;
+	color:  #5C97BF !important;
+	border-color:  #5C97BF  !important;
+	width: 80px !important;
+	padding-right: 4px !important;
+	padding-left: 4px !important;
+	padding-top: 2px !important;
+	padding-bottom: 1px !important; 
+	height: 35px !important;
+	margin-right: 8px !important;
 
 }
 
 .decline {
-    color:  white !important;
-    background-color:  #5C97BF  !important;
-    width: 80px !important;
-    height: 35px !important;
-    border-color: #4a8bb8;
-    padding-right: 4px !important;
-    padding-left: 4px !important;
-    padding-top: 2px !important;
-    padding-bottom: 1px !important;
-    border-top: 1px !important;
-    border-bottom: 1px !important;
-    border-left: 1px !important;
-    border-right: 1px !important;
-    margin-left: 8px !important;
+	color:  white !important;
+	background-color:  #5C97BF  !important;
+	width: 80px !important;
+	height: 35px !important;
+	border-color: #4a8bb8;
+	padding-right: 4px !important;
+	padding-left: 4px !important;
+	padding-top: 2px !important;
+	padding-bottom: 1px !important;
+	border-top: 1px !important;
+	border-bottom: 1px !important;
+	border-left: 1px !important;
+	border-right: 1px !important;
+	margin-left: 8px !important;
 }
-
-/*.action-buttons {
-    margin: 0 auto;
-    left: 50%;
-    width: 200px;
-}*/
 
 .button-clear {
-    font-size: 20px;
-    font-family: 'Open Sans';
-    padding-right: 25px;
+	font-size: 20px;
+	font-family: 'Open Sans';
+	padding-right: 25px;
 }
 
+.ion-ios-checkmark-empty {
+	font-size: 30px !important;
+}
+.ion-ios-close-empty {
+	 font-size: 30px !important;
+	 padding-right: 3px; 
+}
 
 /* Main Task Page */
 
+.item-icon-right > .icon {
+  z-index: 4;
+}
 
 .task-title {
-    font-size:14px;
-    display: inline;
-    padding-right: 10px;
+	font-size:14px;
+	display: inline;
+	padding-right: 10px;
 }
 
 .tasks {
-    padding-top:5px;
-    margin-top: -3px;
-    margin-right: 0px;
-    width:94%;
+	padding-top:5px;
+	margin-top: -3px;
+	margin-right: 0px;
+	width:94%;
 }
 
 .course-title {
-    font-size:13px;
-    font-family: 'Open Sans'
+	font-size:13px;
+	font-family: 'Open Sans'
 }
 
 .date-title {
-    float: right;
-    display: inline;
-    font-size: 15px; 
+	float: right;
+	display: inline;
+	font-size: 15px; 
 }
 
 .item {
@@ -149,11 +143,11 @@ body {
 }
 
 .detail-header {
-    font-size: 14px;
+	font-size: 14px;
 }
 
 .detail {
-    font-size: 12px;
+	font-size: 12px;
 }
 
 
@@ -161,46 +155,46 @@ body {
 /* Add Task Page */
 
 input[type="text"], textarea {
-    font-family: 'Open Sans';
+	font-family: 'Open Sans';
 }
 
 
 input[type="time"] {
-    font-family: 'Open Sans';
-    font-size: 16px;
-    font-color: #444;
-    float: right;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-color: #444;
+	float: right;
 }
 
 .time {
 	display: inline;
 	position: relative;
 	width: 40px;
-    color: #444;
+	color: #444;
 }
 
 .date {
 	display: inline;
-    color: #444;
+	color: #444;
 }
 
 .due-date {
-    font-size: 16px;
-    font-family: 'Open Sans';   
-    color: #444;
+	font-size: 16px;
+	font-family: 'Open Sans';   
+	color: #444;
 }
 
 #due_date {
-    text-align: right;
+	text-align: right;
 }
 
 #due_time {
-    text-align: right;
+	text-align: right;
 }
 
 .class {
-    font-size: 16px;
-    font-family: 'Open Sans';
+	font-size: 16px;
+	font-family: 'Open Sans';
 }
 
 .event-details {
@@ -212,49 +206,53 @@ input[type="time"] {
 }
 
 .item-checkbox .checkbox {
-position: absolute;
-top: 35%;
-right: 8px;
-left: 8px;
-z-index: 3;
-margin-top: -21px;
+	position: absolute;
+	top: 35%;
+	right: 8px;
+	left: 8px;
+	z-index: 3;
+	margin-top: -21px;
+}
+
+.logout {
+	margin-top: 10px !important;
 }
 
 .add {
-    background-color: #80b929 !important;
-    border-color: #72a424 !important;
-    font-family: 'Open Sans';
-    color: white !important;
-    font-size: 20px !important;
+	background-color: #80b929 !important;
+	border-color: #72a424 !important;
+	font-family: 'Open Sans';
+	color: white !important;
+	font-size: 20px !important
 }
 
 /* Tasks Details */
 
 .task-detail-endorsed {
-     float: left;
-    display: inline;
-    font-size: 15px; 
+	 float: left;
+	display: inline;
+	font-size: 15px; 
 }
 
 .task-detail-delete {
-    float: right;
-    display: inline;
-    font-size: 17px; 
+	float: right;
+	display: inline;
+	font-size: 17px; 
 }
 
 .task-detail-title {
-    font-size:17px;
-    display: inline;
-    padding-right: 10px;
+	font-size:17px;
+	display: inline;
+	padding-right: 10px;
 }
 
 .task-detail-date {
-    font-size:14px;
-    padding-right: 10px;
-    padding-top: 5px;
+	font-size:14px;
+	padding-right: 10px;
+	padding-top: 5px;
 }
 
 .task-detail-class {
-    font-size:15px;
-    padding-right: 10px; 
+	font-size:15px;
+	padding-right: 10px; 
 }

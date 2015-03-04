@@ -361,7 +361,7 @@ angular.module('starter.controllers', [])
 
     var confirmPopup = $ionicPopup.confirm({
       title: 'Are you sure?',
-      template: '<p>Removing ' + _class.name + ' will delete all your tasks associated with ' + _class.name + '.<br> Are you sure you want to do this?</p>'
+      template: '<p>All your tasks for ' + _class.name + ' will be deleted'
     });
    confirmPopup.then(function(res) {
      if (res) {
@@ -457,7 +457,7 @@ angular.module('starter.controllers', [])
     if ($scope.isEnrolledClass(_class)) {
       var confirmPopup = $ionicPopup.confirm({
           title: 'Are you sure?',
-          template: '<p>Removing ' + _class.name + ' will delete all your tasks associated with ' + _class.name + '.<br> Are you sure you want to do this?</p>'
+          template: '<p>All your tasks for ' + _class.name + ' will be deleted'
         });
        confirmPopup.then(function(res) {
          if (res) {
