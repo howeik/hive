@@ -50,6 +50,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+
+
 // Add routes here
 app.get('/', index.view_ionic);
 // app.get('/login', login.view);
@@ -84,6 +86,8 @@ app.post('/api/task/update', task_api.update);
 app.get('/addclass', addclass.addclass);
 
 // alternative design
+app.get('/welcome/', function(req, res) { res.redirect('/welcome'); });
+
 app.get('/welcome', welcome.welcome);
 app.get('/welcome/login', welcome.login);
 app.get('/welcome/signup', welcome.signup);

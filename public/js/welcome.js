@@ -3,7 +3,7 @@
 var app = angular.module('welcome', ['ionic'])
 
 app.config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/welcome')
+  $urlRouterProvider.otherwise('/intro')
 
   $stateProvider.state('app', {
     abstract: true,
@@ -12,7 +12,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state('app.welcome', {
     abstract: true,
-    url: '/welcome',
+    url: '',
     views: {
       welcome: {
         template: '<ion-nav-view></ion-nav-view>'
@@ -26,7 +26,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   // })
 
   $stateProvider.state('app.welcome.welcome', {
-    url: '',
+    url: '/intro',
     templateUrl: 'welcome.html',
     controller: 'TodosCtrl'
   })
