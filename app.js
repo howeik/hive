@@ -52,8 +52,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view_ionic);
-app.get('/login', login.view);
-app.post('/login', login.auth);
+// app.get('/login', login.view);
+// app.post('/login', login.auth);
 app.get('/logout', login.logout);
 app.post('/api/user/login', user_api.login);
 app.post('/api/user/signup', user_api.adduser);
