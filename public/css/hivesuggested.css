@@ -3,12 +3,20 @@ body {
 
 }
 
-
+.badge {
+    background-color: #72a424 !important; 
+}
 .item-icon-right > .icon {
   z-index: 4;
 }
-
-
+.topnavbar {
+    background-color: #2980b9 !important;
+    color: white;
+}
+.tabs{
+    background-color: #2980b9 !important;
+   color: white !important;
+}
 
 .mainContainer {
     position: absolute;
@@ -25,7 +33,6 @@ body {
     border-right: 2px solid #ddd; 
 
 }
-
 
 /* Shared Task Page */
 
@@ -49,6 +56,14 @@ body {
 .endorsed {
     font-family: 'open sans';
     font-size: 12px;
+}
+
+.accept {
+    color:  #b96229 !important;
+}
+
+.decline {
+    color:  #B92980 !important;
 }
 
 /*.action-buttons {
@@ -165,6 +180,14 @@ right: 8px;
 left: 8px;
 z-index: 3;
 margin-top: -21px;
+}
+
+.add {
+    background-color: #80b929 !important;
+    border-color: #72a424 !important;
+    font-family: 'Open Sans';
+    color: white !important;
+    font-size: 20px !important;
 }
 
 /* Tasks Details */
