@@ -18,12 +18,12 @@
 				</li>
 
 
-				<div class="tasks">
-					<div class="task-title">
-						<p style="word-wrap: break-word;">{{userTask.task.name}}</p>
-					</div>
+				<div class="tasks" style="overflow: initial;white-space: initial;">
 					<div class="date-title">
-						{{userTask.day_of_the_week}}
+						{{userTask.day_of_the_week.substr(0, 3)}}
+					</div>
+					<div class="task-title">
+						{{userTask.task.name}}
 					</div>
 					<div class="course-title">
 						{{userTask.task.class.name}}
@@ -50,11 +50,11 @@
 				</li>
 
 				<div class="tasks">
+					<div class="date-title">
+						{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
+					</div>
 					<div class="task-title">
 						{{userTask.task.name}}
-					</div>
-					<div class="date-title">
-						{{userTask.task.due_date}}
 					</div>
 					<div class="course-title">
 						{{userTask.task.class.name}}
@@ -81,11 +81,11 @@
 				</li>
 
 				<div class="tasks">
+					<div class="date-title">
+						{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
+					</div>
 					<div class="task-title">
 						{{userTask.task.name}}
-					</div>
-					<div class="date-title">
-						{{userTask.task.due_date}}
 					</div>
 					<div class="course-title">
 						{{userTask.task.class.name}}

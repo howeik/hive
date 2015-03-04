@@ -22,9 +22,9 @@ body {
 
 /* Navigation Bar */
 
-.badge {
+/*.badge {
 	background-color: #97bf5c !important; 
-}
+}*/
 
 .topnavbar {
 	background-color: #5C97BF !important;
@@ -130,6 +130,22 @@ body {
 .tasks {
 	padding-top:5px;
 	margin-top: -3px;
+/*	display: inline;
+*/	margin:0 auto;
+}
+
+.tasks-left {
+    display:inline-block;
+    vertical-align:middle;
+    width:80%;
+    float-left;
+}
+
+.tasks-right {
+    display:inline-block;
+    vertical-align:middle;
+    width:20%;
+    float-right;
 }
 
 .course-title {
@@ -141,7 +157,7 @@ body {
 	float: right;
 	display: inline;
 	font-size: 15px; 
-	margin-top: -5px;
+	vertical-align: middle;
 }
 
 .item {
