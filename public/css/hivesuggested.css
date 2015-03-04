@@ -31,7 +31,7 @@ body {
 	color: white;
 }
 
-.tabs{
+.tabs {
    color:  #2980b9  !important;
 }
 
@@ -115,16 +115,21 @@ body {
 }
 
 .task-title {
-	font-size:14px;
+/*	font-size:14px;
 	display: inline;
 	padding-right: 10px;
+	width:10px !important;
+	min-height:100px;
+	min-width: 40px;
+	max-width: 50px;
+	background-color: red;*/
+/*	word-wrap: break-word;*/
+	/*width: 10em; height: 1.2em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;*/
 }
 
 .tasks {
 	padding-top:5px;
 	margin-top: -3px;
-	margin-right: 0px;
-	width:94%;
 }
 
 .course-title {
@@ -136,6 +141,7 @@ body {
 	float: right;
 	display: inline;
 	font-size: 15px; 
+	margin-top: -5px;
 }
 
 .item {
@@ -219,8 +225,8 @@ input[type="time"] {
 }
 
 .add {
-	background-color: #80b929 !important;
-	border-color: #72a424 !important;
+	background-color: #6ca1c5 !important;
+	border-color: #5c97bf !important;
 	font-family: 'Open Sans';
 	color: white !important;
 	font-size: 20px !important

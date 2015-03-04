@@ -1,5 +1,6 @@
 body {
 	margin: 0 auto;
+	background-color:  #5C97BF;
     background-image:url(/images/geometry.png); background-repeat:repeat;
 }
 
@@ -16,6 +17,7 @@ body {
     border-style: solid;
     border-left: 2px solid #ddd; 
     border-right: 2px solid #ddd; 
+    	background-color:  #5C97BF;
 
 }
 
