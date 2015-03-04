@@ -1,6 +1,5 @@
 body {
 	margin: 0 auto;
-	background-color:  #5C97BF;
     background-image:url(/images/geometry.png); background-repeat:repeat;
 }
 
@@ -17,19 +16,36 @@ body {
     border-style: solid;
     border-left: 2px solid #ddd; 
     border-right: 2px solid #ddd; 
-    	background-color:  #5C97BF;
+   background-color:  #5C97BF;
 
 }
-
+h1 {
+	color: white !important;
+	font-family: 'Open Sans';
+}
+.navbar {
+		background-color:  #5C97BF !important;
+		border-color: #5c97bf !important;
+}
 .welcome-title {
 	font-family: 'Poiret One';
 	font-size: 44px;
 	line-height: 45px;
 	text-align: center;
 	padding-top: 55px;
-	padding-bottom: 70px;
+	padding-bottom: 40px;
 }
 
+.tagline {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;	
+    padding-bottom: 40px;
+   	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 25px;
+	color:#3a7094 ;
+}
 .welcome-content { 
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +61,9 @@ body {
 /*	vertical-align: middle;*/
 	min-width:350px;
 	max-width: 500px;
-
+		background-color:  #5C97BF !important;
+		border-color: #5c97bf !important;
+		color: white;
 
 }
 .welcome-button-login {
@@ -56,7 +74,9 @@ body {
 /*	vertical-align: middle;*/
 	min-width:350px;
 	max-width: 500px;
-
+border-color: #5c97bf !important;
+		color: #3a7094 !important;
+		background-color: white;
 
 }
 

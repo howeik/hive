@@ -26,9 +26,9 @@
 		<ion-nav-view></ion-nav-view>
 
 		<script type="text/ng-template" id="main.html">
-			<ion-nav-bar class="bar-energized">
-				<ion-nav-back-button class="button-clear">
-					<i class="ion-arrow-left-c"></i> Back
+			<ion-nav-bar class="bar navbar">
+				<ion-nav-back-button class="button-clear" style="color: white; font-size:15px;">
+					<i class="icon-left"></i> Back
 				</ion-nav-back-button>
 			</ion-nav-bar>
 
@@ -39,6 +39,9 @@
 	 <script type="text/ng-template" id="welcome.html">
 			<ion-view title=" ">
 				<ion-content>
+					<div class="logo">
+						<img src="owl.png" alt="logo">
+						</div>
 					<div class="welcome-title">
 						Welcome to 
 						<br>
@@ -47,7 +50,11 @@
 							</span>
 					</div>
 
-				<div style="" class="welcome-content">
+				<div class ="tagline">
+					<p> Your <b>peers</b> know what to do <br> Now, <b>you</b> do too. </p>
+				</div>
+
+		<div style="" class="welcome-content">
           <i class="ion-ios-list-outline"></i>
             <p id="shared"> All your tasks, for all your classes in one place.</p>
 						<br>
@@ -56,11 +63,11 @@
             </div>
 
 					<div style="margin-left: auto; margin-right: auto; text-align: center;">
-					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" ui-sref="app.welcome.signup()">
+					<input type="submit" value="SIGN UP" class="button button-large welcome-button-signup" ui-sref="app.welcome.signup()">
 					</input>
 					<br>
 
-          <input type="submit" value="LOG IN" class="button button-large button-outline button-energized welcome-button-login" ui-sref="app.welcome.login()">
+          <input type="submit" value="LOG IN" class="button button-large button-outline  welcome-button-login" ui-sref="app.welcome.login()">
 					</input>
           </div>
 				</ion-content>
@@ -69,7 +76,7 @@
 	
 	<!-- Log In -->
 		<script type="text/ng-template" id="login.html">
-			<ion-view title="Log In">
+			<ion-view title="Log In" >
 				<ion-content>
 					<div class="list">
 						<label class="item item-input">
@@ -80,7 +87,7 @@
 						</label>
 					</div>
 		<div style="margin-left: auto; margin-right: auto; text-align: center;">							
-          <input type="submit" ng-click="login(email, password)" value="LOG IN" class="button button-large  button-energized welcome-button-login" ui-sref="app.welcome.login()">
+          <input type="submit" ng-click="login(email, password)" value="LOG IN" class="button button-large   welcome-button-login" ui-sref="app.welcome.login()">
 					</input>
 		</div>
 				</ion-content>
@@ -89,7 +96,7 @@
 
 	<!-- Sign Up-->
 		<script type="text/ng-template" id="signup.html">
-			<ion-view title="Sign Up">
+			<ion-view title="Sign Up" >
 				<ion-content>
 				 <div class="list">
 						<label class="item item-input">
@@ -103,7 +110,7 @@
 							</label>
 					</div>
 				<div style="margin-left: auto; margin-right: auto; text-align: center;">
-					<input type="submit" value="SIGN UP" class="button button-large button-energized welcome-button-signup" id="signupbutton" ng-click="signup(name, email, password)">
+					<input type="submit" value="SIGN UP" class="button button-large  welcome-button-signup" id="signupbutton" ng-click="signup(name, email, password)">
 					</input>
 				</div>
 
