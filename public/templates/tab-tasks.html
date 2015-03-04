@@ -9,13 +9,18 @@
 
 			<ion-item ng-repeat="userTask in this_week" class="item item-checkbox item-icon-right">
 
-				<label class="checkbox">
+				<label ng-show="!useB" class="checkbox">
 				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
 				</label>
 
+				<li ng-show="useB" class="checkbox">
+				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+				</li>
+
+
 				<div class="tasks">
 					<div class="task-title">
-						{{userTask.task.name}}
+						<p style="word-wrap: break-word;">{{userTask.task.name}}</p>
 					</div>
 					<div class="date-title">
 						{{userTask.day_of_the_week}}
@@ -36,9 +41,13 @@
 
 			<ion-item ng-repeat="userTask in upcoming" class="item item-checkbox item-icon-right">
 
-				<label class="checkbox">
+				<label ng-show="!useB" class="checkbox">
 				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
 				</label>
+
+				<li ng-show="useB" class="checkbox">
+				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+				</li>
 
 				<div class="tasks">
 					<div class="task-title">
@@ -58,14 +67,18 @@
 
 			<!-- Completed -->
 			<div class="item item-divider">
-				Completed
+				Past
 			</div>
 
 			<ion-item ng-repeat="userTask in archived" class="item item-checkbox item-icon-right">
 
-				<label class="checkbox">
+				<label ng-show="!useB" class="checkbox">
 				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
 				</label>
+
+				<li ng-show="useB" class="checkbox">
+				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+				</li>
 
 				<div class="tasks">
 					<div class="task-title">

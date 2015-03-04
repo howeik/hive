@@ -23,14 +23,16 @@ angular.module('starter.controllers', [])
 })
 
 .controller('TasksCtrl', function($rootScope, $scope, $location, User, Task, Users, Classes, Tasks, UserTasks) {
-  if ($rootScope.tracking == undefined) {
-    $rootScope.tracking = true;
+  $scope.useB = false;
+  
     User.me(function(user, err) {
       var userId = user._id;
       var seed = parseInt(userId[userId.length - 1], 16);
       $scope.useB = (seed % 2 == 0);
+      console.log("useB set to " + $scope.useB);
 
       if (err) { console.log(err); return; }
+
       woopra.identify({
         name: user.name,
         email: user.email,
@@ -39,9 +41,7 @@ angular.module('starter.controllers', [])
 
       woopra.track("view task list");
     });
-  } else {
-    woopra.track("view task list");
-  }
+
 
 
   function dayToString(day) {
@@ -75,6 +75,9 @@ angular.module('starter.controllers', [])
   };
 
   $scope.updateUserTask = function(userTask) {
+    var logData = userTask.task;
+    logData['useB'] = $scope.useB;
+    woopra.track("task toggled", logData);
     console.log("in updateUserTask");
     Task.update(userTask, function(data, err) {
       if (err) { console.log(err); return; }
