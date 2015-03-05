@@ -79,7 +79,8 @@ app.factory('TodosService', function() {
   }
 })
 
-app.controller('LoginCtrl', function($scope, $http, $ionicLoading, $location, TodosService) {
+app.controller('LoginCtrl', function($rootScope, $scope, $http, $ionicLoading, $location, TodosService) {
+  $rootScope.showNavBar = true;
   $scope.email = "";
   $scope.password = "";
   $scope.login = function(email, password) {
@@ -109,7 +110,8 @@ app.controller('LoginCtrl', function($scope, $http, $ionicLoading, $location, To
   }
 })
 
-app.controller('SignupCtrl', function($scope, $ionicLoading, $http, TodosService) {
+app.controller('SignupCtrl', function($rootScope, $scope, $ionicLoading, $http, TodosService) {
+  $rootScope.showNavBar = true;
   $scope.name = "";
   $scope.email = "";
   $scope.password = "";
@@ -139,7 +141,8 @@ app.controller('SignupCtrl', function($scope, $ionicLoading, $http, TodosService
     });
   }})
 
-app.controller('TodosCtrl', function($scope, TodosService) {
+app.controller('TodosCtrl', function($rootScope, $scope, TodosService) {
+  $rootScope.showNavBar = false;
   $scope.todos = TodosService.todos
 })
 
