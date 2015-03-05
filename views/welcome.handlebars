@@ -26,7 +26,7 @@
 		<ion-nav-view></ion-nav-view>
 
 		<script type="text/ng-template" id="main.html">
-			<ion-nav-bar ng-show="showNavBar" class="bar navbar">
+			<ion-nav-bar class="bar navbar" animation="slide-in-up">
     <ion-nav-back-button class="icon-left button-clear button-light" style="color: white; font-size:15px; ">
       Back
     </ion-nav-back-button>
@@ -37,7 +37,7 @@
 
 	<!-- Welcome -->
 	 <script type="text/ng-template" id="welcome.html">
-			<ion-view title=" ">
+			<ion-view hide-nav-bar="true" title="">
 				<ion-content>
 					<div class="logo">
 						<img src="images/owl.png" alt="logo" class="logo">
@@ -59,7 +59,7 @@
             </div>
             	<div class="buttons">
 					<div style="margin-left: auto; margin-right: auto; text-align: center;">
-					<input type="submit" value="SIGN UP" class="button button-large welcome-button-signup" ui-sref="app.welcome.signup()">
+					<a  href="#/signup"><input type="submit" value="SIGN UP" class="button button-large welcome-button-signup" ></a>
 					</input>
 					<br>
 
