@@ -264,7 +264,7 @@ input[type="time"] {
 	 float: left;
 	display: inline;
 	font-size: 14px; 
-	padding-top: 5px;
+	padding-top: 20px;
 	font-family: 'Open Sans';
 
 }
@@ -292,6 +292,7 @@ input[type="time"] {
 }
 .trash {
 	background-color: #5C97BF !important;
+	padding:7px !important;
 }
 .task-detail-date {
 	font-size:15px;
