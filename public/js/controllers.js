@@ -18,7 +18,9 @@ angular.module('starter.controllers', [])
       if (err) { console.log(err); return; }
       console.log(res);
       $scope.task.shareCount = res.shareCount;
-      if ($scope.task.is_endorsed == false) {
+      console.log("fdsfsd");
+      console.log($scope.task);
+      if ($scope.task.is_endorsed == false || $scope.task.is_endorsed == undefined) {
         $scope.task.endorsed_message = " by " + $scope.task.shareCount + " students";
       } else {
         $scope.task.endorsed_message = " by an instructor";
@@ -130,7 +132,8 @@ angular.module('starter.controllers', [])
       name: "",
       due_date: new Date(),
       is_shared: true,
-      description: ''
+      description: '',
+      is_endorsed: false
     }
   }
 

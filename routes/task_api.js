@@ -74,6 +74,7 @@ exports.create = function(req, res) {
 
 		console.log("created task with id " + task._id);
 		console.log(task);
+		task['is_endorsed'] = false;
 		models.UserTasks.create({ user: req.signedCookies.user_id, task: task._id }, function(err, userTask) {
 			if (err) { console.log(err); res.send(500); return; }
 
