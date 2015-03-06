@@ -18,6 +18,11 @@ angular.module('starter.controllers', [])
       if (err) { console.log(err); return; }
       console.log(res);
       $scope.task.shareCount = res.shareCount;
+      if ($scope.task.is_endorsed == false) {
+        $scope.task.endorsed_message = " by " + $scope.task.shareCount + " students";
+      } else {
+        $scope.task.endorsed_message = " by an instructor";
+      }
     });
   });
 })
