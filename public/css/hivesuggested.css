@@ -58,7 +58,7 @@ body {
 .date {
 	float: right;
 	font-size: 18px;
-	font-family: 'Open Sans';
+
 }
 
 .endorsed {
@@ -263,28 +263,67 @@ input[type="time"] {
 .task-detail-endorsed {
 	 float: left;
 	display: inline;
-	font-size: 15px; 
+	font-size: 14px; 
+	padding-top: 5px;
+	font-family: 'Open Sans';
+
 }
 
 .task-detail-delete {
 	float: right;
 	display: inline;
 	font-size: 17px; 
+	font-family: 'Open Sans';
 }
 
 .task-detail-title {
-	font-size:17px;
+	font-size:25px;
 	display: inline;
 	padding-right: 10px;
+	font-family: 'Open Sans';
+	font-family: 'Open Sans';
 }
 
+#task-details {
+	font-size: 20px;
+	padding-top: 15px;
+	font-family: 'Open Sans';
+
+}
+.trash {
+	background-color: #5C97BF !important;
+}
 .task-detail-date {
-	font-size:14px;
+	font-size:15px;
 	padding-right: 10px;
-	padding-top: 5px;
+	padding-top: 2px;
+	font-family: 'Open Sans';
 }
 
 .task-detail-class {
+/*	padding-top: 10px;*/
 	font-size:15px;
 	padding-right: 10px; 
+		font-family: 'Open Sans';
+}
+
+.trash-button:hover{
+	text-decoration: none;
+	color: white;
+ }
+ .trash-button:visited {
+ 	text-decoration: none;
+ 		color: white;
+ }
+ .trash-button:link {
+ 	text-decoration: none;
+ 		color: white;
+ }
+
+.ion-trash-a {
+	font-size: 18px !important;
+}
+/* unvisited link */
+a:hover {
+	color:#375a72;
 }

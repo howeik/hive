@@ -26,21 +26,26 @@
 				{{task.class.name}} <!--{{userTask.task.class.name}}-->
 			</div>
 			<div class="task-detail-date">
-				Due: {{task.due_date}} <!--{{userTask.task.due_date}}-->
+				Due Date: {{task.due_date}} <!--{{userTask.task.due_date}}-->
 			</div>
 		  
-		  	<h2>Details</h2>
+		  	<div id="task-details">Details</div>
 		    <p>
 		      {{task.description}}
 		    </p>
 		   
 		   <div class="task-detail-endorsed">
-		      	<p>Endorsed by {{task.shareCount}} Students</p>
+
+                        <span class="ion-checkmark-round" style="padding-right:3px;"></span>by {{task.shareCount}}  students
+
+
 		    </div>
 		    <div class="task-detail-delete">
-		    <a class="item-icon" href="#">
-		      <i class="icon ion-ios-trash"> Delete</i>
+		    <button class="button button-small trash">
+		    <a class="item-icon trash-button" href="#">
+		      <i class="icon ion-trash-a"> Delete</i>
 		    </a>
+		    </button>
 		</div>
 		  </div>
 
