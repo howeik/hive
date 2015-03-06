@@ -5,20 +5,23 @@
       <div class="list list-inset">
         <label class="item item-input">
           <i class="icon ion-search placeholder-icon"></i>
-          <input type="text" ng-model="q" ng-change="onSearchQueryChanged(q)" placeholder="Search (e.g. COGS120)">
+          <input type="text" ng-model="q" ng-change="onSearchQueryChanged(q)" placeholder="Search (e.g. COGS120)" class="input">
         </label>
       </div>
 
       <ion-list>
         <div class="search-results">
 
-        <div ng-repeat="class in classes" id="class{{class._id}}">
-          <div class="item item-icon-right">
+        <div ng-repeat="class in classes" id="class{{class._id}}" class="karen">
+          <div class="item item-icon-right" style="padding-bottom:12px; padding-top:12px;">
             <a ng-click="addClass(class)">
             <i ng-show="!isEnrolledClass(class)" class="icon ion-ios-plus-outline"></i>
             <i ng-show="isEnrolledClass(class)" class="icon ion-checkmark-circled"></i>
             </a>
             {{class.name}}
+              <div class="professor">
+              Last, First
+              </div>
           </div>
         </div>
         </div>

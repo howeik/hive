@@ -1,0 +1,99 @@
+@media only screen and (max-device-width:480px) {
+	.welcome-title {
+		font-family: 'Poiret One';
+		font-size: 38px;
+	/*	line-height: 45px;*/
+		text-align: center;
+	/*	padding-bottom: 35px;*/
+		padding-bottom: 25px;
+	}
+	.tagline {
+	    margin-left: auto;
+	    margin-right: auto;
+	    text-align: center;	
+	    padding-bottom: 10px;
+	   	font-family: 'Open Sans';
+		font-size: 14px;
+		line-height: 15px;
+		color:#3a7094 ;
+	}
+	.logo {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		height: 110px;
+		margin-bottom: -20px;
+		padding-top: 5px;
+	}
+	.welcome-content { 
+	    margin-left: auto;
+	    margin-right: auto;
+/*	    min-width:100px;
+	    max-width:200px;*/
+}
+
+.welcome-button-signup {
+	font-size: 25px;
+	font-family: 'Poiret One';
+	text-align: center;
+
+/*	vertical-align: middle;*/
+	min-width:250px;
+	max-width: 300px;
+		background-color:  #5C97BF !important;
+		border-color: #5c97bf !important;
+		color: white;
+/*	padding-bottom: 10px;*/
+
+}
+.welcome-button-login {
+	font-size: 25px;
+	font-family: 'Poiret One';
+	text-align: center;
+	margin-top: 10px;
+/*	vertical-align: middle;*/
+	min-width:250px;
+	max-width: 300px;
+border-color: #5c97bf !important;
+		color: #3a7094 !important;
+		background-color: white;
+
+}
+.ion-ios-world {
+	font-size: 30px;
+	padding-left: 20px;
+
+}
+
+.buttons {
+	padding-bottom: 20px;
+}
+
+#shared {
+	padding-left:55px;
+	padding-top:20px;
+	width:98%;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	line-height: 15px;	
+}
+
+
+.ion-ios-list-outline {
+	font-size: 30px;
+	padding-left: 20px;
+
+}
+
+#todolist{
+	padding-left:55px;
+	padding-top:14px;
+	width:98%;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	line-height: 15px;	
+	padding-bottom: 15px;
+}
+
+
+}

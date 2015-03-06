@@ -28,9 +28,12 @@
                Add Class
             </a>
 
-            <div ng-repeat="class in classes" class="item">
-              {{class.name}}
-              <a ng-click="deleteClass(class)" class="trash-icon item-icon-right"><i class="icon ion-ios-close-outline"></i></a>
+            <div ng-repeat="class in classes" class="item" style="height:64px; padding-bottom:12px; padding-top:12px;">
+              {{class.name}}  
+              <a ng-click="deleteClass(class)" class="trash-icon item-icon-right"><i class="icon ion-ios-close-outline"></i>
+                            <div class="professorname">
+              Last, First
+              </div></a>
              </div>
 
           </div>

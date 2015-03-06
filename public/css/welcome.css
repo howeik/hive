@@ -30,28 +30,33 @@ body {
 
 	}
 }
+
+
+
 h1 {
 	color: white !important;
 	font-family: 'Open Sans';
 }
+
 .navbar {
 		background-color:  #5C97BF !important;
 		border-color: #5c97bf !important;
 }
+
 .welcome-title {
 	font-family: 'Poiret One';
 	font-size: 50px;
 	line-height: 45px;
 	text-align: center;
 
-	padding-bottom: 35px;
+	padding-bottom: 40px;
 }
 
 .tagline {
     margin-left: auto;
     margin-right: auto;
     text-align: center;	
-    padding-bottom: 10px;
+    padding-bottom: 40px;
    	font-family: 'Open Sans';
 	font-size: 16px;
 	line-height: 25px;
@@ -133,7 +138,7 @@ input[type="text"], textarea {
 #todolist{
 	padding-left:70px;
 	margin-top: -45px;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	width:98%;
 	font-family: 'Open Sans';
 	font-size: 16px;

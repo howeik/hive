@@ -50,7 +50,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-
+app.use(express.favicon("public/images/favicon.ico")); 
 
 // Add routes here
 app.get('/', index.view_ionic);

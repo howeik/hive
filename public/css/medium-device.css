@@ -1,0 +1,101 @@
+@media only screen and (max-device-height:550px) {
+	.welcome-title {
+		font-family: 'Poiret One';
+		font-size: 55px !important;
+	/*	line-height: 45px;*/
+		text-align: center;
+	/*	padding-bottom: 35px;*/
+		padding-bottom: 40px !important;
+	}
+	.tagline {
+	    margin-left: auto;
+	    margin-right: auto;
+	    text-align: center;	
+	    padding-bottom: 19px !important;
+	   	font-family: 'Open Sans';
+		font-size: 16px !important;
+		line-height: 15px;
+		color:#3a7094 ;
+	}
+	.logo {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		height: 110px;
+		margin-bottom: -20px;
+		padding-top: 9px;
+	}
+	.welcome-content { 
+	    margin-left: auto;
+	    margin-right: auto;
+/*	    min-width:100px;
+	    max-width:200px;*/
+}
+
+.welcome-button-signup {
+	font-size: 25px;
+	font-family: 'Poiret One';
+	text-align: center;
+
+/*	vertical-align: middle;*/
+	min-width:280px !important;
+	max-width: 300px !important;
+		background-color:  #5C97BF !important;
+		border-color: #5c97bf !important;
+		color: white;
+		margin-bottom: 5px !important;
+/*	padding-bottom: 10px;*/
+
+}
+.welcome-button-login {
+	font-size: 25px;
+	font-family: 'Poiret One';
+	text-align: center;
+	margin-top: 10px;
+/*	vertical-align: middle;*/
+	min-width:280px !important;
+	max-width: 300px;
+border-color: #5c97bf !important;
+		color: #3a7094 !important;
+		background-color: white;
+
+}
+.ion-ios-world {
+	font-size: 38px !important;
+	padding-left: 20px;
+
+}
+
+.buttons {
+	padding-top: 15px !important;
+}
+
+#shared {
+	padding-left:55px;
+	padding-top:13px !important;
+	font-family: 'Open Sans';
+	font-size: 15px !important;
+	line-height: 15px;
+	padding-bottom: 5px !important;	
+	margin-bottom: 0px !important;
+}
+
+
+.ion-ios-list-outline {
+	font-size: 38px !important;
+	padding-left: 20px;
+
+}
+
+#todolist{
+	padding-left:55px;
+	padding-top: 3px !important;
+	font-family: 'Open Sans';
+	font-size: 15px !important;
+	line-height: 15px;	
+/*	padding-bottom: 5px !important;*/
+	margin-bottom: 0px !important;
+}
+
+
+}

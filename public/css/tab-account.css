@@ -11,3 +11,10 @@
 .accountsummary {
 	padding-bottom: 20px;
 }
+
+.professorname {
+	font-size: 13px;
+	font-family: 'Open Sans';
+	color: #5b5252;
+
+}

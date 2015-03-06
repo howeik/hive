@@ -1,0 +1,19 @@
+input[type="text"], textarea {
+	font-family: 'Open Sans' !important;
+	font-size: 15px !important; 
+}
+
+.input {
+
+}
+
+.ion-search {
+	font-size: 20px !important;
+}
+
+.professor {
+	font-size: 13px;
+	font-family: 'Open Sans';
+	color: #5b5252;
+}
+
