@@ -170,6 +170,29 @@ body {
 	vertical-align: middle;
 }
 
+/**** For completed tasks ****/
+.task-title-completed {
+	text-decoration: line-through;
+	color: #aaa8a7; /*light gray color */
+}
+
+.date-title-completed {
+	/*text-decoration: line-through;*/
+	color: #aaa8a7; /*light gray color */
+	float: right;
+	display: inline;
+	font-size: 15px; 
+	vertical-align: middle;
+}
+
+.course-title-completed {
+	/*text-decoration: line-through;*/
+	color: #aaa8a7; /*light gray color */
+	font-size:13px;
+	font-family: 'Open Sans'
+}
+/*****************************/
+
 .item {
 	font-family: 'Open Sans';
 }
