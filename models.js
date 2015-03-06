@@ -11,7 +11,8 @@ var UserSchema = new Mongoose.Schema({
 });
 
 var ClassSchema = new Mongoose.Schema({
-  "name": String
+  "name": String,
+  "instructor": String
 });
 
 var UserClassesSchema = new Mongoose.Schema({
@@ -23,6 +24,7 @@ var TaskSchema = new Mongoose.Schema({
   "name": String,
   "description": String,
   "due_date": String,
+  "due_time": String,
   "is_shared": Boolean,
   "class": { type: Mongoose.Schema.Types.ObjectId, ref: "Class" },
   "class_name": String,

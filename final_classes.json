@@ -1,0 +1,2450 @@
+[
+    {
+        "instructor": "Stewart, Alexander B",
+        "name": "ANTH1"
+    },
+    {
+        "instructor": "Novak, Jessica M",
+        "name": "ANTH21"
+    },
+    {
+        "instructor": "Kramer, Elise A.",
+        "name": "ANTH23"
+    },
+    {
+        "instructor": "Lafleur, Marni M",
+        "name": "ANTH102"
+    },
+    {
+        "instructor": "Hasty, Jeff M",
+        "name": "BENG2"
+    },
+    {
+        "instructor": "Omens, Jeffrey Howard",
+        "name": "BENG109"
+    },
+    {
+        "instructor": "Lal, Ratnesh",
+        "name": "BENG112A"
+    },
+    {
+        "instructor": "Cabrales, Pedro",
+        "name": "BENG119B"
+    },
+    {
+        "instructor": "Metallo, Christian Michael",
+        "name": "BENG122A"
+    },
+    {
+        "instructor": "Palsson, Bernhard O.",
+        "name": "BENG123"
+    },
+    {
+        "instructor": "Metallo, Christian Michael",
+        "name": "BENG126B"
+    },
+    {
+        "instructor": "Cabrales, Pedro",
+        "name": "BENG140A"
+    },
+    {
+        "instructor": "Silva, Gabriel",
+        "name": "BENG147B"
+    },
+    {
+        "instructor": "Mercola, Mark",
+        "name": "BENG148B"
+    },
+    {
+        "instructor": "Christman, Karen",
+        "name": "BENG149B"
+    },
+    {
+        "instructor": "Metallo, Christian Michael",
+        "name": "BENG161B"
+    },
+    {
+        "instructor": "Gough, David A.",
+        "name": "BENG169B"
+    },
+    {
+        "instructor": "Cauwenberghs, Gert",
+        "name": "BENG186B"
+    },
+    {
+        "instructor": "Cabrales, Pedro",
+        "name": "BENG187C"
+    },
+    {
+        "instructor": "Bussey, Thomas J",
+        "name": "CHEM6A"
+    },
+    {
+        "instructor": "Hoeger, Carl",
+        "name": "CHEM6A"
+    },
+    {
+        "instructor": "Johnson, Christina A",
+        "name": "CHEM6A"
+    },
+    {
+        "instructor": "Trogler, William C",
+        "name": "CHEM6B"
+    },
+    {
+        "instructor": "Kummel, Andrew C",
+        "name": "CHEM6B"
+    },
+    {
+        "instructor": "Muller, Ulrich K.",
+        "name": "CHEM6B"
+    },
+    {
+        "instructor": "Leigh, Brian",
+        "name": "CHEM6B"
+    },
+    {
+        "instructor": "Hoeger, Carl",
+        "name": "CHEM6B"
+    },
+    {
+        "instructor": "Paesani, Francesco",
+        "name": "CHEM6BH"
+    },
+    {
+        "instructor": "Ghosh, Partho",
+        "name": "CHEM6C"
+    },
+    {
+        "instructor": "Berniolles, Sandrine",
+        "name": "CHEM7L"
+    },
+    {
+        "instructor": "Tauber, Michael",
+        "name": "CHEM100A"
+    },
+    {
+        "instructor": "Pomeroy, Robert S.",
+        "name": "CHEM100B"
+    },
+    {
+        "instructor": "Magde, Douglas",
+        "name": "CHEM105A"
+    },
+    {
+        "instructor": "Komives, Elizabeth A",
+        "name": "CHEM114B"
+    },
+    {
+        "instructor": "Devaraj, Neal Krishna",
+        "name": "CHEM116"
+    },
+    {
+        "instructor": "Tukey, Robert H",
+        "name": "CHEM118"
+    },
+    {
+        "instructor": "Figueroa, Joshua",
+        "name": "CHEM120A"
+    },
+    {
+        "instructor": "Tezcan, Faik",
+        "name": "CHEM125"
+    },
+    {
+        "instructor": "Paesani, Francesco",
+        "name": "CHEM126"
+    },
+    {
+        "instructor": "Weare, John H.",
+        "name": "CHEM131"
+    },
+    {
+        "instructor": "Bertrand, Guy",
+        "name": "CHEM140A"
+    },
+    {
+        "instructor": "Gianneschi, Nathan",
+        "name": "CHEM140A"
+    },
+    {
+        "instructor": "Guerrero, Carlos Ariel",
+        "name": "CHEM140B"
+    },
+    {
+        "instructor": "Whitesell, James K.",
+        "name": "CHEM140B"
+    },
+    {
+        "instructor": "Theodorakis, Emmanouil",
+        "name": "CHEM140B"
+    },
+    {
+        "instructor": "Weizman, Haim",
+        "name": "CHEM140BH"
+    },
+    {
+        "instructor": "Godula, Kamil",
+        "name": "CHEM140C"
+    },
+    {
+        "instructor": "Ternansky, Robert J.",
+        "name": "CHEM143A"
+    },
+    {
+        "instructor": "Albizati, Kim F.",
+        "name": "CHEM143A"
+    },
+    {
+        "instructor": "Ternansky, Robert J.",
+        "name": "CHEM143B"
+    },
+    {
+        "instructor": "Burkart, Michael D",
+        "name": "CHEM145"
+    },
+    {
+        "instructor": "Theodorakis, Emmanouil",
+        "name": "CHEM151"
+    },
+    {
+        "instructor": "Godula, Kamil",
+        "name": "CHEM155"
+    },
+    {
+        "instructor": "Perrin, Charles L.",
+        "name": "CHEM156"
+    },
+    {
+        "instructor": "Devaraj, Neal Krishna",
+        "name": "CHEM168"
+    },
+    {
+        "instructor": "Pomeroy, Robert S.",
+        "name": "CHEM172"
+    },
+    {
+        "instructor": "Bussey, Thomas J",
+        "name": "CHEM187"
+    },
+    {
+        "instructor": "Newsam, John",
+        "name": "CHEM194"
+    },
+    {
+        "instructor": "Chen, Pei-Chia",
+        "name": "CHIN10BD"
+    },
+    {
+        "instructor": "Chen, Pei-Chia",
+        "name": "CHIN10BD"
+    },
+    {
+        "instructor": "He, Qian",
+        "name": "CHIN10BM"
+    },
+    {
+        "instructor": "He, Qian",
+        "name": "CHIN10BM"
+    },
+    {
+        "instructor": "Cha, Samuel",
+        "name": "CHIN10BN"
+    },
+    {
+        "instructor": "Cha, Samuel",
+        "name": "CHIN10BN"
+    },
+    {
+        "instructor": "Cha, Samuel",
+        "name": "CHIN10BN"
+    },
+    {
+        "instructor": "He, Qian",
+        "name": "CHIN20BD"
+    },
+    {
+        "instructor": "Wang, Xiao",
+        "name": "CHIN20BM"
+    },
+    {
+        "instructor": "Anderson, Qin-Hong",
+        "name": "CHIN20BN"
+    },
+    {
+        "instructor": "Anderson, Qin-Hong",
+        "name": "CHIN20BN"
+    },
+    {
+        "instructor": "Anderson, Qin-Hong",
+        "name": "CHIN100BM"
+    },
+    {
+        "instructor": "Wang, Xiao",
+        "name": "CHIN100BN"
+    },
+    {
+        "instructor": "Wang, Xiao",
+        "name": "CHIN165B"
+    },
+    {
+        "instructor": "Chen, Pei-Chia",
+        "name": "CHIN182B"
+    },
+    {
+        "instructor": "Kuo, Jane",
+        "name": "CHIN186B"
+    },
+    {
+        "instructor": "Boyle, Mary E. T.",
+        "name": "COGS1"
+    },
+    {
+        "instructor": "Boyle, Mary E. T.",
+        "name": "COGS3"
+    },
+    {
+        "instructor": "Hollan, James D.",
+        "name": "COGS10"
+    },
+    {
+        "instructor": "Boroditsky, Lera",
+        "name": "COGS11"
+    },
+    {
+        "instructor": "Creel, Sarah",
+        "name": "COGS14A"
+    },
+    {
+        "instructor": "Johnson, Christine M.",
+        "name": "COGS17"
+    },
+    {
+        "instructor": "Barrera, Steven James",
+        "name": "COGS101B"
+    },
+    {
+        "instructor": "McComsey, Melanie E",
+        "name": "COGS102B"
+    },
+    {
+        "instructor": "Nitz, Douglas A.",
+        "name": "COGS107B"
+    },
+    {
+        "instructor": "Haist, Frank",
+        "name": "COGS115"
+    },
+    {
+        "instructor": "Tu, Zhuowen",
+        "name": "COGS118A"
+    },
+    {
+        "instructor": "Klemmer, Scott R",
+        "name": "COGS120"
+    },
+    {
+        "instructor": "Nunez, Rafael E",
+        "name": "COGS152"
+    },
+    {
+        "instructor": "Bergen, Benjamin",
+        "name": "COGS153"
+    },
+    {
+        "instructor": "Miller, Luke",
+        "name": "COGS169"
+    },
+    {
+        "instructor": "Nitz, Douglas A.",
+        "name": "COGS177"
+    },
+    {
+        "instructor": "Jernigan, Terry Lynne",
+        "name": "COGS178"
+    },
+    {
+        "instructor": "Johnson, Christine M.",
+        "name": "COGS184"
+    },
+    {
+        "instructor": "Kirsh, David Joel",
+        "name": "COGS187B"
+    },
+    {
+        "instructor": "Saygin, Ayse P",
+        "name": "COGS190B"
+    },
+    {
+        "instructor": "Pineda, Jaime A",
+        "name": "COGS190B"
+    },
+    {
+        "instructor": "Johnson, Christine M.",
+        "name": "COGS190B"
+    },
+    {
+        "instructor": "Bergen, Benjamin",
+        "name": "COGS190B"
+    },
+    {
+        "instructor": "Nunez, Rafael E",
+        "name": "COGS190B"
+    },
+    {
+        "instructor": "Boateng, Boatema",
+        "name": "COMM10"
+    },
+    {
+        "instructor": "Zilberg, Elana",
+        "name": "COMM100B"
+    },
+    {
+        "instructor": "Montoya, Ivonne Patricia",
+        "name": "COMM101"
+    },
+    {
+        "instructor": "Hastert, Wolfgang",
+        "name": "COMM101D"
+    },
+    {
+        "instructor": "Martinico, Daniel J",
+        "name": "COMM101K"
+    },
+    {
+        "instructor": "Vasquez, Olga A.",
+        "name": "COMM102C"
+    },
+    {
+        "instructor": "Vasquez, Olga A.",
+        "name": "COMM102D"
+    },
+    {
+        "instructor": "Davis, Zeinabu I.",
+        "name": "COMM102P"
+    },
+    {
+        "instructor": "Roudakova, Natalia",
+        "name": "COMM104E"
+    },
+    {
+        "instructor": "Whitworth-Smith, Andrew C",
+        "name": "COMM106F"
+    },
+    {
+        "instructor": "Vasquez, Olga A.",
+        "name": "COMM110M"
+    },
+    {
+        "instructor": "Sims, Christopher O",
+        "name": "COMM111D"
+    },
+    {
+        "instructor": "Feldman, Heidi C",
+        "name": "COMM111M"
+    },
+    {
+        "instructor": "Alac, Morana",
+        "name": "COMM112T"
+    },
+    {
+        "instructor": "Medeiros, Benjamin",
+        "name": "COMM114F"
+    },
+    {
+        "instructor": "Montoya, Ivonne Patricia",
+        "name": "COMM120M"
+    },
+    {
+        "instructor": "Goldfarb, Brian",
+        "name": "COMM120P"
+    },
+    {
+        "instructor": "Irani, Lilly C",
+        "name": "COMM124"
+    },
+    {
+        "instructor": "Vasquez, Olga A.",
+        "name": "COMM128"
+    },
+    {
+        "instructor": "Dominguez Rubio, Fernando",
+        "name": "COMM132"
+    },
+    {
+        "instructor": "Boateng, Boatema",
+        "name": "COMM138"
+    },
+    {
+        "instructor": "Goldwasser, Michele A.",
+        "name": "COMM145"
+    },
+    {
+        "instructor": "McKenna, Denise",
+        "name": "COMM146"
+    },
+    {
+        "instructor": "Burg, Suzanne M.M.",
+        "name": "COMM146"
+    },
+    {
+        "instructor": "Anderson, Patrick W.",
+        "name": "COMM180"
+    },
+    {
+        "instructor": "Martinico, Daniel J",
+        "name": "COMM193"
+    },
+    {
+        "instructor": "Marx, Susan S",
+        "name": "CSE3"
+    },
+    {
+        "instructor": "Marx, Susan S",
+        "name": "CSE7"
+    },
+    {
+        "instructor": "Klemperer, Peter Friedrich",
+        "name": "CSE8A"
+    },
+    {
+        "instructor": "Klemperer, Peter Friedrich",
+        "name": "CSE8A"
+    },
+    {
+        "instructor": "Ord, Richard",
+        "name": "CSE8B"
+    },
+    {
+        "instructor": "Porter, Leonard Emerson",
+        "name": "CSE8B"
+    },
+    {
+        "instructor": "Papadopoulos, Philip Micha",
+        "name": "CSE11"
+    },
+    {
+        "instructor": "Jundt, Adam H",
+        "name": "CSE11"
+    },
+    {
+        "instructor": "Gillespie, Gary N",
+        "name": "CSE12"
+    },
+    {
+        "instructor": "Gillespie, Gary N",
+        "name": "CSE12"
+    },
+    {
+        "instructor": "Gillespie, Gary N",
+        "name": "CSE15L"
+    },
+    {
+        "instructor": "Altintas De Callaf, Ilkay",
+        "name": "CSE15L"
+    },
+    {
+        "instructor": "Lovett, Shachar",
+        "name": "CSE20"
+    },
+    {
+        "instructor": "Tiefenbruck, Janine LoBue",
+        "name": "CSE21"
+    },
+    {
+        "instructor": "Impagliazzo, Russell",
+        "name": "CSE21"
+    },
+    {
+        "instructor": "Ord, Richard",
+        "name": "CSE30"
+    },
+    {
+        "instructor": "Ord, Richard",
+        "name": "CSE30"
+    },
+    {
+        "instructor": "Porter, Leonard Emerson",
+        "name": "CSE100"
+    },
+    {
+        "instructor": "Alvarado, Christine J.",
+        "name": "CSE100"
+    },
+    {
+        "instructor": "Kane, Daniel Mertz",
+        "name": "CSE101"
+    },
+    {
+        "instructor": "Kahng, Andrew Byun",
+        "name": "CSE101"
+    },
+    {
+        "instructor": "Shacham, Hovav",
+        "name": "CSE105"
+    },
+    {
+        "instructor": "Micciancio, Daniele",
+        "name": "CSE105"
+    },
+    {
+        "instructor": "Bellare, Mihir",
+        "name": "CSE107"
+    },
+    {
+        "instructor": "Arsanjani, Ali Paul",
+        "name": "CSE110"
+    },
+    {
+        "instructor": "Menarini, Massimiliano",
+        "name": "CSE110"
+    },
+    {
+        "instructor": "Powell, Thomas Allan",
+        "name": "CSE112"
+    },
+    {
+        "instructor": "Pasquale, Joseph",
+        "name": "CSE120"
+    },
+    {
+        "instructor": "Pasquale, Joseph",
+        "name": "CSE120"
+    },
+    {
+        "instructor": "Porter, George M",
+        "name": "CSE124"
+    },
+    {
+        "instructor": "Lerner, Sorin",
+        "name": "CSE130"
+    },
+    {
+        "instructor": "Bournoutian, Garo",
+        "name": "CSE131"
+    },
+    {
+        "instructor": "Vianu, Victor Dan",
+        "name": "CSE132A"
+    },
+    {
+        "instructor": "Deutsch, Alin Bernard",
+        "name": "CSE132B"
+    },
+    {
+        "instructor": "Mirza, Diba",
+        "name": "CSE140"
+    },
+    {
+        "instructor": "Gayles, Eric S",
+        "name": "CSE140L"
+    },
+    {
+        "instructor": "Chu, Isaac Y",
+        "name": "CSE140L"
+    },
+    {
+        "instructor": "Tullsen, Dean Michael",
+        "name": "CSE141"
+    },
+    {
+        "instructor": "Swanson, Steven James",
+        "name": "CSE141"
+    },
+    {
+        "instructor": "Tullsen, Dean Michael",
+        "name": "CSE141L"
+    },
+    {
+        "instructor": "Eldon, John",
+        "name": "CSE141L"
+    },
+    {
+        "instructor": "Saul, Lawrence",
+        "name": "CSE150"
+    },
+    {
+        "instructor": "Schulze, Jurgen P.",
+        "name": "CSE160"
+    },
+    {
+        "instructor": "Rotenberg, Steven Paul",
+        "name": "CSE169"
+    },
+    {
+        "instructor": "Klemmer, Scott R",
+        "name": "CSE170"
+    },
+    {
+        "instructor": "Pevzner, Pavel Arkadjevich",
+        "name": "CSE181"
+    },
+    {
+        "instructor": "Cottrell, Garrison W",
+        "name": "CSE190"
+    },
+    {
+        "instructor": "Barngrover, Christopher M",
+        "name": "CSE190"
+    },
+    {
+        "instructor": "Weibel, Nadir",
+        "name": "CSE190"
+    },
+    {
+        "instructor": "Chockalingam, Ganapathy",
+        "name": "CSE190"
+    },
+    {
+        "instructor": "Hoover, Gregory William",
+        "name": "CSE190"
+    },
+    {
+        "instructor": "Kunin, Jay Stuart",
+        "name": "CSE190"
+    },
+    {
+        "instructor": "Hernandez, Jillian",
+        "name": "CGS2B"
+    },
+    {
+        "instructor": "Kheshti, Roshanak",
+        "name": "CGS101"
+    },
+    {
+        "instructor": "Santizo, Gabriela Domitila",
+        "name": "CGS112"
+    },
+    {
+        "instructor": "Glaser, Amelia",
+        "name": "CAT2"
+    },
+    {
+        "instructor": "Trigilio, Michael",
+        "name": "CAT2"
+    },
+    {
+        "instructor": "Thorpe, Charles Robert",
+        "name": "CAT2"
+    },
+    {
+        "instructor": "Doppelt, Gerald D.",
+        "name": "CAT2"
+    },
+    {
+        "instructor": "Bigham, David Joseph",
+        "name": "CAT125"
+    },
+    {
+        "instructor": "Smith, Ashley Elizabeth",
+        "name": "CAT125"
+    },
+    {
+        "instructor": "Sartor, Alexandra",
+        "name": "CAT125R"
+    },
+    {
+        "instructor": "Hendrickson, Gerald M.",
+        "name": "DOC2"
+    },
+    {
+        "instructor": "Gagnon, Jeffrey C",
+        "name": "DOC2"
+    },
+    {
+        "instructor": "Abrajano, Marisa",
+        "name": "DOC100D"
+    },
+    {
+        "instructor": "Tang, Yuan Emily",
+        "name": "ECON1"
+    },
+    {
+        "instructor": "Tang, Yuan Emily",
+        "name": "ECON1"
+    },
+    {
+        "instructor": "Levkoff, Steven B.",
+        "name": "ECON2"
+    },
+    {
+        "instructor": "Ramey, Valerie A",
+        "name": "ECON3"
+    },
+    {
+        "instructor": "Ramey, Valerie A",
+        "name": "ECON3"
+    },
+    {
+        "instructor": "Willoughby, Michael Gene",
+        "name": "ECON4"
+    },
+    {
+        "instructor": "Famulari, Melissa",
+        "name": "ECON100A"
+    },
+    {
+        "instructor": "Famulari, Melissa",
+        "name": "ECON100A"
+    },
+    {
+        "instructor": "Watson, Joel Christopher",
+        "name": "ECON100B"
+    },
+    {
+        "instructor": "Machina, Mark Joseph",
+        "name": "ECON100BH"
+    },
+    {
+        "instructor": "Sinitsyn, Maxim",
+        "name": "ECON100C"
+    },
+    {
+        "instructor": "Sinitsyn, Maxim",
+        "name": "ECON100C"
+    },
+    {
+        "instructor": "Newhouse, Herbert S",
+        "name": "ECON107"
+    },
+    {
+        "instructor": "Watson, Joel Christopher",
+        "name": "ECON109"
+    },
+    {
+        "instructor": "Candido, Maria Teresa",
+        "name": "ECON110A"
+    },
+    {
+        "instructor": "Hamilton, James D.",
+        "name": "ECON110B"
+    },
+    {
+        "instructor": "Hamilton, James D.",
+        "name": "ECON110B"
+    },
+    {
+        "instructor": "Hamilton, James D.",
+        "name": "ECON110BH"
+    },
+    {
+        "instructor": "Machina, Mark Joseph",
+        "name": "ECON117"
+    },
+    {
+        "instructor": "Elliott, Graham",
+        "name": "ECON120A"
+    },
+    {
+        "instructor": "Elliott, Graham",
+        "name": "ECON120A"
+    },
+    {
+        "instructor": "Dahl, Gordon B.",
+        "name": "ECON120B"
+    },
+    {
+        "instructor": "Dahl, Gordon B.",
+        "name": "ECON120B"
+    },
+    {
+        "instructor": "Berman, Eli",
+        "name": "ECON120BH"
+    },
+    {
+        "instructor": "Foster, Carroll Baldwin",
+        "name": "ECON120C"
+    },
+    {
+        "instructor": "Candido, Maria Teresa",
+        "name": "ECON120C"
+    },
+    {
+        "instructor": "Carson, Richard T",
+        "name": "ECON132"
+    },
+    {
+        "instructor": "Andreoni, James",
+        "name": "ECON143"
+    },
+    {
+        "instructor": "Squires, Dale E",
+        "name": "ECON145"
+    },
+    {
+        "instructor": "Gordon, Roger H.",
+        "name": "ECON150"
+    },
+    {
+        "instructor": "Rauch, James E",
+        "name": "ECON165"
+    },
+    {
+        "instructor": "Chambers, Christopher P.",
+        "name": "ECON171"
+    },
+    {
+        "instructor": "Chambers, Christopher P.",
+        "name": "ECON171"
+    },
+    {
+        "instructor": "Newhouse, Herbert S",
+        "name": "ECON172A"
+    },
+    {
+        "instructor": "Newhouse, Herbert S",
+        "name": "ECON172A"
+    },
+    {
+        "instructor": "Toda, Alexis Akira",
+        "name": "ECON172B"
+    },
+    {
+        "instructor": "Toda, Alexis Akira",
+        "name": "ECON172B"
+    },
+    {
+        "instructor": "Foster, Carroll Baldwin",
+        "name": "ECON173A"
+    },
+    {
+        "instructor": "Willoughby, Michael Gene",
+        "name": "ECON173AL"
+    },
+    {
+        "instructor": "Ramey, Garey",
+        "name": "ECON173B"
+    },
+    {
+        "instructor": "Foster, Carroll Baldwin",
+        "name": "ECON174"
+    },
+    {
+        "instructor": "Sinitsyn, Maxim",
+        "name": "ECON176"
+    },
+    {
+        "instructor": "Harel, Guershon",
+        "name": "EDS30"
+    },
+    {
+        "instructor": "Chapman, Thandeka K",
+        "name": "EDS112"
+    },
+    {
+        "instructor": "Velasquez, Patrick",
+        "name": "EDS116"
+    },
+    {
+        "instructor": "Pollock, Mica",
+        "name": "EDS117"
+    },
+    {
+        "instructor": "Cohen, Shana R",
+        "name": "EDS118"
+    },
+    {
+        "instructor": "Stevens, Laura Jeanne",
+        "name": "EDS121A"
+    },
+    {
+        "instructor": "Bussey, Thomas J",
+        "name": "EDS122"
+    },
+    {
+        "instructor": "Jones, Makeba",
+        "name": "EDS126"
+    },
+    {
+        "instructor": "Bresser, Bernard George",
+        "name": "EDS128A"
+    },
+    {
+        "instructor": "Holtzman, Caren Lynn",
+        "name": "EDS130"
+    },
+    {
+        "instructor": "Wishard Guerra, Alison G.",
+        "name": "EDS131"
+    },
+    {
+        "instructor": "Chung, Luz Marina",
+        "name": "EDS136"
+    },
+    {
+        "instructor": "Chung, Luz Marina",
+        "name": "EDS140"
+    },
+    {
+        "instructor": "Parra, Max",
+        "name": "ERC192A"
+    },
+    {
+        "instructor": "Vardy, Alexander",
+        "name": "ECE15"
+    },
+    {
+        "instructor": "Vasconcelos, Manuela",
+        "name": "ECE25"
+    },
+    {
+        "instructor": "Radic, Stojan",
+        "name": "ECE35"
+    },
+    {
+        "instructor": "Lugannani, Robert",
+        "name": "ECE45"
+    },
+    {
+        "instructor": "Bott-Suzuki, Simon Charles",
+        "name": "ECE65"
+    },
+    {
+        "instructor": "Kante, Boubacar",
+        "name": "ECE85"
+    },
+    {
+        "instructor": "Quest, Kevin B",
+        "name": "ECE101"
+    },
+    {
+        "instructor": "Hall, Drew A.",
+        "name": "ECE102"
+    },
+    {
+        "instructor": "Dayeh, Shadi Ahmad",
+        "name": "ECE103"
+    },
+    {
+        "instructor": "Lomakin, Vitaliy",
+        "name": "ECE107"
+    },
+    {
+        "instructor": "Zeger, Kenneth A.",
+        "name": "ECE109"
+    },
+    {
+        "instructor": "Lin, Bill",
+        "name": "ECE111"
+    },
+    {
+        "instructor": "Tu, Charles",
+        "name": "ECE135A"
+    },
+    {
+        "instructor": "Lau, Silvanus S",
+        "name": "ECE136L"
+    },
+    {
+        "instructor": "Milstein, Laurence B.",
+        "name": "ECE154B"
+    },
+    {
+        "instructor": "Song, Hee Chun",
+        "name": "ECE161B"
+    },
+    {
+        "instructor": "Trivedi, Mohan M.",
+        "name": "ECE172A"
+    },
+    {
+        "instructor": "Vasconcelos, Nuno",
+        "name": "ECE175A"
+    },
+    {
+        "instructor": "Mookherjea, Shayan",
+        "name": "ECE183"
+    },
+    {
+        "instructor": "Fainman, Yeshaiahu",
+        "name": "ECE184"
+    },
+    {
+        "instructor": "Hall, Drew A.",
+        "name": "ECE188"
+    },
+    {
+        "instructor": "Ochoa, Edward Henry",
+        "name": "ENVR110"
+    },
+    {
+        "instructor": "Eckles, Megan Alma",
+        "name": "ENVR141"
+    },
+    {
+        "instructor": "Haymet, Anthony",
+        "name": "ESYS10"
+    },
+    {
+        "instructor": "Russell, Lynn M.",
+        "name": "ESYS102"
+    },
+    {
+        "instructor": "Marez, Curtis F.",
+        "name": "ETHN2"
+    },
+    {
+        "instructor": "Vora, Kalindi",
+        "name": "ETHN100B"
+    },
+    {
+        "instructor": "Fuste, Jose Ignacio",
+        "name": "ETHN104"
+    },
+    {
+        "instructor": "Mendes, Gabriel",
+        "name": "ETHN105"
+    },
+    {
+        "instructor": "Sisavath, Davorn",
+        "name": "ETHN118"
+    },
+    {
+        "instructor": "Santizo, Gabriela Domitila",
+        "name": "ETHN127"
+    },
+    {
+        "instructor": "Nguyen, Linh Thuy",
+        "name": "ETHN129"
+    },
+    {
+        "instructor": "Fuste, Jose Ignacio",
+        "name": "ETHN151"
+    },
+    {
+        "instructor": "Fuste, Jose Ignacio",
+        "name": "ETHN152"
+    },
+    {
+        "instructor": "Espiritu, Yen",
+        "name": "ETHN155"
+    },
+    {
+        "instructor": "Yang, K. Wayne",
+        "name": "ETHN162"
+    },
+    {
+        "instructor": "Childs, Dennis R.",
+        "name": "ETHN172"
+    },
+    {
+        "instructor": "Richards, Stephanie F",
+        "name": "ETHN179A"
+    },
+    {
+        "instructor": "Checkoway, Harvey",
+        "name": "FPMU101A"
+    },
+    {
+        "instructor": "Cummins, Sharon Elizabeth",
+        "name": "FPMU110"
+    },
+    {
+        "instructor": "Carver, Leslie J.",
+        "name": "HDP110"
+    },
+    {
+        "instructor": "Boyd, Jeremy Kenyon",
+        "name": "HDP115"
+    },
+    {
+        "instructor": "Parish, Steven Martin",
+        "name": "HDP133"
+    },
+    {
+        "instructor": "Vasquez, Olga A.",
+        "name": "HDP135"
+    },
+    {
+        "instructor": "Blumenthal, Emily Jeanne",
+        "name": "HDP181"
+    },
+    {
+        "instructor": "Blumenthal, Emily Jeanne",
+        "name": "HDP181"
+    },
+    {
+        "instructor": "Blumenthal, Emily Jeanne",
+        "name": "HDP181"
+    },
+    {
+        "instructor": "Reese, Clarissa Jane",
+        "name": "HDP181"
+    },
+    {
+        "instructor": "Reese, Clarissa Jane",
+        "name": "HDP191"
+    },
+    {
+        "instructor": "Reese, Clarissa Jane",
+        "name": "HDP191"
+    },
+    {
+        "instructor": "Patterson, Patrick H.",
+        "name": "HMNR100"
+    },
+    {
+        "instructor": "Chodorow, Stanley A.",
+        "name": "HUM1"
+    },
+    {
+        "instructor": "Lee, John Hoon",
+        "name": "HUM1"
+    },
+    {
+        "instructor": "Edwards, Anthony",
+        "name": "HUM1"
+    },
+    {
+        "instructor": "Cox, Stephen D.",
+        "name": "HUM1"
+    },
+    {
+        "instructor": "Kontje, Todd Curtis",
+        "name": "HUM4"
+    },
+    {
+        "instructor": "Lyon, Antony J.",
+        "name": "HUM4"
+    },
+    {
+        "instructor": "Watkins, Eric",
+        "name": "HUM4"
+    },
+    {
+        "instructor": "Broz, James Lawrence",
+        "name": "INTL102"
+    },
+    {
+        "instructor": "Ito, Hifumi",
+        "name": "JAPN10B"
+    },
+    {
+        "instructor": "Ito, Hifumi",
+        "name": "JAPN10B"
+    },
+    {
+        "instructor": "Izumi, Yurika",
+        "name": "JAPN10B"
+    },
+    {
+        "instructor": "Tipton, Yuko",
+        "name": "JAPN10B"
+    },
+    {
+        "instructor": "Takeda, Izumi",
+        "name": "JAPN10B"
+    },
+    {
+        "instructor": "Takeda, Izumi",
+        "name": "JAPN10B"
+    },
+    {
+        "instructor": "Tipton, Yuko",
+        "name": "JAPN10B"
+    },
+    {
+        "instructor": "Tipton, Yuko",
+        "name": "JAPN10B"
+    },
+    {
+        "instructor": "McKee, Mayumi Mochizuki",
+        "name": "JAPN20B"
+    },
+    {
+        "instructor": "McKee, Mayumi Mochizuki",
+        "name": "JAPN20B"
+    },
+    {
+        "instructor": "Izumi, Yurika",
+        "name": "JAPN20B"
+    },
+    {
+        "instructor": "Sato, Kyoko",
+        "name": "JAPN130B"
+    },
+    {
+        "instructor": "Sato, Kyoko",
+        "name": "JAPN130B"
+    },
+    {
+        "instructor": "Takeda, Izumi",
+        "name": "JAPN135B"
+    },
+    {
+        "instructor": "McKee, Mayumi Mochizuki",
+        "name": "JAPN140B"
+    },
+    {
+        "instructor": "Ito, Hifumi",
+        "name": "JAPN150B"
+    },
+    {
+        "instructor": "Shuster, Alana",
+        "name": "JUDA2"
+    },
+    {
+        "instructor": "Propp, William Henry",
+        "name": "JUDA102"
+    },
+    {
+        "instructor": "Smith, Peter H",
+        "name": "LATI50"
+    },
+    {
+        "instructor": "Cohen, Richard S.",
+        "name": "MMW12"
+    },
+    {
+        "instructor": "Smarr, Janet L.",
+        "name": "MMW12"
+    },
+    {
+        "instructor": "Chang, Edmond Yi-Teh",
+        "name": "MMW12"
+    },
+    {
+        "instructor": "Cassedy, Steven Dennis",
+        "name": "MMW14"
+    },
+    {
+        "instructor": "Gallant, Thomas W.",
+        "name": "MMW14"
+    },
+    {
+        "instructor": "Patterson, Patrick H.",
+        "name": "MMW122"
+    },
+    {
+        "instructor": "Chang, Edmond Yi-Teh",
+        "name": "MMW122"
+    },
+    {
+        "instructor": "Elle, Susan Michelle",
+        "name": "MATH3C"
+    },
+    {
+        "instructor": "Wen, Jiayi",
+        "name": "MATH4C"
+    },
+    {
+        "instructor": "Zhou, Shenggao",
+        "name": "MATH10A"
+    },
+    {
+        "instructor": "Boutonnet, Remi",
+        "name": "MATH10A"
+    },
+    {
+        "instructor": "Stevens, Laura Jeanne",
+        "name": "MATH10B"
+    },
+    {
+        "instructor": "Mohanty, Sara",
+        "name": "MATH10B"
+    },
+    {
+        "instructor": "Wang, Jie",
+        "name": "MATH10C"
+    },
+    {
+        "instructor": "Roberts, Justin Deritter",
+        "name": "MATH10C"
+    },
+    {
+        "instructor": "Aisenberg, James Maxwell",
+        "name": "MATH15A"
+    },
+    {
+        "instructor": "Bacellar Dos Santo, Jorge",
+        "name": "MATH20A"
+    },
+    {
+        "instructor": "Wang, Xingting",
+        "name": "MATH20A"
+    },
+    {
+        "instructor": "Bryan, Paul Anthony",
+        "name": "MATH20B"
+    },
+    {
+        "instructor": "Allen, Grant",
+        "name": "MATH20B"
+    },
+    {
+        "instructor": "Bowers, Adam R.",
+        "name": "MATH20B"
+    },
+    {
+        "instructor": "Banaszak, Grzegorz Marian",
+        "name": "MATH20B"
+    },
+    {
+        "instructor": "Eggers, John Dietrich",
+        "name": "MATH20C"
+    },
+    {
+        "instructor": "Oliver, Jesus R",
+        "name": "MATH20C"
+    },
+    {
+        "instructor": "Banaszak, Grzegorz Marian",
+        "name": "MATH20C"
+    },
+    {
+        "instructor": "Wang, Xingting",
+        "name": "MATH20C"
+    },
+    {
+        "instructor": "Oliver, Jesus R",
+        "name": "MATH20D"
+    },
+    {
+        "instructor": "Martirosyan, Lilit",
+        "name": "MATH20D"
+    },
+    {
+        "instructor": "Behzadan, Ali",
+        "name": "MATH20E"
+    },
+    {
+        "instructor": "Wang, Jie",
+        "name": "MATH20E"
+    },
+    {
+        "instructor": "Martirosyan, Lilit",
+        "name": "MATH20E"
+    },
+    {
+        "instructor": "Peng, Xing",
+        "name": "MATH20F"
+    },
+    {
+        "instructor": "Eggers, John Dietrich",
+        "name": "MATH20F"
+    },
+    {
+        "instructor": "Sorensen, Claus M",
+        "name": "MATH20F"
+    },
+    {
+        "instructor": "Rabin, Jeffrey Mark",
+        "name": "MATH31BH"
+    },
+    {
+        "instructor": "Harel, Guershon",
+        "name": "MATH95"
+    },
+    {
+        "instructor": "Small, Lance W.",
+        "name": "MATH100B"
+    },
+    {
+        "instructor": "Harel, Guershon",
+        "name": "MATH102"
+    },
+    {
+        "instructor": "Zelmanov, Efim I",
+        "name": "MATH103B"
+    },
+    {
+        "instructor": "Bucur, Alina Ioana",
+        "name": "MATH104B"
+    },
+    {
+        "instructor": "Pelayo, Alvaro",
+        "name": "MATH109"
+    },
+    {
+        "instructor": "Rogalski, Daniel",
+        "name": "MATH109"
+    },
+    {
+        "instructor": "Sorensen, Claus M",
+        "name": "MATH109"
+    },
+    {
+        "instructor": "Wenzl, Hans G",
+        "name": "MATH110B"
+    },
+    {
+        "instructor": "Driver, Bruce K",
+        "name": "MATH120A"
+    },
+    {
+        "instructor": "Stevens, Laura Jeanne",
+        "name": "MATH121A"
+    },
+    {
+        "instructor": "Li, Bo",
+        "name": "MATH130A"
+    },
+    {
+        "instructor": "Chow, Bennett",
+        "name": "MATH140A"
+    },
+    {
+        "instructor": "Oprea, Dragos N.",
+        "name": "MATH140B"
+    },
+    {
+        "instructor": "Agler, Jim",
+        "name": "MATH142A"
+    },
+    {
+        "instructor": "Bryan, Paul Anthony",
+        "name": "MATH142B"
+    },
+    {
+        "instructor": "Rabin, Jeffrey Mark",
+        "name": "MATH150B"
+    },
+    {
+        "instructor": "Graham, Fan Chung",
+        "name": "MATH152"
+    },
+    {
+        "instructor": "Bach, Quang Tran",
+        "name": "MATH155A"
+    },
+    {
+        "instructor": "Saab, Rayan",
+        "name": "MATH170B"
+    },
+    {
+        "instructor": "Gill, Philip E.",
+        "name": "MATH171A"
+    },
+    {
+        "instructor": "Bank, Randolph E",
+        "name": "MATH175"
+    },
+    {
+        "instructor": "Fitzsimmons, Patrick J",
+        "name": "MATH180A"
+    },
+    {
+        "instructor": "Fitzsimmons, Patrick J",
+        "name": "MATH180B"
+    },
+    {
+        "instructor": "Xu, Ronghui",
+        "name": "MATH181A"
+    },
+    {
+        "instructor": "Politis, Dimitris",
+        "name": "MATH181E"
+    },
+    {
+        "instructor": "Bradic, Jelena",
+        "name": "MATH183"
+    },
+    {
+        "instructor": "Tesler, Glenn",
+        "name": "MATH186"
+    },
+    {
+        "instructor": "Bradic, Jelena",
+        "name": "MATH189"
+    },
+    {
+        "instructor": "Bowers, Adam R.",
+        "name": "MATH194"
+    },
+    {
+        "instructor": "Gibson, Carl H.",
+        "name": "MAE5"
+    },
+    {
+        "instructor": "Pham, Hieu Tan",
+        "name": "MAE8"
+    },
+    {
+        "instructor": "Meyers, Marc",
+        "name": "MAE20"
+    },
+    {
+        "instructor": "Nomura, Keiko K.",
+        "name": "MAE101A"
+    },
+    {
+        "instructor": "Miller, David R.",
+        "name": "MAE101B"
+    },
+    {
+        "instructor": "Rangamani, Padmini",
+        "name": "MAE110A"
+    },
+    {
+        "instructor": "Lasheras, Juan C.",
+        "name": "MAE113"
+    },
+    {
+        "instructor": "Tynan, George Robert",
+        "name": "MAE119"
+    },
+    {
+        "instructor": "Tartakovsky, Daniel",
+        "name": "MAE123"
+    },
+    {
+        "instructor": "Kleissl, Jan",
+        "name": "MAE126A"
+    },
+    {
+        "instructor": "Benson, David J",
+        "name": "MAE130A"
+    },
+    {
+        "instructor": "Benson, David J",
+        "name": "MAE130B"
+    },
+    {
+        "instructor": "Murakami, Hidenori",
+        "name": "MAE130C"
+    },
+    {
+        "instructor": "Lanza Di Scalea, Francesco",
+        "name": "MAE131A"
+    },
+    {
+        "instructor": "de Oliveira, Mauricio",
+        "name": "MAE140"
+    },
+    {
+        "instructor": "Anderson, Mark Ronald",
+        "name": "MAE142"
+    },
+    {
+        "instructor": "Bitmead, Robert R.",
+        "name": "MAE143A"
+    },
+    {
+        "instructor": "Talke, Frank E",
+        "name": "MAE150"
+    },
+    {
+        "instructor": "Anderson, Mark Ronald",
+        "name": "MAE155A"
+    },
+    {
+        "instructor": "Delson, Nathan Joseph",
+        "name": "MAE156A"
+    },
+    {
+        "instructor": "Tustaniwskyj, Jerry I",
+        "name": "MAE156A"
+    },
+    {
+        "instructor": "Tustaniwskyj, Jerry I",
+        "name": "MAE156B"
+    },
+    {
+        "instructor": "Graeve, Olivia A",
+        "name": "MAE160"
+    },
+    {
+        "instructor": "Seshadri, Kalyanasundaram",
+        "name": "MAE171A"
+    },
+    {
+        "instructor": "de Callafon, Raymond A",
+        "name": "MAE175A"
+    },
+    {
+        "instructor": "Rowan, Kyle Edward",
+        "name": "MUS1B"
+    },
+    {
+        "instructor": "Zelickman, Robert A",
+        "name": "MUS5"
+    },
+    {
+        "instructor": "Zelickman, Robert A",
+        "name": "MUS9"
+    },
+    {
+        "instructor": "Davis, Clinton Ross",
+        "name": "MUS13AM"
+    },
+    {
+        "instructor": "Donahue, Dustin Wayne",
+        "name": "MUS14"
+    },
+    {
+        "instructor": "Hembree, Paul James",
+        "name": "MUS15"
+    },
+    {
+        "instructor": "Narucki, Susan M",
+        "name": "MUS15"
+    },
+    {
+        "instructor": "Ben Yosef Talmon, Ori",
+        "name": "MUS33B"
+    },
+    {
+        "instructor": "Karis, Aleck",
+        "name": "MUS101B"
+    },
+    {
+        "instructor": "Cimini, Amy Marie",
+        "name": "MUS102B"
+    },
+    {
+        "instructor": "Liang, Lei",
+        "name": "MUS103E"
+    },
+    {
+        "instructor": "Stevens, Jane",
+        "name": "MUS112"
+    },
+    {
+        "instructor": "Pasler, Jann Corinne",
+        "name": "MUS113"
+    },
+    {
+        "instructor": "Cimini, Amy Marie",
+        "name": "MUS120B"
+    },
+    {
+        "instructor": "Richards, Stephanie F",
+        "name": "MUS127A"
+    },
+    {
+        "instructor": "Dubnov, Shlomo",
+        "name": "MUS173"
+    },
+    {
+        "instructor": "Grush, Rick Scott",
+        "name": "PHIL10"
+    },
+    {
+        "instructor": "McKenzie, Kerry V.",
+        "name": "PHIL12"
+    },
+    {
+        "instructor": "Wuthrich, Christian",
+        "name": "PHIL14"
+    },
+    {
+        "instructor": "Lamey, Andy M.",
+        "name": "PHIL27"
+    },
+    {
+        "instructor": "Rutherford, Donald Paul",
+        "name": "PHIL32"
+    },
+    {
+        "instructor": "Johnson, Monte",
+        "name": "PHIL101"
+    },
+    {
+        "instructor": "Rutherford, Donald Paul",
+        "name": "PHIL111"
+    },
+    {
+        "instructor": "Nelkin, Dana Kay",
+        "name": "PHIL115"
+    },
+    {
+        "instructor": "Cohen, Jonathan David",
+        "name": "PHIL132"
+    },
+    {
+        "instructor": "Grush, Rick Scott",
+        "name": "PHIL136"
+    },
+    {
+        "instructor": "Brink, David O.",
+        "name": "PHIL137"
+    },
+    {
+        "instructor": "Lamey, Andy M.",
+        "name": "PHIL148"
+    },
+    {
+        "instructor": "Cartwright, Nancy D.",
+        "name": "PHIL152"
+    },
+    {
+        "instructor": "Arneson, Richard J.",
+        "name": "PHIL160"
+    },
+    {
+        "instructor": "Rickless, Samuel Charles",
+        "name": "PHIL165"
+    },
+    {
+        "instructor": "Anagnostopoulos, G. H.",
+        "name": "PHIL166"
+    },
+    {
+        "instructor": "Tolley, Clinton",
+        "name": "PHIL175"
+    },
+    {
+        "instructor": "Watkins, Eric",
+        "name": "PHIL178"
+    },
+    {
+        "instructor": "Yagil, Avi",
+        "name": "PHYS1A"
+    },
+    {
+        "instructor": "Groisman, Alexander",
+        "name": "PHYS1B"
+    },
+    {
+        "instructor": "Wuerthwein, Frank",
+        "name": "PHYS1B"
+    },
+    {
+        "instructor": "Wuerthwein, Frank",
+        "name": "PHYS1B"
+    },
+    {
+        "instructor": "Burgasser, Adam Jonathan",
+        "name": "PHYS1C"
+    },
+    {
+        "instructor": "Sharma, Vivek A.",
+        "name": "PHYS2A"
+    },
+    {
+        "instructor": "Sharma, Vivek A.",
+        "name": "PHYS2A"
+    },
+    {
+        "instructor": "Sharma, Vivek A.",
+        "name": "PHYS2A"
+    },
+    {
+        "instructor": "Shotwell, Brian",
+        "name": "PHYS2B"
+    },
+    {
+        "instructor": "Butov, Leonid",
+        "name": "PHYS2BL"
+    },
+    {
+        "instructor": "Maple, M. Brian",
+        "name": "PHYS2CL"
+    },
+    {
+        "instructor": "Sinha, Sunil K",
+        "name": "PHYS4A"
+    },
+    {
+        "instructor": "Intriligator, Kenneth Arthur",
+        "name": "PHYS4D"
+    },
+    {
+        "instructor": "Keres, Dusan",
+        "name": "PHYS7"
+    },
+    {
+        "instructor": "Tytler, David Robert",
+        "name": "PHYS10"
+    },
+    {
+        "instructor": "Surko, Clifford M",
+        "name": "PHYS100B"
+    },
+    {
+        "instructor": "Dubin, Daniel Herschel",
+        "name": "PHYS105B"
+    },
+    {
+        "instructor": "Wu, Congjun",
+        "name": "PHYS110B"
+    },
+    {
+        "instructor": "Murphy, Thomas",
+        "name": "PHYS124"
+    },
+    {
+        "instructor": "Fogler, Michael M.",
+        "name": "PHYS140B"
+    },
+    {
+        "instructor": "Kuti, Julius",
+        "name": "PHYS141"
+    },
+    {
+        "instructor": "Konopacky, Quinn Morgan",
+        "name": "PHYS160"
+    },
+    {
+        "instructor": "Fuller, George Michael",
+        "name": "PHYS161"
+    },
+    {
+        "instructor": "Hwa, Terence T.",
+        "name": "PHYS176"
+    },
+    {
+        "instructor": "Sharpee, Tatyana",
+        "name": "PHYS178"
+    },
+    {
+        "instructor": "Galderisi, Peter",
+        "name": "POLI10D"
+    },
+    {
+        "instructor": "Tiwari, Devesh K",
+        "name": "POLI11D"
+    },
+    {
+        "instructor": "Lake, David A",
+        "name": "POLI12D"
+    },
+    {
+        "instructor": "LeJeune, John Louis",
+        "name": "POLI28"
+    },
+    {
+        "instructor": "Galderisi, Peter",
+        "name": "POLI30D"
+    },
+    {
+        "instructor": "Popkin, Samuel L.",
+        "name": "POLI100DA"
+    },
+    {
+        "instructor": "Ingram, James Warren",
+        "name": "POLI102E"
+    },
+    {
+        "instructor": "Fletcher, Nathan",
+        "name": "POLI103A"
+    },
+    {
+        "instructor": "Madigan, Michael D",
+        "name": "POLI103C"
+    },
+    {
+        "instructor": "Smith, Glenn Chatmas",
+        "name": "POLI104B"
+    },
+    {
+        "instructor": "LeJeune, John Louis",
+        "name": "POLI110B"
+    },
+    {
+        "instructor": "Cotkin, Aaron Benjamin",
+        "name": "POLI110EA"
+    },
+    {
+        "instructor": "Haines, Kyle",
+        "name": "POLI110M"
+    },
+    {
+        "instructor": "Hoston, Germaine",
+        "name": "POLI114B"
+    },
+    {
+        "instructor": "Magagna, Victor Valentine",
+        "name": "POLI120A"
+    },
+    {
+        "instructor": "Chandler, William M.",
+        "name": "POLI120C"
+    },
+    {
+        "instructor": "Strom, Kaare",
+        "name": "POLI120G"
+    },
+    {
+        "instructor": "Adida, Claire",
+        "name": "POLI120N"
+    },
+    {
+        "instructor": "Strom, Kaare",
+        "name": "POLI122D"
+    },
+    {
+        "instructor": "Nichter, Simeon C",
+        "name": "POLI126"
+    },
+    {
+        "instructor": "Gibson, Clark C",
+        "name": "POLI129"
+    },
+    {
+        "instructor": "Hoston, Germaine",
+        "name": "POLI130AD"
+    },
+    {
+        "instructor": "Naoi, Megumi",
+        "name": "POLI133A"
+    },
+    {
+        "instructor": "Magagna, Victor Valentine",
+        "name": "POLI136"
+    },
+    {
+        "instructor": "Chandler, William M.",
+        "name": "POLI138D"
+    },
+    {
+        "instructor": "Fisk, David Lee",
+        "name": "POLI142A"
+    },
+    {
+        "instructor": "Mares, David R",
+        "name": "POLI142L"
+    },
+    {
+        "instructor": "Slantchev, Branislav",
+        "name": "POLI143A"
+    },
+    {
+        "instructor": "Fisk, David Lee",
+        "name": "POLI145C"
+    },
+    {
+        "instructor": "Schneider, Christina",
+        "name": "POLI151"
+    },
+    {
+        "instructor": "Schneider, Christina",
+        "name": "POLI153"
+    },
+    {
+        "instructor": "Roberts, Margaret Earling",
+        "name": "POLI170A"
+    },
+    {
+        "instructor": "Burd, Margarette Pamela",
+        "name": "PSYC1"
+    },
+    {
+        "instructor": "Higgins, Emily Catherine",
+        "name": "PSYC3"
+    },
+    {
+        "instructor": "Burd, Margarette Pamela",
+        "name": "PSYC6"
+    },
+    {
+        "instructor": "Dooley, Kevin D.",
+        "name": "PSYC60"
+    },
+    {
+        "instructor": "Plummer, Patrick Reynard",
+        "name": "PSYC60"
+    },
+    {
+        "instructor": "Barner, David A.",
+        "name": "PSYC101"
+    },
+    {
+        "instructor": "Bryan, Christopher Jay",
+        "name": "PSYC104"
+    },
+    {
+        "instructor": "Lowe, Angela Beth",
+        "name": "PSYC105"
+    },
+    {
+        "instructor": "Dobkins, Karen R.",
+        "name": "PSYC106"
+    },
+    {
+        "instructor": "Aron, Adam",
+        "name": "PSYC107"
+    },
+    {
+        "instructor": "Heyman, Gail D.",
+        "name": "PSYC110"
+    },
+    {
+        "instructor": "Pashler, Harold E",
+        "name": "PSYC115"
+    },
+    {
+        "instructor": "Kennelly, Arthur Edwin",
+        "name": "PSYC120"
+    },
+    {
+        "instructor": "Linke, Sarah Elizabeth",
+        "name": "PSYC124"
+    },
+    {
+        "instructor": "Rose, Fred E.",
+        "name": "PSYC125"
+    },
+    {
+        "instructor": "Winkielman, Piotr",
+        "name": "PSYC137"
+    },
+    {
+        "instructor": "Dooley, Kevin D.",
+        "name": "PSYC138"
+    },
+    {
+        "instructor": "Kennelly, Arthur Edwin",
+        "name": "PSYC140"
+    },
+    {
+        "instructor": "Wixted, John T",
+        "name": "PSYC144"
+    },
+    {
+        "instructor": "Serences, John Thomas",
+        "name": "PSYC150"
+    },
+    {
+        "instructor": "Henniger, Nicole Elizabeth",
+        "name": "PSYC153"
+    },
+    {
+        "instructor": "Wanic, Rebekah Amelie",
+        "name": "PSYC155"
+    },
+    {
+        "instructor": "Wanic, Rebekah Amelie",
+        "name": "PSYC164"
+    },
+    {
+        "instructor": "Anagnostaras, Stephan",
+        "name": "PSYC171"
+    },
+    {
+        "instructor": "Oliver, Taylor",
+        "name": "PSYC172"
+    },
+    {
+        "instructor": "Whitfield, Timothy W.",
+        "name": "PSYC188"
+    },
+    {
+        "instructor": "Vul, Edward",
+        "name": "PSYC193"
+    },
+    {
+        "instructor": "Heyman, Gail D.",
+        "name": "PSYC193"
+    },
+    {
+        "instructor": "Heyman, Gail D.",
+        "name": "PSYC193"
+    },
+    {
+        "instructor": "Heyman, Gail D.",
+        "name": "PSYC194B"
+    },
+    {
+        "instructor": "Heyman, Gail D.",
+        "name": "PSYC196B"
+    },
+    {
+        "instructor": "Ramachandran, Vilayanur S",
+        "name": "PSYC196B"
+    },
+    {
+        "instructor": "Bass, Wayne Jeffrey",
+        "name": "RELI2"
+    },
+    {
+        "instructor": "Caciola, Nancy A",
+        "name": "RELI147"
+    },
+    {
+        "instructor": "Rahimi, Babak",
+        "name": "RELI150"
+    },
+    {
+        "instructor": "Stegman, David",
+        "name": "SIO1"
+    },
+    {
+        "instructor": "Aburto Oropeza, Marco Octavio",
+        "name": "SIO3"
+    },
+    {
+        "instructor": "Sclater, John G.",
+        "name": "SIO10"
+    },
+    {
+        "instructor": "Gershunov, Alexander",
+        "name": "SIO20"
+    },
+    {
+        "instructor": "Driscoll, Neal W.",
+        "name": "SIO35"
+    },
+    {
+        "instructor": "Cook, Geoffrey W",
+        "name": "SIO45"
+    },
+    {
+        "instructor": "Kastner, Miriam",
+        "name": "SIO102"
+    },
+    {
+        "instructor": "Minster, Jean Bernard H.",
+        "name": "SIO110"
+    },
+    {
+        "instructor": "Gille, Sarah T",
+        "name": "SIO119"
+    },
+    {
+        "instructor": "Cook, Geoffrey W",
+        "name": "SIO120"
+    },
+    {
+        "instructor": "Palenik, Brian",
+        "name": "SIO126"
+    },
+    {
+        "instructor": "Brahamsha, Bianca M.",
+        "name": "SIO126L"
+    },
+    {
+        "instructor": "Fenical, William H.",
+        "name": "SIO129"
+    },
+    {
+        "instructor": "Landry, Michael Raymond",
+        "name": "SIO134"
+    },
+    {
+        "instructor": "Andersson, Andreas Jerry",
+        "name": "SIO143"
+    },
+    {
+        "instructor": "Castillo, Paterno R.",
+        "name": "SIO144"
+    },
+    {
+        "instructor": "Brown, Kevin Michael",
+        "name": "SIO162"
+    },
+    {
+        "instructor": "Evan, Amato Tomas",
+        "name": "SIO172"
+    },
+    {
+        "instructor": "Haymet, Anthony",
+        "name": "SIO180"
+    },
+    {
+        "instructor": "Rouse, Gregory W.",
+        "name": "SIO184"
+    },
+    {
+        "instructor": "Van Den Einde, Yael Dahlia",
+        "name": "SE1"
+    },
+    {
+        "instructor": "Kuester, Falko",
+        "name": "SE9"
+    },
+    {
+        "instructor": "Benson, David J",
+        "name": "SE101A"
+    },
+    {
+        "instructor": "Benson, David J",
+        "name": "SE101B"
+    },
+    {
+        "instructor": "Murakami, Hidenori",
+        "name": "SE101C"
+    },
+    {
+        "instructor": "Lanza Di Scalea, Francesco",
+        "name": "SE110A"
+    },
+    {
+        "instructor": "Zhu, Qiang",
+        "name": "SE115"
+    },
+    {
+        "instructor": "Van Den Einde, Yael Dahlia",
+        "name": "SE120"
+    },
+    {
+        "instructor": "Uang, Chia-Ming",
+        "name": "SE130A"
+    },
+    {
+        "instructor": "Krysl, Petr",
+        "name": "SE131"
+    },
+    {
+        "instructor": "Whisler, Daniel A",
+        "name": "SE142"
+    },
+    {
+        "instructor": "Restrepo, Jose",
+        "name": "SE151A"
+    },
+    {
+        "instructor": "Kosmatka, John B",
+        "name": "SE160A"
+    },
+    {
+        "instructor": "Fox, Patrick Joseph",
+        "name": "SE181"
+    },
+    {
+        "instructor": "Chacon, Gloria Elizabeth",
+        "name": "TWS22"
+    },
+    {
+        "instructor": "Sinay, Patricia",
+        "name": "TMC15"
+    },
+    {
+        "instructor": "Curcio, Paul David",
+        "name": "USP2"
+    },
+    {
+        "instructor": "Bussell, Mirle Rabinowitz",
+        "name": "USP100"
+    },
+    {
+        "instructor": "Mendes, Gabriel",
+        "name": "USP104"
+    },
+    {
+        "instructor": "Andrews, Abigail Leslie",
+        "name": "USP105"
+    },
+    {
+        "instructor": "Molina, Natalia Margarita",
+        "name": "USP106"
+    },
+    {
+        "instructor": "Ingram, James Warren",
+        "name": "USP107"
+    },
+    {
+        "instructor": "Fletcher, Nathan",
+        "name": "USP109"
+    },
+    {
+        "instructor": "Madigan, Michael D",
+        "name": "USP115"
+    },
+    {
+        "instructor": "McGrory, Jack",
+        "name": "USP120"
+    },
+    {
+        "instructor": "Denny, Elaine Kathryn",
+        "name": "USP125"
+    },
+    {
+        "instructor": "Martin, Isaac",
+        "name": "USP133"
+    },
+    {
+        "instructor": "Nguyen, Linh Thuy",
+        "name": "USP135"
+    },
+    {
+        "instructor": "Lewis, Leslie R",
+        "name": "USP143"
+    },
+    {
+        "instructor": "Peerson, Susan",
+        "name": "USP179"
+    },
+    {
+        "instructor": "Curcio, Paul David",
+        "name": "USP181"
+    },
+    {
+        "instructor": "Pezzoli, Keith",
+        "name": "USP187"
+    },
+    {
+        "instructor": "Dominguez, Ricardo",
+        "name": "VIS2"
+    },
+    {
+        "instructor": "Kester, Grant",
+        "name": "VIS22"
+    },
+    {
+        "instructor": "Stalbaum, Brett",
+        "name": "VIS40"
+    },
+    {
+        "instructor": "Caplan, Lana Z",
+        "name": "VIS60"
+    },
+    {
+        "instructor": "Park, Kyong Dong",
+        "name": "VIS111"
+    },
+    {
+        "instructor": "Sizonenko, Tatiana D",
+        "name": "VIS122AN"
+    },
+    {
+        "instructor": "Newsome, Elizabeth Ann",
+        "name": "VIS126BN"
+    },
+    {
+        "instructor": "Williams, Alena J",
+        "name": "VIS128C"
+    },
+    {
+        "instructor": "Bratton, Benjamin H.",
+        "name": "VIS140"
+    },
+    {
+        "instructor": "Cartwright, Lisa",
+        "name": "VIS159"
+    },
+    {
+        "instructor": "Cross, Brian R",
+        "name": "VIS165"
+    },
+    {
+        "instructor": "Caplan, Lana Z",
+        "name": "VIS171"
+    },
+    {
+        "instructor": "Hock, Louis J.",
+        "name": "VIS174"
+    },
+    {
+        "instructor": "Torres, Josefina E",
+        "name": "VIS174"
+    },
+    {
+        "instructor": "Torres, Josefina E",
+        "name": "VIS177"
+    },
+    {
+        "instructor": "Trigilio, Michael",
+        "name": "VIS178"
+    },
+    {
+        "instructor": "Cross, Brian R",
+        "name": "VIS180A"
+    },
+    {
+        "instructor": "Mangolte, Babette",
+        "name": "VIS181"
+    },
+    {
+        "instructor": "Cartwright, Lisa",
+        "name": "VIS183A"
+    },
+    {
+        "instructor": "Fagin, Steve",
+        "name": "VIS183B"
+    },
+    {
+        "instructor": "Picciotto, Madeleine",
+        "name": "WARR189"
+    }
+]
