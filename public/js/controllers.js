@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('TaskDetailsCtrl', function($scope, $stateParams, Task) {
+.controller('TaskDetailsCtrl', function($scope, $location, $ionicLoading, $stateParams, Task) {
   $scope.task = {
     'class': {
       'name': 'LOADING...'
@@ -8,6 +8,19 @@ angular.module('starter.controllers', [])
     name: 'LOADING...',
     description: 'LOADING'
   }
+
+  $scope.deleteTask = function(task) {
+    Task.delete(task._id, function(data, err) {
+      if (err) { console.log(err); return; }
+
+      if (data.success == true) {
+        $ionicLoading.show({ template: 'Task deleted!', noBackdrop: true, duration: 500 });
+        $location.path("app/tasks");
+      } else {
+        $ionicLoading.show({ template: 'Failed to delete task!', noBackdrop: true, duration: 500 });
+      }
+    });
+  };
 
   Task.detail($stateParams.taskId, function(data, err) {
     if (err) { console.log(err); return; }
@@ -18,7 +31,6 @@ angular.module('starter.controllers', [])
       if (err) { console.log(err); return; }
       console.log(res);
       $scope.task.shareCount = res.shareCount;
-      console.log("fdsfsd");
       console.log($scope.task);
       if ($scope.task.is_endorsed == false || $scope.task.is_endorsed == undefined) {
         $scope.task.endorsed_message = " by " + $scope.task.shareCount + " students";

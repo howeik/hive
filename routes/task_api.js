@@ -31,6 +31,17 @@ exports.all = function(req, res) {
 	});
 };
 
+exports.delete = function(req, res) {
+	if (req.signedCookies.user_id == undefined) { res.send(500); return; }
+
+	var task = req.body.taskId;
+	models.UserTasks.find({'user': req.signedCookies.user_id, 'task': task}).remove(function(err, data) {
+		if (err) { console.log(err); res.send(500); return; }
+
+		res.send(200, {success: true});
+	});
+}
+
 exports.super_all = function(req, res) {
 	models.UserTasks.find().populate('user task').exec(function(err, userTasks) {
 		if (err) { console.log(err); res.send(500); return; }

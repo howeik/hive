@@ -126,6 +126,14 @@ angular.module('starter.services', [])
       };
       this.apiCall(req, callback);
     },
+    delete: function(taskId, callback) {
+      var req = {
+        method: 'POST',
+        url: '/task/delete',
+        data: { 'taskId': taskId }
+      };
+      this.apiCall(req, callback);
+    },
     add: function(taskId, callback) {
       var req = {
         method: 'POST',

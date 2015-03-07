@@ -79,6 +79,8 @@ app.get('/api/task/super_all', task_api.super_all);
 app.get('/api/task/detail/:task_id', task_api.details);
 app.get('/api/task/shareCount/:task_id', task_api.shareCount);
 
+app.post('/api/task/delete', task_api.delete);
+
 
 app.post('/api/task/create', task_api.create);
 app.post('/api/task/add', task_api.add);
