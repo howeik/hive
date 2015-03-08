@@ -9,15 +9,14 @@
 		  	<div class="task-detail-title">
 				{{task.name}}<!--{{userTask.task.name}}-->
 			</div>
-			<div class="task-detail-class">
-				{{task.class.name}} <!--{{userTask.task.class.name}}-->
-			</div>
 			<div class="task-detail-date">
 				Due Date: {{task.due_date}} <!--{{userTask.task.due_date}}-->
 			</div>
-		  
+			<div class="task-detail-class">
+				{{task.class.name}} <!--{{userTask.task.class.name}}-->
+			</div>		  
 		  	<div id="task-details">Details</div>
-		    <p>
+		    <p id="message">
 		      {{task.description}}
 		    </p>
 		   
@@ -27,16 +26,16 @@
 
 
 		    </div>
+		  </div>
+		  	</div>	
 		    <div  ng-click="deleteTask(task)" class="task-detail-delete">
-		    <button  class="button button-small trash">
+		    <button  class="button button-large trash">
 		    <a class="item-icon trash-button" href="#">
-		      <i class="icon ion-trash-a"> Delete</i>
+		      <i class="icon ion-trash-a" style="margin-left:-3px;"> Delete</i>
 		    </a>
 		    </button>
 		</div>
-		  </div>
 
-	</div>	
 
 
 		<!--<p id="title-detail">Details</p>
