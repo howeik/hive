@@ -32,7 +32,9 @@
 				<!-- Completed Tasks checked off-->
 				<div class="tasks" ng-if="userTask.is_finished" style="overflow: initial;white-space: initial;">
 					<div class="date-title-completed">
-						{{userTask.day_of_the_week.substr(0, 3)}}
+						<div ng-show="userTask.task.class.name">
+							{{userTask.day_of_the_week.substr(0, 3)}}
+						</div>
 					</div>
 					<div class="task-title-completed">
 						{{userTask.task.name}}

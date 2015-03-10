@@ -140,10 +140,7 @@ body {
 }
 
 .tasks {
-	padding-top:5px;
-	margin-top: -3px;
-/*	display: inline;
-*/	margin:0 auto;
+	margin:0 auto;
 }
 
 .tasks-left {
