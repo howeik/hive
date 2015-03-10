@@ -19,7 +19,7 @@
 
 				<div class="tasks" ng-if="!userTask.is_finished" style="overflow: initial;white-space: initial;">
 					<div class="date-title">
-						{{userTask.day_of_the_week.substr(0, 3)}}
+						<div ng-show="userTask.task.class.name">{{userTask.day_of_the_week.substr(0, 3)}}</div>
 					</div>
 					<div class="task-title">
 						{{userTask.task.name}}
