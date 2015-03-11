@@ -164,7 +164,7 @@ body {
 
 .date-title {
 	float: right;
-	margin-top: 7px;
+	margin-top: 10px;
 	display: inline;
 	font-size: 16px; 
 	vertical-align: middle;
@@ -182,7 +182,7 @@ body {
 	float: right;
 	display: inline;
 	font-size: 17px; 
-	margin-top: 7px;
+	margin-top: 10px;
 	vertical-align: middle;
 }
 
