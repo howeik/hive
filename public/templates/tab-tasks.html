@@ -7,7 +7,7 @@
 				<ion class="ion-calendar" style="padding-right:3px;"></ion> This Week
 			</div>
 
-			<ion-item ng-repeat="userTask in this_week" class="item item-checkbox item-icon-right">
+			<ion-item ng-repeat="userTask in this_week" id="task{{userTask._id}}" class="item item-checkbox item-icon-right">
 
 				<label ng-show="!useB" class="checkbox">
 				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
@@ -54,7 +54,7 @@
 				Upcoming
 			</div>
 
-			<ion-item ng-repeat="userTask in upcoming" class="item item-checkbox item-icon-right">
+			<ion-item ng-repeat="userTask in upcoming" id="task{{userTask._id}}" class="item item-checkbox item-icon-right">
 
 				<label ng-show="!useB" class="checkbox">
 				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
@@ -94,50 +94,13 @@
 				<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
 			</ion-item>
 
-
-			<!-- Completed -->
-			<div class="item item-divider">
-				Past
-			</div>
-
-			<ion-item ng-repeat="userTask in archived" class="item item-checkbox item-icon-right">
-
-				<label ng-show="!useB" class="checkbox">
-				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
-				</label>
-
-				<li ng-show="useB" class="checkbox">
-				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
-				</li>
-
-				<div class="tasks" ng-if="!userTask.is_finished" style="overflow: initial;white-space: initial;">
-					<div class="date-title">
-						{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
-					</div>
-					<div class="task-title">
-						{{userTask.task.name}}
-					</div>
-					<div class="course-title">
-						{{userTask.task.class.name}}
-					</div>
-				</div>
-
-				<!-- Completed Tasks checked off-->
-				<div class="tasks" ng-if="userTask.is_finished" style="overflow: initial;white-space: initial;">
-					<div class="date-title-completed">
-						{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
-					</div>
-					<div class="task-title-completed">
-						{{userTask.task.name}}
-					</div>
-					<div class="course-title-completed">
-						{{userTask.task.class.name}}
-					</div>
-				</div>
-				<!-- ************************************* -->
-
-				<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
-			</ion-item>
+			<div class="padding">
+			<div class="card" style="text-align: center; margin-left: auto; margin-right: auto;">
+		  	<a class="item positive" href="#">
+			    <i class="icon ion-checkmark-circled"></i> Show Completed Tasks
+		  	</a>
+		  	</div>
+		  	</div>
 
 
 			<!-- OLD This Week Task -->

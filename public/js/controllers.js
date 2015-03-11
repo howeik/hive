@@ -93,7 +93,23 @@ angular.module('starter.controllers', [])
     return Math.round((date - start) / 604800000) + 1;
   };
 
+  function hideTask(userTask) {
+    console.log("hide task 100000000");
+    $('#task' + userTask._id).hide(400, function() {
+      console.log("hidden");
+    });
+  };
+
+  $scope.timeoutIds = {}
+
   $scope.updateUserTask = function(userTask) {
+    if (userTask.is_finished) {
+      var timeoutId = setTimeout(function() { hideTask(userTask) }, 1500);
+      $scope.timeoutIds[userTask._id] = timeoutId;
+    } else {
+      window.clearTimeout($scope.timeoutIds[userTask._id]);
+    }
+
     var logData = userTask.task;
     logData['useB'] = $scope.useB;
     woopra.track("task toggled", logData);
@@ -121,6 +137,8 @@ angular.module('starter.controllers', [])
     $scope.upcoming = [];
     $scope.archived = [];
     tasks.forEach(function(userTask) {
+      if (userTask.is_finished) return;
+
       if (firstday <= new Date(userTask.task.due_date) && new Date(userTask.task.due_date) <= lastday) {
         userTask.day_of_the_week = dayToString(new Date(userTask.task.due_date).getDay());
         $scope.this_week.push(userTask);
