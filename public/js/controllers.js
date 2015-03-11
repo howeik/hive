@@ -256,10 +256,10 @@ angular.module('starter.controllers', [])
       // populate endorsement information
       sharedTasks.forEach(function(sharedTask) {
         if (sharedTask.is_endorsed) {
-          sharedTask.endorsed_message = " by an instructor";
+          sharedTask.endorsed_message = "  added by an insturctor";
         } else {
           Task.shareCount(sharedTask._id, function(res, err) {
-            sharedTask.endorsed_message = " by " + res.shareCount + " students";
+            sharedTask.endorsed_message = " added by " + res.shareCount + " students";
           });
         }
       });
