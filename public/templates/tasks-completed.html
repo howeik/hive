@@ -1,0 +1,51 @@
+<ion-view view-title="Completed Tasks">
+	<ion-content>
+		<!-- Completed Tasks -->
+		<div class="item item-divider">
+			<ion class="ion-calendar" style="padding-right:3px;"></ion> Completed
+		</div>
+
+
+		<ion-item ng-repeat="userTask in tasks" id="task{{userTask._id}}" class="item item-checkbox item-icon-right">
+
+			<label ng-show="!useB" class="checkbox">
+			  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+			</label>
+
+			<li ng-show="useB" class="checkbox">
+			  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+			</li>
+
+			<div class="tasks" ng-if="!userTask.is_finished" style="overflow: initial;white-space: initial;">
+				<div class="date-title">
+					{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
+				</div>
+				<div class="task-title">
+					{{userTask.task.name}}
+				</div>
+				<div class="course-title">
+					{{userTask.task.class.name}}
+				</div>
+			</div>
+
+			<!-- Completed Tasks checked off-->
+			<div class="tasks" ng-if="userTask.is_finished" style="overflow: initial;white-space: initial;">
+				<div class="date-title-completed">
+					<div ng-show="userTask.task.class.name">
+						{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
+					</div>
+				</div>
+				<div class="task-title-completed">
+					{{userTask.task.name}}
+				</div>
+				<div class="course-title-completed">
+					{{userTask.task.class.name}}
+				</div>
+			</div>
+			<!-- ************************************* -->
+
+			<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
+		</ion-item>
+
+	</ion-content>
+</ion-view>

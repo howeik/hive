@@ -1,5 +1,49 @@
 angular.module('starter.controllers', [])
 
+.controller('TasksCompletedCtrl', function($scope, Task) {
+  console.log("now in TasksCompletedCtrl");
+
+  $scope.tasks = [];
+  Task.all(function(tasks, err) {
+    if (err) { console.log(err); return; }
+
+    $scope.tasks = tasks.filter(function(task) {
+      return task.is_finished == true;
+    });
+
+    $scope.tasks = $scope.tasks.sort(function(a, b) {
+      return new Date(b.task.due_date) - new Date(a.task.due_date);
+    });
+  });
+
+  function hideTask(userTask) {
+    console.log("hide task 100000000");
+    $('#task' + userTask._id).hide(400, function() {
+      console.log("hidden");
+    });
+  };
+
+  $scope.timeoutIds = {}
+
+  $scope.updateUserTask = function(userTask) {
+    if (!userTask.is_finished) {
+      var timeoutId = setTimeout(function() { hideTask(userTask) }, 1000);
+      $scope.timeoutIds[userTask._id] = timeoutId;
+    } else {
+      window.clearTimeout($scope.timeoutIds[userTask._id]);
+    }
+
+    var logData = userTask.task;
+    logData['useB'] = $scope.useB;
+    woopra.track("task toggled", logData);
+    console.log("in updateUserTask");
+    Task.update(userTask, function(data, err) {
+      if (err) { console.log(err); return; }
+      console.log(data);
+    });
+  }
+})
+
 .controller('TaskDetailsCtrl', function($scope, $location, $ionicLoading, $stateParams, Task) {
   $scope.task = {
     'class': {

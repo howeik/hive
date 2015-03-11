@@ -48,6 +48,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.task-completed', {
+    url: '/tasks/completed',
+    views: {
+      'tab-tasks': {
+        templateUrl: 'templates/tasks-completed.html',
+        controller: 'TasksCompletedCtrl'
+      }
+    }
+  })
+
   .state('tab.task-detail', {
     url: '/tasks/:taskId',
     views: {
