@@ -121,10 +121,11 @@ body {
 /* Main Task Page */
 
 .item-icon-right > .icon {
-  z-index: 4;
+  z-index: 4 !important;
   font-size: 20px;
   margin-right:5px;
 }
+
 
 .task-title {
 /*	font-size:14px;
@@ -141,6 +142,7 @@ body {
 
 .tasks {
 	margin:0 auto;
+	position: relative;
 }
 
 .tasks-left {

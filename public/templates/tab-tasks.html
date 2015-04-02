@@ -2,8 +2,72 @@
 	<ion-content>
 		<div class="">
 
-			<!-- This Week -->
+
+			<!-- Weekly view -->
+			<div ng-repeat="week in weeklyTasks track by $index">
 			<div class="item item-divider">
+				<ion ng-if="$index == thisWeekIndex" class="ion-calendar" style="padding-right:3px;"></ion> 
+				<ion>Week {{$index + 1}}</ion> <ion ng-if="$index == thisWeekIndex"> (This Week)</ion>
+			</div>
+
+			<ion-item ng-repeat="userTask in week" id="task{{userTask._id}}" class="item item-checkbox item-icon-right">
+
+				<label ng-show="!useB" class="checkbox">
+				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+				</label>
+
+				<li ng-show="useB" class="checkbox">
+				  <input type="checkbox" ng-model="userTask.is_finished" ng-change="updateUserTask(userTask)">
+				</li>
+
+				<div ng-click="taskDetail(userTask)" class="tasks" ng-if="!userTask.is_finished" style="overflow: initial;white-space: initial; z-index: 4 !important;">
+					<div class="date-title">
+						<div ng-show="userTask.task.class.name">
+						{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
+						({{userTask.day_of_the_week.substr(0, 3)}})
+						</div>
+					</div>
+					<div class="task-title">
+						{{userTask.task.name}}
+					</div>
+					<div class="course-title">
+						{{userTask.task.class.name}}
+					</div>
+				</div>
+
+				<!-- Completed Tasks checked off-->
+				<div ng-click="taskDetail(userTask)" class="tasks" ng-if="userTask.is_finished" style="overflow: initial;white-space: initial; z-index: 4 !important;">
+					<div class="date-title-completed">
+						<div ng-show="userTask.task.class.name">
+						{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
+						({{userTask.day_of_the_week.substr(0, 3)}})
+						</div>
+					</div>
+					<div class="task-title-completed">
+						{{userTask.task.name}}
+					</div>
+					<div class="course-title-completed">
+						{{userTask.task.class.name}}
+					</div>
+				</div>
+				<!-- ************************************* -->
+
+				<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<!-- This Week -->
+<!-- 			<div class="item item-divider">
 				<ion class="ion-calendar" style="padding-right:3px;"></ion> This Week
 			</div>
 
@@ -29,7 +93,6 @@
 					</div>
 				</div>
 
-				<!-- Completed Tasks checked off-->
 				<div class="tasks" ng-if="userTask.is_finished" style="overflow: initial;white-space: initial;">
 					<div class="date-title-completed">
 						<div ng-show="userTask.task.class.name">
@@ -43,14 +106,13 @@
 						{{userTask.task.class.name}}
 					</div>
 				</div>
-				<!-- ************************************* -->
 
 				<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
-			</ion-item>
+			</ion-item> -->
 
 
 			<!-- Upcoming -->
-			<div class="item item-divider">
+<!-- 			<div class="item item-divider">
 				<ion class="icon ion-android-stopwatch" style="padding-right:3px;"></ion> Upcoming
 			</div>
 
@@ -76,7 +138,6 @@
 					</div>
 				</div>
 
-				<!-- Completed Tasks checked off-->
 				<div class="tasks"  ng-if="userTask.is_finished" style="overflow: initial;white-space: initial;">
 					<div class="date-title-completed">
 						{{userTask.task.due_date.substr(0, userTask.task.due_date.lastIndexOf('/'))}}
@@ -88,7 +149,6 @@
 						{{userTask.task.class.name}}
 					</div>
 				</div>
-				<!-- ************************************* -->
 
 
 				<i ng-click="taskDetail(userTask)" class="icon ion-chevron-right icon-accessory"></i>
@@ -100,7 +160,7 @@
 			    <i class="icon ion-checkmark-circled"></i> Show Completed Tasks
 		  	</a>
 		  	</div>
-		  	</div>
+		  	</div> -->
 
 
 			<!-- OLD This Week Task -->

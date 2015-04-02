@@ -121,6 +121,8 @@ angular.module('starter.controllers', [])
     return daysOfTheWeek[day];
   };
 
+  $scope.dayToString = dayToString;
+
   $scope.click = function(event){
     alert("Cliked");
   };
@@ -138,10 +140,10 @@ angular.module('starter.controllers', [])
   };
 
   function hideTask(userTask) {
-    console.log("hide task 100000000");
-    $('#task' + userTask._id).hide(400, function() {
-      console.log("hidden");
-    });
+    // console.log("hide task 100000000");
+    // $('#task' + userTask._id).hide(400, function() {
+    //   console.log("hidden");
+    // });
   };
 
   $scope.timeoutIds = {}
@@ -192,8 +194,54 @@ angular.module('starter.controllers', [])
         $scope.upcoming.push(userTask);
       }
     });
+  });
 
+  weekStarts = [];
+  weekStarts.push(new Date('03-29-2015'));
+  for (var i = 1; i < 11; ++i) {
+    weekStarts.push(new Date(weekStarts[i - 1]));
+    weekStarts[i].setDate(weekStarts[i - 1].getDate() + 7);
+  }
 
+  $scope.thisWeekIndex = -1;
+  var today = new Date();
+  for (var i = 0; i < weekStarts.length - 1; ++i) {
+    if (today >= weekStarts[i] && today < weekStarts[i + 1]) {
+      $scope.thisWeekIndex = i;
+    }
+  }
+  $scope.weeklyTasks = [];
+
+  Task.all(function(tasks, err) {
+    if (err) { console.log(err); return; }
+
+    for (var i = 0; i < weekStarts.length; ++i) {
+      $scope.weeklyTasks.push([]);
+    }
+
+    tasks = tasks.sort(function(a, b) {
+      return new Date(a.task.due_date) - new Date(b.task.due_date);
+    });
+
+    tasks.forEach(function(userTask) {
+      var foundWeek = false;
+
+      for (var i = 0; i < weekStarts.length - 1; ++i) {
+        var taskDueDate = new Date(userTask.task.due_date);
+        if (taskDueDate >= weekStarts[i] && taskDueDate < weekStarts[i + 1]) {
+          $scope.weeklyTasks[i].push(userTask);
+          userTask.day_of_the_week = dayToString(taskDueDate.getDay());
+          foundWeek = true;
+          break;
+        }
+      }
+
+      if (foundWeek == false) {
+        $scope.weeklyTasks[$scope.weeklyTasks.length - 1].push(userTask);
+      }
+    });
+
+    console.log($scope.weeklyTasks);
 
   });
 
