@@ -31,7 +31,7 @@ for subject in subjects:
     r = requests.post(
       'https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudentResult.htm',
       params={'page': current_page},
-      data={'selectedTerm': 'WI15', 
+      data={'selectedTerm': TERM, 
             'selectedSubjects': subject, 
             'schedOption1': True, 
             'schedOption2': True}
