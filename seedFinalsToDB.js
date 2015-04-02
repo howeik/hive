@@ -41,7 +41,12 @@ models.Class.find().remove().exec(function (err) {
 									console.log("Done!");
 									models.UserTasks.find().remove().exec(function (err) {
 										if (err) { console.log(err); }
-										mongoose.connection.close();
+
+										models.UserClasses.find().remove().exec(function (err) {
+											if (err) { console.log(err); }
+											mongoose.connection.close();
+										});
+										
 									});
 								}
 							});
