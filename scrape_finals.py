@@ -2,7 +2,7 @@ import json
 import re
 import requests
 
-TERM = 'WI15'
+TERM = 'SP15'
 
 r = requests.get('https://act.ucsd.edu/scheduleOfClasses/department-list.json?selectedTerm=' + TERM)
 dept_list = json.loads(r.text)
@@ -89,6 +89,10 @@ for subject in subjects:
         if start_matching_final == True:
           # parse due_date
           due_date_match = re.search('>(.*?)</td>', lines[final_i])
+          if due_date_match == None:
+            print "idk what's happening... skipping"
+            skipTo = final_i
+            continue
           due_date = due_date_match.group(1)
 
           # find due_time

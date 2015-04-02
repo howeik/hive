@@ -33,7 +33,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Lafleur, Marni M",
+        "class_instructor": "Semendeferi, Ekaterini",
         "class_name": "ANTH102",
         "class_teacher": "",
         "description": "",
@@ -847,7 +847,7 @@
         "name": ""
     },
     {
-        "class_instructor": "McComsey, Melanie E",
+        "class_instructor": "Nitz, Douglas A.",
         "class_name": "COGS102B",
         "class_teacher": "",
         "description": "",
@@ -924,7 +924,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Miller, Luke",
+        "class_instructor": "Nitz, Douglas A.",
         "class_name": "COGS169",
         "class_teacher": "",
         "description": "",
@@ -1045,7 +1045,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Whitworth-Smith, Andrew C",
+        "class_instructor": "Vasquez, Olga A.",
         "class_name": "COMM106F",
         "class_teacher": "",
         "description": "",
@@ -1078,7 +1078,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Feldman, Heidi C",
+        "class_instructor": "Alac, Morana",
         "class_name": "COMM111M",
         "class_teacher": "",
         "description": "",
@@ -1188,7 +1188,7 @@
         "name": ""
     },
     {
-        "class_instructor": "McKenna, Denise",
+        "class_instructor": "Burg, Suzanne M.M.",
         "class_name": "COMM146",
         "class_teacher": "",
         "description": "",
@@ -1298,7 +1298,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Jundt, Adam H",
+        "class_instructor": "Gillespie, Gary N",
         "class_name": "CSE11",
         "class_teacher": "",
         "description": "",
@@ -1595,7 +1595,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Mirza, Diba",
+        "class_instructor": "Gayles, Eric S",
         "class_name": "CSE140",
         "class_teacher": "",
         "description": "",
@@ -1694,7 +1694,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Rotenberg, Steven Paul",
+        "class_instructor": "Klemmer, Scott R",
         "class_name": "CSE169",
         "class_teacher": "",
         "description": "",
@@ -2673,7 +2673,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Ochoa, Edward Henry",
+        "class_instructor": "Eckles, Megan Alma",
         "class_name": "ENVR110",
         "class_teacher": "",
         "description": "",
@@ -2739,17 +2739,6 @@
         "name": ""
     },
     {
-        "class_instructor": "Fuste, Jose Ignacio",
-        "class_name": "ETHN104",
-        "class_teacher": "",
-        "description": "",
-        "due_date": "03/18/2015",
-        "due_time": "11:30am",
-        "is_endorsed": true,
-        "is_shared": true,
-        "name": ""
-    },
-    {
         "class_instructor": "Mendes, Gabriel",
         "class_name": "ETHN105",
         "class_teacher": "",
@@ -2783,7 +2772,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Nguyen, Linh Thuy",
+        "class_instructor": "Fuste, Jose Ignacio",
         "class_name": "ETHN129",
         "class_teacher": "",
         "description": "",
@@ -3311,7 +3300,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Elle, Susan Michelle",
+        "class_instructor": "Zhou, Shenggao",
         "class_name": "MATH3C",
         "class_teacher": "",
         "description": "",
@@ -3322,7 +3311,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Wen, Jiayi",
+        "class_instructor": "Zhou, Shenggao",
         "class_name": "MATH4C",
         "class_teacher": "",
         "description": "",
@@ -3366,7 +3355,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Mohanty, Sara",
+        "class_instructor": "Wang, Jie",
         "class_name": "MATH10B",
         "class_teacher": "",
         "description": "",
@@ -3410,7 +3399,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Bacellar Dos Santo, Jorge",
+        "class_instructor": "Bryan, Paul Anthony",
         "class_name": "MATH20A",
         "class_teacher": "",
         "description": "",
@@ -3421,7 +3410,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Wang, Xingting",
+        "class_instructor": "Bryan, Paul Anthony",
         "class_name": "MATH20A",
         "class_teacher": "",
         "description": "",
@@ -3443,7 +3432,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Allen, Grant",
+        "class_instructor": "Bowers, Adam R.",
         "class_name": "MATH20B",
         "class_teacher": "",
         "description": "",
@@ -3509,7 +3498,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Wang, Xingting",
+        "class_instructor": "Oliver, Jesus R",
         "class_name": "MATH20C",
         "class_teacher": "",
         "description": "",
@@ -3542,7 +3531,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Behzadan, Ali",
+        "class_instructor": "Wang, Jie",
         "class_name": "MATH20E",
         "class_teacher": "",
         "description": "",
@@ -4235,7 +4224,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Zelickman, Robert A",
+        "class_instructor": "Thorpe, Suzanne",
         "class_name": "MUS5",
         "class_teacher": "",
         "description": "",
@@ -4675,17 +4664,6 @@
         "name": ""
     },
     {
-        "class_instructor": "Shotwell, Brian",
-        "class_name": "PHYS2B",
-        "class_teacher": "",
-        "description": "",
-        "due_date": "03/19/2015",
-        "due_time": "8:00am",
-        "is_endorsed": true,
-        "is_shared": true,
-        "name": ""
-    },
-    {
         "class_instructor": "Butov, Leonid",
         "class_name": "PHYS2BL",
         "class_teacher": "",
@@ -4873,7 +4851,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Tiwari, Devesh K",
+        "class_instructor": "Lake, David A",
         "class_name": "POLI11D",
         "class_teacher": "",
         "description": "",
@@ -4928,7 +4906,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Ingram, James Warren",
+        "class_instructor": "Fletcher, Nathan",
         "class_name": "POLI102E",
         "class_teacher": "",
         "description": "",
@@ -4944,17 +4922,6 @@
         "class_teacher": "",
         "description": "",
         "due_date": "03/16/2015",
-        "due_time": "7:00pm",
-        "is_endorsed": true,
-        "is_shared": true,
-        "name": ""
-    },
-    {
-        "class_instructor": "Madigan, Michael D",
-        "class_name": "POLI103C",
-        "class_teacher": "",
-        "description": "",
-        "due_date": "03/19/2015",
         "due_time": "7:00pm",
         "is_endorsed": true,
         "is_shared": true,
@@ -5203,7 +5170,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Burd, Margarette Pamela",
+        "class_instructor": "Mac Leod, Donald I.",
         "class_name": "PSYC1",
         "class_teacher": "",
         "description": "",
@@ -5214,7 +5181,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Higgins, Emily Catherine",
+        "class_instructor": "Mac Leod, Donald I.",
         "class_name": "PSYC3",
         "class_teacher": "",
         "description": "",
@@ -5225,7 +5192,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Burd, Margarette Pamela",
+        "class_instructor": "Mac Leod, Donald I.",
         "class_name": "PSYC6",
         "class_teacher": "",
         "description": "",
@@ -5236,7 +5203,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Dooley, Kevin D.",
+        "class_instructor": "Mac Leod, Donald I.",
         "class_name": "PSYC60",
         "class_teacher": "",
         "description": "",
@@ -5247,7 +5214,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Plummer, Patrick Reynard",
+        "class_instructor": "Mac Leod, Donald I.",
         "class_name": "PSYC60",
         "class_teacher": "",
         "description": "",
@@ -5302,7 +5269,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Aron, Adam",
+        "class_instructor": "Townsend, Andrea Spadoni",
         "class_name": "PSYC107",
         "class_teacher": "",
         "description": "",
@@ -5335,7 +5302,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Kennelly, Arthur Edwin",
+        "class_instructor": "Linke, Sarah Elizabeth",
         "class_name": "PSYC120",
         "class_teacher": "",
         "description": "",
@@ -5379,7 +5346,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Dooley, Kevin D.",
+        "class_instructor": "Wixted, John T",
         "class_name": "PSYC138",
         "class_teacher": "",
         "description": "",
@@ -5390,7 +5357,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Kennelly, Arthur Edwin",
+        "class_instructor": "Wixted, John T",
         "class_name": "PSYC140",
         "class_teacher": "",
         "description": "",
@@ -5423,18 +5390,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Henniger, Nicole Elizabeth",
-        "class_name": "PSYC153",
-        "class_teacher": "",
-        "description": "",
-        "due_date": "03/19/2015",
-        "due_time": "3:00pm",
-        "is_endorsed": true,
-        "is_shared": true,
-        "name": ""
-    },
-    {
-        "class_instructor": "Wanic, Rebekah Amelie",
+        "class_instructor": "Anagnostaras, Stephan",
         "class_name": "PSYC155",
         "class_teacher": "",
         "description": "",
@@ -5445,7 +5401,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Wanic, Rebekah Amelie",
+        "class_instructor": "Anagnostaras, Stephan",
         "class_name": "PSYC164",
         "class_teacher": "",
         "description": "",
@@ -5467,7 +5423,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Oliver, Taylor",
+        "class_instructor": "Whitfield, Timothy W.",
         "class_name": "PSYC172",
         "class_teacher": "",
         "description": "",
@@ -5500,7 +5456,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Bass, Wayne Jeffrey",
+        "class_instructor": "Verdicchio, Pasquale",
         "class_name": "RELI2",
         "class_teacher": "",
         "description": "",
@@ -5918,7 +5874,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Sinay, Patricia",
+        "class_instructor": "Havis, Allan",
         "class_name": "TMC15",
         "class_teacher": "",
         "description": "",
@@ -5929,7 +5885,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Curcio, Paul David",
+        "class_instructor": "Bussell, Mirle Rabinowitz",
         "class_name": "USP2",
         "class_teacher": "",
         "description": "",
@@ -5984,7 +5940,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Ingram, James Warren",
+        "class_instructor": "Fletcher, Nathan",
         "class_name": "USP107",
         "class_teacher": "",
         "description": "",
@@ -6000,17 +5956,6 @@
         "class_teacher": "",
         "description": "",
         "due_date": "03/16/2015",
-        "due_time": "7:00pm",
-        "is_endorsed": true,
-        "is_shared": true,
-        "name": ""
-    },
-    {
-        "class_instructor": "Madigan, Michael D",
-        "class_name": "USP115",
-        "class_teacher": "",
-        "description": "",
-        "due_date": "03/19/2015",
         "due_time": "7:00pm",
         "is_endorsed": true,
         "is_shared": true,
@@ -6039,7 +5984,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Nguyen, Linh Thuy",
+        "class_instructor": "Lewis, Leslie R",
         "class_name": "USP135",
         "class_teacher": "",
         "description": "",
@@ -6072,7 +6017,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Curcio, Paul David",
+        "class_instructor": "Pezzoli, Keith",
         "class_name": "USP181",
         "class_teacher": "",
         "description": "",
@@ -6127,7 +6072,7 @@
         "name": ""
     },
     {
-        "class_instructor": "Sizonenko, Tatiana D",
+        "class_instructor": "Newsome, Elizabeth Ann",
         "class_name": "VIS122AN",
         "class_teacher": "",
         "description": "",

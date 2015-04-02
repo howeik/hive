@@ -12,7 +12,7 @@
         "name": "ANTH23"
     },
     {
-        "instructor": "Lafleur, Marni M",
+        "instructor": "Semendeferi, Ekaterini",
         "name": "ANTH102"
     },
     {
@@ -324,7 +324,7 @@
         "name": "COGS101B"
     },
     {
-        "instructor": "McComsey, Melanie E",
+        "instructor": "Nitz, Douglas A.",
         "name": "COGS102B"
     },
     {
@@ -352,7 +352,7 @@
         "name": "COGS153"
     },
     {
-        "instructor": "Miller, Luke",
+        "instructor": "Nitz, Douglas A.",
         "name": "COGS169"
     },
     {
@@ -428,7 +428,7 @@
         "name": "COMM104E"
     },
     {
-        "instructor": "Whitworth-Smith, Andrew C",
+        "instructor": "Vasquez, Olga A.",
         "name": "COMM106F"
     },
     {
@@ -440,7 +440,7 @@
         "name": "COMM111D"
     },
     {
-        "instructor": "Feldman, Heidi C",
+        "instructor": "Alac, Morana",
         "name": "COMM111M"
     },
     {
@@ -480,7 +480,7 @@
         "name": "COMM145"
     },
     {
-        "instructor": "McKenna, Denise",
+        "instructor": "Burg, Suzanne M.M.",
         "name": "COMM146"
     },
     {
@@ -524,7 +524,7 @@
         "name": "CSE11"
     },
     {
-        "instructor": "Jundt, Adam H",
+        "instructor": "Gillespie, Gary N",
         "name": "CSE11"
     },
     {
@@ -632,7 +632,7 @@
         "name": "CSE132B"
     },
     {
-        "instructor": "Mirza, Diba",
+        "instructor": "Gayles, Eric S",
         "name": "CSE140"
     },
     {
@@ -668,7 +668,7 @@
         "name": "CSE160"
     },
     {
-        "instructor": "Rotenberg, Steven Paul",
+        "instructor": "Klemmer, Scott R",
         "name": "CSE169"
     },
     {
@@ -732,16 +732,12 @@
         "name": "CAT2"
     },
     {
-        "instructor": "Bigham, David Joseph",
+        "instructor": "Smith, Ashley Elizabeth",
         "name": "CAT125"
     },
     {
         "instructor": "Smith, Ashley Elizabeth",
         "name": "CAT125"
-    },
-    {
-        "instructor": "Sartor, Alexandra",
-        "name": "CAT125R"
     },
     {
         "instructor": "Hendrickson, Gerald M.",
@@ -1064,7 +1060,7 @@
         "name": "ECE188"
     },
     {
-        "instructor": "Ochoa, Edward Henry",
+        "instructor": "Eckles, Megan Alma",
         "name": "ENVR110"
     },
     {
@@ -1088,10 +1084,6 @@
         "name": "ETHN100B"
     },
     {
-        "instructor": "Fuste, Jose Ignacio",
-        "name": "ETHN104"
-    },
-    {
         "instructor": "Mendes, Gabriel",
         "name": "ETHN105"
     },
@@ -1104,7 +1096,7 @@
         "name": "ETHN127"
     },
     {
-        "instructor": "Nguyen, Linh Thuy",
+        "instructor": "Fuste, Jose Ignacio",
         "name": "ETHN129"
     },
     {
@@ -1320,11 +1312,11 @@
         "name": "MMW122"
     },
     {
-        "instructor": "Elle, Susan Michelle",
+        "instructor": "Zhou, Shenggao",
         "name": "MATH3C"
     },
     {
-        "instructor": "Wen, Jiayi",
+        "instructor": "Zhou, Shenggao",
         "name": "MATH4C"
     },
     {
@@ -1340,7 +1332,7 @@
         "name": "MATH10B"
     },
     {
-        "instructor": "Mohanty, Sara",
+        "instructor": "Wang, Jie",
         "name": "MATH10B"
     },
     {
@@ -1356,11 +1348,11 @@
         "name": "MATH15A"
     },
     {
-        "instructor": "Bacellar Dos Santo, Jorge",
+        "instructor": "Bryan, Paul Anthony",
         "name": "MATH20A"
     },
     {
-        "instructor": "Wang, Xingting",
+        "instructor": "Bryan, Paul Anthony",
         "name": "MATH20A"
     },
     {
@@ -1368,7 +1360,7 @@
         "name": "MATH20B"
     },
     {
-        "instructor": "Allen, Grant",
+        "instructor": "Bowers, Adam R.",
         "name": "MATH20B"
     },
     {
@@ -1392,7 +1384,7 @@
         "name": "MATH20C"
     },
     {
-        "instructor": "Wang, Xingting",
+        "instructor": "Oliver, Jesus R",
         "name": "MATH20C"
     },
     {
@@ -1404,7 +1396,7 @@
         "name": "MATH20D"
     },
     {
-        "instructor": "Behzadan, Ali",
+        "instructor": "Wang, Jie",
         "name": "MATH20E"
     },
     {
@@ -1656,7 +1648,7 @@
         "name": "MUS1B"
     },
     {
-        "instructor": "Zelickman, Robert A",
+        "instructor": "Thorpe, Suzanne",
         "name": "MUS5"
     },
     {
@@ -1820,10 +1812,6 @@
         "name": "PHYS2A"
     },
     {
-        "instructor": "Shotwell, Brian",
-        "name": "PHYS2B"
-    },
-    {
         "instructor": "Butov, Leonid",
         "name": "PHYS2BL"
     },
@@ -1892,7 +1880,7 @@
         "name": "POLI10D"
     },
     {
-        "instructor": "Tiwari, Devesh K",
+        "instructor": "Lake, David A",
         "name": "POLI11D"
     },
     {
@@ -1912,16 +1900,12 @@
         "name": "POLI100DA"
     },
     {
-        "instructor": "Ingram, James Warren",
+        "instructor": "Fletcher, Nathan",
         "name": "POLI102E"
     },
     {
         "instructor": "Fletcher, Nathan",
         "name": "POLI103A"
-    },
-    {
-        "instructor": "Madigan, Michael D",
-        "name": "POLI103C"
     },
     {
         "instructor": "Smith, Glenn Chatmas",
@@ -2016,23 +2000,23 @@
         "name": "POLI170A"
     },
     {
-        "instructor": "Burd, Margarette Pamela",
+        "instructor": "Mac Leod, Donald I.",
         "name": "PSYC1"
     },
     {
-        "instructor": "Higgins, Emily Catherine",
+        "instructor": "Mac Leod, Donald I.",
         "name": "PSYC3"
     },
     {
-        "instructor": "Burd, Margarette Pamela",
+        "instructor": "Mac Leod, Donald I.",
         "name": "PSYC6"
     },
     {
-        "instructor": "Dooley, Kevin D.",
+        "instructor": "Mac Leod, Donald I.",
         "name": "PSYC60"
     },
     {
-        "instructor": "Plummer, Patrick Reynard",
+        "instructor": "Mac Leod, Donald I.",
         "name": "PSYC60"
     },
     {
@@ -2052,7 +2036,7 @@
         "name": "PSYC106"
     },
     {
-        "instructor": "Aron, Adam",
+        "instructor": "Townsend, Andrea Spadoni",
         "name": "PSYC107"
     },
     {
@@ -2064,7 +2048,7 @@
         "name": "PSYC115"
     },
     {
-        "instructor": "Kennelly, Arthur Edwin",
+        "instructor": "Linke, Sarah Elizabeth",
         "name": "PSYC120"
     },
     {
@@ -2080,11 +2064,11 @@
         "name": "PSYC137"
     },
     {
-        "instructor": "Dooley, Kevin D.",
+        "instructor": "Wixted, John T",
         "name": "PSYC138"
     },
     {
-        "instructor": "Kennelly, Arthur Edwin",
+        "instructor": "Wixted, John T",
         "name": "PSYC140"
     },
     {
@@ -2096,15 +2080,11 @@
         "name": "PSYC150"
     },
     {
-        "instructor": "Henniger, Nicole Elizabeth",
-        "name": "PSYC153"
-    },
-    {
-        "instructor": "Wanic, Rebekah Amelie",
+        "instructor": "Anagnostaras, Stephan",
         "name": "PSYC155"
     },
     {
-        "instructor": "Wanic, Rebekah Amelie",
+        "instructor": "Anagnostaras, Stephan",
         "name": "PSYC164"
     },
     {
@@ -2112,7 +2092,7 @@
         "name": "PSYC171"
     },
     {
-        "instructor": "Oliver, Taylor",
+        "instructor": "Whitfield, Timothy W.",
         "name": "PSYC172"
     },
     {
@@ -2144,7 +2124,7 @@
         "name": "PSYC196B"
     },
     {
-        "instructor": "Bass, Wayne Jeffrey",
+        "instructor": "Verdicchio, Pasquale",
         "name": "RELI2"
     },
     {
@@ -2296,11 +2276,11 @@
         "name": "TWS22"
     },
     {
-        "instructor": "Sinay, Patricia",
+        "instructor": "Havis, Allan",
         "name": "TMC15"
     },
     {
-        "instructor": "Curcio, Paul David",
+        "instructor": "Bussell, Mirle Rabinowitz",
         "name": "USP2"
     },
     {
@@ -2320,20 +2300,12 @@
         "name": "USP106"
     },
     {
-        "instructor": "Ingram, James Warren",
+        "instructor": "Fletcher, Nathan",
         "name": "USP107"
     },
     {
         "instructor": "Fletcher, Nathan",
         "name": "USP109"
-    },
-    {
-        "instructor": "Madigan, Michael D",
-        "name": "USP115"
-    },
-    {
-        "instructor": "McGrory, Jack",
-        "name": "USP120"
     },
     {
         "instructor": "Denny, Elaine Kathryn",
@@ -2344,7 +2316,7 @@
         "name": "USP133"
     },
     {
-        "instructor": "Nguyen, Linh Thuy",
+        "instructor": "Lewis, Leslie R",
         "name": "USP135"
     },
     {
@@ -2356,7 +2328,7 @@
         "name": "USP179"
     },
     {
-        "instructor": "Curcio, Paul David",
+        "instructor": "Pezzoli, Keith",
         "name": "USP181"
     },
     {
@@ -2384,7 +2356,7 @@
         "name": "VIS111"
     },
     {
-        "instructor": "Sizonenko, Tatiana D",
+        "instructor": "Newsome, Elizabeth Ann",
         "name": "VIS122AN"
     },
     {
@@ -2416,11 +2388,11 @@
         "name": "VIS174"
     },
     {
-        "instructor": "Torres, Josefina E",
+        "instructor": "Trigilio, Michael",
         "name": "VIS174"
     },
     {
-        "instructor": "Torres, Josefina E",
+        "instructor": "Trigilio, Michael",
         "name": "VIS177"
     },
     {
