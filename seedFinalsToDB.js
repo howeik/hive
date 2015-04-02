@@ -39,7 +39,10 @@ models.Class.find().remove().exec(function (err) {
 								console.log(tasksToInsert + " tasks left to insert.");
 								if (tasksToInsert == 0) {
 									console.log("Done!");
-									mongoose.connection.close();
+									models.UserTasks.find().remove().exec(function (err) {
+										if (err) { console.log(err); }
+										mongoose.connection.close();
+									});
 								}
 							});
 						});
