@@ -226,8 +226,8 @@ angular.module('starter.controllers', [])
     tasks.forEach(function(userTask) {
       var foundWeek = false;
 
+      var taskDueDate = new Date(userTask.task.due_date);
       for (var i = 0; i < weekStarts.length - 1; ++i) {
-        var taskDueDate = new Date(userTask.task.due_date);
         if (taskDueDate >= weekStarts[i] && taskDueDate < weekStarts[i + 1]) {
           $scope.weeklyTasks[i].push(userTask);
           userTask.day_of_the_week = dayToString(taskDueDate.getDay());
@@ -237,6 +237,7 @@ angular.module('starter.controllers', [])
       }
 
       if (foundWeek == false) {
+        userTask.day_of_the_week = dayToString(taskDueDate.getDay());
         $scope.weeklyTasks[$scope.weeklyTasks.length - 1].push(userTask);
       }
     });
