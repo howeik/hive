@@ -197,9 +197,10 @@ angular.module('starter.controllers', [])
   });
 
   weekStarts = [];
-  weekStarts.push(new Date('03-29-2015'));
+  weekStarts.push(new Date('03/29/2015'));
   for (var i = 1; i < 11; ++i) {
-    weekStarts.push(new Date(weekStarts[i - 1]));
+    weekStarts.push(new Date(weekStarts[i - 1].getTime()));
+    console.log(weekStarts[i]);
     weekStarts[i].setDate(weekStarts[i - 1].getDate() + 7);
   }
 
@@ -228,6 +229,9 @@ angular.module('starter.controllers', [])
 
       var taskDueDate = new Date(userTask.task.due_date);
       for (var i = 0; i < weekStarts.length - 1; ++i) {
+        // console.log("comparing taskDueDate with weekStart[i]");
+        // console.log(taskDueDate);
+        // console.log(weekStarts[i]);
         if (taskDueDate >= weekStarts[i] && taskDueDate < weekStarts[i + 1]) {
           $scope.weeklyTasks[i].push(userTask);
           userTask.day_of_the_week = dayToString(taskDueDate.getDay());
